@@ -1,0 +1,22 @@
+select {
+    @include reset-select;
+    display             : block;
+    width               : 100%;
+    border-radius       : var(--component-radius);
+    padding-top         : var(--component-padding-top);
+    padding-bottom      : var(--component-padding-top);
+    padding-left        : var(--component-padding-left);
+    padding-right       : calc(var(--component-padding-left)*2);
+    font-size           : $input-font-size;
+    line-height         : calc(1em*1.5);
+    border              : 1px solid var(--component-border-color);
+    box-shadow          : var(--component-shadow);
+    background-image    : url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI4IiBoZWlnaHQ9IjYiIHZpZXdCb3g9IjAgMCA4IDYiPjxwYXRoIGQ9Ik00LDAsOCw2SDBaIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSg4IDYpIHJvdGF0ZSgxODApIi8+PC9zdmc+");
+    background-position : calc(100% - 16px) center;
+    background-repeat   : no-repeat;
+
+    &:hover,
+    &:focus {
+        border : 1px solid var(--component-border-hover-color);
+    }
+}

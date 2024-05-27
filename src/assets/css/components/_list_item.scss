@@ -1,0 +1,90 @@
+.project-item {
+    padding       : 20px;
+    background    : #fff;
+    border        : 1px solid var(--component-border-color);
+    border-radius : var(--component-radius);
+    box-shadow    : var(--component-shadow);
+
+    .project-item-inner {
+        @include reset-link;
+        display        : block;
+        height         : 100%;
+        display        : flex;
+        flex-direction : column;
+
+        .thumbnail {
+            flex           : 0 0 auto;
+            width          : 100%;
+            padding-bottom : 20px;
+            margin-bottom  : 16px;
+            border-bottom  : 1px solid var(--component-border-color);
+
+            div {
+                position : relative;
+                width    : 100%;
+                height   : 130px;
+                overflow : hidden;
+                border   : 1px solid var(--gray-primary);
+
+                img {
+                    display         : block;
+                    width           : 100%;
+                    height          : 100%;
+                    object-fit      : cover;
+                    object-position : top center;
+
+                    &.no-image {
+                        object-fit      : scale-down;
+                        object-position : center;
+                        background      : var(--gray-primary);
+                    }
+                }
+
+            }
+        }
+
+        .info {
+            display        : flex;
+            flex-direction : column;
+            flex           : 1 0 auto;
+            padding        : 0 4px;
+
+            .info-important {
+                flex          : 1 0;
+                display       : flex;
+                align-content : flex-start;
+                margin-bottom : 4px;
+
+                h4 {
+                    @include reset;
+                    flex          : 1 1 auto;
+                    max-width     : 100%;
+                    padding-right : 4px;
+                    word-break    : break-all;
+                    font-weight   : $text-font-weight-bold;
+                }
+
+                .tags {
+                    flex        : 0 0 auto;
+                    margin-left : auto;
+                    flex-wrap   : nowrap;
+                }
+
+            }
+
+            .info-detail {
+                display   : flex;
+                font-size : 0.875rem;
+
+                .type {
+                    flex : 1 0 auto;
+
+                    .projectType {
+                        text-transform : uppercase;
+                        margin-right   : 4px;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,54 @@
+// fonts
+//$custom-font-family      : "NotoSans";
+//$font-family             : $custom-font-family, -apple-system, BlinkMacSystemFont, "Malgun Gothic", "맑은 고딕", helvetica, "Apple SD Gothic Neo", sans-serif;
+$text-font-size          : clamp(14px, calc(6px + 1vw), 16px);
+$input-font-size         : 14px;
+$text-font-weight-light  : 100;
+$text-font-weight        : 400;
+$text-font-weight-medium : 500;
+$text-font-weight-bold   : 700;
+
+// color
+$point-primary    : #423ECA;
+$point-secondary  : #6E75F7;
+$point-endpoints  : #C6C2F7;
+
+$gray-primary   : #EAEAEA;
+$gray-secondary : #DDD;
+$gray-endpoints : #999;
+
+$list-bg          : #F9F9F9;
+
+// component
+$component-radius       : 8px;
+$component-padding-top  : 12px;
+$component-padding-left : 20px;
+$popup-radius           : 18px;
+
+// layout
+$tablet-break-point   : 768px;
+$laptop-break-point   : 1020px;
+$desktop-break-point  : 1920px;
+
+$window-max-width  : 1500px;
+$logo-max-width    : 140px;
+
+:root {
+    --header-bg                     : linear-gradient(90deg, #{$point-secondary} 0%, #{$point-endpoints} 100%);
+    --header-logo-fill              : #fff;
+    --text-base-color               : #222;
+    --primary                       : #{$point-primary};
+    --secondary                     : #{$point-secondary};
+    --gray-primary                  : #{$gray-primary};
+    --gray-secondary                : #{$gray-secondary};
+    --gray-endpoints                : #{$gray-endpoints};
+    --exception-color               : #FF5D5D;
+    --casebook-color                : #605dff;
+    --component-radius              : #{$component-radius};
+    --component-padding-top         : #{$component-padding-top};
+    --component-padding-left        : #{$component-padding-left};
+    --component-border-color        : #{$gray-primary};
+    --component-border-hover-color  : #{$gray-secondary};
+    --component-shadow              : 1px 1px 8px 0 rgba(0, 0, 0, 0.07);
+    --popup-radius                  : #{$popup-radius};
+}

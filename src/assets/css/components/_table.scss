@@ -1,0 +1,84 @@
+.ul-table {
+    @include reset-ul;
+    $table-padding-top  : 8px;
+    $table-padding-left : 10px;
+
+    %tdPadding {
+        padding : $table-padding-top 0;
+    }
+    %tdPaddingborder {
+        padding : $table-padding-top $table-padding-left;
+    }
+
+    display         : flex;
+    flex-direction  : column;
+
+    &-row {
+        flex    : 1 0 auto;
+        display : flex;
+
+        &>.tit {
+            @extend %tdPadding;
+            flex          : 0 0 auto;
+            padding-right : $table-padding-left;
+            color         : #999999;
+            font-weight   : $text-font-weight-medium;
+
+            @include laptop {
+                flex-basis : 120px;
+            }
+        }
+
+        &>.con {
+            @extend %tdPadding;
+            flex : 1 1 100%;
+        }
+
+        &.has-child-table {
+            &>.con {
+                padding:0;
+            }
+            @include mobile {
+                flex-wrap : wrap;
+
+                &>.tit {
+                    flex : 1 1 100%
+                }
+
+                &>.con {
+                    background : $gray-primary;
+                }
+            }
+
+        }
+    }
+
+    &-border {
+        @extend .ul-table;
+
+        &>.ul-table-row {
+            border-bottom : 1px solid #DDDDDD;
+
+            &:last-child {
+                border-bottom-width : 0;
+            }
+            & > .tit,
+            & > .con{
+                @extend %tdPaddingborder;
+            }
+        }
+
+        & & {
+            .tit {
+                padding-left : 10px;
+            }
+        }
+    }
+
+    & & {
+
+        @include laptop {
+            height : 100%;
+        }
+    }
+}

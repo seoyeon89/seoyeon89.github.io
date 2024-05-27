@@ -1,0 +1,37 @@
+.ui-list {
+    @include reset-ul;
+
+    &>li {
+        position     : relative;
+        padding-left : 1.25em;
+
+        &::before {
+            content     : '';
+            display     : block;
+            position    : absolute;
+            width       : 1em;
+            height      : 1em;
+            left        : 0;
+            top         : 0;
+            font-size   : inherit;
+            line-height : inherit;
+        }
+
+    }
+
+    &-explanation {
+        @extend .ui-list;
+
+        &>li:before {
+            content : '\203B';
+        }
+    }
+
+    &-circle {
+        @extend .ui-list;
+
+        &>li:before {
+            content : '\26AC'
+        }
+    }
+}

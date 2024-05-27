@@ -1,0 +1,38 @@
+/* 초기화 */
+html {
+    height      : 100vh;
+    //font-family : $font-family;
+    font-size   : $text-font-size;
+    font-weight : $text-font-weight;
+}
+
+body {
+    font-family             : inherit;
+    font-size               : inherit;
+    font-weight             : inherit;
+    margin                  : 0;
+    color                   : var(--text-primary);
+    -webkit-font-smoothing  : antialiased;
+    -moz-osx-font-smoothing : grayscale;
+}
+
+body [hidden] {
+    display : none !important;
+}
+
+* {
+    box-sizing : border-box;
+}
+
+button,
+select,
+input,
+textarea,
+pre {
+    font-family : inherit;
+}
+
+// 숨김
+.blind {
+    @include clip;
+}
