@@ -1,15 +1,15 @@
 import React from 'react';
 import { Route, Routes } from 'react-router-dom';
-import Layout from './components/layout.js';
-import Main from './pages/main';
-import PageA from './pages/detail';
+import Home from './pages/Home';
+import Detail from './pages/Detail';
+import NoPage from './pages/NoPage';
 
 function App() {
   return (
       <Routes>
-          <Route path='/' element={<Layout />} >
-              <Route index element={<Main />} />
-              <Route path='/pageA' element={<PageA />} />
+          <Route path="/" element={<Home />}>
+              <Route path="/Detail/:id" element={<Detail />} />
+              <Route path="*" element={<NoPage />} />
           </Route>
       </Routes>
   );
