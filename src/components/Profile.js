@@ -29,7 +29,7 @@ const MyInfoSection = (props) => {
 
 const Profile = () => {
     return (
-        <section>
+        <section id="profile">
             <h1>Profile</h1>
             <div className="avatar"></div>
             <MyInfoSection title="About Who Am I"/>

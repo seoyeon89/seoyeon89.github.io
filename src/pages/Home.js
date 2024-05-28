@@ -1,17 +1,21 @@
-import AppHeader from '../modules/AppHeader';
-import Profile from '../modules/Profile';
-import WorkList from '../modules/WorkList';
-import Contect from '../modules/Contect';
+import React from 'react';
+
+import AppHeader from '../components/AppHeader';
+import Profile from '../components/Profile';
+import WorkList from '../components/WorkList';
+import Contect from '../components/Contect';
 
 const Home = () => {
     return (
         <>
             <AppHeader />
-            <Profile id="profile"/>
-            <WorkList id="work" />
-            <Contect id="contact" />
+            <main>
+                <Profile />
+                <WorkList />
+                <Contect />
+            </main>
         </>
-   )
+    )
 };
 
 export default Home;

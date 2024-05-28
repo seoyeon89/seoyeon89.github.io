@@ -1,21 +1,18 @@
-import { Outlet, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { HashLink } from 'react-router-hash-link';
 
 const AppHeader = () => {
     return (
         <>
             <header>
-                <h1><span></span></h1>
+                <h1><Link to="/">Seoyeon,Jang</Link></h1>
                 <nav>
                     <ul>
                         <li>
-                            <Link to="/">Home</Link>
+                            <HashLink to="/#a">Profile</HashLink>
                         </li>
                         <li>
-                            <HashLink to="/#a">Link to Hash Fragment</HashLink>
-                        </li>
-                        <li>
-                            <Link to="/detail">detail</Link>
+                            <HashLink to="/#works">Works</HashLink>
                         </li>
                         <li>
                             <Link to="/contact">Contact</Link>
@@ -23,7 +20,6 @@ const AppHeader = () => {
                     </ul>
                 </nav>
             </header>
-            <Outlet/>
         </>
     )
 };
