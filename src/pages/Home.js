@@ -1,7 +1,7 @@
-import AppHeader from '../module/AppHeader';
-import Profile from '../module/Profile';
-import WorkList from '../module/WorkList';
-import Contect from '../module/Contect';
+import AppHeader from '../modules/AppHeader';
+import Profile from '../modules/Profile';
+import WorkList from '../modules/WorkList';
+import Contect from '../modules/Contect';
 
 const Home = () => {
     return (
