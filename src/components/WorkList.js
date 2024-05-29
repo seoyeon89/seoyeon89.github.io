@@ -9,20 +9,22 @@ const WorkSection = (props) => {
                 <h1>WorkList</h1>
                 <ul>
                 {
-                    projectSection.map((item) => {
+                    projectSection.map((Project) => {
                         return (
-                            <li key={item.id}>
-                                <Link to={`/detail/${item.id}`}>
-                                    <div><img src={item.thumbnail}/></div>
+                            <li key={Project.id}>
+                                <Link to={`/detail/${Project.id}`}>
+                                    {Project.thumbnail[0] &&
+                                        <div><img src={Project.thumbnail[0]}/></div>
+                                    }
                                     <div>
-                                        <h2>{item.projectName}</h2>
-                                        <p>{item.projectType}</p>
-                                        {item.date.start &&
-                                            <time >{item.date.start}</time>
+                                        <h2>{Project.projectName}</h2>
+                                        <p>{Project.projectType}</p>
+                                        {Project.date.start &&
+                                            <time >{Project.date.start}</time>
                                         }
 
-                                        { item.date.end &&
-                                            <time >{item.date.end}</time>
+                                        { Project.date.end &&
+                                            <time >{Project.date.end}</time>
                                         }
                                     </div>
                                 </Link>

@@ -15,12 +15,20 @@
                 "start": "2024-05-28",
                 "end": "2024-05-28"
             },
+            "skills" : [
+                "HTML5",
+                "CSS3"
+            ],
+            "discription": [
+                "설명1"
+            ],
             "thumbnail": [
                 "img.png",
                 "img2.png"
             ],
             "publicUrl": [
-                "www.naver.com"
+                "https://www.naver.com",
+                "https://www.naver.com"
             ]
         },
         {
@@ -37,12 +45,15 @@
             "date": {
                 "start": "2024-05-28"
             },
+            "skills" : [
+                "HTML5"
+            ],
+            "discription": [
+                "설명1"
+            ],
             "thumbnail": [
                 "img.png",
                 "img2.png"
-            ],
-            "publicUrl": [
-                "www.naver.com"
             ]
         }
     ]

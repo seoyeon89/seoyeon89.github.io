@@ -1,4 +1,5 @@
 import React from 'react';
+import { Outlet } from 'react-router-dom';
 
 import AppHeader from '../components/AppHeader';
 import Profile from '../components/Profile';
@@ -10,10 +11,12 @@ const Home = () => {
         <>
             <AppHeader />
             <main>
-                <Profile />
-                <WorkList />
-                <Contect />
+                {/*<Profile />*/}
+                {/*<WorkList />*/}
+                {/*<Contect />*/}
             </main>
+
+            <Outlet />
         </>
     )
 };
