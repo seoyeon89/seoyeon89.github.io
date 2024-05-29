@@ -1,12 +1,13 @@
-import { useParams } from "react-router-dom";
+import { useParams } from 'react-router-dom';
 import ProjectsJsonData from '../assets/json/project.json';
+
 const Projects = ProjectsJsonData.projects;
 
 const Detail = () => {
-    const {id} = useParams();
-    const Project = Projects.find( item => item.id === Number(id) );
+    const { id } = useParams();
+    const Project = Projects.find(item => item.id === Number(id));
     return (
-        <section>
+        <aside className="popup-wrap">
             <div>
                 <h1>{Project.projectName}</h1>
                 <p>{Project.projectType}</p>
@@ -27,27 +28,25 @@ const Detail = () => {
                 }
 
                 <article>
-                    <h2></h2>
-                    { Object.entries(Project.participation).map(([key, value]) => {
-                        return (
-                            <div key={key}>
-                                <div>{key}</div>
-                                <div>{value}</div>
-                            </div>
-                        )
-                    })
+                    <h2></h2>{Object.entries(Project.participation).map(([key, value]) => {
+                    return (
+                        <div key={key}>
+                            <div>{key}</div>
+                            <div>{value}</div>
+                        </div>
+                    );
+                })
                 }
                 </article>
 
                 <article>
-                    <h2></h2>
-                    {
-                        Project.skills.map( (skill,index) => {
-                            return (
-                                <div key={index} >{skill}</div>
-                            )
-                        })
-                    }
+                    <h2></h2>{
+                    Project.skills.map((skill, index) => {
+                        return (
+                            <div key={index}>{skill}</div>
+                        );
+                    })
+                }
                 </article>
 
                 <article>
@@ -57,14 +56,10 @@ const Detail = () => {
 
                 {
                     Project.publicUrl &&
-                    Project.publicUrl.map( (link,index) => {
+                    Project.publicUrl.map((link, index) => {
                         return (
-                            <a key={index}
-                                href={link}
-                                rel="noopener noreferrer"
-                                target="_blank"
-                            >{link}</a>
-                        )
+                            <a key={index} href={link} rel="noopener noreferrer" target="_blank">{link}</a>
+                        );
                     })
                 }
             </div>
@@ -73,9 +68,8 @@ const Detail = () => {
                     <div><img src={Project.thumbnail}/></div>
                 }
             </div>
-        </section>
-
-    )
+        </aside>
+    );
 };
 
 export default Detail;

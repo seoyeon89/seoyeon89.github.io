@@ -1,46 +1,56 @@
-import { Link } from "react-router-dom";
+import { Link } from 'react-router-dom';
 import ProjectsJsonData from '../assets/json/project.json';
+
 const Projects = ProjectsJsonData.projects;
 
 const WorkSection = (props) => {
     const projectSection = props.projects;
     return (
-        <section id="works">
-                <h1>WorkList</h1>
-                <ul>
+        <section id="works" className="projects">
+            <h1 hidden>WorkList</h1>
+            <ul className="project-list">
                 {
                     projectSection.map((Project) => {
                         return (
-                            <li key={Project.id}>
-                                <Link to={`/detail/${Project.id}`}>
+                            <li key={Project.id} className="project-item">
+                                <Link to={`/detail/${Project.id}`} className="project-item-inner">
                                     {Project.thumbnail[0] &&
-                                        <div><img src={Project.thumbnail[0]}/></div>
+                                        <div className="thumbnail">
+                                            <div><img src={`/assets/thumnail/${Project.thumbnail[0]}`}/></div>
+                                        </div>
                                     }
-                                    <div>
-                                        <h2>{Project.projectName}</h2>
-                                        <p>{Project.projectType}</p>
-                                        {Project.date.start &&
-                                            <time >{Project.date.start}</time>
-                                        }
+                                    <div className="info">
+                                        <div className="info-important">
+                                            <h2><span>{Project.projectName}</span></h2>
+                                            <div className="tags">
 
-                                        { Project.date.end &&
-                                            <time >{Project.date.end}</time>
-                                        }
+                                            </div>
+                                        </div>
+                                        <div className="info-detail">
+                                            <div className="type">
+                                                {Project.projectType}
+                                            </div>
+                                            {Project.date.start &&
+                                            <div className="start-date">
+                                                    <time>{Project.date.start}</time>
+                                            </div>
+                                            }
+                                        </div>
                                     </div>
                                 </Link>
                             </li>
-                        )
+                        );
                     })
                 }
-                </ul>
-            </section>
-    )
-}
+            </ul>
+        </section>
+    );
+};
 
 const WorkList = () => {
     return (
-        <WorkSection projects={Projects} />
-    )
+        <WorkSection projects={Projects}/>
+    );
 };
 
 export default WorkList;

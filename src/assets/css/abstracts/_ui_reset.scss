@@ -1,38 +1,3 @@
-@mixin reset {
-    margin  : 0;
-    padding : 0;
-}
-
-@mixin reset-ul {
-    margin     : 0;
-    padding    : 0;
-    list-style : none;
-}
-
-@mixin reset-link {
-    color           : inherit;
-    text-decoration : none;
-
-    &:hover,
-    &:focus,
-    &:visited {
-        color           : inherit;
-        text-decoration : none;
-    }
-}
-
-@mixin reset-select {
-    display            : block;
-    margin             : 0;
-    padding            : 0;
-    outline            : none;
-    cursor             : pointer;
-    -o-appearance      : none;
-    -webkit-appearance : none;
-    -moz-appearance    : none;
-    appearance         : none;
-}
-
 @mixin reset-button {
     position           : relative;
     display            : inline-flex;

@@ -4,15 +4,15 @@ import Home from './pages/Home';
 import Detail from './pages/Detail';
 import NoPage from './pages/NoPage';
 
-function App() {
-  return (
-      <Routes>
-          <Route path="/" element={<Home />}>
-              <Route path="/detail/:id" element={<Detail />} />
-          </Route>
-          <Route path="*" element={<NoPage />} />
-      </Routes>
-  );
+function App () {
+    return (
+        <Routes>
+            <Route path="/" element={<Home/>}>
+                <Route path="/detail/:id" element={<Detail/>}/>
+            </Route>
+            <Route path="*" element={<NoPage/>}/>
+        </Routes>
+    );
 }
 
 export default App;

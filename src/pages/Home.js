@@ -4,21 +4,24 @@ import { Outlet } from 'react-router-dom';
 import AppHeader from '../components/AppHeader';
 import Profile from '../components/Profile';
 import WorkList from '../components/WorkList';
-import Contect from '../components/Contect';
 
 const Home = () => {
     return (
         <>
-            <AppHeader />
+            <AppHeader/>
             <main>
-                {/*<Profile />*/}
-                {/*<WorkList />*/}
-                {/*<Contect />*/}
+                <div className="profile-background">
+
+                </div>
+                <div className="inner">
+                    <Profile/>
+                    <WorkList/>
+                </div>
             </main>
 
-            <Outlet />
+            <Outlet/>
         </>
-    )
+    );
 };
 
 export default Home;

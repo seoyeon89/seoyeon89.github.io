@@ -1,30 +1,27 @@
 .project-item {
     padding       : 20px;
-    background    : #fff;
     border        : 1px solid var(--component-border-color);
     border-radius : var(--component-radius);
-    box-shadow    : var(--component-shadow);
+    background    : #fff;
 
     .project-item-inner {
-        @include reset-link;
-        display        : block;
-        height         : 100%;
         display        : flex;
         flex-direction : column;
+        height         : 100%;
 
         .thumbnail {
             flex           : 0 0 auto;
             width          : 100%;
-            padding-bottom : 20px;
             margin-bottom  : 16px;
+            padding-bottom : 20px;
             border-bottom  : 1px solid var(--component-border-color);
 
             div {
                 position : relative;
+                overflow : hidden;
                 width    : 100%;
                 height   : 130px;
-                overflow : hidden;
-                border   : 1px solid var(--gray-primary);
+                border   : 1px solid var(--component-border-color);
 
                 img {
                     display         : block;
@@ -34,9 +31,9 @@
                     object-position : top center;
 
                     &.no-image {
+                        background      : var(--paper-endpoint);
                         object-fit      : scale-down;
                         object-position : center;
-                        background      : var(--gray-primary);
                     }
                 }
 
@@ -45,29 +42,28 @@
 
         .info {
             display        : flex;
-            flex-direction : column;
             flex           : 1 0 auto;
+            flex-direction : column;
             padding        : 0 4px;
 
             .info-important {
-                flex          : 1 0;
                 display       : flex;
+                flex          : 1 0;
                 align-content : flex-start;
                 margin-bottom : 4px;
 
-                h4 {
-                    @include reset;
+                h2 {
                     flex          : 1 1 auto;
                     max-width     : 100%;
                     padding-right : 4px;
-                    word-break    : break-all;
                     font-weight   : $text-font-weight-bold;
+                    word-break    : break-all;
                 }
 
                 .tags {
                     flex        : 0 0 auto;
-                    margin-left : auto;
                     flex-wrap   : nowrap;
+                    margin-left : auto;
                 }
 
             }
@@ -80,8 +76,8 @@
                     flex : 1 0 auto;
 
                     .projectType {
-                        text-transform : uppercase;
                         margin-right   : 4px;
+                        text-transform : uppercase;
                     }
                 }
             }

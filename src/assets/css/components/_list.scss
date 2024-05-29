@@ -1,18 +1,16 @@
 .ui-list {
-    @include reset-ul;
-
-    &>li {
+    & > li {
         position     : relative;
         padding-left : 1.25em;
 
         &::before {
-            content     : '';
-            display     : block;
+            content     : "";
             position    : absolute;
+            top         : 0;
+            left        : 0;
+            display     : block;
             width       : 1em;
             height      : 1em;
-            left        : 0;
-            top         : 0;
             font-size   : inherit;
             line-height : inherit;
         }
@@ -22,16 +20,16 @@
     &-explanation {
         @extend .ui-list;
 
-        &>li:before {
-            content : '\203B';
+        & > li:before {
+            content : "\203B";
         }
     }
 
     &-circle {
         @extend .ui-list;
 
-        &>li:before {
-            content : '\26AC'
+        & > li:before {
+            content : "\26AC"
         }
     }
 }

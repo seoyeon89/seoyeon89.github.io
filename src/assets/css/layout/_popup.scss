@@ -1,10 +1,10 @@
 .popup-wrap {
     position        : fixed;
-    display         : flex;
-    left            : 0;
     top             : 0;
-    right           : 0;
     bottom          : 0;
+    left            : 0;
+    right           : 0;
+    display         : flex;
     align-items     : center;
     justify-content : center;
     z-index         : 300;
@@ -13,40 +13,39 @@
         $mobile-padding : 20px;
         $laptop-padding : 36px;
 
-        display        : flex;
-        flex-direction : column;
-        position       : relative;
-        max-width      : 1000px;
-        width          : calc(100vw - 1.5rem);
-        height:auto;
-        max-height : calc(100vh - 1.5rem);
-        border-radius  : var(--popup-radius);
-        background     : #F5F5FC;
-        z-index        : 1;
+        position        : relative;
+        display         : flex;
+        flex-direction  : column;
+        width           : calc(100vw - 1.5rem);
+        max-width       : 1000px;
+        height          : auto;
+        max-height      : calc(100vh - 1.5rem);
+        border-radius   : var(--popup-radius);
+        background      : #F5F5FC;
+        z-index         : 1;
 
         @include laptop {
-            width      : calc(100vw - $laptop-padding);
-            min-width  : 1000px;
+            width     : calc(100vw - $laptop-padding);
+            min-width : 1000px;
         }
 
         .popup-header {
             display : flex;
             flex    : 0 0 50px;
-            padding : calc($mobile-padding/2) $mobile-padding calc($mobile-padding/4) $mobile-padding;
+            padding : calc($mobile-padding / 2) $mobile-padding calc($mobile-padding / 4) $mobile-padding;
 
             @include laptop {
-                padding : calc($laptop-padding/2) $laptop-padding calc($laptop-padding/4) $laptop-padding;
+                padding : calc($laptop-padding / 2) $laptop-padding calc($laptop-padding / 4) $laptop-padding;
             }
 
             h1 {
-                @include reset;
                 flex      : 1 0 0;
                 font-size : 1.750em;
             }
 
             .btn-close {
                 @include reset-button;
-                @include closeIcon (40px, 24px, #000);
+                @include closeIcon(40px, 24px, #000);
                 position : relative;
                 flex     : 0 0 auto;
             }
@@ -55,16 +54,16 @@
 
         .popup-container {
             @include scrollbar(#DDDDDD);
-            flex: 0 1 auto;
+            flex          : 0 1 auto;
+            overflow      : auto;
+            margin        : 0 $mobile-padding $mobile-padding $mobile-padding;
+            padding       : $mobile-padding*0.75;
             border-radius : var(--popup-radius);
             background    : #fff;
-            overflow      : auto;
-            padding       : $mobile-padding*0.75;
-            margin        : 0 $mobile-padding $mobile-padding $mobile-padding;
 
             @include laptop {
-                padding : $laptop-padding*0.75;
                 margin  : 0 $laptop-padding $laptop-padding $laptop-padding;
+                padding : $laptop-padding*0.75;
             }
         }
     }

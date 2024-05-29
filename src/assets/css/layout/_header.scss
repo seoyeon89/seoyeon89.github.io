@@ -1,108 +1,33 @@
 header {
-    width : 100%;
-}
+    position        : fixed;
+    top             : 0;
+    left            : 0;
+    right           : 0;
+    width           : 100%;
+    height          : $header-height;
+    font-size       : 1.14rem;
+    z-index         : 10;
+    backdrop-filter : blur(30px);
 
-.ui-global {
-    $search-height  : 3rem;
-    $search-padding : 0 2rem;
-
-    background : var(--header-bg);
-
-    .ui-header {
+    .inner {
         display     : flex;
-        flex-wrap   : wrap;
         align-items : center;
-        padding     : 0.75rem 10px;
+        width       : 100%;
+        height      : 100%;
+        padding     : 0 20px;
 
-        .logo {
-            @include reset;
-            @include laptop {
-                width : 206px;
-            }
-
-            flex        : 1 1 auto;
-            width       : 100%;
-            max-width   : $logo-max-width;
-            height      : $search-height;
-            max-height  : calc($search-height - 8px);
-            margin      : 4px 6px;
-
-            a {
-                display     : flex;
-                align-items : center;
-                width       : 100%;
-                height      : 100%;
-
-                svg {
-                    * {
-                        fill : #fff;
-                    }
-                }
-            }
-
+        h1 {
+            font-size : 1.14em;
         }
 
-        .search-area {
-            display         : flex;
-            flex            : 1 1 auto;
-            align-items     : center;
-            justify-content : center;
-            margin          : 4px 6px;
+        nav {
+            margin-left : auto;
 
-            font-size : 1.125rem;
-
-            .search {
-                @include laptop {
-                    flex-grow : 0;
-                    width     : 600px;
-                    transform : translateX(calc($logo-max-width / 2 *-1 + 40px));
-                }
-
-                display  : flex;
-                flex     : 1 1 auto;
-
-                .search-input {
-                    position : relative;
-                    flex     : 1 1 auto;
-                    margin   : 0 10px 0 0;
-
-                    input {
-                        @include reset-text-field;
-                        position      : relative;
-                        display       : block;
-                        height        : $search-height;
-                        padding       : $search-padding;
-                        background    : #fff;
-                        border-radius : calc($search-height / 2);
-
-                    }
-
-                    button {
-                        @include reset-button;
-                        @include closeIcon(2em, .8em, #444);
-                        
-                        position      : absolute;
-                        top           : 50%;
-                        right         : .5em;
-                        display       : block;
-                        width         : 2em;
-                        height        : 2em;
-                        background    : var(--gary-secondary);
-                        border-radius : 100%;
-                        transform     : translateY(-50%);
-
-                    }
-                }
-
-                .search-button {
-                    @include reset-button;
-                    height        : $search-height;
-                    padding       : $search-padding;
-                    color         : #fff;
-                    background    : var(--primary);
-                    border-radius : calc($search-height / 2);
-                }
+            ul {
+                display : flex;
+                gap     : 12px;
             }
+
         }
     }
 }

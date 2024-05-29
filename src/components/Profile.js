@@ -1,14 +1,23 @@
+// import FeatherIcon from 'feather-icons-react';
+import { AccordionItem } from "./Accordion";
 import MyJsonData from '../assets/json/mydata.json';
+
 const MyInfo = MyJsonData;
 const MyInfoSection = (props) => {
     return (
-        <article key={props.title}>
-            <h1>{props.title}</h1>
+        <AccordionItem
+            key={props.number}
+            initOpen={true}
+            title={props.title}
+            extraClass="profile-item"
+        >
             {
                 MyInfo[props.title].map((list) => {
                         return (
                             <>
-                                <div key={list.title}>{list.title}</div>
+                                <div key={list.title}>
+                                    <span>{list.title}</span>
+                                </div>
                                 <ul>
                                     {
                                         list['description'].map((item, index) =>
@@ -19,24 +28,26 @@ const MyInfoSection = (props) => {
                                     }
                                 </ul>
                             </>
-                        )
+                        );
                     }
                 )
             }
-        </article>
-    )
-}
+        </AccordionItem>
+    );
+};
 
 const Profile = () => {
     return (
-        <section id="profile">
-            <h1>Profile</h1>
+        <section id="profile" className="profile">
+            <h1 hidden>Profile</h1>
             <div className="avatar"></div>
-            <MyInfoSection title="About Who Am I"/>
-            <MyInfoSection title="Work Experience"/>
-            <MyInfoSection title="Education"/>
+            <div className="profile-list">
+                <MyInfoSection number="1" title="About Who Am I"/>
+                <MyInfoSection number="2" title="Work Experience"/>
+                <MyInfoSection number="3" title="Education"/>
+            </div>
         </section>
-    )
+    );
 };
 
 export default Profile;

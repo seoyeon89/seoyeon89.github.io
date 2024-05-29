@@ -13,14 +13,5 @@
         border-radius : 30px;
         font-size     : 12px;
 
-        &.exception {
-            color        : var(--exception-color);
-            border-color : var(--exception-color);
-        }
-
-        &.casebook {
-            color        : var(--casebook-color);
-            border-color : var(--casebook-color);
-        }
     }
 }

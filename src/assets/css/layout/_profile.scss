@@ -1,0 +1,24 @@
+.profile {
+    .avatar {
+        width            : 80px;
+        height           : 80px;
+        margin           : 0 auto var(--component-gap);
+        border           : 1px solid var(--component-border-color);
+        border-radius    : 50%;
+        background-color : var(--paper-secondary);
+    }
+
+    .profile-list {
+        display        : flex;
+        gap            : 4px;
+        flex-direction : column;
+
+        .profile-item {
+            .accordion-title {
+            }
+
+            .accordion-box {
+            }
+        }
+    }
+}

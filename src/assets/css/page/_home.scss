@@ -1,0 +1,18 @@
+main {
+    background : var(--paper-secondary);
+
+    .profile-background {
+        background : var(--theme-primary);
+    }
+
+    .inner {
+        .profile {
+            box-shadow    : var(--component-shadow);
+            border-radius : var(--component-radius);
+            background    : var(--paper-primary);
+        }
+
+        .projects {
+        }
+    }
+}
