@@ -3,54 +3,694 @@
     {
       "id": 1,
       "isOpen": 1,
-      "isFeatured": true,
-      "projectName": "Project A",
-      "projectType": "신규구축",
+      "isFeatured": false,
+      "projectName": "월요일의 과일가게",
+      "projectType": "기타",
       "participation": {
-        "design": 100,
-        "publish": 100
+        "design": 40,
+        "publish": 100,
+        "planning": 40
       },
-      "projectPlatform": 1,
+      "projectPlatform": [
+        "web",
+        "Print"
+      ],
       "date": {
-        "start": "2024-05-28",
-        "end": "2024-05-28"
+        "start": "2014-10-10",
+        "end": "2014-10-10"
       },
       "skills": [
-        "HTML5",
-        "CSS3"
+        "XHTML",
+        "CSS"
       ],
       "discription": [
-        "설명1"
+        "대학내 과일 판매 제안 프로젝트로, 대학 수업 시간에 작업한 프로젝트입니다.<br/>BI 참여 및 프로젝트 내의 홈페이지 작업을 전담하였습니다. 홈페이지는 반응형으로 작업되었습니다."
       ],
-      "thumbnail": [
-        "/assets/thumnail/img.png"
-      ],
-      "publicUrl": [
-        "https://www.naver.com",
-        "https://www.naver.com"
+      "thumbnail": "/01_univers/01_monday/monday_thum.png",
+      "images": [
+        "/01_univers/01_monday/monday1.gif",
+        "/01_univers/01_monday/monday2.gif",
+        "/01_univers/01_monday/monday3.gif"
       ]
     },
     {
       "id": 2,
       "isOpen": 1,
-      "isFeatured": true,
-      "projectName": "Project B",
-      "projectType": "유지보수",
+      "isFeatured": false,
+      "projectName": "어라연전각연구소 포스터 작업",
+      "projectType": "외주",
       "participation": {
-        "design": 100,
-        "publish": 100
+        "design": 100
       },
-      "projectPlatform": 1,
+      "projectPlatform": [
+        "Print"
+      ],
       "date": {
-        "start": "2024-05-28"
+        "start": "2016-03-01",
+        "end": "2016-05-31"
       },
       "skills": [
-        "HTML5"
+        "PHTOSHOP",
+        "ILLUSTRATOR"
       ],
       "discription": [
-        "설명1"
+        "학원의 수강 정보를 알려주는 포스터 제작 하였습니다."
       ],
-      "thumbnail": [
+      "thumbnail": "/03_yhlajeon/poster/poster_thum.png",
+      "images": [
+        "/03_yhlajeon/poster/poster1.jpg",
+        "/03_yhlajeon/poster/poster2.jpg"
+      ]
+    },
+    {
+      "id": 3,
+      "isOpen": 1,
+      "isFeatured": false,
+      "projectName": "어라연전각연구소 리플렛 작업",
+      "projectType": "외주",
+      "participation": {
+        "design": 100
+      },
+      "projectPlatform": [
+        "Print"
+      ],
+      "date": {
+        "start": "2016-03-01",
+        "end": "2016-04-01"
+      },
+      "skills": [
+        "PHTOSHOP",
+        "ILLUSTRATOR"
+      ],
+      "discription": [
+        "학원의 수강 정보를 알려주는 리플렛 제작하였습니다."
+      ],
+      "thumbnail": "/03_yhlajeon/leaflet/leaflet_thum.png",
+      "images": [
+        "/03_yhlajeon/leaflet/leaflet1.jpg",
+        "/03_yhlajeon/leaflet/leaflet2.jpg"
+      ]
+    },
+    {
+      "id": 4,
+      "isOpen": 1,
+      "isFeatured": false,
+      "projectName": "카룻 BI디자인",
+      "projectType": "신규 구축",
+      "participation": {
+        "design": 100
+      },
+      "projectPlatform": [
+        "BI Design"
+      ],
+      "date": {
+        "start": "2016-06-01"
+      },
+      "skills": [
+        "ILLUSTRATOR"
+      ],
+      "discription": [
+        "자동차에 관심있는 사람을 위한 SNS 브랜드 카룻(CAROUTE)을 위한 BI 디자인을 진행하였습니다."
+      ],
+      "thumbnail": "/04_senchi/logo/logo.png",
+      "images": [
+        "/04_senchi/logo/logo.jpg"
+      ]
+    },
+    {
+      "id": 5,
+      "isOpen": 1,
+      "isFeatured": false,
+      "projectName": "시립노원노인복지관 모바일 리뉴얼 제안",
+      "projectType": "개인프로젝트",
+      "participation": {
+        "design": 100,
+        "publish": 100,
+        "planning": 100
+      },
+      "projectPlatform": [
+        "mobile"
+      ],
+      "date": {
+        "start": "2015-08-01",
+        "end": "2015-09-30"
+      },
+      "skills": [
+        "XHTML",
+        "CSS",
+        "JQUERY"
+      ],
+      "discription": [
+        "학원의 수강 정보를 알려주는 포스터 제작 하였습니다."
+      ],
+      "thumbnail": "/02_study/01_noin/mobile_thum.png",
+      "images" : [
+        "/02_study/01_noin/mobile1.jpg",
+        "/02_study/01_noin/mobile2.jpg"
+      ],
+      "links" : [
+        "https://fool89.cafe24.com/project/siribm/"
+      ]
+    },
+    {
+      "id": 6,
+      "isOpen": 1,
+      "isFeatured": false,
+      "projectName": "시립노원노인복지관 사이트리뉴얼 제안",
+      "projectType": "개인프로젝트",
+      "participation": {
+        "design": 100,
+        "publish": 100,
+        "planning": 100
+      },
+      "projectPlatform": [
+        "web"
+      ],
+      "date": {
+        "start": "2015-08-01",
+        "end": "2015-09-30"
+      },
+      "skills": [
+        "XHTML",
+        "CSS",
+        "JQUERY"
+      ],
+      "discription": [
+        "건강한 노년의 이미지를 표현하기위해 녹색을 메인컬러, 오렌지색을 키 컬러로 사용하였습니다. 또한 기존의 사이트의 정보를 찾기 어려운 점을 해결하기 위해 메뉴를 조정하였습니다."
+      ],
+      "thumbnail": "/02_study/01_noin/site_thum.png",
+      "images": [
+        "/02_study/01_noin/site1.jpg",
+        "/02_study/01_noin/site2.jpg",
+        "/02_study/01_noin/site3.jpg",
+        "/02_study/01_noin/site4.jpg",
+        "/02_study/01_noin/site5.jpg"
+      ],
+      "links": [
+        "http://fool89.cafe24.com/project/siribw/"
+      ]
+    },
+    {
+      "id": 7,
+      "isOpen": 1,
+      "isFeatured": false,
+      "projectName": "국립수목원 사이트 리뉴얼 제안",
+      "projectType": "개인프로젝트",
+      "participation": {
+        "design": 100,
+        "publish": 100,
+        "planning": 100
+      },
+      "projectPlatform": [
+        "web"
+      ],
+      "date": {
+        "start": "2015-09-01",
+        "end": "2015-10-01"
+      },
+      "skills": [
+        "XHTML",
+        "CSS",
+        "JQUERY"
+      ],
+      "discription": [
+        "자연의 이미지를 살리기 위해 큰 이미지를 배경에 깔아 시원하고 탁 트인 느낌이 들 수 있게 작업하였습니다. 하단에 모듈 형태의 메뉴로 산만하지 않고 정리된 느낌이 들 수 있도록 진행하였습니다."
+      ],
+      "thumbnail": "/02_study/02_sumok/site_thum.png",
+      "images": [
+        "/02_study/02_sumok/site1.jpg",
+        "/02_study/02_sumok/site2.jpg",
+        "/02_study/02_sumok/site3.jpg"
+      ],
+      "links": [
+        "http://fool89.cafe24.com/project/sumok/"
+      ]
+    },
+    {
+      "id": 8,
+      "isOpen": 1,
+      "isFeatured": false,
+      "projectName": "어라연 전각 연구소 홈페이지 리뉴얼",
+      "projectType": "외주",
+      "participation": {
+        "design": 100,
+        "publish": 100,
+        "develop": 100,
+        "planning": 100
+      },
+      "projectPlatform": [
+        "web"
+      ],
+      "date": {
+        "start": "2015-02-01",
+        "end": "2015-03-31"
+      },
+      "skills": [
+        "XHTML",
+        "CSS",
+        "JQUERY",
+        "wordpress"
+      ],
+      "discription": [
+        "masonry 플러그인을 이용하여 창 크기에 따라 갤러리가 유동적으로 변하는 사이트를 의뢰해 주셔서 그에 맞추어 작업하였습니다."
+      ],
+      "thumbnail": "/03_yhlajeon/site/site_thum.png",
+      "images": [
+        "/03_yhlajeon/site/site1.jpg",
+        "/03_yhlajeon/site/site2.jpg",
+        "/03_yhlajeon/site/site3.jpg",
+        "/03_yhlajeon/site/site4.jpg",
+        "/03_yhlajeon/site/site5.jpg"
+      ],
+      "links": [
+        "http://www.jeongakart.com/"
+      ]
+    },
+    {
+      "id": 9,
+      "isOpen": 1,
+      "isFeatured": false,
+      "projectName": "카룻 : 자동차 사용자를 위한 SNS",
+      "projectType": "신규 구축",
+      "participation": {
+        "design": 100,
+        "publish": 100,
+        "develop": 10
+      },
+      "projectPlatform": [
+        "web"
+      ],
+      "date": {
+        "start": "2016-06-05",
+        "end": "2017-02-10"
+      },
+      "skills": [
+        "HTML5",
+        "CSS3",
+        "JQUERY",
+        "PHP"
+      ],
+      "discription": [
+        "자동차 SNS사이트 전 페이지의 디자인 및 개발. 퍼블리싱 작업을 주로 하였으며, 전문가 등록 페이지 등 일부 PHP 페이지를 직접 개발,유지보수 하기도 하였습니다."
+      ],
+      "thumbnail": "/04_senchi/site/site1.jpg",
+      "images": [
+        "/04_senchi/site/site1.jpg",
+        "/04_senchi/site/site2.jpg",
+        "/04_senchi/site/site3.jpg"
+      ]
+    },
+    {
+      "id": 10,
+      "isOpen": 1,
+      "isFeatured": false,
+      "projectName": "시대고시 회원가입 리뉴얼",
+      "projectType": "신규 구축",
+      "participation": {
+        "publish": 100
+      },
+      "projectPlatform": [
+        "web"
+      ],
+      "date": {
+        "start": "2016-06-05",
+        "end": "2017-02-10"
+      },
+      "skills": [
+        "HTML",
+        "CSS",
+        "JQUERY",
+        "템플릿언더바"
+      ],
+      "discription": [
+        "시대고시 회원가입 통합화를 위한 프로젝트에서 디자인 시안에 맞춰 페이지 리뉴얼 작업을 진행하였습니다. 시안에 맞춘 HTML 코딩과 CSS 작업, 약관보기의 플러그인을 이용한 스크롤 커스텀, 유효성 검사 등을 작업하였습니다."
+      ],
+      "thumbnail": "/05_sidaegosi/00_join/site_thum.png",
+      "images": [
+        "/05_sidaegosi/00_join/site1.png",
+        "/05_sidaegosi/00_join/site2.png"
+      ]
+    },
+    {
+      "id": 11,
+      "isOpen": 1,
+      "isFeatured": false,
+      "projectName": "시대고시 공무원 통합사이트",
+      "projectType": "신규 구축",
+      "participation": {
+        "publish": 100
+      },
+      "projectPlatform": [
+        "web"
+      ],
+      "date": {
+        "start": "2017-08-07",
+        "end": "2017-09-15"
+      },
+      "skills": [
+        "HTML5",
+        "CSS3",
+        "JQUERY"
+      ],
+      "discription": [
+        "시대고시 공무원 강좌를 위한 통합사이트 작업을 하였습니다. 퍼블리싱 및 프론트엔드 전반의 작업을 진행하였습니다."
+      ],
+      "thumbnail": "/05_sidaegosi/01_gov/site_thum.png",
+      "images": [
+        "/05_sidaegosi/01_gov/site1.jpg",
+        "/05_sidaegosi/01_gov/site2.jpg",
+        "/05_sidaegosi/01_gov/site3.jpg",
+        "/05_sidaegosi/01_gov/site4.jpg",
+        "/05_sidaegosi/01_gov/site5.jpg"
+      ],
+      "links": [
+        "http://www.sdedu.co.kr/gov/"
+      ]
+    },
+    {
+      "id": 12,
+      "isOpen": 1,
+      "isFeatured": false,
+      "projectName": "시대고시 지텔프 리뉴얼",
+      "projectType": "신규 구축",
+      "participation": {
+        "publish": 100
+      },
+      "projectPlatform": [
+        "web"
+      ],
+      "date": {
+        "start": "2017-09-13",
+        "end": "2017-09-21"
+      },
+      "skills": [
+        "HTML",
+        "CSS",
+        "JQUERY",
+        "템플릿언더바"
+      ],
+      "discription": [
+        "시대고시의 지텔프 상품을 위한 신규 페이지 생성 작업을 진행하였습니다. 시안에 맞춰 HTML/CSS/제이쿼리 작업을 진행하였습니다.공통소스를 제외한 화면상의 모든 페이지의 마크업,스크립트를 작업하였습니다."
+      ],
+      "thumbnail": "/05_sidaegosi/02_gtelp/site_thum.png",
+      "images": [
+        "/05_sidaegosi/02_gtelp/main.jpg",
+        "/05_sidaegosi/02_gtelp/apply.jpg",
+        "/05_sidaegosi/02_gtelp/test_info.png"
+      ]
+    },
+    {
+      "id": 13,
+      "isOpen": 1,
+      "isFeatured": false,
+      "projectName": "시대 북 어플리케이션",
+      "projectType": "신규 구축",
+      "participation": {
+        "publish": 100
+      },
+      "projectPlatform": [
+        "app"
+      ],
+      "date": {
+        "start": "2017-11-20"
+      },
+      "skills": [
+        "HTML5",
+        "LESS"
+      ],
+      "discription": [
+        "LESS를 사용하여 안드로이드/아이폰을 위한 하이브리드 어플리케이션의 마크업과 css 작업을 진행하였습니다."
+      ],
+      "thumbnail": "/05_sidaegosi/04_app/app_thum.png",
+      "images": [
+        "/05_sidaegosi/04_app/iphon_01.png",
+        "/05_sidaegosi/04_app/iphon_02.png",
+        "/05_sidaegosi/04_app/android_01.png",
+        "/05_sidaegosi/04_app/android_02.png"
+      ]
+    },
+    {
+      "id": 14,
+      "isOpen": 1,
+      "isFeatured": false,
+      "projectName": "시대 평생 교육원",
+      "projectType": "신규 구축",
+      "participation": {
+        "publish": 100
+      },
+      "projectPlatform": [
+        "web"
+      ],
+      "date": {
+        "start": "2017-12-12",
+        "end": "2018-01-10"
+      },
+      "skills": [
+        "HTML5",
+        "CSS3",
+        "JQUERY"
+      ],
+      "discription": [
+        "시대고시의 평생교육원 사이트 작업을 진행하였습니다. 시안에 맞춰 HTML/CSS/제이쿼리 작업을 진행하였습니다.공통소스를 제외한 화면상의 모든 페이지의 마크업,스크립트를 작업하였습니다."
+      ],
+      "thumbnail": "/05_sidaegosi/05_lifeedu/site_thum.png",
+      "images": [
+        "/05_sidaegosi/05_lifeedu/site1.png",
+        "/05_sidaegosi/05_lifeedu/site2.png",
+        "/05_sidaegosi/05_lifeedu/site3.png",
+        "/05_sidaegosi/05_lifeedu/site4.png"
+      ]
+    },
+    {
+      "id": 15,
+      "isOpen": 1,
+      "isFeatured": false,
+      "projectName": "시대고시 조경기능사 리뉴얼",
+      "projectType": "신규 구축",
+      "participation": {
+        "publish": 100
+      },
+      "projectPlatform": [
+        "web"
+      ],
+      "date": {
+        "start": "2017-12-26",
+        "end": "2018-01-11"
+      },
+      "skills": [
+        "HTML",
+        "CSS",
+        "JQUERY",
+        "템플릿언더바"
+      ],
+      "discription": [
+        "시대고시의 조경기능사 상품을 위한 리뉴얼 페이지 작업을 진행하였습니다. 시안에 맞춰 HTML/CSS/제이쿼리 작업을 진행하였습니다.공통소스를 제외한 화면상의 모든 페이지의 마크업,스크립트를 작업하였습니다."
+      ],
+      "thumbnail": "/05_sidaegosi/07_landscape/site_thum.jpg",
+      "images": [
+        "/05_sidaegosi/07_landscape/site1.jpg",
+        "/05_sidaegosi/07_landscape/site2.jpg",
+        "/05_sidaegosi/07_landscape/site3.jpg",
+        "/05_sidaegosi/07_landscape/site4.jpg"
+      ]
+    },
+    {
+      "id": 16,
+      "isOpen": 1,
+      "isFeatured": false,
+      "projectName": "시대고시 드론 신규",
+      "projectType": "신규 구축",
+      "participation": {
+        "publish": 100
+      },
+      "projectPlatform": [
+        "web"
+      ],
+      "date": {
+        "start": "2018-02-12",
+        "end": "2018-02-28"
+      },
+      "skills": [
+        "HTML",
+        "CSS",
+        "JQUERY",
+        "템플릿언더바"
+      ],
+      "discription": [
+        "시대고시의 드론 상품을 위한 신규 페이지 작업을 진행하였습니다. 시안에 맞춰 HTML/CSS/제이쿼리 작업을 진행하였습니다.공통소스를 제외한 화면상의 모든 페이지의 마크업,스크립트를 작업하였습니다."
+      ],
+      "thumbnail": "/05_sidaegosi/08_dronepokon/site_thum.png",
+      "images": [
+        "/05_sidaegosi/08_dronepokon/site1.jpg",
+        "/05_sidaegosi/08_dronepokon/site2.jpg",
+        "/05_sidaegosi/08_dronepokon/site3.jpg",
+        "/05_sidaegosi/08_dronepokon/site4.jpg"
+      ]
+    },
+    {
+      "id": 17,
+      "isOpen": 1,
+      "isFeatured": false,
+      "projectName": "시대고시 유통관리사 2급 리뉴얼",
+      "projectType": "신규 구축",
+      "participation": {
+        "publish": 100
+      },
+      "projectPlatform": [
+        "web"
+      ],
+      "date": {
+        "start": "2018-02-21",
+        "end": "2018-03-02"
+      },
+      "skills": [
+        "HTML",
+        "CSS",
+        "JQUERY",
+        "템플릿언더바"
+      ],
+      "discription": [
+        "시대고시의 유통관리사 상품을 위한 리뉴얼 작업을 진행하였습니다. 시안에 맞춰 HTML/CSS/제이쿼리 작업을 진행하였습니다.공통소스를 제외한 화면상의 모든 페이지의 마크업,스크립트를 작업하였습니다."
+      ],
+      "thumbnail": "/05_sidaegosi/09_distribution/site_thum.png",
+      "images": [
+        "/05_sidaegosi/09_distribution/site1.jpg",
+        "/05_sidaegosi/09_distribution/site2.jpg",
+        "/05_sidaegosi/09_distribution/site3.jpg",
+        "/05_sidaegosi/09_distribution/site4.jpg"
+      ]
+    },
+    {
+      "id": 18,
+      "isOpen": 1,
+      "isFeatured": false,
+      "projectName": "시대드론 교육원 사이트",
+      "projectType": "신규 구축",
+      "participation": {
+        "publish": 100
+      },
+      "projectPlatform": [
+        "web"
+      ],
+      "date": {
+        "start": "2018-03-19",
+        "end": "2018-03-23"
+      },
+      "skills": [
+        "HTML",
+        "CSS",
+        "JQUERY",
+        "템플릿언더바"
+      ],
+      "discription": [
+        "시대고시의 유통관리사 상품을 위한 리뉴얼 작업을 진행하였습니다. 시안에 맞춰 HTML/CSS/제이쿼리 작업을 진행하였습니다.공통소스를 제외한 화면상의 모든 페이지의 마크업,스크립트를 작업하였습니다."
+      ],
+      "thumbnail": "/05_sidaegosi/06_drone/site/site_thum.png",
+      "images": [
+        "/05_sidaegosi/06_drone/site/site1.jpg",
+        "/05_sidaegosi/06_drone/site/site2.jpg",
+        "/05_sidaegosi/06_drone/site/site3.jpg",
+        "/05_sidaegosi/06_drone/site/site4.jpg",
+        "/05_sidaegosi/06_drone/site/site5.jpg"
+      ]
+    },
+    {
+      "id": 19,
+      "isOpen": 1,
+      "isFeatured": false,
+      "projectName": "시대드론 교육원 사이트 모바일",
+      "projectType": "신규 구축",
+      "participation": {
+        "publish": 100
+      },
+      "projectPlatform": [
+        "mobile"
+      ],
+      "date": {
+        "start": "2018-06-12",
+        "end": "2018-06-22"
+      },
+      "skills": [
+        "HTML",
+        "CSS",
+        "JQUERY",
+        "템플릿언더바"
+      ],
+      "discription": [
+        "시대고시의 오프라인 드론교육원 모바일 작업을 진행하였습니다. 시안에 맞춰 HTML/CSS/제이쿼리 작업을 진행하였습니다.공통소스를 제외한 화면상의 모든 페이지의 마크업,스크립트를 작업하였습니다."
+      ],
+      "thumbnail": "/05_sidaegosi/06_drone/mobile/site_thum.png",
+      "images": [
+        "/05_sidaegosi/06_drone/mobile/site1.jpg",
+        "/05_sidaegosi/06_drone/mobile/site2.jpg",
+        "/05_sidaegosi/06_drone/mobile/site3.jpg",
+        "/05_sidaegosi/06_drone/mobile/site4.jpg",
+        "/05_sidaegosi/06_drone/mobile/site5.jpg"
+      ]
+    },
+    {
+      "id": 20,
+      "isOpen": 1,
+      "isFeatured": false,
+      "projectName": "시대고시 직업상담사",
+      "projectType": "신규 구축",
+      "participation": {
+        "publish": 100
+      },
+      "projectPlatform": [
+        "web"
+      ],
+      "date": {
+        "start": "2018-06-12",
+        "end": "2018-06-22"
+      },
+      "skills": [
+        "HTML",
+        "CSS",
+        "JQUERY",
+        "템플릿언더바"
+      ],
+      "discription": [
+        "시대고시의 직업상담사 상품을 위한 리뉴얼 작업을 진행하였습니다. 시안에 맞춰 HTML/CSS/제이쿼리 작업을 진행하였습니다.공통소스를 제외한 화면상의 모든 페이지의 마크업,스크립트를 작업하였습니다."
+      ],
+      "thumbnail": "/05_sidaegosi/10_vocational_counselor/site_thum.png",
+      "images": [
+        "/05_sidaegosi/10_vocational_counselor/site1.jpg",
+        "/05_sidaegosi/10_vocational_counselor/site2.jpg",
+        "/05_sidaegosi/10_vocational_counselor/site3.jpg"
+      ]
+    },
+    {
+      "id": 21,
+      "isOpen": 1,
+      "isFeatured": false,
+      "projectName": "시대고시 사회조사분석사",
+      "projectType": "신규 구축",
+      "participation": {
+        "publish": 100
+      },
+      "projectPlatform": [
+        "web"
+      ],
+      "date": {
+        "start": "2018-04-10",
+        "end": "2018-04-19"
+      },
+      "skills": [
+        "HTML",
+        "CSS",
+        "JQUERY",
+        "템플릿언더바"
+      ],
+      "discription": [
+        "시대고시의 사회조사분석사 상품을 위한 리뉴얼 작업을 진행하였습니다. 시안에 맞춰 HTML/CSS/제이쿼리 작업을 진행하였습니다.공통소스를 제외한 화면상의 모든 페이지의 마크업,스크립트를 작업하였습니다."
+      ],
+      "thumbnail": "/05_sidaegosi/11_social_research/site_thum.png",
+      "images": [
+        "/05_sidaegosi/11_social_research/site1.jpg",
+        "/05_sidaegosi/11_social_research/site2.jpg",
+        "/05_sidaegosi/11_social_research/site3.jpg",
+        "/05_sidaegosi/11_social_research/site4.jpg"
       ]
     }
   ]

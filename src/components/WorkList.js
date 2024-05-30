@@ -18,7 +18,7 @@ const WorkSection = (props) => {
                                 >
                                     <div className="project__thumbnail">
                                         <div>
-                                            <img src={`/assets/thumnail/${Project.thumbnail[0]}`}/>
+                                            <img src={`/assets/thumnail/${Project.thumbnail}`} alt={`${Project.projactName}의 썸네일`}/>
                                         </div>
                                     </div>
                                     <div className="project__info">
@@ -26,9 +26,14 @@ const WorkSection = (props) => {
                                             <h2>
                                                 <span>{Project.projectName}</span>
                                             </h2>
-                                            { Project.projectType == '외주' &&
+
+                                            { Project.projectPlatform.length > 0 &&
                                                 <div className="tags">
-                                                    <span class="tags__item">{Project.projectType}</span>
+                                                    {
+                                                        Project.projectPlatform.map((item , index) =>
+                                                            <span key={index} className="tags__item">{item}</span>
+                                                        )
+                                                    }
                                                 </div>
                                             }
                                         </div>

@@ -1,4 +1,5 @@
 @use "sass:math" as math;
+@use "sass:selector";
 
 @mixin mobile {
     @media (max-width : #{$tablet-break-point - 1}) {
@@ -40,7 +41,11 @@
     text-overflow : ellipsis;
     white-space   : nowrap;
 }
-
+@mixin unify-parent($child) {
+    @at-root #{selector.unify(&, $child)} {
+        @content;
+    }
+}
 @mixin scrollbar($thumbColor : $point-primary) {
     @include laptop() {
 
@@ -79,7 +84,7 @@
     background-color : var(--paper-secondary);
 }
 
-@mixin icons($color : var(--theme-primary) ) {
+@mixin icons($iconColor : var(--theme-primary)) {
     display     : flex;
     align-items : center;
 
@@ -95,7 +100,7 @@
             height          : 1em;
             object-fit      : contain;
             object-position : center;
-            stroke          : $color;
+            stroke          : $iconColor;
         }
     }
 }

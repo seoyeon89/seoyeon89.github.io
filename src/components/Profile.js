@@ -13,7 +13,7 @@ const MyInfoSection = (props) => {
                         return (
                             <div className="info-box" key={list.order}>
                                 <div className="info-box__title" key={list.title}>
-                                    {(list.date && index == 0) &&
+                                    {(list.date && index === 0) &&
                                         <i>NOW</i>
                                     }
                                         <strong>{list.title}</strong>
@@ -63,19 +63,31 @@ const Profile = () => {
                 </div>
                 <p className="profile__info__content">
                     <i>
-                        <FeatherIcon icon="smile" size="12" />
+                        <FeatherIcon icon="smile" size="12"/>
                     </i>
                     <span>1989년 3월 7일</span>
                 </p>
-                <a className="profile__info__content" href="mailto:seoyeon8937@gmail.com" >
+                <a className="profile__info__content" href="https://github.com/seoyeon89" target="_blank">
+                    <i>
+                        <FeatherIcon icon="github" size="12"/>
+                    </i>
+                    <span>github.com/seoyeon89</span>
+                </a>
+                <a className="profile__info__content" href="mailto:seoyeon8937@gmail.com">
                     <i>
                         <FeatherIcon icon="mail" size="12"/>
                     </i>
                     <span>seoyeon8937@gmail.com</span>
                 </a>
+                <a className="profile__info__content" href="https://fool89.cafe24.com/" target="_blank">
+                    <i>
+                        <FeatherIcon icon="monitor" size="12"/>
+                    </i>
+                    <span>예전 포트폴리오 사이트</span>
+                </a>
             </div>
             <div className="profile__cards">
-                <MyInfoSection title="Work Experience" open={true} />
+                <MyInfoSection title="Work Experience" open={true}/>
                 <MyInfoSection title="Education" open={false}/>
             </div>
         </section>

@@ -35,7 +35,7 @@
             position : relative;
             overflow : hidden;
             width    : 100%;
-            height   : 130px;
+            aspect-ratio: 1 / 0.6;
             border   : 1px solid var(--component-border-color);
             background      : var(--paper-endpoint);
 
@@ -44,7 +44,7 @@
                 width           : 100%;
                 height          : 100%;
                 object-fit      : cover;
-                object-position : top center;
+                object-position : center;
 
             }
 

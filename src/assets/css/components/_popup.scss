@@ -64,7 +64,7 @@
         overscroll-behavior: contain;
 
         @include laptop {
-            padding        : 0 ($laptop-padding - 12px) $laptop-padding $laptop-padding;
+            padding        : 0 $laptop-padding $laptop-padding $laptop-padding;
         }
     }
 }

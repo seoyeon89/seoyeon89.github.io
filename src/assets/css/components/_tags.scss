@@ -6,12 +6,15 @@
     margin      : -2px;
 
     &__item {
-        font-size     : 12px;
+        font-size     : 11px;
         flex          : 0 0 auto;
         margin        : 2px;
-        padding       : 2px 10px;
-        border        : 1px solid #000;
+        padding       : 2px 6px 1px;
+        border        : 1px solid var(--theme-primary);
+        color:var(--theme-primary);
         border-radius : 30px;
+        line-height:12px;
+        text-transform: uppercase;
 
     }
 }

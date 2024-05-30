@@ -2,7 +2,7 @@ import {useParams} from 'react-router-dom';
 import { Popup } from '../components/Popup';
 import ProjectsJsonData from '../assets/json/project.json';
 
-const Projects = ProjectsJsonData.projects;
+const Projects = ProjectsJsonData.projects.reverse();
 
 const Detail = () => {
     const {id} = useParams();
@@ -83,13 +83,16 @@ const Detail = () => {
                     }
                 </div>
                 {Project.thumbnail &&
-                    Project.thumbnail.map((thumbnail, index) => {
-                        return (
-                            <div className="detail__thumbnail" key={index}>
-                                <img src={thumbnail}/>
-                            </div>
-                        )
-                    })
+                    <div className="detail__thumbnail">
+                        { Project.images.map((image, index) => {
+                                return (
+                                    <div className="detail__thumbnail__item" key={index}>
+                                        <img src={`/assets/thumnail/${image}`} alt={`${Project.projectName}의 썸네일`}/>
+                                    </div>
+                                )
+                            })
+                        }
+                    </div>
                 }
             </div>
         </Popup>
