@@ -1,17 +1,17 @@
 .tags {
-    display     : flex;
-    flex-wrap   : wrap;
-    align-items : baseline;
-    margin      : -2px;
     font-weight : $text-font-weight;
+    display     : flex;
+    align-items : baseline;
+    flex-wrap   : wrap;
+    margin      : -2px;
 
-    .tag {
+    &__item {
+        font-size     : 12px;
         flex          : 0 0 auto;
         margin        : 2px;
         padding       : 2px 10px;
         border        : 1px solid #000;
         border-radius : 30px;
-        font-size     : 12px;
 
     }
 }

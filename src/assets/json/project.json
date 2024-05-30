@@ -1,56 +1,57 @@
 {
-    "projects": [
-        {
-            "id": 1,
-            "isOpen": 1,
-            "isFeatured": true,
-            "projectName": "Project A",
-            "projectType": "신규구축",
-            "participation": {
-                "design": 100,
-                "publish": 100
-            },
-            "projectPlatform": 1,
-            "date": {
-                "start": "2024-05-28",
-                "end": "2024-05-28"
-            },
-            "skills": [
-                "HTML5",
-                "CSS3"
-            ],
-            "discription": [
-                "설명1"
-            ],
-            "thumbnail": [
-            ],
-            "publicUrl": [
-                "https://www.naver.com",
-                "https://www.naver.com"
-            ]
-        },
-        {
-            "id": 2,
-            "isOpen": 1,
-            "isFeatured": true,
-            "projectName": "Project B",
-            "projectType": "유지보수",
-            "participation": {
-                "design": 100,
-                "publish": 100
-            },
-            "projectPlatform": 1,
-            "date": {
-                "start": "2024-05-28"
-            },
-            "skills": [
-                "HTML5"
-            ],
-            "discription": [
-                "설명1"
-            ],
-            "thumbnail": [
-            ]
-        }
-    ]
+  "projects": [
+    {
+      "id": 1,
+      "isOpen": 1,
+      "isFeatured": true,
+      "projectName": "Project A",
+      "projectType": "신규구축",
+      "participation": {
+        "design": 100,
+        "publish": 100
+      },
+      "projectPlatform": 1,
+      "date": {
+        "start": "2024-05-28",
+        "end": "2024-05-28"
+      },
+      "skills": [
+        "HTML5",
+        "CSS3"
+      ],
+      "discription": [
+        "설명1"
+      ],
+      "thumbnail": [
+        "/assets/thumnail/img.png"
+      ],
+      "publicUrl": [
+        "https://www.naver.com",
+        "https://www.naver.com"
+      ]
+    },
+    {
+      "id": 2,
+      "isOpen": 1,
+      "isFeatured": true,
+      "projectName": "Project B",
+      "projectType": "유지보수",
+      "participation": {
+        "design": 100,
+        "publish": 100
+      },
+      "projectPlatform": 1,
+      "date": {
+        "start": "2024-05-28"
+      },
+      "skills": [
+        "HTML5"
+      ],
+      "discription": [
+        "설명1"
+      ],
+      "thumbnail": [
+      ]
+    }
+  ]
 }

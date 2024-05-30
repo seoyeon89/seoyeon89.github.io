@@ -1,0 +1,27 @@
+.no-page {
+    display         : flex;
+    align-items     : center;
+    justify-content : center;
+    width           : 100vw;
+    height          : 100vh;
+    background      : var(--paper-secondary);
+
+    &__box {
+        display         : flex;
+        align-items     : center;
+        flex-direction  : column;
+        justify-content : center;
+        min-width       : 300px;
+        min-height      : 200px;
+        padding         : calc(var(--component-padding) * 2);
+        border          : 1px solid var(--theme-primary);
+        border-radius   : var(--component-radius);
+        background      : rgba(var(--theme-primary-rgb), 0.05);
+        gap             : var(--component-gap);
+
+        & > h1 {
+            font-size : 30px;
+            color     : var(--theme-primary)
+        }
+    }
+}

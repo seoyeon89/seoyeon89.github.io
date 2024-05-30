@@ -1,47 +1,56 @@
-.accordion-item {
-    .accordion-title {
-        @include reset-button;
-        width         : 100%;
-        padding       : 8px;
-        border-bottom : 1px solid var(--text-primary);
-        font-size     : 1.14em;
+.accordion {
+    &:hover {
+        background : var(--paper-secondary);
+        box-shadow : var(--component-shadow);
+    }
 
-        span {
+    &__title {
+        @include reset-button;
+        font-size  : 1.14em;
+        width      : 100%;
+        padding    : 8px;
+        transition : all 0.2s;
+        color      : var(--theme-primary);
+
+        & > span {
+            font-weight : $text-font-weight-bold;
             flex        : 0 1 auto;
             width       : 100%;
-            font-weight : $text-font-weight-bold;
             text-align  : left;
         }
 
-        i {
+        & > i {
             display         : inline-flex;
-            flex            : 0 0 auto;
-            align-items     : center;
-            justify-content : center;
             overflow        : hidden;
+            align-items     : center;
+            flex            : 0 0 auto;
+            justify-content : center;
             width           : 24px;
             height          : 24px;
             margin-left     : auto;
-            background    : rgba(var(--theme-primary-rgb), 0.4);
-            border-radius:50%;
+            border-radius   : 50%;
+            background      : rgba(#fff, 0.4);
 
-            svg {
+            & > svg {
                 width           : 18px;
                 height          : 18px;
                 transition      : all .2s;
                 object-fit      : contain;
                 object-position : center;
+                stroke          : var(--theme-primary);
             }
         }
     }
 
-    .accordion-box {
-        display : none;
-        padding : 8px;
+    &__content {
+        display    : none;
+        padding    : 12px;
+        background : var(--paper-secondary);
     }
 
+
     &[data-expended="true"] {
-        .accordion-title {
+        .accordion__title {
             i {
                 svg {
                     transition : all .2s;
@@ -50,18 +59,7 @@
             }
         }
 
-        .accordion-box {
-            display : block;
-        }
-    }
-
-    @include laptop {
-        .accordion-title {
-            i {
-                display : none;
-            }
-        }
-        .accordion-box {
+        .accordion__content {
             display : block;
         }
     }

@@ -1,19 +1,24 @@
-import React, { useState } from 'react';
+import React, {useState} from 'react';
 import FeatherIcon from 'feather-icons-react';
 
-export const AccordionItem = ({ children, title, initOpen = true, extraClass }) => {
-    const [active, setActive] = useState(initOpen);
+export const Accordion = ({children, title, initOpen = true, extraClass = ''}) => {
+    const [isActive, setActive] = useState(initOpen);
     const handleToggle = () => {
-        setActive(!active);
-        console.log(active);
+        setActive(!isActive);
     };
     return (
-        <div className={`accordion-item ${extraClass}`} data-expended={`${active ? 'true' : 'false'}`}>
-            <button type="button" className='accordion-title' onClick={handleToggle}>
+        <div className={`accordion ${extraClass}`}
+             data-expended={`${isActive ? 'true' : 'false'}`}
+             key={title}
+        >
+            <button type="button"
+                    className="accordion__title"
+                    onClick={handleToggle}
+            >
                 <span>{title}</span>
-                <i><FeatherIcon icon="chevron-down" /></i>
+                <i><FeatherIcon icon="chevron-down"/></i>
             </button>
-            <div className="accordion-box">
+            <div className="accordion__content">
                 {children}
             </div>
         </div>

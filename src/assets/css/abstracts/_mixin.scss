@@ -35,17 +35,6 @@
     background : none !important;
 }
 
-@mixin image-cover {
-    width           : 100%;
-    height          : 100%;
-    border-radius   : inherit;
-    border          : none;
-    color           : transparent;
-    text-align      : center;
-    object-fit      : cover;
-    object-position : center center;
-}
-
 @mixin text-truncate {
     overflow      : hidden;
     text-overflow : ellipsis;
@@ -79,6 +68,36 @@
     -webkit-box-orient : vertical;
     -webkit-line-clamp : $rows;
     overflow           : hidden;
+}
+
+
+@mixin avatar($size : 92px) {
+    width            : $size;
+    height           : $size;
+    border           : 1px solid var(--component-border-color);
+    border-radius    : 50%;
+    background-color : var(--paper-secondary);
+}
+
+@mixin icons($color : var(--theme-primary) ) {
+    display     : flex;
+    align-items : center;
+
+    & > i {
+        align-items     : center;
+        flex            : 0 0 auto;
+        display         : flex;
+        justify-content : center;
+        margin-right    : 4px;
+
+        & > svg {
+            width           : 1em;
+            height          : 1em;
+            object-fit      : contain;
+            object-position : center;
+            stroke          : $color;
+        }
+    }
 }
 
 @mixin closeIcon($area:40px, $bar:24px, $color:#000) {

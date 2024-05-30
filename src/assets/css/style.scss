@@ -6,20 +6,20 @@
 @import "abstracts/function";
 @import "abstracts/variables";
 
-@import "base/default";
 @import "base/font";
+@import "base/default";
 
+@import "components/avatar";
 @import "components/select";
 @import "components/table";
-@import "components/list";
-@import "components/list_item";
+@import "components/list/projects";
+@import "components/list/info-box";
 @import "components/tags";
 @import "components/accordion";
-
-@import "layout/grid";
-@import "layout/header";
-@import "layout/profile";
-@import "layout/popup";
+@import "components/header";
+@import "components/popup";
+@import "components/profile";
 
 @import "page/home";
 @import "page/detail";
+@import "page/no-page";
