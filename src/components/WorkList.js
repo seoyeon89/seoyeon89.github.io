@@ -1,49 +1,79 @@
+import React, { useState,useEffect } from 'react';
 import {Link} from 'react-router-dom';
 import ProjectsJsonData from '../assets/json/project.json';
 
-const Projects = ProjectsJsonData.projects;
+const ProjectsOrigin = ProjectsJsonData.projects;
+const FilterOrigin = [
+    { id: 0, title: 'web', seen: false },
+    { id: 1, title: 'print', seen: false },
+    { id: 2, title: 'mobile', seen: true },
+    { id: 3, title: 'app', seen: false },
+    { id: 4, title: 'etc', seen: false },
+];
 
-const WorkSection = (props) => {
-    const projectSection = props.projects;
+const WorkList = () => {
+    const [filters, setFilter] = useState(FilterOrigin);
+    const [projects, setProjects] = useState(ProjectsOrigin);
+    const filteringProject = () => {
+        const filterList = filters.reduce((acc,cur) => {
+            if(cur.seen) {
+                acc.push(cur.title)
+            }
+            return acc;
+        },[])
+        setProjects(ProjectsOrigin.filter((item) => filterList.includes(item.projectPlatform) ))
+    }
+    const filterChange = (filterId, nextSeen) => {
+        const filtersNextList = [...filters];
+        const filter = filtersNextList.find( item => item.id === filterId );
+        filter.seen = nextSeen;
+        setFilter(filtersNextList);
+    }
     return (
-        <section id="works" className="works" >
+        <section id="works" className="works">
             <h1 hidden>WorkList</h1>
+            <button type="button" onClick={filteringProject}>클릭</button>
+            {
+                filters.map((filter) => {
+                    return (
+                        <label key={filter.id}>
+                            <input type="checkbox" checked={filter.seen} onChange={e => filterChange(filter.id, e.target.checked)} value={filter.title}/>
+                            <span>{filter.title}</span>
+                        </label>
+                    )
+                })
+            }
             <ul className="projects">
                 {
-                    projectSection.map((Project) => {
+                    projects.map((project) => {
                         return (
-                            <li key={Project.id} >
-                                <Link to={`/detail/${Project.id}`}
-                                      className="project"
-                                >
+                            <li key={project.id}>
+                                <Link to={`/detail/${project.id}`} className="project">
                                     <div className="project__thumbnail">
                                         <div>
-                                            <img src={`/assets/thumnail/${Project.thumbnail}`} alt={`${Project.projactName}의 썸네일`}/>
+                                            {/*<img src={`/assets/thumnail/${project.thumbnail}`} alt={`${project.projactName}의 썸네일`}/>*/}
                                         </div>
                                     </div>
                                     <div className="project__info">
                                         <div className="project__info__important">
                                             <h2>
-                                                <span>{Project.projectName}</span>
+                                                <span>{project.projectName}</span>
                                             </h2>
 
-                                            { Project.projectPlatform.length > 0 &&
+                                            {project.projectPlatform &&
                                                 <div className="tags">
-                                                    {
-                                                        Project.projectPlatform.map((item , index) =>
-                                                            <span key={index} className="tags__item">{item}</span>
-                                                        )
-                                                    }
+                                                    <span key={project.projectPlatform}
+                                                          className="tags__item">{project.projectPlatform}</span>
                                                 </div>
                                             }
                                         </div>
                                         <div className="project__info__detail">
                                             <div className="type">
-                                                {Project.projectType}
+                                                {project.projectType}
                                             </div>
-                                            {Project.date.start &&
+                                            {project.date.start &&
                                                 <div className="start-date">
-                                                    <time>{Project.date.start}</time>
+                                                    <time>{project.date.start}</time>
                                                 </div>
                                             }
                                         </div>
@@ -55,12 +85,6 @@ const WorkSection = (props) => {
                 }
             </ul>
         </section>
-    );
-};
-
-const WorkList = () => {
-    return (
-        <WorkSection projects={Projects}/>
     );
 };
 

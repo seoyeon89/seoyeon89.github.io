@@ -11,10 +11,7 @@
         "publish": 100,
         "planning": 40
       },
-      "projectPlatform": [
-        "web",
-        "Print"
-      ],
+      "projectPlatform": "web",
       "date": {
         "start": "2014-10-10",
         "end": "2014-10-10"
@@ -42,9 +39,7 @@
       "participation": {
         "design": 100
       },
-      "projectPlatform": [
-        "Print"
-      ],
+      "projectPlatform": "print",
       "date": {
         "start": "2016-03-01",
         "end": "2016-05-31"
@@ -71,9 +66,7 @@
       "participation": {
         "design": 100
       },
-      "projectPlatform": [
-        "Print"
-      ],
+      "projectPlatform": "print",
       "date": {
         "start": "2016-03-01",
         "end": "2016-04-01"
@@ -100,9 +93,7 @@
       "participation": {
         "design": 100
       },
-      "projectPlatform": [
-        "BI Design"
-      ],
+      "projectPlatform": "BI Design",
       "date": {
         "start": "2016-06-01"
       },
@@ -128,9 +119,7 @@
         "publish": 100,
         "planning": 100
       },
-      "projectPlatform": [
-        "mobile"
-      ],
+      "projectPlatform": "mobile",
       "date": {
         "start": "2015-08-01",
         "end": "2015-09-30"
@@ -163,9 +152,7 @@
         "publish": 100,
         "planning": 100
       },
-      "projectPlatform": [
-        "web"
-      ],
+      "projectPlatform": "web",
       "date": {
         "start": "2015-08-01",
         "end": "2015-09-30"
@@ -201,9 +188,7 @@
         "publish": 100,
         "planning": 100
       },
-      "projectPlatform": [
-        "web"
-      ],
+      "projectPlatform": "web",
       "date": {
         "start": "2015-09-01",
         "end": "2015-10-01"
@@ -238,9 +223,7 @@
         "develop": 100,
         "planning": 100
       },
-      "projectPlatform": [
-        "web"
-      ],
+      "projectPlatform": "web",
       "date": {
         "start": "2015-02-01",
         "end": "2015-03-31"
@@ -277,9 +260,7 @@
         "publish": 100,
         "develop": 10
       },
-      "projectPlatform": [
-        "web"
-      ],
+      "projectPlatform": "web",
       "date": {
         "start": "2016-06-05",
         "end": "2017-02-10"
@@ -309,9 +290,7 @@
       "participation": {
         "publish": 100
       },
-      "projectPlatform": [
-        "web"
-      ],
+      "projectPlatform": "web",
       "date": {
         "start": "2016-06-05",
         "end": "2017-02-10"
@@ -340,9 +319,7 @@
       "participation": {
         "publish": 100
       },
-      "projectPlatform": [
-        "web"
-      ],
+      "projectPlatform": "web",
       "date": {
         "start": "2017-08-07",
         "end": "2017-09-15"
@@ -376,9 +353,7 @@
       "participation": {
         "publish": 100
       },
-      "projectPlatform": [
-        "web"
-      ],
+      "projectPlatform": "web",
       "date": {
         "start": "2017-09-13",
         "end": "2017-09-21"
@@ -408,9 +383,7 @@
       "participation": {
         "publish": 100
       },
-      "projectPlatform": [
-        "app"
-      ],
+      "projectPlatform": "app",
       "date": {
         "start": "2017-11-20"
       },
@@ -438,9 +411,7 @@
       "participation": {
         "publish": 100
       },
-      "projectPlatform": [
-        "web"
-      ],
+      "projectPlatform": "web",
       "date": {
         "start": "2017-12-12",
         "end": "2018-01-10"
@@ -470,9 +441,7 @@
       "participation": {
         "publish": 100
       },
-      "projectPlatform": [
-        "web"
-      ],
+      "projectPlatform": "web",
       "date": {
         "start": "2017-12-26",
         "end": "2018-01-11"
@@ -503,9 +472,7 @@
       "participation": {
         "publish": 100
       },
-      "projectPlatform": [
-        "web"
-      ],
+      "projectPlatform": "web",
       "date": {
         "start": "2018-02-12",
         "end": "2018-02-28"
@@ -536,9 +503,7 @@
       "participation": {
         "publish": 100
       },
-      "projectPlatform": [
-        "web"
-      ],
+      "projectPlatform": "web",
       "date": {
         "start": "2018-02-21",
         "end": "2018-03-02"
@@ -569,9 +534,7 @@
       "participation": {
         "publish": 100
       },
-      "projectPlatform": [
-        "web"
-      ],
+      "projectPlatform": "web",
       "date": {
         "start": "2018-03-19",
         "end": "2018-03-23"
@@ -603,9 +566,7 @@
       "participation": {
         "publish": 100
       },
-      "projectPlatform": [
-        "mobile"
-      ],
+      "projectPlatform": "mobile",
       "date": {
         "start": "2018-06-12",
         "end": "2018-06-22"
@@ -637,9 +598,7 @@
       "participation": {
         "publish": 100
       },
-      "projectPlatform": [
-        "web"
-      ],
+      "projectPlatform": "web",
       "date": {
         "start": "2018-06-12",
         "end": "2018-06-22"
@@ -669,9 +628,7 @@
       "participation": {
         "publish": 100
       },
-      "projectPlatform": [
-        "web"
-      ],
+      "projectPlatform": "web",
       "date": {
         "start": "2018-04-10",
         "end": "2018-04-19"
@@ -691,6 +648,36 @@
         "/05_sidaegosi/11_social_research/site2.jpg",
         "/05_sidaegosi/11_social_research/site3.jpg",
         "/05_sidaegosi/11_social_research/site4.jpg"
+      ]
+    },
+    {
+      "id": 22,
+      "isOpen": 1,
+      "isFeatured": false,
+      "projectName": "시대고시 경비지도사",
+      "projectType": "신규 구축",
+      "participation": {
+        "publish": 100
+      },
+      "projectPlatform": "web",
+      "date": {
+        "start": "2018-04-26",
+        "end": "2018-05-16"
+      },
+      "skills": [
+        "HTML",
+        "CSS",
+        "JQUERY",
+        "템플릿언더바"
+      ],
+      "discription": [
+        "시대고시의 경비지도사 상품을 위한 리뉴얼 작업을 진행하였습니다. 시안에 맞춰 HTML/CSS/제이쿼리 작업을 진행하였습니다.공통소스를 제외한 화면상의 모든 페이지의 마크업,스크립트를 작업하였습니다."
+      ],
+      "thumbnail": "/05_sidaegosi/12_security/site_thum.png",
+      "images": [
+        "/05_sidaegosi/12_security/site1.jpg",
+        "/05_sidaegosi/12_security/site2.jpg",
+        "/05_sidaegosi/12_security/site3.jpg"
       ]
     }
   ]
