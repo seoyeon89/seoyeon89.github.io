@@ -1,16 +1,17 @@
 .header {
-    font-size       : 1.14rem;
-    position        : fixed;
-    z-index         : 10;
-    top             : 0;
-    right           : 0;
-    left            : 0;
-    display         : flex;
-    align-items     : center;
-    width           : 100%;
-    height          : $header-height;
-    padding         : 0 20px;
-    backdrop-filter : blur(30px);
+    display          : flex;
+    position         : fixed;
+    align-items      : center;
+    top              : 0;
+    right            : 0;
+    left             : 0;
+    width            : 100%;
+    height           : $header-height;
+    padding          : 0 20px;
+    background-color : rgba(255, 255, 255, 0.2);
+    font-size        : 1.14rem;
+    z-index          : 10;
+    backdrop-filter  : blur(12px);
 
     &__logo {
         font-size : 1.14em;

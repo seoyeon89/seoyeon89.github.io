@@ -1,0 +1,15 @@
+.ui-checkbox {
+    display     : inline-flex;
+    gap         : 8px;
+    align-items : center;
+    cursor      : pointer;
+
+    & > input {
+        transform    : scale(1.2);
+        accent-color : var(--theme-primary);
+    }
+
+    & > span {
+        font-size : 0.8em
+    }
+}

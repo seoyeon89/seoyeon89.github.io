@@ -1,0 +1,10 @@
+.ui-callout {
+    padding    : var(--component-padding);
+    background : var(--paper-secondary);
+
+    & > p {
+        & + p {
+            margin-top : 8px;
+        }
+    }
+}

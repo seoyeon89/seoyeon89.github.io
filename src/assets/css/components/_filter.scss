@@ -1,0 +1,36 @@
+.filter {
+    display        : flex;
+    text-transform : uppercase;
+    gap:12px;
+
+    &__dropdown {
+        flex        : 0 0 auto;
+    }
+    &__result {
+        flex        : 0 1 auto;
+        display     : flex;
+        flex-wrap   : wrap;
+        gap         : 8px;
+        align-items : center;
+
+        &__item {
+            flex        : 0 0 auto;
+            display     : flex;
+            gap         : 6px;
+            align-items : center;
+            min-height  : 20px;
+            padding     : 4px 8px;
+            line-height : 16px;
+            color       : var(--theme-primary);
+            background  : var(--paper-endpoint);
+
+            & > button {
+                @include reset-button;
+
+                & > div {
+                    @include icons();
+                }
+            }
+        }
+    }
+}

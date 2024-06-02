@@ -560,7 +560,7 @@
     {
       "id": 19,
       "isOpen": 1,
-      "isFeatured": false,
+      "isFeatured": true,
       "projectName": "시대드론 교육원 사이트 모바일",
       "projectType": "신규 구축",
       "participation": {

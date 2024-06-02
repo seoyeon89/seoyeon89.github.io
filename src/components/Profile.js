@@ -53,40 +53,42 @@ const Profile = () => {
     return (
         <section id="profile" className="profile">
             <h1 hidden>Profile</h1>
-            <div className="profile__avatar"></div>
-            <div className="profile__info">
-                <h2 className="profile__info__title">
-                    <strong>장서연</strong>
-                </h2>
-                <div className="profile__info__sub-title">
-                    <span>SEOYEON,JANG</span>
+            <div className="profile__card">
+                <div className="profile__card__avatar"></div>
+                <div className="profile__card__info">
+                    <h2 className="profile__card__info__title">
+                        <strong>장서연</strong>
+                    </h2>
+                    <div className="profile__card__info__sub-title">
+                        <span>SEOYEON,JANG</span>
+                    </div>
+                    <p className="profile__card__info__content">
+                        <i>
+                            <FeatherIcon icon="smile" size="12"/>
+                        </i>
+                        <span>1989년 3월 7일</span>
+                    </p>
+                    <a className="profile__card__info__content" rel="noreferrer noopener" href="https://github.com/seoyeon89" target="_blank">
+                        <i>
+                            <FeatherIcon icon="github" size="12"/>
+                        </i>
+                        <span>github.com/seoyeon89</span>
+                    </a>
+                    <a className="profile__card__info__content" rel="noreferrer noopener" href="mailto:seoyeon8937@gmail.com">
+                        <i>
+                            <FeatherIcon icon="mail" size="12"/>
+                        </i>
+                        <span>seoyeon8937@gmail.com</span>
+                    </a>
+                    <a className="profile__card__info__content" rel="noreferrer noopener" href="https://fool89.cafe24.com/" target="_blank">
+                        <i>
+                            <FeatherIcon icon="monitor" size="12"/>
+                        </i>
+                        <span>예전 포트폴리오 사이트</span>
+                    </a>
                 </div>
-                <p className="profile__info__content">
-                    <i>
-                        <FeatherIcon icon="smile" size="12"/>
-                    </i>
-                    <span>1989년 3월 7일</span>
-                </p>
-                <a className="profile__info__content" href="https://github.com/seoyeon89" target="_blank">
-                    <i>
-                        <FeatherIcon icon="github" size="12"/>
-                    </i>
-                    <span>github.com/seoyeon89</span>
-                </a>
-                <a className="profile__info__content" href="mailto:seoyeon8937@gmail.com">
-                    <i>
-                        <FeatherIcon icon="mail" size="12"/>
-                    </i>
-                    <span>seoyeon8937@gmail.com</span>
-                </a>
-                <a className="profile__info__content" href="https://fool89.cafe24.com/" target="_blank">
-                    <i>
-                        <FeatherIcon icon="monitor" size="12"/>
-                    </i>
-                    <span>예전 포트폴리오 사이트</span>
-                </a>
             </div>
-            <div className="profile__cards">
+            <div className="profile__blocks">
                 <MyInfoSection title="Work Experience" open={true}/>
                 <MyInfoSection title="Education" open={false}/>
             </div>

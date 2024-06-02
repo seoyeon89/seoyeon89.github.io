@@ -1,0 +1,22 @@
+.flex-box {
+    display        : flex;
+    flex-direction : column;
+
+    &__item {
+        flex           : 0 1 auto;
+        display        : flex;
+        flex-direction : column;
+        gap            : 8px;
+        width          : 100%;
+
+        &__title {
+            font-weight : $text-font-weight-bold;
+        }
+
+        & + .flex-box__item {
+            margin-top  : 12px;
+            padding-top : 12px;
+            border-top  : 1px solid var(--component-border-color)
+        }
+    }
+}

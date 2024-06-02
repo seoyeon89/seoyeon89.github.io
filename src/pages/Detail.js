@@ -12,7 +12,6 @@ const Detail = () => {
             <div className="detail">
                 <div className="detail__info">
                     <div className="ul-table">
-
                         <div className="ul-table__row">
                             <h2 className="title">작업 종류</h2>
                             <div className="content">{Project.projectType}</div>
@@ -38,36 +37,54 @@ const Detail = () => {
 
                         <div className="ul-table__row">
                             <h2 className="title">참여 부분</h2>
-                            <div className="content">
+                            <div className="content participation">
                                 {Object.entries(Project.participation).map(([key, value]) => {
+                                    const RADIUS = 54;
+                                    const CIRCUMFERENCE = 2 * Math.PI * RADIUS;
+                                    const progress = value / 100;
+                                    const dashoffset = CIRCUMFERENCE * (1 - progress);
+
                                     return (
-                                        <div key={key}>
-                                            <div>{key}</div>
-                                            <div>{value}</div>
+                                        <div className="participation__item" key={key}>
+                                            <div className="circle-progress">
+                                                <svg width="120" height="120" viewBox="0 0 120 120">
+                                                    <circle className="circle-progress__frame" cx="60" cy="60" r="54" stroke-width="12"/>
+                                                    <circle className="circle-progress__bar" cx="60" cy="60" r="54" stroke-width="12"
+                                                    style={ {strokeDasharray:CIRCUMFERENCE, strokeDashoffset: dashoffset} }/>
+                                                </svg>
+                                                <div className="circle-progress__value">
+                                                    <strong>{key}</strong>
+                                                    <span>{value}%</span>
+                                                </div>
+                                            </div>
                                         </div>
                                     );
                                 })
                                 }
                             </div>
                         </div>
+                        <div className="ul-table__row">
+                            <h2 className="title">사용 기술</h2>
+                            <div className="content skills">
+                                {
+                                    Project.skills.map((skill, index) => {
+                                        return (
+                                            <div key={index}>{skill}</div>
+                                        );
+                                    })
+                                }
+                            </div>
+                        </div>
                     </div>
-                    <p></p>
-
-                    <article>
-                        <h2></h2>
+                    <div class="ui-callout discription">
                         {
-                            Project.skills.map((skill, index) => {
+                            Project.discription.map((discription, index) => {
                                 return (
-                                    <div key={index}>{skill}</div>
+                                    <p key={index}>{discription}</p>
                                 );
                             })
                         }
-                    </article>
-
-                    <article>
-                        <h2 hidden></h2>
-                        <div>{Project.discription}</div>
-                    </article>
+                    </div>
 
                     {
                         Project.publicUrl &&

@@ -3,27 +3,28 @@
     $table-padding-left : 10px;
 
     display             : flex;
-
     flex-direction      : column;
+
+    border-top          : 1px solid var(--component-border-color);
 
     %tdPadding {
         padding : $table-padding-top $table-padding-left;
     }
 
     &__row {
-        display : flex;
-        flex    : 1 0 auto;
+        flex          : 1 0 auto;
+        display       : flex;
+        border-bottom : 1px solid var(--component-border-color);
 
         & > .title {
             @extend %tdPadding;
-            font-weight   : $text-font-weight-medium;
-            flex          : 0 0 auto;
-            padding : 0 $table-padding-left;
-            color         : #999999;
-            background : rgb(var(--theme-primary-rgb), 0.05);
+            flex        : 0 0 auto;
+            padding     : 0 $table-padding-left;
+            background  : rgb(var(--theme-primary-rgb), 0.05);
+            font-weight : $text-font-weight-medium;
 
             @include laptop {
-                flex-basis : 120px;
+                flex-basis : 74px;
             }
         }
 
