@@ -1,6 +1,6 @@
 .filter {
-    display        : flex;
-    gap            : 12px;
+    display : flex;
+    gap     : 12px;
 
     &__dropdown {
         flex : 0 0 auto;
@@ -31,9 +31,10 @@
                     @include icons();
                 }
             }
+
             & > em {
-                font-style: normal;
-                font-weight: $text-font-weight-bold;
+                font-weight    : $text-font-weight-bold;
+                font-style     : normal;
                 text-transform : uppercase;
             }
         }

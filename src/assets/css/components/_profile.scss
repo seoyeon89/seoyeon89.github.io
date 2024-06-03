@@ -1,4 +1,7 @@
 .profile {
+    margin-top  : -$header-height;
+    padding-top : $header-height;
+
     &__card {
         display         : flex;
         align-items     : center;
@@ -16,14 +19,11 @@
         &__avatar {
             flex : 0 0 auto;
             @include avatar(92px);
-            //margin : 0 auto var(--component-gap);
         }
 
         &__info {
             display        : flex;
-            //align-items     : center;
             flex-direction : column;
-            //justify-content : center;
             gap            : 2px;
 
             &__title {

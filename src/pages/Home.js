@@ -1,5 +1,4 @@
 import React from 'react';
-// import { ScrollRestoration, Outlet} from 'react-router-dom';
 import { Outlet} from 'react-router-dom';
 
 import AppHeader from '../components/AppHeader';
@@ -10,11 +9,7 @@ const Home = () => {
     return (
         <>
             <AppHeader />
-            {/*<ScrollRestoration getKey={(location, matches) => {*/}
-            {/*        return location.key;*/}
-            {/*    }}*/}
-            {/*>*/}
-                <main className="container">
+                <main className="container"  id="profile">
                     <div className="container__background">
 
                     </div>
@@ -23,7 +18,6 @@ const Home = () => {
                         <WorkList />
                     </div>
                 </main>
-            {/*</ScrollRestoration>*/}
             <Outlet />
         </>
     );

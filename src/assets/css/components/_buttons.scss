@@ -1,0 +1,19 @@
+.ui-button {
+    @include reset-button;
+    $height :36px;
+    height:$height;
+    padding:0 20px;
+    border-radius: $height/2;
+
+
+    &--primary{
+        background: var(--theme-primary);
+        color:#fff;
+
+        &:hover,
+        &:visited,
+        &:link{
+            color:#fff;
+        }
+    }
+}

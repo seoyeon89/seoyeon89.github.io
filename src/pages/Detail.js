@@ -1,20 +1,19 @@
-import {useParams} from 'react-router-dom';
+import { useParams, useSearchParams } from 'react-router-dom';
 import { Popup } from '../components/Popup';
+import Error from '../components/Error';
 import ProjectsJsonData from '../assets/json/project.json';
 
 const Projects = ProjectsJsonData.projects.reverse();
 
-const Detail = () => {
-    const {id} = useParams();
-    const Project = Projects.find(item => item.id === Number(id));
+const DetailPopup = ({Project}) => {
     return (
-        <Popup title={Project.projectName}>
+        <Popup title={Project.name}>
             <div className="detail">
                 <div className="detail__info">
                     <div className="ul-table">
                         <div className="ul-table__row">
                             <h2 className="title">작업 종류</h2>
-                            <div className="content">{Project.projectType}</div>
+                            <div className="content">{Project.category}</div>
                         </div>
 
                         {(Project.date.start || Project.date.end) &&
@@ -113,18 +112,49 @@ const Detail = () => {
                 {Project.thumbnail &&
                     <div className="detail__thumbnail">
                         { Project.images.map((image, index) => {
-                                return (
-                                    <div className="detail__thumbnail__item" key={index}>
-                                        <img src={`/assets/thumnail/${image}`} alt={`${Project.projectName}의 썸네일`}/>
-                                    </div>
-                                )
-                            })
+                            return (
+                                <div className="detail__thumbnail__item" key={index}>
+                                    <img src={`/assets/thumnail/${image}`} alt={`${Project.name}의 썸네일`}/>
+                                </div>
+                            )
+                        })
                         }
                     </div>
                 }
             </div>
         </Popup>
     )
+}
+const Detail = () => {
+    const [searchParams] = useSearchParams();
+    const {id} = useParams();
+    const Project = Projects.find(item => item.id === Number(id));
+    let isShow = false;
+
+    switch (Project.isOpen) {
+        case 1:
+            isShow = searchParams.get('resume') ? true : false;
+            break;
+        case 2:
+            isShow = true;
+            break;
+        default:
+            isShow = false;
+    }
+
+
+    return (
+        <>
+            {
+                isShow
+                ? <DetailPopup Project={Project}/>
+                : <Popup title="ERROR">
+                        <Error/>
+                  </Popup>
+            }
+        </>
+    )
 };
+
 
 export default Detail;

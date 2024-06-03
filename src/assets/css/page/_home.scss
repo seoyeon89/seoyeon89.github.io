@@ -52,36 +52,58 @@
             background    : var(--paper-primary);
             box-shadow    : var(--component-shadow);
 
-            @include laptop {
-                position : sticky;
-                top      : $header-height + 10px;
-                flex     : 0 0 auto;
-                width    : 360px;
+            @include tablet {
+                position   : sticky;
+                top        : $header-height;
+                overflow   : hidden auto;
+                flex       : 0 0 auto;
+                width      : 360px;
+                max-height : calc(100vh - 120px);
+                @include scrollbar(#DDDDDD);
             }
         }
 
         .works {
-            flex  : 0 1 auto;
-            width : 100%;
+            flex        : 0 1 auto;
+            width       : 100%;
+            margin-top  : -$header-height;
+            padding-top : $header-height;
 
             @include tablet {
                 margin-top  : $profile-height - $profile-top;
-                padding-top : calc(var(--inner-padding) - 12px);
+                padding-top : calc(var(--inner-padding) - 16px);
             }
 
             .works-top {
-                display:flex;
-                align-items: center;
-                margin-bottom : 16px;
+                display          : flex;
+                align-items      : center;
+                padding          : 12px 8px;
+                border           : 1px solid rgba(var(--theme-primary-rgb), 0.4);
+                border-radius    : var(--component-radius);
+                background-color : rgba(255, 255, 255, 0.2);
+
+                @include tablet {
+                    position        : sticky;
+                    z-index         : 10;
+                    top             : $header-height;
+                    backdrop-filter : blur(12px);
+                }
+
                 .filter {
                 }
+
                 .total {
-                    margin-left:auto;
-                    flex:0 0 auto;
+                    flex        : 0 0 auto;
+                    margin-left : auto;
+
                     strong {
-                        color:var(--theme-primary);
+                        color : var(--theme-primary);
                     }
                 }
+            }
+
+            .projects {
+                margin-top : 20px;
             }
         }
 

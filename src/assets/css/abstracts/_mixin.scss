@@ -49,7 +49,7 @@
 }
 
 @mixin scrollbar($thumbColor : $point-primary) {
-    @include laptop() {
+    @include tablet() {
 
         &::-webkit-scrollbar {
             width : 16px;

@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
-import {Link} from 'react-router-dom';
+import { Link, useSearchParams } from 'react-router-dom';
 import { Dropdown } from './Dropdown';
 import ProjectsJsonData from '../assets/json/project.json';
 import FeatherIcon from 'feather-icons-react';
 
-const projectInit = ProjectsJsonData.projects
+let projectInit = ProjectsJsonData.projects
     .filter((a) => a.isOpen > 0 )
     .sort((a, b) => { return new Date(b.date.start) - new Date(a.date.start) })
 
@@ -31,17 +31,17 @@ const getSelected = (FilterObject) => {
         return acc;
     },[])
 }
+
 const getProjectList = (filters, featured, categories ) => {
     const selectedFilter = getSelected(filters);
     const selectedCategories = getSelected(categories);
     const nextFeatured = featured;
-    console.log(nextFeatured);
     return projectInit
         .filter((a) => {
-            return selectedFilter.includes(a.projectPlatform)
+            return selectedFilter.includes(a.platform)
         })
         .filter((a) => {
-            return selectedCategories.includes(a.projectType)
+            return selectedCategories.includes(a.category)
         })
         .filter((a) => {
             return nextFeatured ? a.isFeatured : true;
@@ -52,10 +52,15 @@ const getProjectList = (filters, featured, categories ) => {
 }
 
 const WorkList = () => {
+    const [searchParams] = useSearchParams();
+    if(!searchParams.get('resume')){
+        projectInit = projectInit.filter((a) => a.isOpen > 1 )
+    }
+
     const [filters, setFilter] = useState(filterInit);
     const [categories, setCategories] = useState(categoriesInit);
     const [seeFeatured, setSeeFeatured] = useState(featuredInit);
-    const [projects, setProjects] = useState(getProjectList(filterInit,featuredInit, categoriesInit));
+    const [projects, setProjects] = useState( getProjectList(filterInit,featuredInit, categoriesInit) );
 
     const filterChange = (filterId, nextSeen) => {
         const nextFilters = [...filters];
@@ -202,19 +207,19 @@ const WorkList = () => {
                                             <div className="project__info">
                                                 <div className="project__info__important">
                                                     <h2>
-                                                        <span>{project.projectName}</span>
+                                                        <span>{project.name}</span>
                                                     </h2>
 
-                                                    {project.projectPlatform &&
+                                                    {project.platform &&
                                                         <div className="tags">
-                                                        <span key={project.projectPlatform}
-                                                              className="tags__item">{project.projectPlatform}</span>
+                                                        <span key={project.platform}
+                                                              className="tags__item">{project.platform}</span>
                                                         </div>
                                                     }
                                                 </div>
                                                 <div className="project__info__detail">
                                                     <div className="type">
-                                                        {project.projectType}
+                                                        {project.category}
                                                     </div>
                                                     {project.date.start &&
                                                         <div className="start-date">

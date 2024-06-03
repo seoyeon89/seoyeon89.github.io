@@ -2,16 +2,16 @@
   "projects": [
     {
       "id": 1,
-      "isOpen": 1,
+      "isOpen": 2,
       "isFeatured": false,
-      "projectName": "월요일의 과일가게",
-      "projectType": "기타",
+      "name": "월요일의 과일가게",
+      "category": "기타",
       "participation": {
         "design": 40,
         "publish": 100,
         "planning": 40
       },
-      "projectPlatform": "web",
+      "platform": "web",
       "date": {
         "start": "2014-10-10",
         "end": "2014-10-10"
@@ -32,14 +32,14 @@
     },
     {
       "id": 2,
-      "isOpen": 1,
+      "isOpen": 2,
       "isFeatured": false,
-      "projectName": "어라연전각연구소 포스터 작업",
-      "projectType": "외주",
+      "name": "어라연전각연구소 포스터 작업",
+      "category": "외주",
       "participation": {
         "design": 100
       },
-      "projectPlatform": "print",
+      "platform": "print",
       "date": {
         "start": "2016-03-01",
         "end": "2016-05-31"
@@ -59,14 +59,14 @@
     },
     {
       "id": 3,
-      "isOpen": 1,
+      "isOpen": 2,
       "isFeatured": false,
-      "projectName": "어라연전각연구소 리플렛 작업",
-      "projectType": "외주",
+      "name": "어라연전각연구소 리플렛 작업",
+      "category": "외주",
       "participation": {
         "design": 100
       },
-      "projectPlatform": "print",
+      "platform": "print",
       "date": {
         "start": "2016-03-01",
         "end": "2016-04-01"
@@ -86,14 +86,14 @@
     },
     {
       "id": 4,
-      "isOpen": 1,
+      "isOpen": 2,
       "isFeatured": false,
-      "projectName": "카룻 BI디자인",
-      "projectType": "신규구축",
+      "name": "카룻 BI디자인",
+      "category": "신규구축",
       "participation": {
         "design": 100
       },
-      "projectPlatform": "etc",
+      "platform": "etc",
       "date": {
         "start": "2016-06-01"
       },
@@ -110,16 +110,16 @@
     },
     {
       "id": 5,
-      "isOpen": 1,
+      "isOpen": 2,
       "isFeatured": false,
-      "projectName": "시립노원노인복지관 모바일 리뉴얼 제안",
-      "projectType": "개인프로젝트",
+      "name": "시립노원노인복지관 모바일 리뉴얼 제안",
+      "category": "개인프로젝트",
       "participation": {
         "design": 100,
         "publish": 100,
         "planning": 100
       },
-      "projectPlatform": "mobile",
+      "platform": "mobile",
       "date": {
         "start": "2015-08-01",
         "end": "2015-09-30"
@@ -143,16 +143,16 @@
     },
     {
       "id": 6,
-      "isOpen": 1,
+      "isOpen": 2,
       "isFeatured": false,
-      "projectName": "시립노원노인복지관 사이트리뉴얼 제안",
-      "projectType": "개인프로젝트",
+      "name": "시립노원노인복지관 사이트리뉴얼 제안",
+      "category": "개인프로젝트",
       "participation": {
         "design": 100,
         "publish": 100,
         "planning": 100
       },
-      "projectPlatform": "web",
+      "platform": "web",
       "date": {
         "start": "2015-08-01",
         "end": "2015-09-30"
@@ -179,16 +179,16 @@
     },
     {
       "id": 7,
-      "isOpen": 1,
+      "isOpen": 2,
       "isFeatured": false,
-      "projectName": "국립수목원 사이트 리뉴얼 제안",
-      "projectType": "개인프로젝트",
+      "name": "국립수목원 사이트 리뉴얼 제안",
+      "category": "개인프로젝트",
       "participation": {
         "design": 100,
         "publish": 100,
         "planning": 100
       },
-      "projectPlatform": "web",
+      "platform": "web",
       "date": {
         "start": "2015-09-01",
         "end": "2015-10-01"
@@ -213,17 +213,17 @@
     },
     {
       "id": 8,
-      "isOpen": 1,
+      "isOpen": 2,
       "isFeatured": false,
-      "projectName": "어라연 전각 연구소 홈페이지 리뉴얼",
-      "projectType": "외주",
+      "name": "어라연 전각 연구소 홈페이지 리뉴얼",
+      "category": "외주",
       "participation": {
         "design": 100,
         "publish": 100,
         "development": 100,
         "planning": 100
       },
-      "projectPlatform": "web",
+      "platform": "web",
       "date": {
         "start": "2015-02-01",
         "end": "2015-03-31"
@@ -251,16 +251,16 @@
     },
     {
       "id": 9,
-      "isOpen": 1,
+      "isOpen": 2,
       "isFeatured": false,
-      "projectName": "카룻 : 자동차 사용자를 위한 SNS",
-      "projectType": "신규구축",
+      "name": "카룻 : 자동차 사용자를 위한 SNS",
+      "category": "신규구축",
       "participation": {
         "design": 100,
         "publish": 100,
         "development": 10
       },
-      "projectPlatform": "web",
+      "platform": "web",
       "date": {
         "start": "2016-06-05",
         "end": "2017-02-10"
@@ -283,14 +283,14 @@
     },
     {
       "id": 10,
-      "isOpen": 1,
+      "isOpen": 2,
       "isFeatured": false,
-      "projectName": "시대고시 회원가입 리뉴얼",
-      "projectType": "신규구축",
+      "name": "시대고시 회원가입 리뉴얼",
+      "category": "신규구축",
       "participation": {
         "publish": 100
       },
-      "projectPlatform": "web",
+      "platform": "web",
       "date": {
         "start": "2016-06-05",
         "end": "2017-02-10"
@@ -312,14 +312,14 @@
     },
     {
       "id": 11,
-      "isOpen": 1,
+      "isOpen": 2,
       "isFeatured": false,
-      "projectName": "시대고시 공무원 통합사이트",
-      "projectType": "신규구축",
+      "name": "시대고시 공무원 통합사이트",
+      "category": "신규구축",
       "participation": {
         "publish": 100
       },
-      "projectPlatform": "web",
+      "platform": "web",
       "date": {
         "start": "2017-08-07",
         "end": "2017-09-15"
@@ -346,14 +346,14 @@
     },
     {
       "id": 12,
-      "isOpen": 1,
+      "isOpen": 2,
       "isFeatured": false,
-      "projectName": "시대고시 지텔프 리뉴얼",
-      "projectType": "신규구축",
+      "name": "시대고시 지텔프 리뉴얼",
+      "category": "신규구축",
       "participation": {
         "publish": 100
       },
-      "projectPlatform": "web",
+      "platform": "web",
       "date": {
         "start": "2017-09-13",
         "end": "2017-09-21"
@@ -376,14 +376,14 @@
     },
     {
       "id": 13,
-      "isOpen": 1,
+      "isOpen": 2,
       "isFeatured": false,
-      "projectName": "시대 북 어플리케이션",
-      "projectType": "신규구축",
+      "name": "시대 북 어플리케이션",
+      "category": "신규구축",
       "participation": {
         "publish": 100
       },
-      "projectPlatform": "app",
+      "platform": "app",
       "date": {
         "start": "2017-11-20"
       },
@@ -404,14 +404,14 @@
     },
     {
       "id": 14,
-      "isOpen": 1,
+      "isOpen": 2,
       "isFeatured": false,
-      "projectName": "시대 평생 교육원",
-      "projectType": "신규구축",
+      "name": "시대 평생 교육원",
+      "category": "신규구축",
       "participation": {
         "publish": 100
       },
-      "projectPlatform": "web",
+      "platform": "web",
       "date": {
         "start": "2017-12-12",
         "end": "2018-01-10"
@@ -434,14 +434,14 @@
     },
     {
       "id": 15,
-      "isOpen": 1,
+      "isOpen": 2,
       "isFeatured": false,
-      "projectName": "시대고시 조경기능사 리뉴얼",
-      "projectType": "신규구축",
+      "name": "시대고시 조경기능사 리뉴얼",
+      "category": "신규구축",
       "participation": {
         "publish": 100
       },
-      "projectPlatform": "web",
+      "platform": "web",
       "date": {
         "start": "2017-12-26",
         "end": "2018-01-11"
@@ -465,14 +465,14 @@
     },
     {
       "id": 16,
-      "isOpen": 1,
+      "isOpen": 2,
       "isFeatured": false,
-      "projectName": "시대고시 드론 신규",
-      "projectType": "신규구축",
+      "name": "시대고시 드론 신규",
+      "category": "신규구축",
       "participation": {
         "publish": 100
       },
-      "projectPlatform": "web",
+      "platform": "web",
       "date": {
         "start": "2018-02-12",
         "end": "2018-02-28"
@@ -496,14 +496,14 @@
     },
     {
       "id": 17,
-      "isOpen": 1,
+      "isOpen": 2,
       "isFeatured": false,
-      "projectName": "시대고시 유통관리사 2급 리뉴얼",
-      "projectType": "신규구축",
+      "name": "시대고시 유통관리사 2급 리뉴얼",
+      "category": "신규구축",
       "participation": {
         "publish": 100
       },
-      "projectPlatform": "web",
+      "platform": "web",
       "date": {
         "start": "2018-02-21",
         "end": "2018-03-02"
@@ -527,14 +527,14 @@
     },
     {
       "id": 18,
-      "isOpen": 1,
+      "isOpen": 2,
       "isFeatured": false,
-      "projectName": "시대드론 교육원 사이트",
-      "projectType": "신규구축",
+      "name": "시대드론 교육원 사이트",
+      "category": "신규구축",
       "participation": {
         "publish": 100
       },
-      "projectPlatform": "web",
+      "platform": "web",
       "date": {
         "start": "2018-03-19",
         "end": "2018-03-23"
@@ -559,14 +559,14 @@
     },
     {
       "id": 19,
-      "isOpen": 1,
+      "isOpen": 2,
       "isFeatured": true,
-      "projectName": "시대드론 교육원 사이트 모바일",
-      "projectType": "신규구축",
+      "name": "시대드론 교육원 사이트 모바일",
+      "category": "신규구축",
       "participation": {
         "publish": 100
       },
-      "projectPlatform": "mobile",
+      "platform": "mobile",
       "date": {
         "start": "2018-06-12",
         "end": "2018-06-22"
@@ -591,14 +591,14 @@
     },
     {
       "id": 20,
-      "isOpen": 1,
+      "isOpen": 2,
       "isFeatured": false,
-      "projectName": "시대고시 직업상담사",
-      "projectType": "신규구축",
+      "name": "시대고시 직업상담사",
+      "category": "신규구축",
       "participation": {
         "publish": 100
       },
-      "projectPlatform": "web",
+      "platform": "web",
       "date": {
         "start": "2018-06-12",
         "end": "2018-06-22"
@@ -621,14 +621,14 @@
     },
     {
       "id": 21,
-      "isOpen": 1,
+      "isOpen": 2,
       "isFeatured": false,
-      "projectName": "시대고시 사회조사분석사",
-      "projectType": "신규구축",
+      "name": "시대고시 사회조사분석사",
+      "category": "신규구축",
       "participation": {
         "publish": 100
       },
-      "projectPlatform": "web",
+      "platform": "web",
       "date": {
         "start": "2018-04-10",
         "end": "2018-04-19"
@@ -652,14 +652,14 @@
     },
     {
       "id": 22,
-      "isOpen": 1,
+      "isOpen": 2,
       "isFeatured": false,
-      "projectName": "시대고시 경비지도사",
-      "projectType": "신규구축",
+      "name": "시대고시 경비지도사",
+      "category": "신규구축",
       "participation": {
         "publish": 100
       },
-      "projectPlatform": "web",
+      "platform": "web",
       "date": {
         "start": "2018-04-26",
         "end": "2018-05-16"
@@ -682,14 +682,14 @@
     },
     {
       "id": 23,
-      "isOpen": 1,
+      "isOpen": 2,
       "isFeatured": false,
-      "projectName": "시대고시 임상심리사",
-      "projectType": "신규구축",
+      "name": "시대고시 임상심리사",
+      "category": "신규구축",
       "participation": {
         "publish": 100
       },
-      "projectPlatform": "web",
+      "platform": "web",
       "date": {
         "start": "2018-06-26",
         "end": "2018-07-11"
@@ -713,14 +713,14 @@
     },
     {
       "id": 24,
-      "isOpen": 1,
+      "isOpen": 2,
       "isFeatured": false,
-      "projectName": "시대고시 위생사",
-      "projectType": "신규구축",
+      "name": "시대고시 위생사",
+      "category": "신규구축",
       "participation": {
         "publish": 100
       },
-      "projectPlatform": "web",
+      "platform": "web",
       "date": {
         "start": "2018-08-06",
         "end": "2018-08-10"
@@ -744,14 +744,14 @@
     },
     {
       "id": 25,
-      "isOpen": 1,
+      "isOpen": 2,
       "isFeatured": false,
-      "projectName": "시대고시 관광종사원",
-      "projectType": "신규구축",
+      "name": "시대고시 관광종사원",
+      "category": "신규구축",
       "participation": {
         "publish": 100
       },
-      "projectPlatform": "web",
+      "platform": "web",
       "date": {
         "start": "2018-08-06",
         "end": "2018-08-16"
@@ -775,14 +775,14 @@
     },
     {
       "id": 26,
-      "isOpen": 1,
+      "isOpen": 2,
       "isFeatured": false,
-      "projectName": "시대고시 조경산업기사",
-      "projectType": "신규구축",
+      "name": "시대고시 조경산업기사",
+      "category": "신규구축",
       "participation": {
         "publish": 100
       },
-      "projectPlatform": "web",
+      "platform": "web",
       "date": {
         "start": "2018-08-17",
         "end": "2018-08-31"
@@ -804,14 +804,14 @@
     },
     {
       "id": 27,
-      "isOpen": 1,
+      "isOpen": 2,
       "isFeatured": false,
-      "projectName": "시대고시 CS리더스관리사",
-      "projectType": "신규구축",
+      "name": "시대고시 CS리더스관리사",
+      "category": "신규구축",
       "participation": {
         "publish": 100
       },
-      "projectPlatform": "web",
+      "platform": "web",
       "date": {
         "start": "2018-09-03",
         "end": "2018-09-13"
@@ -834,14 +834,14 @@
     },
     {
       "id": 28,
-      "isOpen": 1,
+      "isOpen": 2,
       "isFeatured": false,
-      "projectName": "시대고시 공인중개사",
-      "projectType": "신규구축",
+      "name": "시대고시 공인중개사",
+      "category": "신규구축",
       "participation": {
         "publish": 100
       },
-      "projectPlatform": "web",
+      "platform": "web",
       "date": {
         "start": "2018-09-10",
         "end": "2018-09-18"
@@ -864,14 +864,14 @@
     },
     {
       "id": 29,
-      "isOpen": 1,
+      "isOpen": 2,
       "isFeatured": true,
-      "projectName": "시대고시 마이페이지 정오표 구조변경",
-      "projectType": "신규구축",
+      "name": "시대고시 마이페이지 정오표 구조변경",
+      "category": "신규구축",
       "participation": {
         "publish": 100
       },
-      "projectPlatform": "web",
+      "platform": "web",
       "date": {
         "start": "2018-09-28",
         "end": "2018-10-01"
@@ -893,14 +893,14 @@
     },
     {
       "id": 30,
-      "isOpen": 1,
+      "isOpen": 2,
       "isFeatured": false,
-      "projectName": "시대고시 주택관리사",
-      "projectType": "신규구축",
+      "name": "시대고시 주택관리사",
+      "category": "신규구축",
       "participation": {
         "publish": 100
       },
-      "projectPlatform": "web",
+      "platform": "web",
       "date": {
         "start": "2018-10-01",
         "end": "2018-10-12"
@@ -922,14 +922,14 @@
     },
     {
       "id": 31,
-      "isOpen": 1,
+      "isOpen": 2,
       "isFeatured": true,
-      "projectName": "도서소개 전사상품 교체",
-      "projectType": "신규구축",
+      "name": "도서소개 전사상품 교체",
+      "category": "신규구축",
       "participation": {
         "publish": 100
       },
-      "projectPlatform": "web",
+      "platform": "web",
       "date": {
         "start": "2018-10-08",
         "end": "2018-10-12"
@@ -951,14 +951,14 @@
     },
     {
       "id": 32,
-      "isOpen": 1,
+      "isOpen": 2,
       "isFeatured": true,
-      "projectName": "시대고시 결제단계 축소",
-      "projectType": "신규구축",
+      "name": "시대고시 결제단계 축소",
+      "category": "신규구축",
       "participation": {
         "publish": 100
       },
-      "projectPlatform": "web",
+      "platform": "web",
       "date": {
         "start": "2018-11-01",
         "end": "2018-11-13"
@@ -980,14 +980,14 @@
     },
     {
       "id": 33,
-      "isOpen": 1,
+      "isOpen": 2,
       "isFeatured": true,
-      "projectName": "시대고시 전사상품 결제영역 변경",
-      "projectType": "신규구축",
+      "name": "시대고시 전사상품 결제영역 변경",
+      "category": "신규구축",
       "participation": {
         "publish": 100
       },
-      "projectPlatform": "web",
+      "platform": "web",
       "date": {
         "start": "2018-11-07",
         "end": "2018-11-08"
@@ -1011,14 +1011,14 @@
     },
     {
       "id": 34,
-      "isOpen": 1,
+      "isOpen": 2,
       "isFeatured": false,
-      "projectName": "시대고시 사회복지사",
-      "projectType": "신규구축",
+      "name": "시대고시 사회복지사",
+      "category": "신규구축",
       "participation": {
         "publish": 100
       },
-      "projectPlatform": "web",
+      "platform": "web",
       "date": {
         "start": "2018-11-15",
         "end": "2018-11-19"
@@ -1041,14 +1041,14 @@
     },
     {
       "id": 35,
-      "isOpen": 1,
+      "isOpen": 2,
       "isFeatured": false,
-      "projectName": "시대고시 공인노무사",
-      "projectType": "신규구축",
+      "name": "시대고시 공인노무사",
+      "category": "신규구축",
       "participation": {
         "publish": 100
       },
-      "projectPlatform": "web",
+      "platform": "web",
       "date": {
         "start": "2018-11-21",
         "end": "2018-11-26"
@@ -1071,14 +1071,14 @@
     },
     {
       "id": 36,
-      "isOpen": 1,
+      "isOpen": 2,
       "isFeatured": false,
-      "projectName": "시대고시 경영지도사 ",
-      "projectType": "신규구축",
+      "name": "시대고시 경영지도사 ",
+      "category": "신규구축",
       "participation": {
         "publish": 100
       },
-      "projectPlatform": "web",
+      "platform": "web",
       "date": {
         "start": "2018-11-27",
         "end": "2018-12-04"
@@ -1101,14 +1101,14 @@
     },
     {
       "id": 37,
-      "isOpen": 1,
+      "isOpen": 2,
       "isFeatured": false,
-      "projectName": "시대고시 보세사",
-      "projectType": "신규구축",
+      "name": "시대고시 보세사",
+      "category": "신규구축",
       "participation": {
         "publish": 100
       },
-      "projectPlatform": "web",
+      "platform": "web",
       "date": {
         "start": "2018-12-04",
         "end": "2018-12-17"
@@ -1131,14 +1131,14 @@
     },
     {
       "id": 38,
-      "isOpen": 1,
+      "isOpen": 2,
       "isFeatured": false,
-      "projectName": "시대고시 텔레마케팅",
-      "projectType": "신규구축",
+      "name": "시대고시 텔레마케팅",
+      "category": "신규구축",
       "participation": {
         "publish": 100
       },
-      "projectPlatform": "web",
+      "platform": "web",
       "date": {
         "start": "2018-12-28",
         "end": "2019-01-09"
@@ -1162,17 +1162,17 @@
     },
     {
       "id": 39,
-      "isOpen": 1,
+      "isOpen": 2,
       "isFeatured": true,
-      "projectName": "장서연 포트폴리오 사이트 리뉴얼",
-      "projectType": "개인프로젝트",
+      "name": "장서연 포트폴리오 사이트 리뉴얼",
+      "category": "개인프로젝트",
       "participation": {
         "publish": 100,
         "design": 100,
         "development": 100,
         "planning": 100
       },
-      "projectPlatform": "web",
+      "platform": "web",
       "date": {
         "start": "2018-12-24",
         "end": "2018-12-24"
@@ -1200,15 +1200,15 @@
     },
     {
       "id": 40,
-      "isOpen": 1,
+      "isOpen": 2,
       "isFeatured": true,
-      "projectName": "병원 마케팅 플랫폼",
-      "projectType": "신규구축",
+      "name": "병원 마케팅 플랫폼",
+      "category": "신규구축",
       "participation": {
         "publish": 100,
         "planning": 100
       },
-      "projectPlatform": "web",
+      "platform": "web",
       "date": {
         "start": "2019-07-08",
         "end": "2019-07-24"
@@ -1235,16 +1235,16 @@
     },
     {
       "id": 41,
-      "isOpen": 1,
+      "isOpen": 2,
       "isFeatured": true,
-      "projectName": "병원 마케팅 플랫폼 어드민",
-      "projectType": "신규구축",
+      "name": "병원 마케팅 플랫폼 어드민",
+      "category": "신규구축",
       "participation": {
         "publish": 100,
         "design": 100,
         "planning": 100
       },
-      "projectPlatform": "web",
+      "platform": "web",
       "date": {
         "start": "2020-01-10",
         "end": "2020-05-10"
@@ -1268,16 +1268,16 @@
     },
     {
       "id": 42,
-      "isOpen": 1,
+      "isOpen": 2,
       "isFeatured": false,
-      "projectName": "병원 마케팅 플랫폼 대쉬보드",
-      "projectType": "신규구축",
+      "name": "병원 마케팅 플랫폼 대쉬보드",
+      "category": "신규구축",
       "participation": {
         "publish": 100,
         "design": 100,
         "planning": 100
       },
-      "projectPlatform": "web",
+      "platform": "web",
       "date": {
         "start": "2021-03-01",
         "end": "2021-04-04"
@@ -1301,14 +1301,14 @@
     },
     {
       "id": 43,
-      "isOpen": 1,
+      "isOpen": 2,
       "isFeatured": true,
-      "projectName": "오토마케팅",
-      "projectType": "외주",
+      "name": "오토마케팅",
+      "category": "외주",
       "participation": {
         "publish": 100
       },
-      "projectPlatform": "web",
+      "platform": "web",
       "date": {
         "start": "2020-07-23",
         "end": "2020-08-03"
@@ -1335,14 +1335,14 @@
     },
     {
       "id": 44,
-      "isOpen": 1,
+      "isOpen": 2,
       "isFeatured": false,
-      "projectName": "매출모아",
-      "projectType": "유지보수",
+      "name": "매출모아",
+      "category": "유지보수",
       "participation": {
         "publish": 100
       },
-      "projectPlatform": "web",
+      "platform": "web",
       "date": {
         "start": "2021-09-06"
       },
@@ -1363,14 +1363,14 @@
     },
     {
       "id": 45,
-      "isOpen": 1,
+      "isOpen": 2,
       "isFeatured": true,
-      "projectName": "마통",
-      "projectType": "유지보수",
+      "name": "마통",
+      "category": "유지보수",
       "participation": {
         "publish": 100
       },
-      "projectPlatform": "web",
+      "platform": "web",
       "date": {
         "start": "2021-09-06"
       },
@@ -1395,17 +1395,17 @@
     },
     {
       "id": 46,
-      "isOpen": 1,
+      "isOpen": 2,
       "isFeatured": true,
-      "projectName": "시음기 어플 : 차차로",
-      "projectType": "개인프로젝트",
+      "name": "시음기 어플 : 차차로",
+      "category": "개인프로젝트",
       "participation": {
         "publish": 100,
         "design": 100,
         "development": 100,
         "planning": 100
       },
-      "projectPlatform": "web",
+      "platform": "web",
       "date": {
         "start": "2022-08-01"
       },
@@ -1427,14 +1427,14 @@
     },
     {
       "id": 47,
-      "isOpen": 1,
+      "isOpen": 2,
       "isFeatured": true,
-      "projectName": "클리니션",
-      "projectType": "외주",
+      "name": "클리니션",
+      "category": "외주",
       "participation": {
         "publish": 100
       },
-      "projectPlatform": "web",
+      "platform": "web",
       "date": {
         "start": "2023-03-10",
         "end": "2023-05-07"
@@ -1462,14 +1462,14 @@
     },
     {
       "id": 48,
-      "isOpen": 1,
+      "isOpen": 2,
       "isFeatured": true,
-      "projectName": "Dx&Vx 게놈 유전자 검사 결과",
-      "projectType": "외주",
+      "name": "Dx&Vx 게놈 유전자 검사 결과",
+      "category": "외주",
       "participation": {
         "publish": 100
       },
-      "projectPlatform": "web",
+      "platform": "web",
       "date": {
         "start": "2023-02-20",
         "end": "2023-03-05"
@@ -1488,14 +1488,14 @@
     },
     {
       "id": 49,
-      "isOpen": 1,
+      "isOpen": 2,
       "isFeatured": true,
-      "projectName": "Dx&Vx 게놈 유전자 검사 결과",
-      "projectType": "외주",
+      "name": "Dx&Vx 게놈 유전자 검사 결과",
+      "category": "외주",
       "participation": {
         "publish": 100
       },
-      "projectPlatform": "web",
+      "platform": "web",
       "date": {
         "start": "2023-06-20",
         "end": "2023-08-15"
@@ -1517,6 +1517,617 @@
         "/07_out/04_hwasung/hwasung05.png",
         "/07_out/04_hwasung/hwasung06.png",
         "/07_out/04_hwasung/hwasung07.png"
+      ]
+    },
+    {
+      "id": 50,
+      "isOpen": 1,
+      "isFeatured": false,
+      "name": "SH수협 그룹웨어 구축",
+      "category": "신규구축",
+      "participation": {
+        "publish": 70
+      },
+      "platform": "web",
+      "date": {
+        "start": "2022-10-01",
+        "end": "2023-05-03"
+      },
+      "skills": [
+        "HTML5",
+        "CSS3",
+        "JQuery"
+      ],
+      "discription": [
+        "SH수협의 그룹웨어 구축 프로젝트의 퍼블리싱 담당으로 참여 하였습니다.",
+        "백엔드 언어는 JAVA로 구성되어 있으며, 폐쇠망으로 운영되는 은행사라 매주 외근을 나가 작업하였습니다.",
+        "기여도는 70프로로 전임자가 작업한 페이지를 바탕으로 수정 및 신규 페이지 작업을 하였습니다."
+      ],
+      "thumbnail": "/09_covision/01_suhyup/site_thum.png",
+      "images" : [
+        "/09_covision/01_suhyup/suhyup01.png",
+        "/09_covision/01_suhyup/suhyup02.png",
+        "/09_covision/01_suhyup/suhyup03.png",
+        "/09_covision/01_suhyup/suhyup04.png",
+        "/09_covision/01_suhyup/suhyup05.png",
+        "/09_covision/01_suhyup/suhyup06.png"
+      ]
+    },
+    {
+      "id": 51,
+      "isOpen": 1,
+      "isFeatured": true,
+      "name": "우미건설 그룹웨어 구축",
+      "category": "신규구축",
+      "participation": {
+        "publish": 70
+      },
+      "platform": "web",
+      "date": {
+        "start": "2022-11-03",
+        "end": "2023-07-03"
+      },
+      "skills": [
+        "HTML5",
+        "CSS3",
+        "JQuery"
+      ],
+      "discription": [
+        "우미건설 그룹웨어 구축 프로젝트의 퍼블리싱 담당으로 참여 하였습니다.",
+        "백엔드 언어는 JAVA입니다."
+      ],
+      "thumbnail": "/09_covision/02_woomi/site_thum.png",
+      "images" : [
+        "/09_covision/02_woomi/woomi01.png",
+        "/09_covision/02_woomi/woomi02.png"
+      ]
+    },
+    {
+      "id": 52,
+      "isOpen": 1,
+      "isFeatured": false,
+      "name": "동국제약 그룹웨어 구축",
+      "category": "신규구축",
+      "participation": {
+        "publish": 30
+      },
+      "platform": "web",
+      "date": {
+        "start": "2022-10-01",
+        "end": "2022-11-28"
+      },
+      "skills": [
+        "HTML5",
+        "CSS3",
+        "JQuery"
+      ],
+      "discription": [
+        "동국제약 그룹웨어 구축 프로젝트의 퍼블리싱 담당으로 참여 하였습니다.",
+        "백엔드 언어는 JAVA입니다.",
+        "기여도는 70프로로 전임자가 작업한 페이지를 바탕으로 수정 및 신규 페이지 작업을 하였습니다."
+      ],
+      "thumbnail": "/09_covision/03_dongkook/site_thum.png",
+      "images" : [
+        "/09_covision/03_dongkook/dongkook01.png",
+        "/09_covision/03_dongkook/dongkook02.png"
+      ]
+    },
+    {
+      "id": 53,
+      "isOpen": 1,
+      "isFeatured": false,
+      "name": "에코넷 그룹웨어 구축",
+      "category": "신규구축",
+      "participation": {
+        "publish": 30
+      },
+      "platform": "web",
+      "date": {
+        "start": "2022-11-03",
+        "end": "2023-07-03"
+      },
+      "skills": [
+        "HTML5",
+        "CSS3",
+        "JQuery"
+      ],
+      "discription": [
+        "에코넷 그룹웨어 구축 프로젝트의 퍼블리싱 담당으로 참여 하였습니다.",
+        "백엔드 언어는 JAVA입니다.",
+        "기여도는 30프로로 전임자가 작업한 페이지를 바탕으로 오류 수정 작업을 하였습니다."
+      ],
+      "thumbnail": "/09_covision/04_econet/site_thum.png",
+      "images" : [
+        "/09_covision/04_econet/site01.png",
+        "/09_covision/04_econet/site02.png"
+      ]
+    },
+    {
+      "id": 54,
+      "isOpen": 1,
+      "isFeatured": false,
+      "name": "한국 미쓰비시 엘리베이터 그룹웨어 구축",
+      "category": "신규구축",
+      "participation": {
+        "publish": 100
+      },
+      "platform": "web",
+      "date": {
+        "start": "2023-03-09",
+        "end": "2023-04-06"
+      },
+      "skills": [
+        "HTML5",
+        "CSS3",
+        "JQuery"
+      ],
+      "discription": [
+        "한국 미쓰비시 엘리베이터 그룹웨어 구축 프로젝트의 퍼블리싱 담당으로 참여 하였습니다.",
+        "백엔드 언어는 닷넷(ASPX)입니다."
+      ],
+      "thumbnail": "/09_covision/05_mitsubishi/site_thum.png",
+      "images" : [
+        "/09_covision/05_mitsubishi/site01.png",
+        "/09_covision/05_mitsubishi/site02.png"
+      ]
+    },
+    {
+      "id": 55,
+      "isOpen": 1,
+      "isFeatured": false,
+      "name": "한림대학교 의료원 그룹웨어 구축",
+      "category": "신규구축",
+      "participation": {
+        "publish": 100
+      },
+      "platform": "web",
+      "date": {
+        "start": "2023-03-06",
+        "end": "2023-04-06"
+      },
+      "skills": [
+        "HTML5",
+        "CSS3",
+        "JQuery"
+      ],
+      "discription": [
+        "한림대학교 의료원 그룹웨어 구축 프로젝트의 퍼블리싱 담당으로 참여 하였습니다.",
+        "백엔드 언어는 JAVA(JSP)입니다."
+      ],
+      "thumbnail": "/09_covision/06_hallym/site_thum.png",
+      "images" : [
+        "/09_covision/06_hallym/site01.png",
+        "/09_covision/06_hallym/site02.png"
+      ]
+    },
+    {
+      "id": 56,
+      "isOpen": 1,
+      "isFeatured": false,
+      "name": "경신홀딩스 그룹웨어 구축",
+      "category": "신규구축",
+      "participation": {
+        "publish": 100
+      },
+      "platform": "web",
+      "date": {
+        "start": "2023-04-03",
+        "end": "2023-07-17"
+      },
+      "skills": [
+        "HTML5",
+        "CSS3",
+        "JQuery"
+      ],
+      "discription": [
+        "경신홀딩스 그룹웨어 구축 프로젝트의 퍼블리싱 담당으로 참여 하였습니다.",
+        "백엔드 언어는 닷넷(ASPX)입니다."
+      ],
+      "thumbnail": "/09_covision/07_kyungshinholdings/site_thum.png",
+      "images" : [
+        "/09_covision/07_kyungshinholdings/site01.png",
+        "/09_covision/07_kyungshinholdings/site02.png",
+        "/09_covision/07_kyungshinholdings/site03.png",
+        "/09_covision/07_kyungshinholdings/site04.png"
+      ]
+    },
+    {
+      "id": 57,
+      "isOpen": 1,
+      "isFeatured": false,
+      "name": "대덕그룹 그룹웨어 구축",
+      "category": "신규구축",
+      "participation": {
+        "publish": 100
+      },
+      "platform": "web",
+      "date": {
+        "start": "2023-03-15",
+        "end": "2023-07-24"
+      },
+      "skills": [
+        "HTML5",
+        "CSS3",
+        "JQuery"
+      ],
+      "discription": [
+        "대덕그룹 그룹웨어 구축 프로젝트의 퍼블리싱 담당으로 참여 하였습니다.",
+        "백엔드 언어는 닷넷(ASPX)입니다."
+      ],
+      "thumbnail": "/09_covision/08_daeduck/site_thum.png",
+      "images" : [
+        "/09_covision/08_daeduck/site01.png",
+        "/09_covision/08_daeduck/site02.png"
+      ]
+    },
+    {
+      "id": 58,
+      "isOpen": 1,
+      "isFeatured": true,
+      "name": "가야대학교 전자결재 구축",
+      "category": "신규구축",
+      "participation": {
+        "publish": 100
+      },
+      "platform": "web",
+      "date": {
+        "start": "2023-05-31",
+        "end": "2023-08-31"
+      },
+      "skills": [
+        "HTML5",
+        "CSS3",
+        "JQuery"
+      ],
+      "discription": [
+        "가야대학교 전자결재 구축 프로젝트의 퍼블리싱 담당으로 참여 하였습니다.",
+        "백엔드 언어는 JAVA(JSP)입니다."
+      ],
+      "thumbnail": "/09_covision/09_kaya_univ/site_thum.png",
+      "images" : [
+        "/09_covision/09_kaya_univ/site01.png"
+      ]
+    },
+    {
+      "id": 59,
+      "isOpen": 1,
+      "isFeatured": true,
+      "name": "인지그룹 그룹웨어 구축",
+      "category": "신규구축",
+      "participation": {
+        "publish": 100
+      },
+      "platform": "web",
+      "date": {
+        "start": "2023-05-31",
+        "end": "2023-08-31"
+      },
+      "skills": [
+        "HTML5",
+        "CSS3",
+        "JQuery"
+      ],
+      "discription": [
+        "인지그룹 그룹웨어 구축 프로젝트의 퍼블리싱 담당으로 참여 하였습니다.",
+        "백엔드 언어는 JAVA(JSP)입니다."
+      ],
+      "thumbnail": "/09_covision/11_inzigroup/site_thum.png",
+      "images" : [
+        "/09_covision/11_inzigroup/site01.png",
+        "/09_covision/11_inzigroup/site02.png"
+      ]
+    },
+    {
+      "id": 60,
+      "isOpen": 1,
+      "isFeatured": false,
+      "name": "제이시스메디칼 전자결재 구축",
+      "category": "신규구축",
+      "participation": {
+        "publish": 100
+      },
+      "platform": "web",
+      "date": {
+        "start": "2023-07-17",
+        "end": "2023-11-20"
+      },
+      "skills": [
+        "HTML5",
+        "CSS3",
+        "JQuery"
+      ],
+      "discription": [
+        "제이시스메디칼 전자결재 구축 프로젝트의 퍼블리싱 담당으로 참여 하였습니다.",
+        "백엔드 언어는 JAVA(JSP)입니다."
+      ],
+      "thumbnail": "/09_covision/12_jeisys/site_thum.png",
+      "images" : [
+        "/09_covision/12_jeisys/site01.png",
+        "/09_covision/12_jeisys/site02.png"
+      ]
+    },
+    {
+      "id": 61,
+      "isOpen": 1,
+      "isFeatured": true,
+      "name": "호반그룹 그룹웨어 구축",
+      "category": "신규구축",
+      "participation": {
+        "publish": 100
+      },
+      "platform": "web",
+      "date": {
+        "start": "2023-06-19",
+        "end": "2023-12-18"
+      },
+      "skills": [
+        "HTML5",
+        "CSS3",
+        "JQuery"
+      ],
+      "discription": [
+        "호반그룹 그룹웨어 구축 프로젝트의 퍼블리싱 담당으로 참여 하였습니다.",
+        "백엔드 언어는 JAVA(JSP)입니다."
+      ],
+      "thumbnail": "/09_covision/13_hoban/site_thum.png",
+      "images" : [
+        "/09_covision/13_hoban/site01.png",
+        "/09_covision/13_hoban/site02.png",
+        "/09_covision/13_hoban/site03.png",
+        "/09_covision/13_hoban/site04.png"
+      ]
+    },
+    {
+      "id": 62,
+      "isOpen": 1,
+      "isFeatured": true,
+      "name": "LS그룹 그룹웨어 구축",
+      "category": "신규구축",
+      "participation": {
+        "publish": 100
+      },
+      "platform": "web",
+      "date": {
+        "start": "2023-07-10",
+        "end": "2024-01-15"
+      },
+      "skills": [
+        "HTML5",
+        "CSS3",
+        "JQuery"
+      ],
+      "discription": [
+        "LS그룹 그룹웨어 구축 프로젝트의 퍼블리싱 담당으로 참여 하였습니다.",
+        "백엔드 언어는 닷넷(ASPX)입니다.",
+        "PC웹 환경 외에도 Teams Add In 환경도 함께 고려하는 퍼블리싱 작업을 진행하였습니다."
+      ],
+      "thumbnail": "/09_covision/14_ls/site_thum.png",
+      "images" : [
+        "/09_covision/14_ls/site01.png",
+        "/09_covision/14_ls/site02.png",
+        "/09_covision/14_ls/site03.png",
+        "/09_covision/14_ls/site04.png",
+        "/09_covision/14_ls/site05.png",
+        "/09_covision/14_ls/site06.png",
+        "/09_covision/14_ls/site07.png",
+        "/09_covision/14_ls/site08.png",
+        "/09_covision/14_ls/site09.png",
+        "/09_covision/14_ls/site10.png"
+      ]
+    },
+    {
+      "id": 63,
+      "isOpen": 1,
+      "isFeatured": false,
+      "name": "NH 아문디 그룹웨어 구축",
+      "category": "신규구축",
+      "participation": {
+        "publish": 100
+      },
+      "platform": "web",
+      "date": {
+        "start": "2023-09-25",
+        "end": "2023-12-29"
+      },
+      "skills": [
+        "HTML5",
+        "CSS3",
+        "JQuery"
+      ],
+      "discription": [
+        "NH 아문디 그룹웨어 구축 프로젝트의 퍼블리싱 담당으로 참여 하였습니다.",
+        "백엔드 언어는 닷넷(ASPX)입니다."
+      ],
+      "thumbnail": "/09_covision/15_nh_amundi/site_thum.png",
+      "images" : [
+        "/09_covision/15_nh_amundi/site01.png",
+        "/09_covision/15_nh_amundi/site02.png",
+        "/09_covision/15_nh_amundi/site03.png"
+      ]
+    },
+    {
+      "id": 64,
+      "isOpen": 1,
+      "isFeatured": true,
+      "name": "휠라홀딩스 그룹웨어 구축",
+      "category": "신규구축",
+      "participation": {
+        "publish": 100
+      },
+      "platform": "web",
+      "date": {
+        "start": "2023-08-21",
+        "end": "2024-01-24"
+      },
+      "skills": [
+        "HTML5",
+        "CSS3",
+        "JQuery"
+      ],
+      "discription": [
+        "휠라홀딩스 그룹웨어 구축 프로젝트의 퍼블리싱 담당으로 참여 하였습니다.",
+        "백엔드 언어는 JAVA(JSP)입니다."
+      ],
+      "thumbnail": "/09_covision/16_fila/site03.png",
+      "images" : [
+        "/09_covision/16_fila/site01.png",
+        "/09_covision/16_fila/site02.png",
+        "/09_covision/16_fila/site03.png"
+      ]
+    },
+    {
+      "id": 65,
+      "isOpen": 1,
+      "isFeatured": false,
+      "name": "BNK금융그룹 노후인프라 교체 사업 프로젝트",
+      "category": "유지보수",
+      "participation": {
+        "publish": 100
+      },
+      "platform": "web",
+      "date": {
+        "start": "2023-08-14",
+        "end": "2023-12-02"
+      },
+      "skills": [
+        "XHTML",
+        "CSS",
+        "JQuery"
+      ],
+      "discription": [
+        "BNK금융그룹 노후인프라 교체 사업 프로젝트의 퍼블리싱 담당으로 참여 하였습니다.",
+        "2013년에 만들어진 구 포탈을 2019년에 디자인만 올려서 변경하였고, 소스 변경 없이 CSS만 수정하여 리뉴얼 하는 프로젝트입니다.",
+        "백엔드 언어는 닷넷(ASPX)입니다."
+      ],
+      "thumbnail": "/09_covision/17_bnk/site_thum.png",
+      "images" : [
+        "/09_covision/17_bnk/site01.png"
+      ]
+    },
+    {
+      "id": 66,
+      "isOpen": 1,
+      "isFeatured": false,
+      "name": "메트라이프 모바일 그룹웨어 구축",
+      "category": "신규구축",
+      "participation": {
+        "publish": 100
+      },
+      "platform": "web",
+      "date": {
+        "start": "2023-01-12",
+        "end": "2023-02-22"
+      },
+      "skills": [
+        "HTML5",
+        "CSS3",
+        "JQuery"
+      ],
+      "discription": [
+        "메트라이프 모바일 그룹웨어 구축 프로젝트의 퍼블리싱 담당으로 참여 하였습니다.",
+        "백엔드 언어는 닷넷(ASPX)입니다."
+      ],
+      "thumbnail": "/09_covision/18_metlife/site_thum.png",
+      "images" : [
+        "/09_covision/18_metlife/site01.png",
+        "/09_covision/18_metlife/site02.png"
+      ]
+    },
+    {
+      "id": 67,
+      "isOpen": 1,
+      "isFeatured": true,
+      "name": "한국무역협회 그룹웨어 구축",
+      "category": "신규구축",
+      "participation": {
+        "publish": 100
+      },
+      "platform": "web",
+      "date": {
+        "start": "2023-08-23",
+        "end": "2024-08-02"
+      },
+      "skills": [
+        "HTML5",
+        "CSS3",
+        "JQuery"
+      ],
+      "discription": [
+        "한국무역협회 그룹웨어 구축 프로젝트의 퍼블리싱 담당으로 참여 하였습니다.",
+        "백엔드 언어는 JAVA(JSP)입니다."
+      ],
+      "thumbnail": "/09_covision/19_kita/site_thum.png",
+      "images" : [
+        "/09_covision/19_kita/site01.png",
+        "/09_covision/19_kita/site02.png",
+        "/09_covision/19_kita/site03.png",
+        "/09_covision/19_kita/site04.png",
+        "/09_covision/19_kita/site05.png",
+        "/09_covision/19_kita/site06.png"
+      ]
+    },
+    {
+      "id": 68,
+      "isOpen": 2,
+      "isFeatured": true,
+      "name": "코비폴리오",
+      "category": "개인프로젝트",
+      "participation": {
+        "publish": 100,
+        "development": 100,
+        "planning": 100
+      },
+      "platform": "web",
+      "date": {
+        "start": "2023-04-11",
+        "end": "2023-09-08"
+      },
+      "skills": [
+        "HTML5",
+        "CSS3",
+        "JQuery"
+      ],
+      "discription": [
+        "코비젼에서 개인 역량을 기르기 위해 시행하는 스터디에서 vue를 스터디하였습니다.",
+        "학습한 vue를 이용하여 코비젼 프로젝트 포트폴리오, 코비폴리오 사이트를 개설한다는 컨셉으로 프로젝트를 진행하였습니다."
+      ],
+      "thumbnail": "/02_study/05_covifoilo/site_thum.png",
+      "images" : [
+        "/02_study/05_covifoilo/site01.png",
+        "/02_study/05_covifoilo/site02.png",
+        "/02_study/05_covifoilo/site03.png"
+      ]
+    },
+    {
+      "id": 69,
+      "isOpen": 2,
+      "isFeatured": true,
+      "name": "장서연 포트폴리오 사이트 리뉴얼",
+      "category": "개인프로젝트",
+      "participation": {
+        "publish": 100,
+        "development": 100,
+        "design": 100,
+        "planning": 100
+      },
+      "platform": "web",
+      "date": {
+        "start": "2024-05-27",
+        "end": "2024-06-03"
+      },
+      "skills": [
+        "HTML5",
+        "CSS3",
+        "react"
+      ],
+      "discription": [
+        "react 스터디를 하며 학습한 코드를 이용하여 개인 포트폴리오 사이트를 리뉴얼 하였습니다."
+      ],
+      "thumbnail": "/02_study/06_portfoilo/site_thum.png",
+      "images" : [
+        "/02_study/06_portfoilo/site01.png",
+        "/02_study/06_portfoilo/site02.png",
+        "/02_study/06_portfoilo/site03.png"
       ]
     }
   ]
