@@ -29,25 +29,26 @@
 
     &__inner {
         $profile-top    : $header-height + $profile-background-gap;
-        position        : relative;
+        --inner-padding : calc( var(--component-gap) / 2);
 
+        position        : relative;
         z-index         : 2;
         display         : flex;
         align-items     : center;
         flex-direction  : column;
         padding         : $profile-top var(--inner-padding) var(--inner-padding);
-        gap             : var(--inner-padding);
-        --inner-padding : calc(var(--component-gap) * 1.6);
+        gap             : var(--component-gap);
 
         @include tablet {
             align-items    : flex-start;
             flex-direction : row;
+            --inner-padding : calc(var(--component-gap) * 1.6);
         }
 
         .profile {
             flex          : 0 1 auto;
             width         : 100%;
-            padding       : var(--component-gap);
+            padding       : var(--component-gap) calc(var(--component-gap) / 2);
             border-radius : var(--component-radius);
             background    : var(--paper-primary);
             box-shadow    : var(--component-shadow);
@@ -59,6 +60,7 @@
                 flex       : 0 0 auto;
                 width      : 360px;
                 max-height : calc(100vh - 120px);
+                padding    : var(--component-gap);
                 @include scrollbar(#DDDDDD);
             }
         }
@@ -76,8 +78,7 @@
 
             .works-top {
                 display          : flex;
-                align-items      : center;
-                padding          : 12px 8px;
+                padding          : 12px;
                 border           : 1px solid rgba(var(--theme-primary-rgb), 0.4);
                 border-radius    : var(--component-radius);
                 background-color : rgba(255, 255, 255, 0.2);
@@ -87,6 +88,8 @@
                     z-index         : 10;
                     top             : $header-height;
                     backdrop-filter : blur(12px);
+                    align-items      : center;
+                    background-color: rgba(255, 255, 255, 0.2);
                 }
 
                 .filter {
