@@ -5,25 +5,25 @@
 
     &__title {
         @include reset-button;
+        font-size  : 1.14em;
         width      : 100%;
         padding    : 8px;
         transition : all 0.2s;
         color      : var(--theme-primary);
-        font-size  : 1.14em;
 
         & > span {
+            font-weight : $text-font-weight-bold;
             flex        : 0 1 auto;
             width       : 100%;
             text-align  : left;
-            font-weight : $text-font-weight-bold;
         }
 
         & > i {
-            flex            : 0 0 auto;
             display         : inline-flex;
-            align-items     : center;
-            justify-content : center;
             overflow        : hidden;
+            align-items     : center;
+            flex            : 0 0 auto;
+            justify-content : center;
             width           : 24px;
             height          : 24px;
             margin-left     : auto;

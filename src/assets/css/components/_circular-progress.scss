@@ -16,28 +16,34 @@
 
     &__bar {
         fill           : none;
-        stroke         : var(--theme-primary);
+        stroke         : url(#gradient);
         stroke-linecap : round;
     }
 
     &__value {
-        display         : flex;
+        font-size       : 1rem;
         position        : absolute;
-        flex-direction  : column;
-        gap             : 4px;
-        align-items     : center;
-        justify-content : center;
         top             : 0;
         right           : 0;
         bottom          : 0;
         left            : 0;
+        display         : flex;
+        align-items     : center;
+        flex-direction  : column;
+        justify-content : center;
         padding         : 20px;
         text-align      : center;
         color           : var(--text-primary);
-        font-size       : 1rem;
+        gap             : 4px;
 
         strong {
             text-transform : uppercase;
+            word-break     : break-all;
+            color          : var(--theme-primary)
+        }
+
+        span {
+
         }
     }
 }

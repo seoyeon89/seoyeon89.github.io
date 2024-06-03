@@ -1,28 +1,28 @@
 .filter {
     display        : flex;
-    text-transform : uppercase;
-    gap:12px;
+    gap            : 12px;
 
     &__dropdown {
-        flex        : 0 0 auto;
+        flex : 0 0 auto;
     }
+
     &__result {
-        flex        : 0 1 auto;
         display     : flex;
+        align-items : center;
+        flex        : 0 1 auto;
         flex-wrap   : wrap;
         gap         : 8px;
-        align-items : center;
 
         &__item {
-            flex        : 0 0 auto;
+            line-height : 16px;
             display     : flex;
-            gap         : 6px;
             align-items : center;
+            flex        : 0 0 auto;
             min-height  : 20px;
             padding     : 4px 8px;
-            line-height : 16px;
             color       : var(--theme-primary);
             background  : var(--paper-endpoint);
+            gap         : 6px;
 
             & > button {
                 @include reset-button;
@@ -30,6 +30,11 @@
                 & > div {
                     @include icons();
                 }
+            }
+            & > em {
+                font-style: normal;
+                font-weight: $text-font-weight-bold;
+                text-transform : uppercase;
             }
         }
     }

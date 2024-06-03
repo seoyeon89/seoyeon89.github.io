@@ -3,11 +3,11 @@
     flex-direction : column;
 
     &__item {
-        flex           : 0 1 auto;
         display        : flex;
+        flex           : 0 1 auto;
         flex-direction : column;
-        gap            : 8px;
         width          : 100%;
+        gap            : 8px;
 
         &__title {
             font-weight : $text-font-weight-bold;
