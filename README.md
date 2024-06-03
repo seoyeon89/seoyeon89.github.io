@@ -1,1 +1,0 @@
-# seoyeon89.github.io
