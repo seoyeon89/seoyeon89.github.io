@@ -1,8 +1,8 @@
 .ui-checkbox {
     display     : inline-flex;
+    gap         : 8px;
     align-items : center;
     cursor      : pointer;
-    gap         : 8px;
 
     & > input {
         transform    : scale(1.2);
@@ -14,8 +14,8 @@
     }
 
     & > em {
+        text-transform : uppercase;
         font-size      : 0.9em;
         font-style     : normal;
-        text-transform : uppercase;
     }
 }

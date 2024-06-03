@@ -23,11 +23,11 @@
       "discription": [
         "대학내 과일 판매 제안 프로젝트로, 대학 수업 시간에 작업한 프로젝트입니다.<br/>BI 참여 및 프로젝트 내의 홈페이지 작업을 전담하였습니다. 홈페이지는 반응형으로 작업되었습니다."
       ],
-      "thumbnail": "/01_univers/01_monday/monday_thum.png",
+      "thumbnail": "01_univers/01_monday/monday_thum.png",
       "images": [
-        "/01_univers/01_monday/monday1.gif",
-        "/01_univers/01_monday/monday2.gif",
-        "/01_univers/01_monday/monday3.gif"
+        "01_univers/01_monday/monday1.gif",
+        "01_univers/01_monday/monday2.gif",
+        "01_univers/01_monday/monday3.gif"
       ]
     },
     {
@@ -51,10 +51,10 @@
       "discription": [
         "학원의 수강 정보를 알려주는 포스터 제작 하였습니다."
       ],
-      "thumbnail": "/03_yhlajeon/poster/poster_thum.png",
+      "thumbnail": "03_yhlajeon/poster/poster_thum.png",
       "images": [
-        "/03_yhlajeon/poster/poster1.jpg",
-        "/03_yhlajeon/poster/poster2.jpg"
+        "03_yhlajeon/poster/poster1.jpg",
+        "03_yhlajeon/poster/poster2.jpg"
       ]
     },
     {
@@ -78,10 +78,10 @@
       "discription": [
         "학원의 수강 정보를 알려주는 리플렛 제작하였습니다."
       ],
-      "thumbnail": "/03_yhlajeon/leaflet/leaflet_thum.png",
+      "thumbnail": "03_yhlajeon/leaflet/leaflet_thum.png",
       "images": [
-        "/03_yhlajeon/leaflet/leaflet1.jpg",
-        "/03_yhlajeon/leaflet/leaflet2.jpg"
+        "03_yhlajeon/leaflet/leaflet1.jpg",
+        "03_yhlajeon/leaflet/leaflet2.jpg"
       ]
     },
     {
@@ -103,9 +103,9 @@
       "discription": [
         "자동차에 관심있는 사람을 위한 SNS 브랜드 카룻(CAROUTE)을 위한 BI 디자인을 진행하였습니다."
       ],
-      "thumbnail": "/04_senchi/logo/logo.png",
+      "thumbnail": "04_senchi/logo/logo.png",
       "images": [
-        "/04_senchi/logo/logo.jpg"
+        "04_senchi/logo/logo.jpg"
       ]
     },
     {
@@ -132,10 +132,10 @@
       "discription": [
         "학원의 수강 정보를 알려주는 포스터 제작 하였습니다."
       ],
-      "thumbnail": "/02_study/01_noin/mobile_thum.png",
+      "thumbnail": "02_study/01_noin/mobile_thum.png",
       "images" : [
-        "/02_study/01_noin/mobile1.jpg",
-        "/02_study/01_noin/mobile2.jpg"
+        "02_study/01_noin/mobile1.jpg",
+        "02_study/01_noin/mobile2.jpg"
       ],
       "links" : [
         "https://fool89.cafe24.com/project/siribm/"
@@ -165,13 +165,13 @@
       "discription": [
         "건강한 노년의 이미지를 표현하기위해 녹색을 메인컬러, 오렌지색을 키 컬러로 사용하였습니다. 또한 기존의 사이트의 정보를 찾기 어려운 점을 해결하기 위해 메뉴를 조정하였습니다."
       ],
-      "thumbnail": "/02_study/01_noin/site_thum.png",
+      "thumbnail": "02_study/01_noin/site_thum.png",
       "images": [
-        "/02_study/01_noin/site1.jpg",
-        "/02_study/01_noin/site2.jpg",
-        "/02_study/01_noin/site3.jpg",
-        "/02_study/01_noin/site4.jpg",
-        "/02_study/01_noin/site5.jpg"
+        "02_study/01_noin/site1.jpg",
+        "02_study/01_noin/site2.jpg",
+        "02_study/01_noin/site3.jpg",
+        "02_study/01_noin/site4.jpg",
+        "02_study/01_noin/site5.jpg"
       ],
       "links": [
         "http://fool89.cafe24.com/project/siribw/"
@@ -201,11 +201,11 @@
       "discription": [
         "자연의 이미지를 살리기 위해 큰 이미지를 배경에 깔아 시원하고 탁 트인 느낌이 들 수 있게 작업하였습니다. 하단에 모듈 형태의 메뉴로 산만하지 않고 정리된 느낌이 들 수 있도록 진행하였습니다."
       ],
-      "thumbnail": "/02_study/02_sumok/site_thum.png",
+      "thumbnail": "02_study/02_sumok/site_thum.png",
       "images": [
-        "/02_study/02_sumok/site1.jpg",
-        "/02_study/02_sumok/site2.jpg",
-        "/02_study/02_sumok/site3.jpg"
+        "02_study/02_sumok/site1.jpg",
+        "02_study/02_sumok/site2.jpg",
+        "02_study/02_sumok/site3.jpg"
       ],
       "links": [
         "http://fool89.cafe24.com/project/sumok/"
@@ -237,13 +237,13 @@
       "discription": [
         "masonry 플러그인을 이용하여 창 크기에 따라 갤러리가 유동적으로 변하는 사이트를 의뢰해 주셔서 그에 맞추어 작업하였습니다."
       ],
-      "thumbnail": "/03_yhlajeon/site/site_thum.png",
+      "thumbnail": "03_yhlajeon/site/site_thum.png",
       "images": [
-        "/03_yhlajeon/site/site1.jpg",
-        "/03_yhlajeon/site/site2.jpg",
-        "/03_yhlajeon/site/site3.jpg",
-        "/03_yhlajeon/site/site4.jpg",
-        "/03_yhlajeon/site/site5.jpg"
+        "03_yhlajeon/site/site1.jpg",
+        "03_yhlajeon/site/site2.jpg",
+        "03_yhlajeon/site/site3.jpg",
+        "03_yhlajeon/site/site4.jpg",
+        "03_yhlajeon/site/site5.jpg"
       ],
       "links": [
         "http://www.jeongakart.com/"
@@ -274,11 +274,11 @@
       "discription": [
         "자동차 SNS사이트 전 페이지의 디자인 및 개발. 퍼블리싱 작업을 주로 하였으며, 전문가 등록 페이지 등 일부 PHP 페이지를 직접 개발,유지보수 하기도 하였습니다."
       ],
-      "thumbnail": "/04_senchi/site/site1.jpg",
+      "thumbnail": "04_senchi/site/site1.jpg",
       "images": [
-        "/04_senchi/site/site1.jpg",
-        "/04_senchi/site/site2.jpg",
-        "/04_senchi/site/site3.jpg"
+        "04_senchi/site/site1.jpg",
+        "04_senchi/site/site2.jpg",
+        "04_senchi/site/site3.jpg"
       ]
     },
     {
@@ -304,10 +304,10 @@
       "discription": [
         "시대고시 회원가입 통합화를 위한 프로젝트에서 디자인 시안에 맞춰 페이지 리뉴얼 작업을 진행하였습니다. 시안에 맞춘 HTML 코딩과 CSS 작업, 약관보기의 플러그인을 이용한 스크롤 커스텀, 유효성 검사 등을 작업하였습니다."
       ],
-      "thumbnail": "/05_sidaegosi/00_join/site_thum.png",
+      "thumbnail": "05_sidaegosi/00_join/site_thum.png",
       "images": [
-        "/05_sidaegosi/00_join/site1.png",
-        "/05_sidaegosi/00_join/site2.png"
+        "05_sidaegosi/00_join/site1.png",
+        "05_sidaegosi/00_join/site2.png"
       ]
     },
     {
@@ -332,13 +332,13 @@
       "discription": [
         "시대고시 공무원 강좌를 위한 통합사이트 작업을 하였습니다. 퍼블리싱 및 프론트엔드 전반의 작업을 진행하였습니다."
       ],
-      "thumbnail": "/05_sidaegosi/01_gov/site_thum.png",
+      "thumbnail": "05_sidaegosi/01_gov/site_thum.png",
       "images": [
-        "/05_sidaegosi/01_gov/site1.jpg",
-        "/05_sidaegosi/01_gov/site2.jpg",
-        "/05_sidaegosi/01_gov/site3.jpg",
-        "/05_sidaegosi/01_gov/site4.jpg",
-        "/05_sidaegosi/01_gov/site5.jpg"
+        "05_sidaegosi/01_gov/site1.jpg",
+        "05_sidaegosi/01_gov/site2.jpg",
+        "05_sidaegosi/01_gov/site3.jpg",
+        "05_sidaegosi/01_gov/site4.jpg",
+        "05_sidaegosi/01_gov/site5.jpg"
       ],
       "links": [
         "http://www.sdedu.co.kr/gov/"
@@ -367,11 +367,11 @@
       "discription": [
         "시대고시의 지텔프 상품을 위한 신규 페이지 생성 작업을 진행하였습니다. 시안에 맞춰 HTML/CSS/제이쿼리 작업을 진행하였습니다.공통소스를 제외한 화면상의 모든 페이지의 마크업,스크립트를 작업하였습니다."
       ],
-      "thumbnail": "/05_sidaegosi/02_gtelp/site_thum.png",
+      "thumbnail": "05_sidaegosi/02_gtelp/site_thum.png",
       "images": [
-        "/05_sidaegosi/02_gtelp/main.jpg",
-        "/05_sidaegosi/02_gtelp/apply.jpg",
-        "/05_sidaegosi/02_gtelp/test_info.png"
+        "05_sidaegosi/02_gtelp/main.jpg",
+        "05_sidaegosi/02_gtelp/apply.jpg",
+        "05_sidaegosi/02_gtelp/test_info.png"
       ]
     },
     {
@@ -394,12 +394,12 @@
       "discription": [
         "LESS를 사용하여 안드로이드/아이폰을 위한 하이브리드 어플리케이션의 마크업과 css 작업을 진행하였습니다."
       ],
-      "thumbnail": "/05_sidaegosi/04_app/app_thum.png",
+      "thumbnail": "05_sidaegosi/04_app/app_thum.png",
       "images": [
-        "/05_sidaegosi/04_app/iphon_01.png",
-        "/05_sidaegosi/04_app/iphon_02.png",
-        "/05_sidaegosi/04_app/android_01.png",
-        "/05_sidaegosi/04_app/android_02.png"
+        "05_sidaegosi/04_app/iphon_01.png",
+        "05_sidaegosi/04_app/iphon_02.png",
+        "05_sidaegosi/04_app/android_01.png",
+        "05_sidaegosi/04_app/android_02.png"
       ]
     },
     {
@@ -424,12 +424,12 @@
       "discription": [
         "시대고시의 평생교육원 사이트 작업을 진행하였습니다. 시안에 맞춰 HTML/CSS/제이쿼리 작업을 진행하였습니다.공통소스를 제외한 화면상의 모든 페이지의 마크업,스크립트를 작업하였습니다."
       ],
-      "thumbnail": "/05_sidaegosi/05_lifeedu/site_thum.png",
+      "thumbnail": "05_sidaegosi/05_lifeedu/site_thum.png",
       "images": [
-        "/05_sidaegosi/05_lifeedu/site1.png",
-        "/05_sidaegosi/05_lifeedu/site2.png",
-        "/05_sidaegosi/05_lifeedu/site3.png",
-        "/05_sidaegosi/05_lifeedu/site4.png"
+        "05_sidaegosi/05_lifeedu/site1.png",
+        "05_sidaegosi/05_lifeedu/site2.png",
+        "05_sidaegosi/05_lifeedu/site3.png",
+        "05_sidaegosi/05_lifeedu/site4.png"
       ]
     },
     {
@@ -455,12 +455,12 @@
       "discription": [
         "시대고시의 조경기능사 상품을 위한 리뉴얼 페이지 작업을 진행하였습니다. 시안에 맞춰 HTML/CSS/제이쿼리 작업을 진행하였습니다.공통소스를 제외한 화면상의 모든 페이지의 마크업,스크립트를 작업하였습니다."
       ],
-      "thumbnail": "/05_sidaegosi/07_landscape/site_thum.jpg",
+      "thumbnail": "05_sidaegosi/07_landscape/site_thum.jpg",
       "images": [
-        "/05_sidaegosi/07_landscape/site1.jpg",
-        "/05_sidaegosi/07_landscape/site2.jpg",
-        "/05_sidaegosi/07_landscape/site3.jpg",
-        "/05_sidaegosi/07_landscape/site4.jpg"
+        "05_sidaegosi/07_landscape/site1.jpg",
+        "05_sidaegosi/07_landscape/site2.jpg",
+        "05_sidaegosi/07_landscape/site3.jpg",
+        "05_sidaegosi/07_landscape/site4.jpg"
       ]
     },
     {
@@ -486,12 +486,12 @@
       "discription": [
         "시대고시의 드론 상품을 위한 신규 페이지 작업을 진행하였습니다. 시안에 맞춰 HTML/CSS/제이쿼리 작업을 진행하였습니다.공통소스를 제외한 화면상의 모든 페이지의 마크업,스크립트를 작업하였습니다."
       ],
-      "thumbnail": "/05_sidaegosi/08_dronepokon/site_thum.png",
+      "thumbnail": "05_sidaegosi/08_dronepokon/site_thum.png",
       "images": [
-        "/05_sidaegosi/08_dronepokon/site1.jpg",
-        "/05_sidaegosi/08_dronepokon/site2.jpg",
-        "/05_sidaegosi/08_dronepokon/site3.jpg",
-        "/05_sidaegosi/08_dronepokon/site4.jpg"
+        "05_sidaegosi/08_dronepokon/site1.jpg",
+        "05_sidaegosi/08_dronepokon/site2.jpg",
+        "05_sidaegosi/08_dronepokon/site3.jpg",
+        "05_sidaegosi/08_dronepokon/site4.jpg"
       ]
     },
     {
@@ -517,12 +517,12 @@
       "discription": [
         "시대고시의 유통관리사 상품을 위한 리뉴얼 작업을 진행하였습니다. 시안에 맞춰 HTML/CSS/제이쿼리 작업을 진행하였습니다.공통소스를 제외한 화면상의 모든 페이지의 마크업,스크립트를 작업하였습니다."
       ],
-      "thumbnail": "/05_sidaegosi/09_distribution/site_thum.png",
+      "thumbnail": "05_sidaegosi/09_distribution/site_thum.png",
       "images": [
-        "/05_sidaegosi/09_distribution/site1.jpg",
-        "/05_sidaegosi/09_distribution/site2.jpg",
-        "/05_sidaegosi/09_distribution/site3.jpg",
-        "/05_sidaegosi/09_distribution/site4.jpg"
+        "05_sidaegosi/09_distribution/site1.jpg",
+        "05_sidaegosi/09_distribution/site2.jpg",
+        "05_sidaegosi/09_distribution/site3.jpg",
+        "05_sidaegosi/09_distribution/site4.jpg"
       ]
     },
     {
@@ -548,13 +548,13 @@
       "discription": [
         "시대고시의 유통관리사 상품을 위한 리뉴얼 작업을 진행하였습니다. 시안에 맞춰 HTML/CSS/제이쿼리 작업을 진행하였습니다.공통소스를 제외한 화면상의 모든 페이지의 마크업,스크립트를 작업하였습니다."
       ],
-      "thumbnail": "/05_sidaegosi/06_drone/site/site_thum.png",
+      "thumbnail": "05_sidaegosi/06_drone/site/site_thum.png",
       "images": [
-        "/05_sidaegosi/06_drone/site/site1.jpg",
-        "/05_sidaegosi/06_drone/site/site2.jpg",
-        "/05_sidaegosi/06_drone/site/site3.jpg",
-        "/05_sidaegosi/06_drone/site/site4.jpg",
-        "/05_sidaegosi/06_drone/site/site5.jpg"
+        "05_sidaegosi/06_drone/site/site1.jpg",
+        "05_sidaegosi/06_drone/site/site2.jpg",
+        "05_sidaegosi/06_drone/site/site3.jpg",
+        "05_sidaegosi/06_drone/site/site4.jpg",
+        "05_sidaegosi/06_drone/site/site5.jpg"
       ]
     },
     {
@@ -580,13 +580,13 @@
       "discription": [
         "시대고시의 오프라인 드론교육원 모바일 작업을 진행하였습니다. 시안에 맞춰 HTML/CSS/제이쿼리 작업을 진행하였습니다.공통소스를 제외한 화면상의 모든 페이지의 마크업,스크립트를 작업하였습니다."
       ],
-      "thumbnail": "/05_sidaegosi/06_drone/mobile/site_thum.png",
+      "thumbnail": "05_sidaegosi/06_drone/mobile/site_thum.png",
       "images": [
-        "/05_sidaegosi/06_drone/mobile/site1.jpg",
-        "/05_sidaegosi/06_drone/mobile/site2.jpg",
-        "/05_sidaegosi/06_drone/mobile/site3.jpg",
-        "/05_sidaegosi/06_drone/mobile/site4.jpg",
-        "/05_sidaegosi/06_drone/mobile/site5.jpg"
+        "05_sidaegosi/06_drone/mobile/site1.jpg",
+        "05_sidaegosi/06_drone/mobile/site2.jpg",
+        "05_sidaegosi/06_drone/mobile/site3.jpg",
+        "05_sidaegosi/06_drone/mobile/site4.jpg",
+        "05_sidaegosi/06_drone/mobile/site5.jpg"
       ]
     },
     {
@@ -612,11 +612,11 @@
       "discription": [
         "시대고시의 직업상담사 상품을 위한 리뉴얼 작업을 진행하였습니다. 시안에 맞춰 HTML/CSS/제이쿼리 작업을 진행하였습니다.공통소스를 제외한 화면상의 모든 페이지의 마크업,스크립트를 작업하였습니다."
       ],
-      "thumbnail": "/05_sidaegosi/10_vocational_counselor/site_thum.png",
+      "thumbnail": "05_sidaegosi/10_vocational_counselor/site_thum.png",
       "images": [
-        "/05_sidaegosi/10_vocational_counselor/site1.jpg",
-        "/05_sidaegosi/10_vocational_counselor/site2.jpg",
-        "/05_sidaegosi/10_vocational_counselor/site3.jpg"
+        "05_sidaegosi/10_vocational_counselor/site1.jpg",
+        "05_sidaegosi/10_vocational_counselor/site2.jpg",
+        "05_sidaegosi/10_vocational_counselor/site3.jpg"
       ]
     },
     {
@@ -642,12 +642,12 @@
       "discription": [
         "시대고시의 사회조사분석사 상품을 위한 리뉴얼 작업을 진행하였습니다. 시안에 맞춰 HTML/CSS/제이쿼리 작업을 진행하였습니다.공통소스를 제외한 화면상의 모든 페이지의 마크업,스크립트를 작업하였습니다."
       ],
-      "thumbnail": "/05_sidaegosi/11_social_research/site_thum.png",
+      "thumbnail": "05_sidaegosi/11_social_research/site_thum.png",
       "images": [
-        "/05_sidaegosi/11_social_research/site1.jpg",
-        "/05_sidaegosi/11_social_research/site2.jpg",
-        "/05_sidaegosi/11_social_research/site3.jpg",
-        "/05_sidaegosi/11_social_research/site4.jpg"
+        "05_sidaegosi/11_social_research/site1.jpg",
+        "05_sidaegosi/11_social_research/site2.jpg",
+        "05_sidaegosi/11_social_research/site3.jpg",
+        "05_sidaegosi/11_social_research/site4.jpg"
       ]
     },
     {
@@ -673,11 +673,11 @@
       "discription": [
         "시대고시의 경비지도사 상품을 위한 리뉴얼 작업을 진행하였습니다. 시안에 맞춰 HTML/CSS/제이쿼리 작업을 진행하였습니다.공통소스를 제외한 화면상의 모든 페이지의 마크업,스크립트를 작업하였습니다."
       ],
-      "thumbnail": "/05_sidaegosi/12_security/site_thum.png",
+      "thumbnail": "05_sidaegosi/12_security/site_thum.png",
       "images": [
-        "/05_sidaegosi/12_security/site1.jpg",
-        "/05_sidaegosi/12_security/site2.jpg",
-        "/05_sidaegosi/12_security/site3.jpg"
+        "05_sidaegosi/12_security/site1.jpg",
+        "05_sidaegosi/12_security/site2.jpg",
+        "05_sidaegosi/12_security/site3.jpg"
       ]
     },
     {
@@ -703,12 +703,12 @@
       "discription": [
         "시대고시의 임상심리사 리뉴얼 작업을 진행하였습니다. 시안에 맞춰 HTML/CSS/제이쿼리 작업을 진행하였습니다.공통소스를 제외한 화면상의 모든 페이지의 마크업,스크립트를 작업하였습니다."
       ],
-      "thumbnail": "/05_sidaegosi/13_imsang/site_thum.png",
+      "thumbnail": "05_sidaegosi/13_imsang/site_thum.png",
       "images": [
-        "/05_sidaegosi/13_imsang/site1.jpg",
-        "/05_sidaegosi/13_imsang/site2.jpg",
-        "/05_sidaegosi/13_imsang/site3.jpg",
-        "/05_sidaegosi/13_imsang/site4.jpg"
+        "05_sidaegosi/13_imsang/site1.jpg",
+        "05_sidaegosi/13_imsang/site2.jpg",
+        "05_sidaegosi/13_imsang/site3.jpg",
+        "05_sidaegosi/13_imsang/site4.jpg"
       ]
     },
     {
@@ -734,12 +734,12 @@
       "discription": [
         "시대고시의 위생사 리뉴얼 작업을 진행하였습니다. 시안에 맞춰 HTML/CSS/제이쿼리 작업을 진행하였습니다.공통소스를 제외한 화면상의 모든 페이지의 마크업,스크립트를 작업하였습니다."
       ],
-      "thumbnail": "/05_sidaegosi/14_wss/site_thum.png",
+      "thumbnail": "05_sidaegosi/14_wss/site_thum.png",
       "images": [
-        "/05_sidaegosi/14_wss/site1.jpg",
-        "/05_sidaegosi/14_wss/site2.jpg",
-        "/05_sidaegosi/14_wss/site3.jpg",
-        "/05_sidaegosi/14_wss/site4.jpg"
+        "05_sidaegosi/14_wss/site1.jpg",
+        "05_sidaegosi/14_wss/site2.jpg",
+        "05_sidaegosi/14_wss/site3.jpg",
+        "05_sidaegosi/14_wss/site4.jpg"
       ]
     },
     {
@@ -765,12 +765,12 @@
       "discription": [
         "시대고시의 관광종사원 리뉴얼 작업을 진행하였습니다. 시안에 맞춰 HTML/CSS/제이쿼리 작업을 진행하였습니다.공통소스를 제외한 화면상의 모든 페이지의 마크업,스크립트를 작업하였습니다."
       ],
-      "thumbnail": "/05_sidaegosi/15_tourism/site_thum.png",
+      "thumbnail": "05_sidaegosi/15_tourism/site_thum.png",
       "images": [
-        "/05_sidaegosi/15_tourism/site1.jpg",
-        "/05_sidaegosi/15_tourism/site2.jpg",
-        "/05_sidaegosi/15_tourism/site3.jpg",
-        "/05_sidaegosi/15_tourism/site4.jpg"
+        "05_sidaegosi/15_tourism/site1.jpg",
+        "05_sidaegosi/15_tourism/site2.jpg",
+        "05_sidaegosi/15_tourism/site3.jpg",
+        "05_sidaegosi/15_tourism/site4.jpg"
       ]
     },
     {
@@ -796,10 +796,10 @@
       "discription": [
         "시대고시의 조경산업기사 리뉴얼 작업을 진행하였습니다. 시안에 맞춰 HTML/CSS/제이쿼리 작업을 진행하였습니다.공통소스를 제외한 화면상의 모든 페이지의 마크업,스크립트를 작업하였습니다."
       ],
-      "thumbnail": "/05_sidaegosi/16_landscape/site_thum.png",
+      "thumbnail": "05_sidaegosi/16_landscape/site_thum.png",
       "images": [
-        "/05_sidaegosi/16_landscape/site1.jpg",
-        "/05_sidaegosi/16_landscape/site2.jpg"
+        "05_sidaegosi/16_landscape/site1.jpg",
+        "05_sidaegosi/16_landscape/site2.jpg"
       ]
     },
     {
@@ -825,11 +825,11 @@
       "discription": [
         "시대고시의 CS리더스관리사 리뉴얼 작업을 진행하였습니다. 시안에 맞춰 HTML/CSS/제이쿼리 작업을 진행하였습니다.공통소스를 제외한 화면상의 모든 페이지의 마크업,스크립트를 작업하였습니다."
       ],
-      "thumbnail": "/05_sidaegosi/17_csleaders/site_thum.png",
+      "thumbnail": "05_sidaegosi/17_csleaders/site_thum.png",
       "images": [
-        "/05_sidaegosi/17_csleaders/site1.jpg",
-        "/05_sidaegosi/17_csleaders/site2.jpg",
-        "/05_sidaegosi/17_csleaders/site3.jpg"
+        "05_sidaegosi/17_csleaders/site1.jpg",
+        "05_sidaegosi/17_csleaders/site2.jpg",
+        "05_sidaegosi/17_csleaders/site3.jpg"
       ]
     },
     {
@@ -855,11 +855,11 @@
       "discription": [
         "시대고시의 공인중개사 리뉴얼 작업을 진행하였습니다. 시안에 맞춰 HTML/CSS/제이쿼리 작업을 진행하였습니다.공통소스를 제외한 화면상의 모든 페이지의 마크업,스크립트를 작업하였습니다."
       ],
-      "thumbnail": "/05_sidaegosi/18_gongin/site_thum.png",
+      "thumbnail": "05_sidaegosi/18_gongin/site_thum.png",
       "images": [
-        "/05_sidaegosi/18_gongin/site1.jpg",
-        "/05_sidaegosi/18_gongin/site2.jpg",
-        "/05_sidaegosi/18_gongin/site3.jpg"
+        "05_sidaegosi/18_gongin/site1.jpg",
+        "05_sidaegosi/18_gongin/site2.jpg",
+        "05_sidaegosi/18_gongin/site3.jpg"
       ]
     },
     {
@@ -885,10 +885,10 @@
       "discription": [
         "시대고시의 마이페이지의 정오표 페이지 구조 변경하엿습니다. 기존에 도서 정보가 보이지 않던 부분에 도서 정보가 노출되도록 변경하였습니다."
       ],
-      "thumbnail": "/05_sidaegosi/19_correct/site_thum.png",
+      "thumbnail": "05_sidaegosi/19_correct/site_thum.png",
       "images": [
-        "/05_sidaegosi/19_correct/site1.jpg",
-        "/05_sidaegosi/19_correct/site2.jpg"
+        "05_sidaegosi/19_correct/site1.jpg",
+        "05_sidaegosi/19_correct/site2.jpg"
       ]
     },
     {
@@ -914,10 +914,10 @@
       "discription": [
         "시대고시의 주택관리사 리뉴얼 작업을 진행하였습니다. 공인중개사와 같은 레이아웃으로 진행하였습니다.공통소스를 제외한 화면상의 모든 페이지의 마크업,스크립트를 작업하였습니다."
       ],
-      "thumbnail": "/05_sidaegosi/20_jutak/site_thum.png",
+      "thumbnail": "05_sidaegosi/20_jutak/site_thum.png",
       "images": [
-        "/05_sidaegosi/20_jutak/site1.jpg",
-        "/05_sidaegosi/20_jutak/site2.jpg"
+        "05_sidaegosi/20_jutak/site1.jpg",
+        "05_sidaegosi/20_jutak/site2.jpg"
       ]
     },
     {
@@ -943,10 +943,10 @@
       "discription": [
         "하드코딩으로 관리하던 각 상품페이지들의 도서소개 영역을 자동화 하고 직접 구매가 가능하도록 리뉴얼 하였습니다."
       ],
-      "thumbnail": "/05_sidaegosi/21_book_view/site_thum.png",
+      "thumbnail": "05_sidaegosi/21_book_view/site_thum.png",
       "images": [
-        "/05_sidaegosi/21_book_view/site1.jpg",
-        "/05_sidaegosi/21_book_view/site2.jpg"
+        "05_sidaegosi/21_book_view/site1.jpg",
+        "05_sidaegosi/21_book_view/site2.jpg"
       ]
     },
     {
@@ -972,10 +972,10 @@
       "discription": [
         "시대고시의 결제 단계 축소를위한 결제 페이지 변경 작업을 하였습니다.  CSS/JS 작업을 진행하였습니다."
       ],
-      "thumbnail": "/05_sidaegosi/22_apply_step/site_thum.png",
+      "thumbnail": "05_sidaegosi/22_apply_step/site_thum.png",
       "images": [
-        "/05_sidaegosi/22_apply_step/site1.jpg",
-        "/05_sidaegosi/22_apply_step/site2.jpg"
+        "05_sidaegosi/22_apply_step/site1.jpg",
+        "05_sidaegosi/22_apply_step/site2.jpg"
       ]
     },
     {
@@ -1001,12 +1001,12 @@
       "discription": [
         "하드코딩으로 관리되던 시대고시의 수강신청페이지 하단의 수강영역을 반 자동화 하였습니다.  AJAX를 이용하여 하단 도서 정보 및 커리큘럼 보기 버튼을 자동화 하였습니다."
       ],
-      "thumbnail": "/05_sidaegosi/23_apply_view/site_thum.png",
+      "thumbnail": "05_sidaegosi/23_apply_view/site_thum.png",
       "images": [
-        "/05_sidaegosi/23_apply_view/site1.jpg",
-        "/05_sidaegosi/23_apply_view/site2.jpg",
-        "/05_sidaegosi/23_apply_view/site3.jpg",
-        "/05_sidaegosi/23_apply_view/site4.jpg"
+        "05_sidaegosi/23_apply_view/site1.jpg",
+        "05_sidaegosi/23_apply_view/site2.jpg",
+        "05_sidaegosi/23_apply_view/site3.jpg",
+        "05_sidaegosi/23_apply_view/site4.jpg"
       ]
     },
     {
@@ -1032,11 +1032,11 @@
       "discription": [
         "시대고시의 사회복지사 리뉴얼 작업을 진행하였습니다. 시안에 맞춰 HTML/CSS/제이쿼리 작업을 진행하였습니다.공통소스를 제외한 화면상의 모든 페이지의 마크업,스크립트를 작업하였습니다."
       ],
-      "thumbnail": "/05_sidaegosi/24_sabok/site_thum.png",
+      "thumbnail": "05_sidaegosi/24_sabok/site_thum.png",
       "images": [
-        "/05_sidaegosi/24_sabok/site1.jpg",
-        "/05_sidaegosi/24_sabok/site2.jpg",
-        "/05_sidaegosi/24_sabok/site3.jpg"
+        "05_sidaegosi/24_sabok/site1.jpg",
+        "05_sidaegosi/24_sabok/site2.jpg",
+        "05_sidaegosi/24_sabok/site3.jpg"
       ]
     },
     {
@@ -1062,11 +1062,11 @@
       "discription": [
         "시대고시의 공인노무사 리뉴얼 작업을 진행하였습니다. 시안에 맞춰 HTML/CSS/제이쿼리 작업을 진행하였습니다.공통소스를 제외한 화면상의 모든 페이지의 마크업,스크립트를 작업하였습니다."
       ],
-      "thumbnail": "/05_sidaegosi/25_gonino/site_thum.png",
+      "thumbnail": "05_sidaegosi/25_gonino/site_thum.png",
       "images": [
-        "/05_sidaegosi/25_gonino/site1.jpg",
-        "/05_sidaegosi/25_gonino/site2.jpg",
-        "/05_sidaegosi/25_gonino/site3.jpg"
+        "05_sidaegosi/25_gonino/site1.jpg",
+        "05_sidaegosi/25_gonino/site2.jpg",
+        "05_sidaegosi/25_gonino/site3.jpg"
       ]
     },
     {
@@ -1092,11 +1092,11 @@
       "discription": [
         "시대고시의 경영지도사 리뉴얼 작업을 진행하였습니다. 시안에 맞춰 HTML/CSS/제이쿼리 작업을 진행하였습니다.공통소스를 제외한 화면상의 모든 페이지의 마크업,스크립트를 작업하였습니다."
       ],
-      "thumbnail": "/05_sidaegosi/26_manageleader/site_thum.png",
+      "thumbnail": "05_sidaegosi/26_manageleader/site_thum.png",
       "images": [
-        "/05_sidaegosi/26_manageleader/site1.jpg",
-        "/05_sidaegosi/26_manageleader/site2.jpg",
-        "/05_sidaegosi/26_manageleader/site3.jpg"
+        "05_sidaegosi/26_manageleader/site1.jpg",
+        "05_sidaegosi/26_manageleader/site2.jpg",
+        "05_sidaegosi/26_manageleader/site3.jpg"
       ]
     },
     {
@@ -1122,11 +1122,11 @@
       "discription": [
         "시대고시의 보세사 리뉴얼 작업을 진행하였습니다. 시안에 맞춰 HTML/CSS/제이쿼리 작업을 진행하였습니다.공통소스를 제외한 화면상의 모든 페이지의 마크업,스크립트를 작업하였습니다."
       ],
-      "thumbnail": "/05_sidaegosi/27_bosesa/site_thum.png",
+      "thumbnail": "05_sidaegosi/27_bosesa/site_thum.png",
       "images": [
-        "/05_sidaegosi/27_bosesa/site1.jpg",
-        "/05_sidaegosi/27_bosesa/site2.jpg",
-        "/05_sidaegosi/27_bosesa/site3.jpg"
+        "05_sidaegosi/27_bosesa/site1.jpg",
+        "05_sidaegosi/27_bosesa/site2.jpg",
+        "05_sidaegosi/27_bosesa/site3.jpg"
       ]
     },
     {
@@ -1152,12 +1152,12 @@
       "discription": [
         "시대고시의 텔레마케팅 리뉴얼 작업을 진행하였습니다. 시안에 맞춰 HTML/CSS/제이쿼리 작업을 진행하였습니다.공통소스를 제외한 화면상의 모든 페이지의 마크업,스크립트를 작업하였습니다."
       ],
-      "thumbnail": "/05_sidaegosi/28_tell/site_thum.png",
+      "thumbnail": "05_sidaegosi/28_tell/site_thum.png",
       "images": [
-        "/05_sidaegosi/28_tell/site1.jpg",
-        "/05_sidaegosi/28_tell/site2.jpg",
-        "/05_sidaegosi/28_tell/site3.jpg",
-        "/05_sidaegosi/28_tell/site4.jpg"
+        "05_sidaegosi/28_tell/site1.jpg",
+        "05_sidaegosi/28_tell/site2.jpg",
+        "05_sidaegosi/28_tell/site3.jpg",
+        "05_sidaegosi/28_tell/site4.jpg"
       ]
     },
     {
@@ -1188,11 +1188,11 @@
         "디자인, 마크업, JS 작업 뿐만 아니라 포트폴리오 작업들은 DB에 입력하여 노출되는 형태로 변경하였습니다. 이에 따라 로그인, 로그아웃, 프로젝트 작성 등의 기능을 추가로 개발하였습니다.",
         "또한 반응형으로 제작하여 모든 디바이스에서 적절한 레이아웃으로 보일 수 있도록 변경하였습니다."
       ],
-      "thumbnail": "/02_study/03_2019pp/site_thum.png",
+      "thumbnail": "02_study/03_2019pp/site_thum.png",
       "images": [
-        "/02_study/03_2019pp/site1.jpg",
-        "/02_study/03_2019pp/site2.jpg",
-        "/02_study/03_2019pp/site3.jpg"
+        "02_study/03_2019pp/site1.jpg",
+        "02_study/03_2019pp/site2.jpg",
+        "02_study/03_2019pp/site3.jpg"
       ],
      "links": [
        "https://fool89.cafe24.com/"
@@ -1223,11 +1223,11 @@
         "해당 프로젝트는 Vue.js 로 작업되었습니다.역기획서 작성 및 ver.2 기획서를 작업하였으며, 시안에 맞춰 HTML5/CSS3 작업을 진행하였고(기여도 100%) 프론트엔드 개발자와 협업하여였습니다.",
         "본 프로젝트는 현재 인천의 인천사랑 병원에서 운영되고 있습니다."
       ],
-      "thumbnail": "/06_ngt/01_mobile/site_thum.png",
+      "thumbnail": "06_ngt/01_mobile/site_thum.png",
       "images": [
-        "/06_ngt/01_mobile/site1.png",
-        "/06_ngt/01_mobile/site2.png",
-        "/06_ngt/01_mobile/site3.png"
+        "06_ngt/01_mobile/site1.png",
+        "06_ngt/01_mobile/site2.png",
+        "06_ngt/01_mobile/site3.png"
       ],
       "links": [
         "https://web.saranghospital.com/"
@@ -1258,12 +1258,12 @@
         "모바일 서비스를 개발자가 병원에 파견되어 설치해 주고 데이터를 직접 입력해주는 형태가 아닌, 병원에서 자체적으로 설정하게 할 수 있도록 만들고자, 서비스에 필요한 데이터를 병원에서 직접 입력 할 수 있는 관리자 페이지를 기획하였습니다.",
         "해당 작업에서 기획, 디자인, 퍼블리싱을 전담하여 진행하였습니다. 해당 작업들의 기여도는 100% 입니다. 프론트엔드 개발자와 협업하여 진행하였습니다.,"
       ],
-      "thumbnail": "/06_ngt/02_admin/site_thum.png",
+      "thumbnail": "06_ngt/02_admin/site_thum.png",
       "images": [
-        "/06_ngt/02_admin/site1.png",
-        "/06_ngt/02_admin/site2.png",
-        "/06_ngt/02_admin/site3.png",
-        "/06_ngt/02_admin/site4.png"
+        "06_ngt/02_admin/site1.png",
+        "06_ngt/02_admin/site2.png",
+        "06_ngt/02_admin/site3.png",
+        "06_ngt/02_admin/site4.png"
       ]
     },
     {
@@ -1290,13 +1290,13 @@
       "discription": [
         "모바일 서비스의 모바일 예약자 목록 및 증명서 신청 목록, 회원가입 추천인 목록을 확인 할 수 있는 페이지 작업을 진행 하였습니다."
       ],
-      "thumbnail": "/06_ngt/03_management/site_thum.png",
+      "thumbnail": "06_ngt/03_management/site_thum.png",
       "images": [
-        "/06_ngt/03_management/site1.png",
-        "/06_ngt/03_management/site2.png",
-        "/06_ngt/03_management/site3.png",
-        "/06_ngt/03_management/site4.png",
-        "/06_ngt/03_management/site5.png"
+        "06_ngt/03_management/site1.png",
+        "06_ngt/03_management/site2.png",
+        "06_ngt/03_management/site3.png",
+        "06_ngt/03_management/site4.png",
+        "06_ngt/03_management/site5.png"
       ]
     },
     {
@@ -1321,13 +1321,13 @@
       "discription": [
         "오토마케팅 사이트 퍼블리싱. 퍼블리싱 기여도 100%입니다."
       ],
-      "thumbnail": "/07_out/01_auto/site_thum.png",
+      "thumbnail": "07_out/01_auto/site_thum.png",
       "images": [
-        "/07_out/01_auto/site1.png",
-        "/07_out/01_auto/site2.png",
-        "/07_out/01_auto/site3.png",
-        "/07_out/01_auto/site4.png",
-        "/07_out/01_auto/site5.png"
+        "07_out/01_auto/site1.png",
+        "07_out/01_auto/site2.png",
+        "07_out/01_auto/site3.png",
+        "07_out/01_auto/site4.png",
+        "07_out/01_auto/site5.png"
       ],
       "links" : [
         "https://www.automarketing.co.kr/"
@@ -1356,7 +1356,7 @@
         "마사지 샵 사장님을 위한 프로그램 매출모아의 유지보수 작업을 진행하였습니다.",
         "datepicker수정 및 gulp 3.X버전을 4버전으로 마이그레이션 하는 작업을 하였습니다."
       ],
-      "thumbnail": "/08_lsinno/moa/img0.png",
+      "thumbnail": "08_lsinno/moa/img0.png",
       "links" : [
         "https://info.maemo.co.kr/"
       ]
@@ -1383,11 +1383,11 @@
       "discription": [
         "마사지 샵 사용자를 위한 어플 마통의 웹페이지 유지보수 작업을 진행하였습니다.퍼블리싱 기여도는 100%입니다."
       ],
-      "thumbnail": "/08_lsinno/matong/site_thum.png",
+      "thumbnail": "08_lsinno/matong/site_thum.png",
       "images" : [
-        "/08_lsinno/matong/img1.png",
-        "/08_lsinno/matong/img2.png",
-        "/08_lsinno/matong/img3.png"
+        "08_lsinno/matong/img1.png",
+        "08_lsinno/matong/img2.png",
+        "08_lsinno/matong/img3.png"
       ],
       "links" : [
         "https://www.msgtong.com/"
@@ -1417,12 +1417,12 @@
       "discription": [
         "차를 마시고 시음기를 써서 친구들과 함께 공유하는 차 일기 서비스 제안. 기획은 어플리케이션으로, 실제 구현한 서비스 플랫폼은 모바일 웹입니다."
       ],
-      "thumbnail": "/02_study/04_teajournal/site_thum.jpg",
+      "thumbnail": "02_study/04_teajournal/site_thum.jpg",
       "images" : [
-        "/02_study/04_teajournal/site1.jpg",
-        "/02_study/04_teajournal/site2.png",
-        "/02_study/04_teajournal/site3.png",
-        "/02_study/04_teajournal/site4.png"
+        "02_study/04_teajournal/site1.jpg",
+        "02_study/04_teajournal/site2.png",
+        "02_study/04_teajournal/site3.png",
+        "02_study/04_teajournal/site4.png"
       ]
     },
     {
@@ -1448,13 +1448,13 @@
         "청소 전문 업체 클리니션의 홈페이지 및 관리자용 대쉬보드 프로젝트 진행하였습니다.",
         "figma로 제작된 디자인 시안을 기반으로 작업하였으며, 풀 반응형으로 모바일, 태블릿, 랩탑, 데스크탑에서 최신 크롬/사파리 브라우저 를 기준으로 최적화 하며 퍼블리싱 진행하였습니다. 개발은 react 로 진행되었고, 퍼블리싱 파트를 담당하였습니다. 기여도는 100%입니다."
       ],
-      "thumbnail": "/07_out/02_cleanician/site_thum.png",
+      "thumbnail": "07_out/02_cleanician/site_thum.png",
       "images" : [
-        "/07_out/02_cleanician/cleanician01.png",
-        "/07_out/02_cleanician/cleanician02.png",
-        "/07_out/02_cleanician/cleanician03.png",
-        "/07_out/02_cleanician/cleanician04.png",
-        "/07_out/02_cleanician/cleanician05.png"
+        "07_out/02_cleanician/cleanician01.png",
+        "07_out/02_cleanician/cleanician02.png",
+        "07_out/02_cleanician/cleanician03.png",
+        "07_out/02_cleanician/cleanician04.png",
+        "07_out/02_cleanician/cleanician05.png"
       ],
       "links": [
         "https://cleanician.co.kr/"
@@ -1481,16 +1481,16 @@
       "discription": [
         "Dx&Vx 게놈 유전자 검사 결과지 관련 퍼블리싱 본 작업 하였습니다 해당 페이지 웹에서 프린팅 하였을대 문제 없이 출력 가능하도록 고려하여 퍼블리싱 진행되었습니다."
       ],
-      "thumbnail": "/07_out/03_genom/site_thum.png",
+      "thumbnail": "07_out/03_genom/site_thum.png",
       "images" : [
-        "/07_out/03_genom/genom01.png"
+        "07_out/03_genom/genom01.png"
       ]
     },
     {
       "id": 49,
       "isOpen": 2,
       "isFeatured": true,
-      "name": "Dx&Vx 게놈 유전자 검사 결과",
+      "name": "화성시 연구원",
       "category": "외주",
       "participation": {
         "publish": 100
@@ -1508,15 +1508,15 @@
         "화성시 연구원의 홈페이지 프로젝트 진행하였습니다.",
         "figma로 제작된 디자인 시안을 기반으로 작업하였으며, 풀 반응형으로 모바일, 태블릿, 랩탑, 데스크탑에서 최신 크롬/사파리 브라우저 를 기준으로 최적화 하며 퍼블리싱 진행하였습니다. 개발은 react 로 진행되었고, 퍼블리싱 파트를 담당하였습니다. 기여도는 100%입니다."
       ],
-      "thumbnail": "/07_out/04_hwasung/site_thum.png",
+      "thumbnail": "07_out/04_hwasung/site_thum.png",
       "images" : [
-        "/07_out/04_hwasung/hwasung01.png",
-        "/07_out/04_hwasung/hwasung02.png",
-        "/07_out/04_hwasung/hwasung03.png",
-        "/07_out/04_hwasung/hwasung04.png",
-        "/07_out/04_hwasung/hwasung05.png",
-        "/07_out/04_hwasung/hwasung06.png",
-        "/07_out/04_hwasung/hwasung07.png"
+        "07_out/04_hwasung/hwasung01.png",
+        "07_out/04_hwasung/hwasung02.png",
+        "07_out/04_hwasung/hwasung03.png",
+        "07_out/04_hwasung/hwasung04.png",
+        "07_out/04_hwasung/hwasung05.png",
+        "07_out/04_hwasung/hwasung06.png",
+        "07_out/04_hwasung/hwasung07.png"
       ]
     },
     {
@@ -1543,14 +1543,14 @@
         "백엔드 언어는 JAVA로 구성되어 있으며, 폐쇠망으로 운영되는 은행사라 매주 외근을 나가 작업하였습니다.",
         "기여도는 70프로로 전임자가 작업한 페이지를 바탕으로 수정 및 신규 페이지 작업을 하였습니다."
       ],
-      "thumbnail": "/09_covision/01_suhyup/site_thum.png",
+      "thumbnail": "09_covision/01_suhyup/site_thum.png",
       "images" : [
-        "/09_covision/01_suhyup/suhyup01.png",
-        "/09_covision/01_suhyup/suhyup02.png",
-        "/09_covision/01_suhyup/suhyup03.png",
-        "/09_covision/01_suhyup/suhyup04.png",
-        "/09_covision/01_suhyup/suhyup05.png",
-        "/09_covision/01_suhyup/suhyup06.png"
+        "09_covision/01_suhyup/suhyup01.png",
+        "09_covision/01_suhyup/suhyup02.png",
+        "09_covision/01_suhyup/suhyup03.png",
+        "09_covision/01_suhyup/suhyup04.png",
+        "09_covision/01_suhyup/suhyup05.png",
+        "09_covision/01_suhyup/suhyup06.png"
       ]
     },
     {
@@ -1576,10 +1576,10 @@
         "우미건설 그룹웨어 구축 프로젝트의 퍼블리싱 담당으로 참여 하였습니다.",
         "백엔드 언어는 JAVA입니다."
       ],
-      "thumbnail": "/09_covision/02_woomi/site_thum.png",
+      "thumbnail": "09_covision/02_woomi/site_thum.png",
       "images" : [
-        "/09_covision/02_woomi/woomi01.png",
-        "/09_covision/02_woomi/woomi02.png"
+        "09_covision/02_woomi/woomi01.png",
+        "09_covision/02_woomi/woomi02.png"
       ]
     },
     {
@@ -1606,10 +1606,10 @@
         "백엔드 언어는 JAVA입니다.",
         "기여도는 70프로로 전임자가 작업한 페이지를 바탕으로 수정 및 신규 페이지 작업을 하였습니다."
       ],
-      "thumbnail": "/09_covision/03_dongkook/site_thum.png",
+      "thumbnail": "09_covision/03_dongkook/site_thum.png",
       "images" : [
-        "/09_covision/03_dongkook/dongkook01.png",
-        "/09_covision/03_dongkook/dongkook02.png"
+        "09_covision/03_dongkook/dongkook01.png",
+        "09_covision/03_dongkook/dongkook02.png"
       ]
     },
     {
@@ -1636,10 +1636,10 @@
         "백엔드 언어는 JAVA입니다.",
         "기여도는 30프로로 전임자가 작업한 페이지를 바탕으로 오류 수정 작업을 하였습니다."
       ],
-      "thumbnail": "/09_covision/04_econet/site_thum.png",
+      "thumbnail": "09_covision/04_econet/site_thum.png",
       "images" : [
-        "/09_covision/04_econet/site01.png",
-        "/09_covision/04_econet/site02.png"
+        "09_covision/04_econet/site01.png",
+        "09_covision/04_econet/site02.png"
       ]
     },
     {
@@ -1665,10 +1665,10 @@
         "한국 미쓰비시 엘리베이터 그룹웨어 구축 프로젝트의 퍼블리싱 담당으로 참여 하였습니다.",
         "백엔드 언어는 닷넷(ASPX)입니다."
       ],
-      "thumbnail": "/09_covision/05_mitsubishi/site_thum.png",
+      "thumbnail": "09_covision/05_mitsubishi/site_thum.png",
       "images" : [
-        "/09_covision/05_mitsubishi/site01.png",
-        "/09_covision/05_mitsubishi/site02.png"
+        "09_covision/05_mitsubishi/site01.png",
+        "09_covision/05_mitsubishi/site02.png"
       ]
     },
     {
@@ -1694,10 +1694,10 @@
         "한림대학교 의료원 그룹웨어 구축 프로젝트의 퍼블리싱 담당으로 참여 하였습니다.",
         "백엔드 언어는 JAVA(JSP)입니다."
       ],
-      "thumbnail": "/09_covision/06_hallym/site_thum.png",
+      "thumbnail": "09_covision/06_hallym/site_thum.png",
       "images" : [
-        "/09_covision/06_hallym/site01.png",
-        "/09_covision/06_hallym/site02.png"
+        "09_covision/06_hallym/site01.png",
+        "09_covision/06_hallym/site02.png"
       ]
     },
     {
@@ -1723,12 +1723,12 @@
         "경신홀딩스 그룹웨어 구축 프로젝트의 퍼블리싱 담당으로 참여 하였습니다.",
         "백엔드 언어는 닷넷(ASPX)입니다."
       ],
-      "thumbnail": "/09_covision/07_kyungshinholdings/site_thum.png",
+      "thumbnail": "09_covision/07_kyungshinholdings/site_thum.png",
       "images" : [
-        "/09_covision/07_kyungshinholdings/site01.png",
-        "/09_covision/07_kyungshinholdings/site02.png",
-        "/09_covision/07_kyungshinholdings/site03.png",
-        "/09_covision/07_kyungshinholdings/site04.png"
+        "09_covision/07_kyungshinholdings/site01.png",
+        "09_covision/07_kyungshinholdings/site02.png",
+        "09_covision/07_kyungshinholdings/site03.png",
+        "09_covision/07_kyungshinholdings/site04.png"
       ]
     },
     {
@@ -1754,10 +1754,10 @@
         "대덕그룹 그룹웨어 구축 프로젝트의 퍼블리싱 담당으로 참여 하였습니다.",
         "백엔드 언어는 닷넷(ASPX)입니다."
       ],
-      "thumbnail": "/09_covision/08_daeduck/site_thum.png",
+      "thumbnail": "09_covision/08_daeduck/site_thum.png",
       "images" : [
-        "/09_covision/08_daeduck/site01.png",
-        "/09_covision/08_daeduck/site02.png"
+        "09_covision/08_daeduck/site01.png",
+        "09_covision/08_daeduck/site02.png"
       ]
     },
     {
@@ -1783,9 +1783,9 @@
         "가야대학교 전자결재 구축 프로젝트의 퍼블리싱 담당으로 참여 하였습니다.",
         "백엔드 언어는 JAVA(JSP)입니다."
       ],
-      "thumbnail": "/09_covision/09_kaya_univ/site_thum.png",
+      "thumbnail": "09_covision/09_kaya_univ/site_thum.png",
       "images" : [
-        "/09_covision/09_kaya_univ/site01.png"
+        "09_covision/09_kaya_univ/site01.png"
       ]
     },
     {
@@ -1811,10 +1811,10 @@
         "인지그룹 그룹웨어 구축 프로젝트의 퍼블리싱 담당으로 참여 하였습니다.",
         "백엔드 언어는 JAVA(JSP)입니다."
       ],
-      "thumbnail": "/09_covision/11_inzigroup/site_thum.png",
+      "thumbnail": "09_covision/11_inzigroup/site_thum.png",
       "images" : [
-        "/09_covision/11_inzigroup/site01.png",
-        "/09_covision/11_inzigroup/site02.png"
+        "09_covision/11_inzigroup/site01.png",
+        "09_covision/11_inzigroup/site02.png"
       ]
     },
     {
@@ -1840,10 +1840,10 @@
         "제이시스메디칼 전자결재 구축 프로젝트의 퍼블리싱 담당으로 참여 하였습니다.",
         "백엔드 언어는 JAVA(JSP)입니다."
       ],
-      "thumbnail": "/09_covision/12_jeisys/site_thum.png",
+      "thumbnail": "09_covision/12_jeisys/site_thum.png",
       "images" : [
-        "/09_covision/12_jeisys/site01.png",
-        "/09_covision/12_jeisys/site02.png"
+        "09_covision/12_jeisys/site01.png",
+        "09_covision/12_jeisys/site02.png"
       ]
     },
     {
@@ -1869,12 +1869,12 @@
         "호반그룹 그룹웨어 구축 프로젝트의 퍼블리싱 담당으로 참여 하였습니다.",
         "백엔드 언어는 JAVA(JSP)입니다."
       ],
-      "thumbnail": "/09_covision/13_hoban/site_thum.png",
+      "thumbnail": "09_covision/13_hoban/site_thum.png",
       "images" : [
-        "/09_covision/13_hoban/site01.png",
-        "/09_covision/13_hoban/site02.png",
-        "/09_covision/13_hoban/site03.png",
-        "/09_covision/13_hoban/site04.png"
+        "09_covision/13_hoban/site01.png",
+        "09_covision/13_hoban/site02.png",
+        "09_covision/13_hoban/site03.png",
+        "09_covision/13_hoban/site04.png"
       ]
     },
     {
@@ -1901,18 +1901,18 @@
         "백엔드 언어는 닷넷(ASPX)입니다.",
         "PC웹 환경 외에도 Teams Add In 환경도 함께 고려하는 퍼블리싱 작업을 진행하였습니다."
       ],
-      "thumbnail": "/09_covision/14_ls/site_thum.png",
+      "thumbnail": "09_covision/14_ls/site_thum.png",
       "images" : [
-        "/09_covision/14_ls/site01.png",
-        "/09_covision/14_ls/site02.png",
-        "/09_covision/14_ls/site03.png",
-        "/09_covision/14_ls/site04.png",
-        "/09_covision/14_ls/site05.png",
-        "/09_covision/14_ls/site06.png",
-        "/09_covision/14_ls/site07.png",
-        "/09_covision/14_ls/site08.png",
-        "/09_covision/14_ls/site09.png",
-        "/09_covision/14_ls/site10.png"
+        "09_covision/14_ls/site01.png",
+        "09_covision/14_ls/site02.png",
+        "09_covision/14_ls/site03.png",
+        "09_covision/14_ls/site04.png",
+        "09_covision/14_ls/site05.png",
+        "09_covision/14_ls/site06.png",
+        "09_covision/14_ls/site07.png",
+        "09_covision/14_ls/site08.png",
+        "09_covision/14_ls/site09.png",
+        "09_covision/14_ls/site10.png"
       ]
     },
     {
@@ -1938,11 +1938,11 @@
         "NH 아문디 그룹웨어 구축 프로젝트의 퍼블리싱 담당으로 참여 하였습니다.",
         "백엔드 언어는 닷넷(ASPX)입니다."
       ],
-      "thumbnail": "/09_covision/15_nh_amundi/site_thum.png",
+      "thumbnail": "09_covision/15_nh_amundi/site_thum.png",
       "images" : [
-        "/09_covision/15_nh_amundi/site01.png",
-        "/09_covision/15_nh_amundi/site02.png",
-        "/09_covision/15_nh_amundi/site03.png"
+        "09_covision/15_nh_amundi/site01.png",
+        "09_covision/15_nh_amundi/site02.png",
+        "09_covision/15_nh_amundi/site03.png"
       ]
     },
     {
@@ -1968,11 +1968,11 @@
         "휠라홀딩스 그룹웨어 구축 프로젝트의 퍼블리싱 담당으로 참여 하였습니다.",
         "백엔드 언어는 JAVA(JSP)입니다."
       ],
-      "thumbnail": "/09_covision/16_fila/site03.png",
+      "thumbnail": "09_covision/16_fila/site03.png",
       "images" : [
-        "/09_covision/16_fila/site01.png",
-        "/09_covision/16_fila/site02.png",
-        "/09_covision/16_fila/site03.png"
+        "09_covision/16_fila/site01.png",
+        "09_covision/16_fila/site02.png",
+        "09_covision/16_fila/site03.png"
       ]
     },
     {
@@ -1999,9 +1999,9 @@
         "2013년에 만들어진 구 포탈을 2019년에 디자인만 올려서 변경하였고, 소스 변경 없이 CSS만 수정하여 리뉴얼 하는 프로젝트입니다.",
         "백엔드 언어는 닷넷(ASPX)입니다."
       ],
-      "thumbnail": "/09_covision/17_bnk/site_thum.png",
+      "thumbnail": "09_covision/17_bnk/site_thum.png",
       "images" : [
-        "/09_covision/17_bnk/site01.png"
+        "09_covision/17_bnk/site01.png"
       ]
     },
     {
@@ -2027,10 +2027,10 @@
         "메트라이프 모바일 그룹웨어 구축 프로젝트의 퍼블리싱 담당으로 참여 하였습니다.",
         "백엔드 언어는 닷넷(ASPX)입니다."
       ],
-      "thumbnail": "/09_covision/18_metlife/site_thum.png",
+      "thumbnail": "09_covision/18_metlife/site_thum.png",
       "images" : [
-        "/09_covision/18_metlife/site01.png",
-        "/09_covision/18_metlife/site02.png"
+        "09_covision/18_metlife/site01.png",
+        "09_covision/18_metlife/site02.png"
       ]
     },
     {
@@ -2056,14 +2056,14 @@
         "한국무역협회 그룹웨어 구축 프로젝트의 퍼블리싱 담당으로 참여 하였습니다.",
         "백엔드 언어는 JAVA(JSP)입니다."
       ],
-      "thumbnail": "/09_covision/19_kita/site_thum.png",
+      "thumbnail": "09_covision/19_kita/site_thum.png",
       "images" : [
-        "/09_covision/19_kita/site01.png",
-        "/09_covision/19_kita/site02.png",
-        "/09_covision/19_kita/site03.png",
-        "/09_covision/19_kita/site04.png",
-        "/09_covision/19_kita/site05.png",
-        "/09_covision/19_kita/site06.png"
+        "09_covision/19_kita/site01.png",
+        "09_covision/19_kita/site02.png",
+        "09_covision/19_kita/site03.png",
+        "09_covision/19_kita/site04.png",
+        "09_covision/19_kita/site05.png",
+        "09_covision/19_kita/site06.png"
       ]
     },
     {
@@ -2091,11 +2091,11 @@
         "코비젼에서 개인 역량을 기르기 위해 시행하는 스터디에서 vue를 스터디하였습니다.",
         "학습한 vue를 이용하여 코비젼 프로젝트 포트폴리오, 코비폴리오 사이트를 개설한다는 컨셉으로 프로젝트를 진행하였습니다."
       ],
-      "thumbnail": "/02_study/05_covifoilo/site_thum.png",
+      "thumbnail": "02_study/05_covifoilo/site_thum.png",
       "images" : [
-        "/02_study/05_covifoilo/site01.png",
-        "/02_study/05_covifoilo/site02.png",
-        "/02_study/05_covifoilo/site03.png"
+        "02_study/05_covifoilo/site01.png",
+        "02_study/05_covifoilo/site02.png",
+        "02_study/05_covifoilo/site03.png"
       ]
     },
     {
@@ -2123,11 +2123,10 @@
       "discription": [
         "react 스터디를 하며 학습한 코드를 이용하여 개인 포트폴리오 사이트를 리뉴얼 하였습니다."
       ],
-      "thumbnail": "/02_study/06_portfoilo/site_thum.png",
+      "thumbnail": "02_study/06_portfoilo/site_thum.png",
       "images" : [
-        "/02_study/06_portfoilo/site01.png",
-        "/02_study/06_portfoilo/site02.png",
-        "/02_study/06_portfoilo/site03.png"
+        "02_study/06_portfoilo/site01.png",
+        "02_study/06_portfoilo/site02.png"
       ]
     }
   ]

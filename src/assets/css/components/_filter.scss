@@ -7,22 +7,22 @@
     }
 
     &__result {
-        display     : flex;
-        align-items : center;
         flex        : 0 1 auto;
+        display     : flex;
         flex-wrap   : wrap;
         gap         : 8px;
+        align-items : center;
 
         &__item {
-            line-height : 16px;
-            display     : flex;
-            align-items : center;
             flex        : 0 0 auto;
+            display     : flex;
+            gap         : 6px;
+            align-items : center;
             min-height  : 20px;
             padding     : 4px 8px;
+            line-height : 16px;
             color       : var(--theme-primary);
             background  : var(--paper-endpoint);
-            gap         : 6px;
 
             & > button {
                 @include reset-button;
@@ -33,9 +33,9 @@
             }
 
             & > em {
+                text-transform : uppercase;
                 font-weight    : $text-font-weight-bold;
                 font-style     : normal;
-                text-transform : uppercase;
             }
         }
     }

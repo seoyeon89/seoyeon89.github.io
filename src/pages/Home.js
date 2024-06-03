@@ -9,10 +9,8 @@ const Home = () => {
     return (
         <>
             <AppHeader />
-                <main className="container"  id="profile">
-                    <div className="container__background">
-
-                    </div>
+                <main className="container" id="profile">
+                    <div className="container__background"></div>
                     <div className="container__inner">
                         <Profile />
                         <WorkList />

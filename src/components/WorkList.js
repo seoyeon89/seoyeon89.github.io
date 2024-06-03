@@ -195,9 +195,10 @@ const WorkList = () => {
                     <ul className="projects">
                         {
                             projects.map((project) => {
+                                const url = searchParams.get('resume') === 'yes' ? `/detail/${project.id}?resume=yes` : `/detail/${project.id}`
                                 return (
                                     <li key={project.id}>
-                                        <Link to={`/detail/${project.id}`} className="project">
+                                        <Link to={url} className="project">
                                             <div className="project__thumbnail">
                                                 <div>
                                                     <img src={`/assets/thumnail/${project.thumbnail}`}

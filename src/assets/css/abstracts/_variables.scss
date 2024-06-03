@@ -19,7 +19,7 @@ $logo-max-width          : 140px;
 
 $header-height           : 54px;
 $profile-height          : 200px;
-$profile-background-gap  : 80px;
+$profile-background-gap  : $profile-height - $header-height;
 
 //color
 $theme-primary           : #7a2ad9;

@@ -1,5 +1,6 @@
 import FeatherIcon from 'feather-icons-react';
 import { Accordion } from './Accordion';
+import { CircleProgress } from './CircleProgress';
 import MyJsonData from '../assets/json/mydata.json';
 
 const MyInfo = MyJsonData;
@@ -51,10 +52,12 @@ const MyInfoSection = (props) => {
 
 const Profile = () => {
     return (
-        <section id="profile" className="profile">
+        <section className="profile">
             <h1 hidden>Profile</h1>
             <div className="profile__card">
-                <div className="profile__card__avatar"></div>
+                <div className="profile__card__avatar">
+                    <img src="/assets/images/profile.png" alt="장서연 프로필 이미지"/>
+                </div>
                 <div className="profile__card__info">
                     <h2 className="profile__card__info__title">
                         <strong>장서연</strong>
@@ -86,6 +89,11 @@ const Profile = () => {
                         </i>
                         <span>예전 포트폴리오 사이트</span>
                     </a>
+                </div>
+                <div className="profile__card__skills">
+                    <CircleProgress title="HTML" percent="99" />
+                    <CircleProgress title="CSS" percent="99" />
+                    <CircleProgress title="JS" percent="70" />
                 </div>
             </div>
             <div className="profile__blocks">

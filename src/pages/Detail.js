@@ -1,5 +1,6 @@
 import { useParams, useSearchParams } from 'react-router-dom';
 import { Popup } from '../components/Popup';
+import { CircleProgress } from '../components/CircleProgress';
 import Error from '../components/Error';
 import ProjectsJsonData from '../assets/json/project.json';
 
@@ -38,35 +39,9 @@ const DetailPopup = ({Project}) => {
                             <h2 className="title">참여 부분</h2>
                             <div className="content participation">
                                 {Object.entries(Project.participation).map(([key, value]) => {
-                                    const RADIUS = 54;
-                                    const CIRCUMFERENCE = 2 * Math.PI * RADIUS;
-                                    const progress = value / 100;
-                                    const dashoffset = CIRCUMFERENCE * (1 - progress);
-
                                     return (
                                         <div className="participation__item" key={key}>
-                                            <div className="circle-progress">
-                                                <svg width="120" height="120" viewBox="0 0 120 120">
-                                                    <defs>
-                                                        <linearGradient id="gradient" x1="0%" y1="0%" x2="0%" y2="100%">
-                                                            <stop offset="0%" stop-color="var(--theme-secondary)"/>
-                                                            <stop offset="100%" stop-color="var(--theme-primary)"/>
-                                                        </linearGradient>
-                                                    </defs>
-                                                    <circle className="circle-progress__frame" cx="60" cy="60" r="54"
-                                                            stroke-width="12"/>
-                                                    <circle className="circle-progress__bar" cx="60" cy="60" r="54"
-                                                            stroke-width="12"
-                                                            style={{
-                                                                strokeDasharray: CIRCUMFERENCE,
-                                                                strokeDashoffset: dashoffset
-                                                            }}/>
-                                                </svg>
-                                                <div className="circle-progress__value">
-                                                    <strong>{key}</strong>
-                                                    <span>{value}%</span>
-                                                </div>
-                                            </div>
+                                            <CircleProgress title={key} percent={value} />
                                         </div>
                                     );
                                 })
@@ -86,7 +61,7 @@ const DetailPopup = ({Project}) => {
                             </div>
                         </div>
                     </div>
-                    <div class="ui-callout discription">
+                    <div className="ui-callout discription">
                         {
                             Project.discription.map((discription, index) => {
                                 return (

@@ -12,16 +12,16 @@
     }
 
     &__row {
-        display       : flex;
         flex          : 1 0 auto;
+        display       : flex;
         border-bottom : 1px solid var(--component-border-color);
 
         & > .title {
             @extend %tdPadding;
-            font-weight : $text-font-weight-medium;
             flex        : 0 0 auto;
             padding     : 0 $table-padding-left;
             background  : rgb(var(--theme-primary-rgb), 0.05);
+            font-weight : $text-font-weight-medium;
 
             @include laptop {
                 flex-basis : 74px;

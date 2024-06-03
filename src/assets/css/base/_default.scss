@@ -1,18 +1,18 @@
 /* 초기화 */
 html {
+    height      : 100vh;
+    line-height : 1.3em;
     font-family : $font-family;
     font-size   : $text-font-size;
     font-weight : $text-font-weight;
-    line-height : 1.3em;
-    height      : 100vh;
 }
 
 body {
+    margin                  : 0;
+    color                   : var(--text-primary);
     font-family             : inherit;
     font-size               : inherit;
     font-weight             : inherit;
-    margin                  : 0;
-    color                   : var(--text-primary);
     -webkit-font-smoothing  : antialiased;
     -moz-osx-font-smoothing : grayscale;
 }
@@ -22,10 +22,10 @@ body [hidden] {
 }
 
 * {
-    font-size  : inherit;
-    box-sizing : border-box;
     margin     : 0;
     padding    : 0;
+    font-size  : inherit;
+    box-sizing : border-box;
 }
 
 button,
@@ -85,4 +85,11 @@ select {
     --component-radius       : 8px;
     --component-border-color : #eaeaea;
     --popup-radius           : 20px;
+    --inner-padding          : 12px;
+}
+
+@include tablet {
+    :root {
+        --inner-padding : 32px;
+    }
 }

@@ -1,19 +1,21 @@
+@use "sass:math" as math;
+
 .ui-button {
     @include reset-button;
-    $height :36px;
-    height:$height;
-    padding:0 20px;
-    border-radius: $height/2;
+    $height       : 36px;
+    height        : $height;
+    padding       : 0 20px;
+    border-radius : math.div($height, 2);
 
 
-    &--primary{
-        background: var(--theme-primary);
-        color:#fff;
+    &--primary {
+        color      : #fff;
+        background : var(--theme-primary);
 
         &:hover,
         &:visited,
-        &:link{
-            color:#fff;
+        &:link {
+            color : #fff;
         }
     }
 }

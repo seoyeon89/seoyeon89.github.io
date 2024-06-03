@@ -26,7 +26,7 @@ export const  Popup = ( {children, title}) => {
     }, []);
 
     const closePopup = () => {
-        navigate('/');
+        navigate(-1);
     };
 
     return (

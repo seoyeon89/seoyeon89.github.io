@@ -1,19 +1,19 @@
 .tags {
-    font-weight : $text-font-weight;
     display     : flex;
-    align-items : baseline;
     flex-wrap   : wrap;
+    align-items : baseline;
     margin      : -2px;
+    font-weight : $text-font-weight;
 
     &__item {
-        font-size      : 11px;
-        line-height    : 12px;
         flex           : 0 0 auto;
         margin         : 2px;
         padding        : 2px 6px 1px;
+        line-height    : 12px;
         text-transform : uppercase;
         color          : var(--theme-primary);
         border         : 1px solid var(--theme-primary);
         border-radius  : 30px;
+        font-size      : 11px;
     }
 }
