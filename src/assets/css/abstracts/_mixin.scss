@@ -48,7 +48,7 @@
     }
 }
 
-@mixin scrollbar($thumbColor : $point-primary) {
+@mixin scrollbar($thumbColor : #DDDDDD) {
     @include tablet() {
 
         &::-webkit-scrollbar {
