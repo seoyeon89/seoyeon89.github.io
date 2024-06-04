@@ -1,21 +1,19 @@
 .ui-checkbox {
-    display     : inline-flex;
+    display     : flex;
+    gap         : 6px;
     align-items : center;
+    padding     : 4px 2px;
+    line-height : 1.2em;
     cursor      : pointer;
-    gap         : 8px;
+    font-size   : 0.9em;
 
     & > input {
-        transform    : scale(1.2);
+        transform    : scale(1.1);
         accent-color : var(--theme-primary);
     }
 
-    & > span {
-        font-size : 0.9em
-    }
-
     & > em {
-        font-size      : 0.9em;
-        font-style     : normal;
         text-transform : uppercase;
+        font-style     : normal;
     }
 }

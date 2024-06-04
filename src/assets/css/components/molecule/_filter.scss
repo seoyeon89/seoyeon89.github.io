@@ -7,36 +7,45 @@
     }
 
     &__result {
-        display     : flex;
-        align-items : center;
         flex        : 0 1 auto;
+        display     : flex;
         flex-wrap   : wrap;
         gap         : 8px;
+        align-items : center;
 
         &__item {
-            line-height : 16px;
-            display     : flex;
-            align-items : center;
             flex        : 0 0 auto;
-            min-height  : 20px;
-            padding     : 4px 8px;
-            color       : var(--theme-primary);
-            background  : var(--paper-endpoint);
-            gap         : 6px;
+            gap         : 2px;
+            line-height : 16px;
 
             & > button {
                 @include reset-button;
+                display     : flex;
+                align-items : center;
+                min-height  : 24px;
+                padding     : 4px 8px;
+                color       : var(--theme-primary);
+                background  : var(--paper-endpoint);
+                font-size   : 0.8em;
+
+                @include tablet {
+                    gap        : 6px;
+                    min-height : 20px;
+                    font-size  : 0.95em;
+                }
 
                 & > div {
                     @include icons();
+                    margin-right : 4px
+                }
+
+                & > em {
+                    text-transform : uppercase;
+                    font-weight    : $text-font-weight-bold;
+                    font-style     : normal;
                 }
             }
 
-            & > em {
-                font-weight    : $text-font-weight-bold;
-                font-style     : normal;
-                text-transform : uppercase;
-            }
         }
     }
 }

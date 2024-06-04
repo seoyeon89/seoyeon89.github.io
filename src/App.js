@@ -11,6 +11,7 @@ function App() {
                 <Route path="/detail/:id" element={<Detail/>} />
             </Route>
             <Route path="*" element={<NoPage/>} />
+            <Route path={"/*"} element={<NoPage language={"NULL"} />} />
         </Routes>
     );
 }

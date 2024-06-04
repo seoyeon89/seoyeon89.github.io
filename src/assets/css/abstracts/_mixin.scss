@@ -115,7 +115,7 @@
     }
 }
 
-@mixin closeIcon($area:40px, $bar:24px, $color:#000) {
+@mixin closeIcon($area:40px, $bar:24px, $color:#000000) {
     $barHafl    : math.div($bar, 2);
     $barQuarter : math.div($bar, 4);
 

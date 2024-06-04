@@ -6,8 +6,8 @@
     $border  : 2px;
     $width   : ($height - $gap - $border ) * 2;
 
-    position : relative;
     display  : flex;
+    position : relative;
     width    : $width;
     height   : $height;
     cursor   : pointer;
@@ -24,7 +24,7 @@
 
             &:before {
                 left       : $width -  $height + $gap;
-                background : #fff;
+                background : #FFFFFF;
             }
         }
     }
@@ -39,12 +39,12 @@
         border-radius : math.div($height, 2);
 
         &::before {
+            content       : "";
+            display       : block;
             position      : absolute;
             top           : $gap;
             left          : $gap;
-            display       : block;
             height        : calc(100% - $gap * 2);
-            content       : '';
             transition    : all 0.2s;
             border-radius : 50%;
             background    : var(--theme-primary);

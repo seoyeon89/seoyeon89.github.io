@@ -1,18 +1,19 @@
 /* 초기화 */
 html {
+    height      : 100vh;
+    height      : 100svh;
+    line-height : 1.3em;
     font-family : $font-family;
     font-size   : $text-font-size;
     font-weight : $text-font-weight;
-    line-height : 1.3em;
-    height      : 100vh;
 }
 
 body {
+    margin                  : 0;
+    color                   : var(--text-primary);
     font-family             : inherit;
     font-size               : inherit;
     font-weight             : inherit;
-    margin                  : 0;
-    color                   : var(--text-primary);
     -webkit-font-smoothing  : antialiased;
     -moz-osx-font-smoothing : grayscale;
 }
@@ -22,10 +23,10 @@ body [hidden] {
 }
 
 * {
-    font-size  : inherit;
-    box-sizing : border-box;
     margin     : 0;
     padding    : 0;
+    font-size  : inherit;
+    box-sizing : border-box;
 }
 
 button,
@@ -71,25 +72,29 @@ select {
 }
 
 :root {
-    --theme-primary          : #{$theme-primary};
-    --theme-primary-rgb      : #{to-rgb($theme-primary)};
-    --theme-secondary        : #{$theme-secondary};
-    --text-primary           : #222;
-    --text-secondary         : #999;
-    --paper-primary          : #fff;
-    --paper-secondary        : #f5f5f5;
-    --paper-endpoint         : #eee;
-    --component-gap          : 20px;
-    --component-padding      : 20px;
-    --component-shadow       : 1px 1px 8px 0 rgba(0, 0, 0, 0.2);
-    --component-radius       : 8px;
-    --component-border-color : #eaeaea;
-    --popup-radius           : 20px;
-    --inner-padding          : 12px;
+    --theme-primary               : #{$theme-primary};
+    --theme-primary-rgb           : #{to-rgb($theme-primary)};
+    --theme-secondary             : #{$theme-secondary};
+    --text-primary                : #222222;
+    --text-secondary              : #999999;
+    --paper-primary               : #FFFFFF;
+    --paper-secondary             : #F5F5F5;
+    --paper-endpoint              : #EEEEEE;
+    --component-gap               : 16px;
+    --component-padding           : 16px;
+    --component-padding-secondary : 6px;
+    --component-shadow            : 1px 1px 8px 0 rgba(0, 0, 0, 0.2);
+    --component-radius            : 8px;
+    --component-border-color      : #EAEAEA;
+    --popup-radius                : 20px;
+    --inner-padding               : 12px;
 }
 
 @include tablet {
     :root {
-        --inner-padding : 32px;
+        --inner-padding               : 32px;
+        --component-gap               : 20px;
+        --component-padding           : 20px;
+        --component-padding-secondary : 12px;
     }
 }

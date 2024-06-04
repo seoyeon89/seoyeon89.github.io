@@ -1,8 +1,23 @@
-import React, {useState} from 'react';
+import React, { useRef, useState, useEffect } from 'react';
 import FeatherIcon from 'feather-icons-react';
 
 export const Dropdown = ({children, title, titleIcon, initOpen = false, extraClass = ''}) => {
+    const dropdownRef = useRef(null);
     const [isActive, setActive] = useState(initOpen);
+    useEffect(() => {
+        function handleClickOutside(e) {
+            const isInside = dropdownRef?.current?.contains(e.target);
+            if (dropdownRef && !isInside) {
+                setActive(false);
+            }
+        }
+
+        document.addEventListener('click', handleClickOutside);
+        return () => {
+            document.removeEventListener('click', handleClickOutside);
+        };
+    }, [dropdownRef]);
+
     const handleToggle = () => {
         setActive(!isActive);
     };
@@ -10,6 +25,7 @@ export const Dropdown = ({children, title, titleIcon, initOpen = false, extraCla
         <div className={`dropdown ${extraClass}`}
              data-expended={`${isActive ? 'true' : 'false'}`}
              key={title}
+             ref={dropdownRef}
         >
             <button type="button"
                     className="dropdown__button"
@@ -19,7 +35,7 @@ export const Dropdown = ({children, title, titleIcon, initOpen = false, extraCla
                 <span>Add filter</span>
             </button>
 
-            <div className="dropdown__list">
+            <div className="dropdown__list" >
                 {children}
             </div>
         </div>

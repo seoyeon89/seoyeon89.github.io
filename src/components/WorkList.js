@@ -83,8 +83,6 @@ const WorkList = () => {
         setSeeFeatured(checked);
         setProjects(getProjectList(filters, checked, categories));
     }
-    console.log(projects);
-    console.log(projectInit);
     return (
         <section id="works" className="works">
             <h1 hidden>WorkList</h1>
@@ -149,9 +147,8 @@ const WorkList = () => {
                             <div className="filter__result__item">
                                 <button type="button" onClick={ e => featuredChange(!seeFeatured)}>
                                     <div><i><FeatherIcon icon="x"/></i></div>
-                                    <span hidden>삭제</span>
+                                    <em>중요프로젝트만 보기</em>
                                 </button>
-                                <em>중요프로젝트만 보기</em>
                             </div>
                         }
                         {
@@ -162,10 +159,9 @@ const WorkList = () => {
                                             filterChange(category.id, !category.seen)
                                         }}>
                                             <div><i><FeatherIcon icon="x"/></i></div>
-                                            <span hidden>삭제</span>
+                                            <span>범주 :</span>
+                                            <em>{category.title}</em>
                                         </button>
-                                        <span>범주 :</span>
-                                        <em>{category.title}</em>
                                     </div>
                             })
                         }
@@ -177,10 +173,9 @@ const WorkList = () => {
                                             filterChange(filter.id, !filter.seen)
                                         }}>
                                             <div><i><FeatherIcon icon="x"/></i></div>
-                                            <span hidden>삭제</span>
+                                            <span>플랫폼 :</span>
+                                            <em>{filter.title}</em>
                                         </button>
-                                        <span>플랫폼 :</span>
-                                        <em>{filter.title}</em>
                                     </div>
                             })
                         }

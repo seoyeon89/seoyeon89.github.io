@@ -1,16 +1,16 @@
 @use "sass:math" as math;
 
 .popup-warp {
+    display             : flex;
     position            : fixed;
-    z-index             : 300;
+    align-items         : center;
+    justify-content     : center;
     top                 : 0;
     right               : 0;
     bottom              : 0;
     left                : 0;
-    display             : flex;
-    align-items         : center;
-    justify-content     : center;
     background          : rgba(0, 0, 0, 0.4);
+    z-index             : 300;
     overscroll-behavior : contain;
 }
 
@@ -18,26 +18,28 @@
     $mobile-padding     : 20px;
     $laptop-padding     : 36px;
 
-    position            : relative;
-    z-index             : 1;
     display             : flex;
+    position            : relative;
     flex-direction      : column;
     width               : calc(100vw - $mobile-padding * 2);
     height              : auto;
     max-height          : calc(100vh - $mobile-padding * 2);
+    max-height          : calc(100svh - $mobile-padding * 2);
     border-radius       : var(--popup-radius);
     background          : var(--paper-secondary);
+    z-index             : 1;
     overscroll-behavior : contain;
 
     @include laptop {
         width      : calc(100vw - $laptop-padding * 2);
         max-height : calc(100vh - $laptop-padding * 2);
+        max-height : calc(100svh - $laptop-padding * 2);
     }
 
     &__title {
+        flex        : 0 0 50px;
         display     : flex;
         align-items : center;
-        flex        : 0 0 50px;
         padding     : math.div($mobile-padding, 2) $mobile-padding;
 
         @include laptop {
@@ -45,24 +47,24 @@
         }
 
         & > h1 {
-            font-size   : 1.750em;
-            line-height : 1.3em;
             flex        : 1 0 0;
+            line-height : 1.3em;
+            font-size   : 1.750em;
         }
 
         &__close {
             @include reset-button;
-            @include closeIcon(40px, 24px, #000);
-            position : relative;
+            @include closeIcon(40px, 24px, #000000);
             flex     : 0 0 auto;
+            position : relative;
         }
 
     }
 
     &__container {
         @include scrollbar(#DDDDDD);
-        overflow            : auto;
         flex                : 0 1 auto;
+        overflow            : auto;
         padding             : 0 $mobile-padding $mobile-padding $mobile-padding;
         overscroll-behavior : contain;
 

@@ -1,14 +1,14 @@
 .projects {
     display               : grid;
-    width                 : 100%;
     grid-template-columns : repeat(auto-fill, minmax(260px, 1fr));
     gap                   : var(--component-gap);
+    width                 : 100%;
 
 
     &--no-child {
+        flex            : 1 1 auto;
         display         : flex;
         align-items     : center;
-        flex            : 1 1 auto;
         justify-content : center;
         height          : 300px;
     }
@@ -21,7 +21,7 @@
     padding        : 20px;
     border         : 1px solid var(--component-border-color);
     border-radius  : var(--component-radius);
-    background     : #fff;
+    background     : #FFFFFF;
 
 
     &__thumbnail {
@@ -52,23 +52,23 @@
     }
 
     &__info {
-        display        : flex;
         flex           : 1 0 auto;
+        display        : flex;
         flex-direction : column;
         padding        : 0 4px;
 
         &__important {
+            flex          : 1 0;
             display       : flex;
             align-content : flex-start;
-            flex          : 1 0;
             margin-bottom : 4px;
 
             h2 {
-                font-weight   : $text-font-weight-bold;
                 flex          : 1 1 auto;
                 max-width     : 100%;
                 padding-right : 4px;
                 word-break    : break-all;
+                font-weight   : $text-font-weight-bold;
             }
 
             .tags {
@@ -80,8 +80,8 @@
         }
 
         &__detail {
-            font-size : 0.875rem;
             display   : flex;
+            font-size : 0.875rem;
 
             .type {
                 flex : 1 0 auto;
