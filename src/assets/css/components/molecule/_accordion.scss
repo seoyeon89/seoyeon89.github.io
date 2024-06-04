@@ -1,3 +1,5 @@
+@use "../../import" as *;
+
 .accordion {
     &:hover {
         box-shadow : var(--component-shadow);
@@ -15,7 +17,7 @@
             flex        : 0 1 auto;
             width       : 100%;
             text-align  : left;
-            font-weight : $text-font-weight-bold;
+            font-weight : $font-weight-bold;
         }
 
         & > i {

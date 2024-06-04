@@ -1,10 +1,11 @@
+@use "../../import" as *;
+
 .ul-table {
     $table-padding-top  : 8px;
     $table-padding-left : 10px;
 
     display             : flex;
     flex-direction      : column;
-
     border-top          : 1px solid var(--component-border-color);
 
     %tdPadding {
@@ -21,9 +22,9 @@
             flex        : 0 0 auto;
             padding     : 0 $table-padding-left;
             background  : rgb(var(--theme-primary-rgb), 0.05);
-            font-weight : $text-font-weight-medium;
+            font-weight : $font-weight-medium;
 
-            @include laptop {
+            @include media-laptop {
                 flex-basis : 74px;
             }
         }
@@ -36,7 +37,7 @@
     }
 
     & & {
-        @include laptop {
+        @include media-laptop {
             height : 100%;
         }
     }

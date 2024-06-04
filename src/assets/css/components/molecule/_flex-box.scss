@@ -1,3 +1,5 @@
+@use "../../import" as *;
+
 .flex-box {
     display        : flex;
     flex-direction : column;
@@ -10,7 +12,7 @@
         width          : 100%;
 
         &__title {
-            font-weight : $text-font-weight-bold;
+            font-weight : $font-weight-bold;
         }
 
         & + .flex-box__item {

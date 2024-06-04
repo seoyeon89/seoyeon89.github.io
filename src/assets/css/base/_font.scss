@@ -1,11 +1,13 @@
+@use "../import" as *;
+
 // 텍스트 폰트
-$fonts : ("Light": $text-font-weight-light, "Regular": $text-font-weight, "Medium": $text-font-weight-medium, "Bold": $text-font-weight-bold);
+$fonts : ("Light": $font-weight-light, "Regular": $font-weight, "Medium": $font-weight-medium, "Bold": $font-weight-bold);
 
 @each $weight, $value in $fonts {
     @font-face {
-        font-family : $custom-font-family;
+        font-family : $font-family;
         font-weight : $value;
         font-style  : normal;
-        src         : url("../../font/#{$custom-font-family}-#{$weight}.woff2") format("woff2");
+        src         : url("../../font/#{$font-family}-#{$weight}.woff2") format("woff2");
     }
 }

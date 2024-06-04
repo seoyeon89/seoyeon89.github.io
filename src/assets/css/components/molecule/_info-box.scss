@@ -1,3 +1,5 @@
+@use "../../import" as *;
+
 .info-box {
     & + .info-box {
         margin-top : 16px
@@ -27,7 +29,7 @@
         color         : var(--text-secondary);
         font-size     : 0.88em;
 
-        @include icons(var(--text-secondary));
+        @include mixin-icons(var(--text-secondary));
     }
 
     &__content {

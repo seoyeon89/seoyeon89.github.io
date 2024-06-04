@@ -1,6 +1,8 @@
+@use "../../import" as *;
+
 .profile {
-    margin-top  : -$header-height;
-    padding-top : $header-height;
+    margin-top  : -$size-header-height;
+    padding-top : $size-header-height;
 
     &__card {
         display         : flex;
@@ -10,7 +12,7 @@
         justify-content : center;
         margin-bottom   : var(--component-gap);
 
-        @include laptop {
+        @include media-laptop {
             flex-direction  : column;
             align-items     : center;
             justify-content : center;
@@ -18,7 +20,7 @@
 
         &__avatar {
             flex : 0 0 auto;
-            @include avatar(92px);
+            @include mixin-avatar(92px);
         }
 
         &__info {
@@ -28,7 +30,7 @@
 
             &__title {
                 font-size : 1.29em;
-                @include laptop {
+                @include media-laptop {
                     text-align : center;
                 }
             }
@@ -36,17 +38,17 @@
             &__sub-title {
                 margin-bottom : 12px;
                 font-size     : 14px;
-                @include laptop {
+                @include media-laptop {
                     text-align : center;
                 }
             }
 
             &__content {
-                @include icons(var(--text-secondary));
+                @include mixin-icons(var(--text-secondary));
                 color     : var(--text-secondary);
                 font-size : 12px;
 
-                @include unify-parent("a") {
+                @include mixin-unify-parent("a") {
                     &:visited,
                     &:link {
                         color : var(--text-secondary);

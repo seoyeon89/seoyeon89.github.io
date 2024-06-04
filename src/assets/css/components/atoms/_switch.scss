@@ -1,4 +1,5 @@
 @use "sass:math" as math;
+@use "../../import" as *;
 
 .ui-switch {
     $height  : 20px;
@@ -17,7 +18,7 @@
     }
 
     & > input {
-        @include clip;
+        @include mixin-clip;
 
         &:checked + .ui-switch__button {
             background : var(--theme-primary);

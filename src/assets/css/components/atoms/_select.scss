@@ -1,3 +1,5 @@
+@use "../../import" as *;
+
 select {
     display             : block;
     width               : 100%;
@@ -12,7 +14,7 @@ select {
     background-repeat   : no-repeat;
     background-position : calc(100% - 16px) center;
     box-shadow          : var(--component-shadow);
-    font-size           : $input-font-size;
+    font-size           : $font-size;
 
     &:hover,
     &:focus {

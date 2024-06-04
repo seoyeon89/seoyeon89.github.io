@@ -1,3 +1,5 @@
+@use "../../import" as *;
+
 .dropdown {
     position               : relative;
     --dropdown-icon-height : 32px;
@@ -32,11 +34,11 @@
         border-radius : 50%;
 
         & > .icons {
-            @include icons(var(--theme-primary))
+            @include mixin-icons(var(--theme-primary))
         }
 
         & > span {
-            @include clip;
+            @include mixin-clip;
         }
 
         &:hover {
@@ -59,7 +61,7 @@
         box-shadow    : var(--component-shadow);
         z-index       : 99;
 
-        @include tablet {
+        @include media-tablet {
             max-height : calc(100vh - 133px);
         }
     }

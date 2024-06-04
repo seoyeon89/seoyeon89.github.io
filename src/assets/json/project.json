@@ -21,7 +21,8 @@
         "CSS"
       ],
       "discription": [
-        "대학내 과일 판매 제안 프로젝트로, 대학 수업 시간에 작업한 프로젝트입니다.<br/>BI 참여 및 프로젝트 내의 홈페이지 작업을 전담하였습니다. 홈페이지는 반응형으로 작업되었습니다."
+        "대학내 과일 판매 제안 프로젝트로, 대학 수업 시간에 작업한 프로젝트입니다.",
+        "BI 참여 및 프로젝트 내의 홈페이지 작업을 전담하였습니다. 홈페이지는 반응형으로 작업되었습니다."
       ],
       "thumbnail": "01_univers/01_monday/monday_thum.png",
       "images": [
@@ -1453,8 +1454,10 @@
         "07_out/02_cleanician/cleanician01.png",
         "07_out/02_cleanician/cleanician02.png",
         "07_out/02_cleanician/cleanician03.png",
-        "07_out/02_cleanician/cleanician04.png",
-        "07_out/02_cleanician/cleanician05.png"
+        "07_out/02_cleanician/cleanician_dashboard01.png",
+        "07_out/02_cleanician/cleanician_dashboard02.png",
+        "07_out/02_cleanician/cleanician_dashboard03.png",
+        "07_out/02_cleanician/cleanician_dashboard04.png"
       ],
       "links": [
         "https://cleanician.co.kr/"

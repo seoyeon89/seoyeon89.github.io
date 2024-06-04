@@ -1,29 +1,6 @@
+@use "./media" as *;
 @use "sass:math" as math;
 @use "sass:selector";
-
-@mixin mobile {
-    @media (max-width : #{$tablet-break-point - 1}) {
-        @content;
-    }
-}
-
-@mixin tablet {
-    @media (min-width : #{$tablet-break-point}) {
-        @content;
-    }
-}
-
-@mixin laptop {
-    @media (min-width : #{$laptop-break-point}) {
-        @content;
-    }
-}
-
-@mixin desktop {
-    @media (min-width : #{$desktop-break-point}) {
-        @content;
-    }
-}
 
 @mixin clip {
     position   : absolute !important;
@@ -49,7 +26,7 @@
 }
 
 @mixin scrollbar($thumbColor : #DDDDDD) {
-    @include tablet() {
+    @include tablet {
 
         &::-webkit-scrollbar {
             width : 16px;

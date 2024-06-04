@@ -1,35 +1,30 @@
 @charset "UTF-8";
 @use "sass:math" as math;
 
-@import "abstracts/mixin";
-@import "abstracts/ui_reset";
-@import "abstracts/function";
-@import "abstracts/variables";
+@use "base/font";
+@use "base/default";
 
-@import "base/font";
-@import "base/default";
+@use "components/atoms/avatar";
+@use "components/atoms/buttons";
+@use "components/atoms/select";
+@use "components/atoms/checkbox";
+@use "components/atoms/switch";
+@use "components/atoms/circular-progress";
+@use "components/atoms/callout";
 
-@import "components/atoms/avatar";
-@import "components/atoms/buttons";
-@import "components/atoms/select";
-@import "components/atoms/checkbox";
-@import "components/atoms/switch";
-@import "components/atoms/circular-progress";
-@import "components/atoms/callout";
+@use "components/molecule/table";
+@use "components/molecule/filter";
+@use "components/molecule/dropdown";
+@use "components/molecule/info-box";
+@use "components/molecule/tags";
+@use "components/molecule/accordion";
+@use "components/molecule/flex-box";
 
-@import "components/molecule/table";
-@import "components/molecule/filter";
-@import "components/molecule/dropdown";
-@import "components/molecule/info-box";
-@import "components/molecule/tags";
-@import "components/molecule/accordion";
-@import "components/molecule/flex-box";
+@use "components/organism/projects";
+@use "components/organism/header";
+@use "components/organism/popup";
+@use "components/organism/profile";
 
-@import "components/organism/projects";
-@import "components/organism/header";
-@import "components/organism/popup";
-@import "components/organism/profile";
-
-@import "pages/home";
-@import "pages/detail";
-@import "pages/no-page";
+@use "pages/home";
+@use "pages/detail";
+@use "pages/no-page";

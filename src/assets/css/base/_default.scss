@@ -1,11 +1,13 @@
+@use "../import" as *;
+
 /* 초기화 */
 html {
     height      : 100vh;
     height      : 100svh;
     line-height : 1.3em;
-    font-family : $font-family;
-    font-size   : $text-font-size;
-    font-weight : $text-font-weight;
+    font-family : $font-family-list;
+    font-size   : $font-size;
+    font-weight : $font-weight;
 }
 
 body {
@@ -68,13 +70,13 @@ select {
 
 // 숨김
 .blind {
-    @include clip;
+    @include mixin-clip;
 }
 
 :root {
-    --theme-primary               : #{$theme-primary};
-    --theme-primary-rgb           : #{to-rgb($theme-primary)};
-    --theme-secondary             : #{$theme-secondary};
+    --theme-primary               : #{$color-theme-primary};
+    --theme-primary-rgb           : #{function-to-rgb($color-theme-primary)};
+    --theme-secondary             : #{$color-theme-secondary};
     --text-primary                : #222222;
     --text-secondary              : #999999;
     --paper-primary               : #FFFFFF;
@@ -90,7 +92,7 @@ select {
     --inner-padding               : 12px;
 }
 
-@include tablet {
+@include media-tablet {
     :root {
         --inner-padding               : 32px;
         --component-gap               : 20px;

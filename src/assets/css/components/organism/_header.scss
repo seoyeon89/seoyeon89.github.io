@@ -1,3 +1,5 @@
+@use "../../import" as *;
+
 .header {
     display         : flex;
     position        : fixed;
@@ -6,7 +8,7 @@
     right           : 0;
     left            : 0;
     width           : 100%;
-    height          : $header-height;
+    height          : $size-header-height;
     padding         : 0 var(--inner-padding);
     font-size       : 1.14rem;
     z-index         : 10;

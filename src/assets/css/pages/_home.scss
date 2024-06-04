@@ -1,3 +1,5 @@
+@use "../import" as *;
+
 .container {
     position   : relative;
     min-height : 100vh;
@@ -9,7 +11,7 @@
         right      : 0;
         left       : 0;
         width      : 100%;
-        height     : $profile-height;
+        height     : $size-containter_background_height;
         background : url("/assets/images/background.png") center repeat var(--paper-primary);
         z-index    : 1;
 
@@ -36,7 +38,7 @@
         padding        : 0 var(--inner-padding) var(--inner-padding);
         z-index        : 2;
 
-        @include tablet {
+        @include media-tablet {
             flex-direction : row;
             align-items    : flex-start;
         }
@@ -44,40 +46,40 @@
         .profile {
             flex          : 0 1 auto;
             width         : 100%;
-            margin-top    : $header-height;
+            margin-top    : $size-header-height;
             padding       : var(--component-gap) calc(var(--component-gap) / 2);
             border-radius : var(--component-radius);
             background    : var(--paper-primary);
             box-shadow    : var(--component-shadow);
 
-            @include tablet {
-                @include scrollbar(#DDDDDD);
+            @include media-tablet {
+                @include mixin-scrollbar(#DDDDDD);
                 flex               : 0 0 auto;
                 position           : sticky;
-                top                : $header-height;
+                top                : $size-header-height;
                 overflow           : hidden auto;
                 width              : 360px;
                 max-height         : calc(100vh - var(--max-height-outer));
                 padding            : var(--component-gap);
-                --max-height-outer : calc(var(--inner-padding) + #{$header-height});
+                --max-height-outer : calc(var(--inner-padding) + #{$size-header-height});
             }
         }
 
         .works {
             flex        : 0 1 auto;
             width       : 100%;
-            margin-top  : -$header-height;
-            padding-top : $header-height;
+            margin-top  : -$size-header-height;
+            padding-top : $size-header-height;
 
-            @include tablet {
+            @include media-tablet {
                 margin-top  : 0;
-                padding-top : calc(var(--component-gap) + $profile-height);
+                padding-top : calc(var(--component-gap) + $size-containter_background_height);
             }
 
             .works-top {
                 display          : flex;
                 position         : sticky;
-                top              : $header-height;
+                top              : $size-header-height;
                 padding          : var(--component-padding-secondary);
                 border           : 1px solid rgba(var(--theme-primary-rgb), 0.4);
                 border-radius    : var(--component-radius);
@@ -85,7 +87,7 @@
                 z-index          : 10;
                 backdrop-filter  : blur(12px);
 
-                @include tablet {
+                @include media-tablet {
                     align-items : center;
                 }
 

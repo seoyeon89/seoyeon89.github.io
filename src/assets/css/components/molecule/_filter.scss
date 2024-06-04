@@ -1,3 +1,5 @@
+@use "../../import" as *;
+
 .filter {
     display : flex;
     gap     : 12px;
@@ -21,30 +23,31 @@
             & > button {
                 @include reset-button;
                 display     : flex;
+                gap         : 4px;
                 align-items : center;
                 min-height  : 24px;
                 padding     : 4px 8px;
                 color       : var(--theme-primary);
                 background  : var(--paper-endpoint);
                 font-size   : 0.8em;
-                gap:4px;
 
-                @include tablet {
+                @include media-tablet {
                     gap        : 6px;
                     min-height : 20px;
                     font-size  : 0.95em;
                 }
 
                 & > div {
-                    @include icons();
+                    @include mixin-icons();
                 }
 
                 & > span {
-                    font-weight    : $text-font-weight-light;
+                    font-weight : $font-weight-light;
                 }
+
                 & > em {
                     text-transform : uppercase;
-                    font-weight    : $text-font-weight-bold;
+                    font-weight    : $font-weight-bold;
                     font-style     : normal;
                 }
             }

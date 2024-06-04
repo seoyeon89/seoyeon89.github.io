@@ -1,9 +1,11 @@
+@use "../../import" as *;
+
 .tags {
     display     : flex;
     flex-wrap   : wrap;
     align-items : baseline;
     margin      : -2px;
-    font-weight : $text-font-weight;
+    font-weight : $font-weight;
 
     &__item {
         flex           : 0 0 auto;
