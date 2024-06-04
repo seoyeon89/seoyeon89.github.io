@@ -9,25 +9,27 @@
 @import "base/font";
 @import "base/default";
 
-@import "components/avatar";
-@import "components/buttons";
-@import "components/select";
-@import "components/checkbox";
-@import "components/switch";
-@import "components/circular-progress";
-@import "components/table";
-@import "components/filter";
-@import "components/dropdown";
-@import "components/list/projects";
-@import "components/list/info-box";
-@import "components/tags";
-@import "components/accordion";
-@import "components/flex-box";
-@import "components/callout";
-@import "components/header";
-@import "components/popup";
-@import "components/profile";
+@import "components/atoms/avatar";
+@import "components/atoms/buttons";
+@import "components/atoms/select";
+@import "components/atoms/checkbox";
+@import "components/atoms/switch";
+@import "components/atoms/circular-progress";
+@import "components/atoms/callout";
 
-@import "page/home";
-@import "page/detail";
-@import "page/no-page";
+@import "components/molecule/table";
+@import "components/molecule/filter";
+@import "components/molecule/dropdown";
+@import "components/molecule/info-box";
+@import "components/molecule/tags";
+@import "components/molecule/accordion";
+@import "components/molecule/flex-box";
+
+@import "components/organism/projects";
+@import "components/organism/header";
+@import "components/organism/popup";
+@import "components/organism/profile";
+
+@import "pages/home";
+@import "pages/detail";
+@import "pages/no-page";

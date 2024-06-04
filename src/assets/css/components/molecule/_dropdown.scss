@@ -47,17 +47,21 @@
 
     &__list {
         position      : absolute;
+        z-index       : 99;
         top           : calc(var(--dropdown-icon-height) + 4px);
         left          : 0;
         overflow      : auto;
         width         : max-content;
         min-width     : 240px;
-        max-height    : calc(100vh - 80px);
+        max-height    : calc(100vh - 118px);
         padding       : var(--component-padding);
         border-radius : var(--component-radius);
         background    : var(--paper-primary);
         box-shadow    : var(--component-shadow);
-        z-index       : 99;
+
+        @include tablet{
+            max-height    : calc(100vh - 133px);
+        }
 
         ul {
             li {

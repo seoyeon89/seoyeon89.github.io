@@ -1,15 +1,15 @@
 .detail {
     display        : flex;
+    align-items    : flex-start;
     flex-direction : column;
     gap            : var(--component-gap);
-    align-items    : flex-start;
     @include laptop {
         flex-direction : row;
     }
 
     &__info {
-        flex          : 0 0 auto;
         overflow      : hidden auto;
+        flex          : 0 0 auto;
         width         : 100%;
         padding       : var(--component-padding);
         border-radius : var(--component-radius);
@@ -26,12 +26,12 @@
     }
 
     &__thumbnail {
-        flex            : 0 1 auto;
         display         : flex;
+        flex            : 0 1 auto;
         flex-wrap       : wrap;
-        gap             : 8px;
         justify-content : center;
         width           : 100%;
+        gap             : 8px;
 
         @include tablet {
             justify-content : unset;
@@ -53,8 +53,8 @@
     .participation {
         display         : flex;
         flex-wrap       : wrap;
-        gap             : 8px;
         justify-content : center;
+        gap             : 8px;
     }
 
     .skills {
@@ -63,16 +63,16 @@
         & > div {
             & + div {
                 &:before {
-                    content : ',';
                     margin  : 0 2px;
+                    content : ',';
                 }
             }
         }
     }
 
     .discription {
-        margin-top  : 12px;
         line-height : 1.5em;
+        margin-top  : 12px;
 
         & > p {
             & + p {

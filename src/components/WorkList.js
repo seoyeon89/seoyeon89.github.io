@@ -21,6 +21,7 @@ const categoriesInit = [
     { id: 1, title: '유지보수', seen: true },
     { id: 2, title: '외주', seen: true },
     { id: 3, title: '개인프로젝트', seen: true },
+    { id: 4, title: '기타', seen: false },
 ]
 
 const getSelected = (FilterObject) => {
@@ -82,6 +83,8 @@ const WorkList = () => {
         setSeeFeatured(checked);
         setProjects(getProjectList(filters, checked, categories));
     }
+    console.log(projects);
+    console.log(projectInit);
     return (
         <section id="works" className="works">
             <h1 hidden>WorkList</h1>
@@ -144,7 +147,7 @@ const WorkList = () => {
                         {
                             seeFeatured === true &&
                             <div className="filter__result__item">
-                                <button type="button" onClick={e => featuredChange(!seeFeatured)}>
+                                <button type="button" onClick={ e => featuredChange(!seeFeatured)}>
                                     <div><i><FeatherIcon icon="x"/></i></div>
                                     <span hidden>삭제</span>
                                 </button>
