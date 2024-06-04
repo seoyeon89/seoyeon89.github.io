@@ -64,6 +64,7 @@ const WorkList = () => {
     const [projects, setProjects] = useState( getProjectList(filterInit,featuredInit, categoriesInit) );
 
     const filterChange = (filterId, nextSeen) => {
+        console.log('필터');
         const nextFilters = [...filters];
         const targetFilter = nextFilters.find( item => item.id === filterId );
         targetFilter.seen = nextSeen;
@@ -72,6 +73,7 @@ const WorkList = () => {
         setProjects(getProjectList(nextFilters, seeFeatured, categories));
     }
     const categoryChange = (CategoryId, nextSeen) => {
+        console.log('실행');
         const nextCategories = [...categories];
         const targetCategory = nextCategories.find( item => item.id === CategoryId );
         targetCategory.seen = nextSeen;
@@ -80,6 +82,7 @@ const WorkList = () => {
         setProjects(getProjectList(filters, seeFeatured, nextCategories));
     }
     const featuredChange = (checked) =>{
+        console.log('중요');
         setSeeFeatured(checked);
         setProjects(getProjectList(filters, checked, categories));
     }
@@ -156,10 +159,10 @@ const WorkList = () => {
                                 return category.seen === true &&
                                     <div key={category.id} className="filter__result__item">
                                         <button type="button" onClick={() => {
-                                            filterChange(category.id, !category.seen)
+                                            categoryChange(category.id, !category.seen)
                                         }}>
                                             <div><i><FeatherIcon icon="x"/></i></div>
-                                            <span>범주 :</span>
+                                            <span>범주</span>
                                             <em>{category.title}</em>
                                         </button>
                                     </div>
@@ -173,7 +176,7 @@ const WorkList = () => {
                                             filterChange(filter.id, !filter.seen)
                                         }}>
                                             <div><i><FeatherIcon icon="x"/></i></div>
-                                            <span>플랫폼 :</span>
+                                            <span>플랫폼</span>
                                             <em>{filter.title}</em>
                                         </button>
                                     </div>

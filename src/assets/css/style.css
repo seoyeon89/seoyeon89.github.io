@@ -394,6 +394,7 @@ select:hover, select:focus {
   color: var(--theme-primary);
   background: var(--paper-endpoint);
   font-size: 0.8em;
+  gap: 4px;
 }
 .filter__result__item > button:before,
 .filter__result__item > button i,
@@ -415,7 +416,6 @@ select:hover, select:focus {
   display: flex;
   align-items: center;
   gap: 4px;
-  margin-right: 4px;
 }
 .filter__result__item > button > div > i {
   align-items: center;
@@ -429,6 +429,9 @@ select:hover, select:focus {
   object-fit: contain;
   object-position: center;
   stroke: var(--theme-primary);
+}
+.filter__result__item > button > span {
+  font-weight: 100;
 }
 .filter__result__item > button > em {
   text-transform: uppercase;
