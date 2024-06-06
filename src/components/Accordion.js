@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import FeatherIcon from 'feather-icons-react';
 
-export const Accordion = ({children, title, initOpen = true, extraClass = ''}) => {
+export const Accordion = ({children, title, initOpen = false, extraClass = ''}) => {
     const [isActive, setActive] = useState(initOpen);
     const handleToggle = () => {
         setActive(!isActive);

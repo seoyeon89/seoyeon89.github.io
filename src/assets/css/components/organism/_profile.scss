@@ -7,20 +7,14 @@
     &__card {
         display         : flex;
         flex-wrap       : wrap;
-        gap             : 20px;
+        gap             : 16px;
         align-items     : center;
         justify-content : center;
         margin-bottom   : var(--component-gap);
 
-        @include media-laptop {
-            flex-direction  : column;
-            align-items     : center;
-            justify-content : center;
-        }
-
         &__avatar {
             flex : 0 0 auto;
-            @include mixin-avatar(92px);
+            @include mixin-avatar(120px);
         }
 
         &__info {
@@ -30,48 +24,40 @@
 
             &__title {
                 font-size : 1.29em;
-                @include media-laptop {
+                @media (max-width : 347px) {
                     text-align : center;
                 }
             }
 
             &__sub-title {
-                margin-bottom : 12px;
+                margin-bottom : 8px;
                 font-size     : 14px;
-                @include media-laptop {
+                @media (max-width : 347px) {
                     text-align : center;
                 }
             }
 
             &__content {
-                @include mixin-icons(var(--text-secondary));
                 color     : var(--text-secondary);
                 font-size : 12px;
 
-                @include mixin-unify-parent("a") {
-                    &:visited,
-                    &:link {
-                        color : var(--text-secondary);
+                & > li {
+                    & > * {
+                        @include mixin-icons(var(--text-endpoint));
                     }
-                    &:hover {
-                        text-decoration : underline;
-                        color           : var(--text-secondary);
+
+                    a {
+                        &:visited,
+                        &:link {
+                            color : var(--text-endpoint);
+                        }
+
+                        &:hover {
+                            text-decoration : underline;
+                            color           : var(--text-endpoint);
+                        }
                     }
                 }
-            }
-        }
-
-        &__skills {
-            display         : flex;
-            gap             : 8px;
-            align-items     : center;
-            justify-content : center;
-
-            & > div {
-                flex   : 0 0 auto;
-                width  : 80px;
-                height : 80px;
-
             }
         }
     }
@@ -80,6 +66,89 @@
         display        : flex;
         flex-direction : column;
         gap            : 4px;
+    }
+
+    .introduce {
+        &__title {
+            margin-bottom           : 12px;
+            line-height             : 1.3em;
+            background              : linear-gradient(170deg, var(--theme-primary) 39%, var(--theme-secondary) 100%);
+            -webkit-background-clip : text;
+            font-size               : 1.5em;
+            font-weight             : $font-weight-light;
+            -webkit-text-fill-color : rgba(0, 0, 0, 0);
+        }
+
+        & > {
+            line-height : 1.5em;
+        }
+    }
+
+    .skills {
+        &__item {
+            display        : flex;
+            flex-direction : column;
+            flex-wrap      : wrap;
+            gap            : 8px;
+
+            & + .skills__item {
+                margin-top : 24px;
+            }
+
+            &__title {
+                display        : flex;
+                align-items    : center;
+                margin-bottom  : 4px;
+                line-height    : 1.3rem;
+                text-transform : uppercase;
+                font-size      : 0.86em;
+                font-weight    : $font-weight;
+
+                @include media-tablet {
+                    font-size : 1em;
+                }
+
+                i {
+                    display         : flex;
+                    align-items     : center;
+                    justify-content : center;
+                    width           : 20px;
+                    height          : 20px;
+                    margin-right    : 4px;
+                    border-radius   : 50%;
+                    background      : var(--theme-primary);
+
+                    & > svg {
+                        stroke : #FFFFFF;
+                    }
+                }
+
+                span {
+                    margin-right : 2px;
+                }
+            }
+
+            &__box {
+                & + .skills__item__box {
+                    margin-top : 12px;
+                }
+
+                &__icons {
+                    display               : grid;
+                    grid-template-columns : repeat(auto-fit, 32px);
+                    gap                   : 8px;
+                    margin-bottom         : 8px;
+
+                    & > span {
+                        & > svg {
+                            display : block;
+                            width   : 100%;
+                            height  : 100%;
+                        }
+                    }
+                }
+            }
+        }
 
     }
 

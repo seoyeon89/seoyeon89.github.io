@@ -53,10 +53,10 @@
     }
 
     .participation {
-        display         : flex;
-        flex-wrap       : wrap;
-        gap             : 8px;
-        justify-content : center;
+        display               : grid;
+        grid-template-columns : repeat(auto-fit, 100px);
+        gap                   : 8px;
+        justify-content       : center;
     }
 
     .skills {

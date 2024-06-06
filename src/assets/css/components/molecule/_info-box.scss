@@ -25,32 +25,29 @@
     }
 
     &__date {
-        margin-bottom : 4px;
-        color         : var(--text-secondary);
-        font-size     : 0.88em;
+        @include mixin-icons(var(--text-endpoint));
+        min-height : 24px;
+        color      : var(--text-endpoint);
+        font-size  : 0.88em;
 
-        @include mixin-icons(var(--text-secondary));
+        & > i {
+            width  : 12px;
+            height : 12px;
+        }
+
+        & > span {
+            line-height : 20px;
+        }
+
+        & > em {
+            margin-left : auto;
+            color       : var(--text-secondary);
+            font-style  : normal;
+        }
     }
 
     &__content {
-        & > ul {
-            li {
-                position     : relative;
-                padding-left : 16px;
 
-                &:before {
-                    content          : "";
-                    display          : block;
-                    position         : absolute;
-                    top              : 0.5em;
-                    left             : 4px;
-                    width            : 4px;
-                    height           : 4px;
-                    border-radius    : 50%;
-                    background-color : var(--theme-primary);
-                }
-            }
-        }
     }
 
 

@@ -1,6 +1,9 @@
 @use "../../import" as *;
 
 .accordion {
+    overflow      : hidden;
+    border-radius : var(--component-radius);
+
     &:hover {
         box-shadow : var(--component-shadow);
     }
@@ -51,6 +54,8 @@
 
 
     &[data-expended="true"] {
+        box-shadow : var(--component-shadow);
+
         .accordion__title {
             i {
                 svg {

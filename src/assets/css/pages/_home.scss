@@ -47,7 +47,7 @@
             flex          : 0 1 auto;
             width         : 100%;
             margin-top    : $size-header-height;
-            padding       : var(--component-gap) calc(var(--component-gap) / 2);
+            padding       : var(--component-gap);
             border-radius : var(--component-radius);
             background    : var(--paper-primary);
             box-shadow    : var(--component-shadow);
