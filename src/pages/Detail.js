@@ -5,7 +5,20 @@ import Error from '../components/Error';
 import ProjectsJsonData from '../assets/json/project.json';
 
 const Projects = ProjectsJsonData.projects.reverse();
-
+const mappingParticipation = (str) => {
+    switch (str.toLowerCase()) {
+        case 'publish':
+            return "퍼블리싱"
+        case 'design':
+            return '디자인'
+        case 'development':
+            return '개발'
+        case 'planning':
+            return '기획'
+        default:
+            return '기타'
+    }
+}
 const DetailPopup = ({Project}) => {
     return (
         <Popup title={Project.name}>
@@ -41,7 +54,7 @@ const DetailPopup = ({Project}) => {
                                 {Object.entries(Project.participation).map(([key, value]) => {
                                     return (
                                         <div className="participation__item" key={key}>
-                                            <CircleProgress title={key} percent={value} />
+                                            <CircleProgress title={mappingParticipation(key)} percent={value} />
                                         </div>
                                     );
                                 })
@@ -54,7 +67,7 @@ const DetailPopup = ({Project}) => {
                                 {
                                     Project.skills.map((skill, index) => {
                                         return (
-                                            <div key={index}>{skill}</div>
+                                            <span key={index}>{skill}</span>
                                         );
                                     })
                                 }

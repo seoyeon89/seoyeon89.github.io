@@ -19,11 +19,11 @@
         box-shadow    : var(--component-shadow);
 
         @include media-laptop {
+            @include mixin-scrollbar(#DDDDDD);
             position   : sticky;
             top        : 0;
-            width      : 380px;
+            width      : 320px;
             max-height : calc(100vh - 180px);
-            @include mixin-scrollbar(#DDDDDD);
         }
     }
 
@@ -54,9 +54,13 @@
 
     .participation {
         display               : grid;
-        grid-template-columns : repeat(auto-fit, 100px);
+        grid-template-columns : repeat(auto-fit, 80px);
         gap                   : 8px;
         justify-content       : center;
+        .circle-progress {
+            width:100%;
+            height:100%;
+        }
     }
 
     .skills {

@@ -290,7 +290,7 @@ select:hover, select:focus {
   right: 0;
   bottom: 0;
   left: 0;
-  padding: 20px;
+  padding: 16px;
   text-align: center;
   color: var(--text-primary);
   font-size: 1rem;
@@ -616,6 +616,20 @@ select:hover, select:focus {
   color: var(--text-secondary);
   font-style: normal;
 }
+.skills {
+  flex: 1 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+}
+.skills > span {
+  background: var(--paper-endpoint);
+  color: var(--text-secondary);
+  padding: 1px 4px;
+  font-size: 0.86em;
+  text-transform: uppercase;
+}
+
 .tags {
   display: flex;
   flex-wrap: wrap;
@@ -632,7 +646,7 @@ select:hover, select:focus {
   color: var(--theme-primary);
   border: 1px solid var(--theme-primary);
   border-radius: 30px;
-  font-size: 11px;
+  font-size: 0.86em;
 }
 
 .accordion {
@@ -763,7 +777,7 @@ select:hover, select:focus {
   display: flex;
   flex-direction: column;
   height: 100%;
-  padding: 20px;
+  padding: 16px;
   border: 1px solid var(--component-border-color);
   border-radius: var(--component-radius);
   background: #FFFFFF;
@@ -771,8 +785,7 @@ select:hover, select:focus {
 .project__thumbnail {
   flex: 0 0 auto;
   width: 100%;
-  margin-bottom: 16px;
-  padding-bottom: 20px;
+  margin-bottom: 12px;
   border-bottom: 1px solid var(--component-border-color);
 }
 .project__thumbnail div {
@@ -795,19 +808,19 @@ select:hover, select:focus {
   display: flex;
   flex-direction: column;
   padding: 0 4px;
+  gap: 4px;
 }
 .project__info__important {
   flex: 1 0;
   display: flex;
   align-content: flex-start;
-  margin-bottom: 4px;
 }
 .project__info__important h2 {
   flex: 1 1 auto;
   max-width: 100%;
-  padding-right: 4px;
   word-break: break-all;
   font-weight: 700;
+  font-size: 16px;
 }
 .project__info__important .tags {
   flex: 0 0 auto;
@@ -816,7 +829,6 @@ select:hover, select:focus {
 }
 .project__info__detail {
   display: flex;
-  font-size: 0.875rem;
 }
 .project__info__detail .type {
   flex: 1 0 auto;
@@ -1076,6 +1088,9 @@ select:hover, select:focus {
   font-weight: 100;
   -webkit-text-fill-color: rgba(0, 0, 0, 0);
 }
+.profile .introduce > p {
+  line-height: 1.5em;
+}
 .profile .skills__item {
   display: flex;
   flex-direction: column;
@@ -1089,15 +1104,9 @@ select:hover, select:focus {
   display: flex;
   align-items: center;
   margin-bottom: 4px;
-  line-height: 1.3rem;
   text-transform: uppercase;
-  font-size: 0.86em;
   font-weight: 400;
-}
-@media (min-width: 768px) {
-  .profile .skills__item__title {
-    font-size: 1em;
-  }
+  font-size: 1.14em;
 }
 .profile .skills__item__title i {
   display: flex;
@@ -1271,7 +1280,7 @@ select:hover, select:focus {
   .detail__info {
     position: sticky;
     top: 0;
-    width: 380px;
+    width: 320px;
     max-height: calc(100vh - 180px);
   }
 }
@@ -1314,9 +1323,13 @@ select:hover, select:focus {
 }
 .detail .participation {
   display: grid;
-  grid-template-columns: repeat(auto-fit, 100px);
+  grid-template-columns: repeat(auto-fit, 80px);
   gap: 8px;
   justify-content: center;
+}
+.detail .participation .circle-progress {
+  width: 100%;
+  height: 100%;
 }
 .detail .skills {
   display: flex;

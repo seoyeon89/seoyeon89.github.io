@@ -24,6 +24,10 @@ const categoriesInit = [
     { id: 4, title: '기타', seen: false },
 ]
 
+const formatDate = (dateString) =>  {
+    const [year, month] = dateString.split('-');
+    return `${year}/${month}`;
+}
 const getSelected = (FilterObject) => {
     return FilterObject.reduce((acc,cur) => {
         if(cur.seen) {
@@ -64,7 +68,6 @@ const WorkList = () => {
     const [projects, setProjects] = useState( getProjectList(filterInit,featuredInit, categoriesInit) );
 
     const filterChange = (filterId, nextSeen) => {
-        console.log('필터');
         const nextFilters = [...filters];
         const targetFilter = nextFilters.find( item => item.id === filterId );
         targetFilter.seen = nextSeen;
@@ -73,7 +76,6 @@ const WorkList = () => {
         setProjects(getProjectList(nextFilters, seeFeatured, categories));
     }
     const categoryChange = (CategoryId, nextSeen) => {
-        console.log('실행');
         const nextCategories = [...categories];
         const targetCategory = nextCategories.find( item => item.id === CategoryId );
         targetCategory.seen = nextSeen;
@@ -82,7 +84,6 @@ const WorkList = () => {
         setProjects(getProjectList(filters, seeFeatured, nextCategories));
     }
     const featuredChange = (checked) =>{
-        console.log('중요');
         setSeeFeatured(checked);
         setProjects(getProjectList(filters, checked, categories));
     }
@@ -225,8 +226,15 @@ const WorkList = () => {
                                                     </div>
                                                     {project.date.start &&
                                                         <div className="start-date">
-                                                            <time>{project.date.start}</time>
+                                                            <time>{formatDate(project.date.start)}</time>
                                                         </div>
+                                                    }
+                                                </div>
+                                                <div className="project__info__skills skills">
+                                                    {
+                                                        project.skills.map((skill) => {
+                                                            return <span>{skill}</span>
+                                                        })
                                                     }
                                                 </div>
                                             </div>

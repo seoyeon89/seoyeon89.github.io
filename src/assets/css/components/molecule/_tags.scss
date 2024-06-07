@@ -1,5 +1,20 @@
 @use "../../import" as *;
 
+.skills {
+    flex           : 1 0 auto;
+    display        : flex;
+    flex-wrap: wrap;
+    gap:4px;
+
+    & > span{
+        background: var(--paper-endpoint);
+        color:var(--text-secondary);
+        padding:1px 4px;
+        font-size:0.86em;
+        text-transform: uppercase;
+    }
+}
+
 .tags {
     display     : flex;
     flex-wrap   : wrap;
@@ -16,6 +31,6 @@
         color          : var(--theme-primary);
         border         : 1px solid var(--theme-primary);
         border-radius  : 30px;
-        font-size      : 11px;
+        font-size:0.86em;
     }
 }

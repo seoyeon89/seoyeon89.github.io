@@ -20,7 +20,7 @@
     display        : flex;
     flex-direction : column;
     height         : 100%;
-    padding        : 20px;
+    padding        : 16px;
     border         : 1px solid var(--component-border-color);
     border-radius  : var(--component-radius);
     background     : #FFFFFF;
@@ -29,8 +29,7 @@
     &__thumbnail {
         flex           : 0 0 auto;
         width          : 100%;
-        margin-bottom  : 16px;
-        padding-bottom : 20px;
+        margin-bottom  : 12px;
         border-bottom  : 1px solid var(--component-border-color);
 
         div {
@@ -47,9 +46,7 @@
                 height          : 100%;
                 object-fit      : cover;
                 object-position : center;
-
             }
-
         }
     }
 
@@ -58,19 +55,19 @@
         display        : flex;
         flex-direction : column;
         padding        : 0 4px;
+        gap:4px;
 
         &__important {
             flex          : 1 0;
             display       : flex;
             align-content : flex-start;
-            margin-bottom : 4px;
 
             h2 {
                 flex          : 1 1 auto;
                 max-width     : 100%;
-                padding-right : 4px;
                 word-break    : break-all;
                 font-weight   : $font-weight-bold;
+                font-size:16px;
             }
 
             .tags {
@@ -83,7 +80,6 @@
 
         &__detail {
             display   : flex;
-            font-size : 0.875rem;
 
             .type {
                 flex : 1 0 auto;
@@ -94,5 +90,6 @@
                 }
             }
         }
+
     }
 }

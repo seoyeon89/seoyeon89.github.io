@@ -561,7 +561,7 @@
     {
       "id": 19,
       "isOpen": 2,
-      "isFeatured": true,
+      "isFeatured": false,
       "name": "시대드론 교육원 사이트 모바일",
       "category": "신규구축",
       "participation": {
@@ -715,7 +715,7 @@
     {
       "id": 24,
       "isOpen": 2,
-      "isFeatured": false,
+      "isFeatured": true,
       "name": "시대고시 위생사",
       "category": "신규구축",
       "participation": {
@@ -1103,7 +1103,7 @@
     {
       "id": 37,
       "isOpen": 2,
-      "isFeatured": false,
+      "isFeatured": true,
       "name": "시대고시 보세사",
       "category": "신규구축",
       "participation": {
@@ -1164,7 +1164,7 @@
     {
       "id": 39,
       "isOpen": 2,
-      "isFeatured": true,
+      "isFeatured": false,
       "name": "장서연 포트폴리오 사이트 리뉴얼",
       "category": "개인프로젝트",
       "participation": {
@@ -1237,7 +1237,7 @@
     {
       "id": 41,
       "isOpen": 2,
-      "isFeatured": true,
+      "isFeatured": false,
       "name": "병원 마케팅 플랫폼 어드민",
       "category": "신규구축",
       "participation": {
@@ -1358,6 +1358,9 @@
         "datepicker수정 및 gulp 3.X버전을 4버전으로 마이그레이션 하는 작업을 하였습니다."
       ],
       "thumbnail": "08_lsinno/moa/img0.png",
+      "images" : [
+        "08_lsinno/moa/img0.png"
+      ],
       "links" : [
         "https://info.maemo.co.kr/"
       ]
@@ -1466,7 +1469,7 @@
     {
       "id": 48,
       "isOpen": 2,
-      "isFeatured": true,
+      "isFeatured": false,
       "name": "Dx&Vx 게놈 유전자 검사 결과",
       "category": "외주",
       "participation": {
@@ -1794,7 +1797,7 @@
     {
       "id": 59,
       "isOpen": 1,
-      "isFeatured": true,
+      "isFeatured": false,
       "name": "인지그룹 그룹웨어 구축",
       "category": "신규구축",
       "participation": {
@@ -1852,7 +1855,7 @@
     {
       "id": 61,
       "isOpen": 1,
-      "isFeatured": true,
+      "isFeatured": false,
       "name": "호반그룹 그룹웨어 구축",
       "category": "신규구축",
       "participation": {
@@ -1971,7 +1974,7 @@
         "휠라홀딩스 그룹웨어 구축 프로젝트의 퍼블리싱 담당으로 참여 하였습니다.",
         "백엔드 언어는 JAVA(JSP)입니다."
       ],
-      "thumbnail": "09_covision/16_fila/site03.png",
+      "thumbnail": "09_covision/16_fila/site01.png",
       "images" : [
         "09_covision/16_fila/site01.png",
         "09_covision/16_fila/site02.png",
@@ -2039,7 +2042,7 @@
     {
       "id": 67,
       "isOpen": 1,
-      "isFeatured": true,
+      "isFeatured": false,
       "name": "한국무역협회 그룹웨어 구축",
       "category": "신규구축",
       "participation": {
@@ -2059,7 +2062,7 @@
         "한국무역협회 그룹웨어 구축 프로젝트의 퍼블리싱 담당으로 참여 하였습니다.",
         "백엔드 언어는 JAVA(JSP)입니다."
       ],
-      "thumbnail": "09_covision/19_kita/site_thum.png",
+      "thumbnail": "09_covision/19_kita/site02.png",
       "images" : [
         "09_covision/19_kita/site01.png",
         "09_covision/19_kita/site02.png",
@@ -2072,7 +2075,7 @@
     {
       "id": 68,
       "isOpen": 2,
-      "isFeatured": true,
+      "isFeatured": false,
       "name": "코비폴리오",
       "category": "개인프로젝트",
       "participation": {
