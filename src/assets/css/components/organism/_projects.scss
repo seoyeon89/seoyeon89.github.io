@@ -58,7 +58,7 @@
         gap:4px;
 
         &__important {
-            flex          : 1 0;
+            flex:0 0 auto;
             display       : flex;
             align-content : flex-start;
 
@@ -90,6 +90,8 @@
                 }
             }
         }
-
+        &__skills {
+            flex:0 0 auto;
+        }
     }
 }

@@ -16,7 +16,6 @@ import { ReactComponent as IconSvn } from '../assets/images/icon_svn.svg';
 import { ReactComponent as IconGit } from '../assets/images/icon_git.svg';
 import { ReactComponent as IconVscode } from '../assets/images/icon_vscode.svg';
 import { ReactComponent as IconWebstrom } from '../assets/images/icon_webstorm.svg';
-
 const MyInfo = MyJsonData;
 
 const formatMonthsToYearMonth = (months) => {
@@ -38,6 +37,7 @@ const formatMonthsToYearMonth = (months) => {
 
     return result.trim();
 }
+
 const getMonthGap = (joinDate, leaveDate) => {
     // 입사일과 퇴사일을 Date 객체로 변환
     const joinDateObj = new Date(`${joinDate}.01`);
@@ -47,6 +47,12 @@ const getMonthGap = (joinDate, leaveDate) => {
 
     return (leaveDateObj.getFullYear() * 12 + leaveDateObj.getMonth()) - (joinDateObj.getFullYear() * 12 + joinDateObj.getMonth());
 }
+const totalCareerMonth = MyInfo['experience'].map( item => {
+    return getMonthGap(item.dateStart, item.dateEnd);
+}).reduce((acc, cur) => {
+    return acc + cur;
+}, 0);
+
 const MyInfoSection = (props) => {
     return (
             MyInfo[props.objectKey].map((list, index) => {
@@ -65,10 +71,13 @@ const MyInfoSection = (props) => {
                                 </i>
                                 <span>{list.dateStart}</span>
                                 <span>- {list.dateEnd ?? `NOW`}</span>
-                                <em>{formatMonthsToYearMonth(getMonthGap(list.dateStart, list.dateEnd))}</em>
+                                {
+                                    props.objectKey === 'experience' &&
+                                    <em>{formatMonthsToYearMonth(getMonthGap(list.dateStart, list.dateEnd))}</em>
+                                }
                             </p>
                         <div className="info-box__content">
-                            <ul className="list-bullet">
+                        <ul className="list-bullet">
                                 {
                                     list['description'].map((item, index) => {
                                         return(
@@ -88,11 +97,6 @@ const MyInfoSection = (props) => {
 };
 
 const Profile = () => {
-    const totalCareerMonth = MyInfo['experience'].map( item => {
-        return getMonthGap(item.dateStart, item.dateEnd);
-    }).reduce((acc, cur) => {
-        return acc + cur;
-    }, 0);
     return (
         <section className="profile">
             <h1 hidden>Profile</h1>

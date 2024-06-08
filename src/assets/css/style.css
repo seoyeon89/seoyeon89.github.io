@@ -811,7 +811,7 @@ select:hover, select:focus {
   gap: 4px;
 }
 .project__info__important {
-  flex: 1 0;
+  flex: 0 0 auto;
   display: flex;
   align-content: flex-start;
 }
@@ -836,6 +836,9 @@ select:hover, select:focus {
 .project__info__detail .type .projectType {
   margin-right: 4px;
   text-transform: uppercase;
+}
+.project__info__skills {
+  flex: 0 0 auto;
 }
 
 .header {
