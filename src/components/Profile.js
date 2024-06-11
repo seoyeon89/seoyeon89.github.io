@@ -39,16 +39,16 @@ const formatMonthsToYearMonth = (months) => {
 }
 
 const getMonthGap = (joinDate, leaveDate) => {
-    const joinDateObj = new Date(`${joinDate}.01`);
-    let leaveDateObj = (typeof leaveDate !== 'undefined') ? new Date(`${leaveDate}.${new Date(joinDateObj.getFullYear(), joinDateObj.getMonth() + 1, 0).getDate()}`) : new Date();
+    const joinDateObj = new Date(`${joinDate}/01`);
+    let leaveDateObj = (typeof leaveDate !== 'undefined') ? new Date(`${leaveDate}/${new Date(joinDateObj.getFullYear(), joinDateObj.getMonth() + 1, 0).getDate()}`) : new Date();
     return (leaveDateObj.getFullYear() * 12 + leaveDateObj.getMonth()) - (joinDateObj.getFullYear() * 12 + joinDateObj.getMonth());
 }
 
-const totalCareerMonth = MyInfo['experience'].map( item => {
+const totalCareerMonth = Number(MyInfo.experience.map( item => {
     return getMonthGap(item.dateStart, item.dateEnd);
 }).reduce((acc, cur) => {
     return acc + cur;
-}, 0);
+}, 0));
 
 const MyInfoSection = (props) => {
     return (
