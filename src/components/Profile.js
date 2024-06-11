@@ -39,14 +39,11 @@ const formatMonthsToYearMonth = (months) => {
 }
 
 const getMonthGap = (joinDate, leaveDate) => {
-    // 입사일과 퇴사일을 Date 객체로 변환
     const joinDateObj = new Date(`${joinDate}.01`);
-    const leaveDateObj = leaveDate
-        ? new Date(`${leaveDate}.${new Date(joinDateObj.getFullYear(), joinDateObj.getMonth() + 1, 0).getDate()}`)
-        : new Date();
-
+    let leaveDateObj = (typeof leaveDate !== 'undefined') ? new Date(`${leaveDate}.${new Date(joinDateObj.getFullYear(), joinDateObj.getMonth() + 1, 0).getDate()}`) : new Date();
     return (leaveDateObj.getFullYear() * 12 + leaveDateObj.getMonth()) - (joinDateObj.getFullYear() * 12 + joinDateObj.getMonth());
 }
+
 const totalCareerMonth = MyInfo['experience'].map( item => {
     return getMonthGap(item.dateStart, item.dateEnd);
 }).reduce((acc, cur) => {

@@ -232,8 +232,8 @@ const WorkList = () => {
                                                 </div>
                                                 <div className="project__info__skills skills">
                                                     {
-                                                        project.skills.map((skill) => {
-                                                            return <span>{skill}</span>
+                                                        project.skills.map((skill,index) => {
+                                                            return <span key={index}>{skill}</span>
                                                         })
                                                     }
                                                 </div>
