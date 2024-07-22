@@ -25,3 +25,15 @@ $desktop-break-point : 1920px;
         @content;
     }
 }
+
+@mixin dark() {
+    html[data-mode="dark"] & {
+        @content;
+    }
+
+    html:not([data-mode="light"]):not([data-mode="dark"]) {
+        @media (prefers-color-scheme : dark) {
+            @content;
+        }
+    }
+}

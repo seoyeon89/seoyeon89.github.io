@@ -12,6 +12,7 @@
 
     &[data-expended="true"] {
         .dropdown__button {
+            color      : #FFFFFF;
             background : var(--theme-primary);
 
             & > .icons > i > svg {
@@ -27,11 +28,13 @@
 
     &__button {
         @include reset-button;
-        width         : var(--dropdown-icon-height);
+        min-width     : var(--dropdown-icon-height);
         height        : var(--dropdown-icon-height);
+        padding       : 0 8px;
         transition    : background-color .3s;
+        color         : var(--theme-primary);
         border        : 1px solid var(--theme-primary);
-        border-radius : 50%;
+        border-radius : calc(var(--dropdown-icon-height) / 2);
 
         & > .icons {
             @include mixin-icons(var(--theme-primary))
@@ -39,6 +42,14 @@
 
         & > span {
             @include mixin-clip;
+        }
+
+        & > em {
+            font-style : normal;
+            padding    : 0 4px;
+            @include media-laptop {
+                display : none;
+            }
         }
 
         &:hover {
@@ -49,6 +60,7 @@
 
     &__list {
         position      : absolute;
+        z-index       : 99;
         top           : calc(var(--dropdown-icon-height) + 4px);
         left          : 0;
         overflow      : auto;
@@ -59,7 +71,6 @@
         border-radius : var(--component-radius);
         background    : var(--paper-primary);
         box-shadow    : var(--component-shadow);
-        z-index       : 99;
 
         @include media-tablet {
             max-height : calc(100vh - 133px);

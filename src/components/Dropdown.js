@@ -1,7 +1,7 @@
 import React, { useRef, useState, useEffect } from 'react';
 import FeatherIcon from 'feather-icons-react';
 
-export const Dropdown = ({children, title, titleIcon, initOpen = false, extraClass = ''}) => {
+export const Dropdown = ({children, title, titleIcon, label, initOpen = false, extraClass = ''}) => {
     const dropdownRef = useRef(null);
     const [isActive, setActive] = useState(initOpen);
     useEffect(() => {
@@ -26,6 +26,7 @@ export const Dropdown = ({children, title, titleIcon, initOpen = false, extraCla
              data-expended={`${isActive ? 'true' : 'false'}`}
              key={title}
              ref={dropdownRef}
+             label={label}
         >
             <button type="button"
                     className="dropdown__button"
@@ -33,6 +34,7 @@ export const Dropdown = ({children, title, titleIcon, initOpen = false, extraCla
             >
                 <div className="icons"><i><FeatherIcon icon={titleIcon} size="22"/></i></div>
                 <span>Add filter</span>
+                <em>{label}</em>
             </button>
 
             <div className="dropdown__list" >

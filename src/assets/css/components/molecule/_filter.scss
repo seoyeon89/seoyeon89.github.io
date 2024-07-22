@@ -1,40 +1,44 @@
 @use "../../import" as *;
 
 .filter {
-    display : flex;
-    gap     : 12px;
+    display     : flex;
+    align-items : center;
+    gap         : 12px;
 
     &__dropdown {
         flex : 0 0 auto;
     }
 
     &__result {
-        flex        : 0 1 auto;
-        display     : flex;
-        flex-wrap   : wrap;
-        gap         : 8px;
-        align-items : center;
+        display : none;
+        @include media-laptop {
+            display     : flex;
+            align-items : center;
+            flex        : 0 1 auto;
+            flex-wrap   : wrap;
+            gap         : 6px 8px;
+        }
 
         &__item {
+            line-height : 16px;
             flex        : 0 0 auto;
             gap         : 2px;
-            line-height : 16px;
 
             & > button {
                 @include reset-button;
+                font-size   : 0.8em;
                 display     : flex;
-                gap         : 4px;
                 align-items : center;
                 min-height  : 24px;
                 padding     : 4px 8px;
                 color       : var(--theme-primary);
                 background  : var(--paper-endpoint);
-                font-size   : 0.8em;
+                gap         : 4px;
 
                 @include media-tablet {
-                    gap        : 6px;
-                    min-height : 20px;
                     font-size  : 0.95em;
+                    min-height : 20px;
+                    gap        : 6px;
                 }
 
                 & > div {
@@ -46,9 +50,9 @@
                 }
 
                 & > em {
-                    text-transform : uppercase;
                     font-weight    : $font-weight-bold;
                     font-style     : normal;
+                    text-transform : uppercase;
                 }
             }
 

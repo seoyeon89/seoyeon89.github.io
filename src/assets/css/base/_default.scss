@@ -2,20 +2,20 @@
 
 /* 초기화 */
 html {
-    height      : 100vh;
-    height      : 100svh;
-    line-height : 1.3em;
     font-family : $font-family-list;
     font-size   : $font-size;
     font-weight : $font-weight;
+    line-height : 1.3em;
+    height      : 100vh;
+    height      : 100svh;
 }
 
 body {
-    margin                  : 0;
-    color                   : var(--text-primary);
     font-family             : inherit;
     font-size               : inherit;
     font-weight             : inherit;
+    margin                  : 0;
+    color                   : var(--text-primary);
     -webkit-font-smoothing  : antialiased;
     -moz-osx-font-smoothing : grayscale;
 }
@@ -25,10 +25,10 @@ body [hidden] {
 }
 
 * {
-    margin     : 0;
-    padding    : 0;
     font-size  : inherit;
     box-sizing : border-box;
+    margin     : 0;
+    padding    : 0;
 }
 
 button,
@@ -71,33 +71,4 @@ select {
 // 숨김
 .blind {
     @include mixin-clip;
-}
-
-:root {
-    --theme-primary               : #{$color-theme-primary};
-    --theme-primary-rgb           : #{function-to-rgb($color-theme-primary)};
-    --theme-secondary             : #{$color-theme-secondary};
-    --text-primary                : #222222;
-    --text-secondary              : #666666;
-    --text-endpoint               : #999999;
-    --paper-primary               : #FFFFFF;
-    --paper-secondary             : #F5F5F5;
-    --paper-endpoint              : #EEEEEE;
-    --component-gap               : 16px;
-    --component-padding           : 16px;
-    --component-padding-secondary : 6px;
-    --component-shadow            : 1px 1px 8px 0 rgba(0, 0, 0, 0.2);
-    --component-radius            : 8px;
-    --component-border-color      : #EAEAEA;
-    --popup-radius                : 20px;
-    --inner-padding               : 12px;
-}
-
-@include media-tablet {
-    :root {
-        --inner-padding               : 32px;
-        --component-gap               : 20px;
-        --component-padding           : 20px;
-        --component-padding-secondary : 12px;
-    }
 }

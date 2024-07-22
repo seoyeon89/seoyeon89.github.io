@@ -2,38 +2,40 @@
 
 .accordion {
     overflow      : hidden;
+    border        : 1px solid transparent;
     border-radius : var(--component-radius);
 
     &:hover {
-        box-shadow : var(--component-shadow);
+        &:not([data-expended="true"]) {
+            box-shadow : var(--component-shadow);
+        }
     }
 
     &__title {
         @include reset-button;
+        font-size  : 1.14em;
         width      : 100%;
         padding    : 8px 8px 8px 18px;
         transition : all 0.2s;
         color      : var(--theme-primary);
-        font-size  : 1.14em;
 
         & > span {
+            font-weight : $font-weight-bold;
             flex        : 0 1 auto;
             width       : 100%;
             text-align  : left;
-            font-weight : $font-weight-bold;
         }
 
         & > i {
-            flex            : 0 0 auto;
             display         : inline-flex;
-            align-items     : center;
-            justify-content : center;
             overflow        : hidden;
+            align-items     : center;
+            flex            : 0 0 auto;
+            justify-content : center;
             width           : 24px;
             height          : 24px;
             margin-left     : auto;
             border-radius   : 50%;
-            background      : rgba(#fff, 0.4);
 
             & > svg {
                 width           : 18px;
@@ -49,12 +51,12 @@
     &__content {
         display    : none;
         padding    : 12px;
-        background : var(--paper-secondary);
+        border-top : 1px solid var(--component-border-color);
     }
 
 
     &[data-expended="true"] {
-        box-shadow : var(--component-shadow);
+        border-color : var(--component-border-color);
 
         .accordion__title {
             i {

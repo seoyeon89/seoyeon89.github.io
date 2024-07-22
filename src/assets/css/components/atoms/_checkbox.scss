@@ -1,11 +1,11 @@
 .ui-checkbox {
+    font-size   : 0.9em;
+    line-height : 1.2em;
     display     : flex;
-    gap         : 6px;
     align-items : center;
     padding     : 4px 2px;
-    line-height : 1.2em;
     cursor      : pointer;
-    font-size   : 0.9em;
+    gap         : 6px;
 
     & > input {
         transform    : scale(1.1);
@@ -13,7 +13,7 @@
     }
 
     & > em {
-        text-transform : uppercase;
         font-style     : normal;
+        text-transform : uppercase;
     }
 }

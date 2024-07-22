@@ -37,6 +37,9 @@ const getSelected = (FilterObject) => {
     },[])
 }
 
+const countingSeen = (filterObject) => {
+    return filterObject.filter(item => item.seen === true ).length;
+}
 const getProjectList = (filters, featured, categories ) => {
     const selectedFilter = getSelected(filters);
     const selectedCategories = getSelected(categories);
@@ -87,12 +90,18 @@ const WorkList = () => {
         setSeeFeatured(checked);
         setProjects(getProjectList(filters, checked, categories));
     }
+    const getFilterCounter = () =>{
+        let num = seeFeatured === true ? 1 : 0;
+        num += countingSeen(filters);
+        num += countingSeen(categories);
+        return num;
+    }
     return (
         <section id="works" className="works">
             <h1 hidden>WorkList</h1>
             <div className="works-top">
                 <div className="filter">
-                    <Dropdown title="filter-list" titleIcon="filter" extraClass="filter__dropdown">
+                    <Dropdown title="filter-list" titleIcon="filter" label={`${getFilterCounter()}개의 필터 활성화`} extraClass="filter__dropdown">
                         <div className="flex-box">
                             <div className="flex-box__item">
                                 <div className="flex-box__item__title">Category</div>
@@ -185,17 +194,16 @@ const WorkList = () => {
                         }
                     </div>
                 </div>
-                <div className="total">
-                    <strong>{projects.length}</strong>
-                    <span>/</span>
-                    <span>{projectInit.length}</span>
-                    <span>개</span>
+                <div className="counter">
+                    <div className="total"><span>전체 </span>{projectInit.length}개</div>
+                    <div className="bar"><span>중에서</span></div>
+                    <div className="current"><strong>{projects.length}</strong>개<span> 보는 중</span></div>
                 </div>
             </div>
             {projects.length > 0 ?
                 (
                     <ul className="projects">
-                        {
+                    {
                             projects.map((project) => {
                                 const url = searchParams.get('resume') === 'yes' ? `/detail/${project.id}?resume=yes` : `/detail/${project.id}`
                                 return (

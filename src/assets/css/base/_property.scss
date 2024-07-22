@@ -1,0 +1,85 @@
+@use "../import" as *;
+
+html {
+    --component-gap               : 16px;
+    --component-padding           : 16px;
+    --component-padding-secondary : 6px;
+    --component-shadow            : 1px 1px 8px 0 rgba(var(--base-revers), 0.2);
+    --component-radius            : 8px;
+    --popup-radius                : 20px;
+    --inner-padding               : 12px;
+}
+
+
+@include media-tablet {
+    html {
+        --inner-padding               : 32px;
+        --component-gap               : 20px;
+        --component-padding           : 20px;
+        --component-padding-secondary : 12px;
+    }
+}
+
+
+@mixin light-theme {
+    --base                   : #{function-to-rgb($color-white)};
+    --base-revers            : #{function-to-rgb($color-black)};
+
+    --theme-primary          : #{$color-theme-primary};
+    --theme-primary-rgb      : #{function-to-rgb($color-theme-primary)};
+    --theme-secondary        : #{$color-theme-secondary};
+
+    --text-primary           : #222222;
+    --text-secondary         : #666666;
+    --text-endpoint          : #999999;
+
+    --background             : #F5F5F5;
+
+    --paper-primary          : #FFFFFF;
+    --paper-secondary        : #F5F5F5;
+    --paper-endpoint         : #EEEEEE;
+
+    --component-border-color : #EAEAEA;
+}
+
+@mixin dark-theme {
+    --base                   : #{function-to-rgb($color-black)};
+    --base-revers            : #{function-to-rgb($color-white)};
+
+    --theme-primary          : #{$color-theme-dark-primary};
+    --theme-primary-rgb      : #{function-to-rgb($color-theme-dark-primary)};
+    --theme-secondary        : #{$color-theme-dark-secondary};
+
+    --text-primary           : #EEEEEE;
+    --text-secondary         : #cccccc;
+    --text-endpoint          : #666666;
+
+    --background             : #0c0c0c;
+
+    --paper-primary          : #171717;
+    --paper-secondary        : #2d2d2d;
+    --paper-endpoint         : #3a3a3a;
+
+    --component-border-color : #2f2f2f;
+}
+
+
+html[data-mode="light"] {
+    @include light-theme;
+}
+
+html[data-mode="dark"] {
+    @include dark-theme;
+}
+
+// OS Default.
+html:not([data-mode="light"]):not([data-mode="dark"]) {
+    @media (prefers-color-scheme : light) {
+        @include light-theme;
+    }
+
+    @media (prefers-color-scheme : dark) {
+        @include dark-theme;
+    }
+}
+

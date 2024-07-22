@@ -67,7 +67,8 @@ const MyInfoSection = (props) => {
                                     <FeatherIcon icon="calendar" size="12"/>
                                 </i>
                                 <span>{list.dateStart}</span>
-                                <span>- {list.dateEnd ?? `NOW`}</span>
+                                <span>-</span>
+                                <span>{list.dateEnd ?? `NOW`}</span>
                                 {
                                     props.objectKey === 'experience' &&
                                     <em>{formatMonthsToYearMonth(getMonthGap(list.dateStart, list.dateEnd))}</em>

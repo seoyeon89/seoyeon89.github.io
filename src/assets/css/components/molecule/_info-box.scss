@@ -11,24 +11,24 @@
         margin-bottom : 2px;
 
         & > i {
+            font-size     : 9px;
+            font-style    : normal;
+            line-height   : 14px;
             display       : inline-flex;
             margin-right  : 4px;
             padding       : 0 4px;
-            line-height   : 14px;
             color         : #FFFFFF;
             border-radius : 4px;
             background    : var(--theme-primary);
-            font-size     : 9px;
-            font-style    : normal;
         }
 
     }
 
     &__date {
         @include mixin-icons(var(--text-endpoint));
+        font-size  : 0.88em;
         min-height : 24px;
         color      : var(--text-endpoint);
-        font-size  : 0.88em;
 
         & > i {
             width  : 12px;
@@ -40,9 +40,9 @@
         }
 
         & > em {
+            font-style  : normal;
             margin-left : auto;
             color       : var(--text-secondary);
-            font-style  : normal;
         }
     }
 

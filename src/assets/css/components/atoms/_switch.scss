@@ -7,8 +7,8 @@
     $border  : 2px;
     $width   : ($height - $gap - $border ) * 2;
 
-    display  : flex;
     position : relative;
+    display  : flex;
     width    : $width;
     height   : $height;
     cursor   : pointer;
@@ -40,12 +40,12 @@
         border-radius : math.div($height, 2);
 
         &::before {
-            content       : "";
-            display       : block;
             position      : absolute;
             top           : $gap;
             left          : $gap;
+            display       : block;
             height        : calc(100% - $gap * 2);
+            content       : "";
             transition    : all 0.2s;
             border-radius : 50%;
             background    : var(--theme-primary);

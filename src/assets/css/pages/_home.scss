@@ -3,44 +3,44 @@
 .container {
     position   : relative;
     min-height : 100vh;
-    background : var(--paper-secondary);
+    background : var(--background);
 
     &__background {
         position   : absolute;
+        z-index    : 1;
         top        : 0;
         right      : 0;
         left       : 0;
         width      : 100%;
         height     : $size-containter_background_height;
         background : url("/assets/images/background.png") center repeat var(--paper-primary);
-        z-index    : 1;
 
         &:before {
-            content    : "";
-            display    : block;
             position   : absolute;
             top        : 0;
             right      : 0;
             bottom     : 0;
             left       : 0;
+            display    : block;
             width      : 100%;
             height     : 100%;
-            background : rgba(255, 255, 255, 0.5);
+            content    : "";
+            background : rgba(var(--base), 0.5);
         }
     }
 
     &__inner {
-        display        : flex;
         position       : relative;
-        flex-direction : column;
-        gap            : var(--component-gap);
-        align-items    : center;
-        padding        : 0 var(--inner-padding) var(--inner-padding);
         z-index        : 2;
+        display        : flex;
+        align-items    : center;
+        flex-direction : column;
+        padding        : 0 var(--inner-padding) var(--inner-padding);
+        gap            : var(--component-gap);
 
         @include media-tablet {
-            flex-direction : row;
             align-items    : flex-start;
+            flex-direction : row;
         }
 
         .profile {
@@ -54,10 +54,10 @@
 
             @include media-tablet {
                 @include mixin-scrollbar(#DDDDDD);
-                flex               : 0 0 auto;
                 position           : sticky;
                 top                : $size-header-height;
                 overflow           : hidden auto;
+                flex               : 0 0 auto;
                 width              : 360px;
                 max-height         : calc(100vh - var(--max-height-outer));
                 padding            : var(--component-gap);
@@ -77,14 +77,14 @@
             }
 
             .works-top {
-                display          : flex;
                 position         : sticky;
+                z-index          : 10;
                 top              : $size-header-height;
+                display          : flex;
                 padding          : var(--component-padding-secondary);
                 border           : 1px solid rgba(var(--theme-primary-rgb), 0.4);
                 border-radius    : var(--component-radius);
-                background-color : rgba(255, 255, 255, 0.2);
-                z-index          : 10;
+                background-color : rgba(var(--background), 0.2);
                 backdrop-filter  : blur(12px);
 
                 @include media-tablet {
@@ -94,12 +94,52 @@
                 .filter {
                 }
 
-                .total {
-                    flex        : 0 0 auto;
-                    margin-left : auto;
+                .counter {
+                    font-size    : 0.9em;
+                    display      : flex;
+                    align-items  : center;
+                    flex         : 0 1 auto;
+                    margin-left  : auto;
+                    padding-left : 8px;
+                    text-align   : right;
+                    white-space  : nowrap;
+                    gap          : 4px;
 
-                    strong {
+                    span {
+                        @include media-laptop {
+                            display : none;
+                        }
+                    }
+
+                    .total {
+                        order   : 1;
+                        opacity : 0.7;
+                        @include media-laptop {
+                            order   : 3;
+                            opacity : 1;
+                        }
+                    }
+
+                    .bar {
+                        order   : 2;
+                        opacity : 0.5;
+                        @include media-laptop {
+                            opacity : 1;
+                            &:before {
+                                display         : inline-flex;
+                                align-items     : center;
+                                justify-content : center;
+                                content         : '/';
+                            }
+                        }
+                    }
+
+                    .current {
+                        order : 3;
                         color : var(--theme-primary);
+                        @include media-laptop {
+                            order : 1;
+                        }
                     }
                 }
             }
