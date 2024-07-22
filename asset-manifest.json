@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.bea53ce5.css",
+    "main.css": "/static/css/main.872baeaa.css",
     "main.js": "/static/js/main.7676a9a3.js",
     "static/js/453.ace21015.chunk.js": "/static/js/453.ace21015.chunk.js",
     "static/media/Pretendard-Bold.woff2": "/static/media/Pretendard-Bold.0c6f5e225ff28f456183.woff2",
@@ -24,12 +24,12 @@
     "static/media/icon_git.svg": "/static/media/icon_git.a0041b8ecd4367b316f5ec075f210c46.svg",
     "static/media/icon_html.svg": "/static/media/icon_html.46c066b99244c81954e20cd83560a04c.svg",
     "static/media/icon_vue.svg": "/static/media/icon_vue.687000e7654aaa6fc2bca4b9457866f8.svg",
-    "main.bea53ce5.css.map": "/static/css/main.bea53ce5.css.map",
+    "main.872baeaa.css.map": "/static/css/main.872baeaa.css.map",
     "main.7676a9a3.js.map": "/static/js/main.7676a9a3.js.map",
     "453.ace21015.chunk.js.map": "/static/js/453.ace21015.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.bea53ce5.css",
+    "static/css/main.872baeaa.css",
     "static/js/main.7676a9a3.js"
   ]
 }
