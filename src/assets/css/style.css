@@ -3,7 +3,6 @@ html {
   --component-gap: 16px;
   --component-padding: 16px;
   --component-padding-secondary: 6px;
-  --component-shadow: 1px 1px 8px 0 rgba(var(--base-revers), 0.2);
   --component-radius: 8px;
   --popup-radius: 20px;
   --inner-padding: 12px;
@@ -20,6 +19,7 @@ html {
 html[data-mode=light] {
   --base: 255, 255, 255;
   --base-revers: 0, 0, 0;
+  --component-shadow: 1px 1px 8px 0 rgba(var(--base-revers), 0.2);
   --theme-primary: #7A2AD9;
   --theme-primary-rgb: 122, 42, 217;
   --theme-secondary: #EA1E63;
@@ -27,15 +27,19 @@ html[data-mode=light] {
   --text-secondary: #666666;
   --text-endpoint: #999999;
   --background: #F5F5F5;
+  --background-rgb: 245, 245, 245;
   --paper-primary: #FFFFFF;
   --paper-secondary: #F5F5F5;
   --paper-endpoint: #EEEEEE;
+  --avator-background-color:#F5F5F5;
   --component-border-color: #EAEAEA;
+  --scroll-thum: #dddddd;
 }
 
 html[data-mode=dark] {
   --base: 0, 0, 0;
   --base-revers: 255, 255, 255;
+  --component-shadow: none;
   --theme-primary: #c197f3;
   --theme-primary-rgb: 193, 151, 243;
   --theme-secondary: #ff79a4;
@@ -43,16 +47,20 @@ html[data-mode=dark] {
   --text-secondary: #cccccc;
   --text-endpoint: #666666;
   --background: #0c0c0c;
+  --background-rgb: 12, 12, 12;
   --paper-primary: #171717;
   --paper-secondary: #2d2d2d;
   --paper-endpoint: #3a3a3a;
+  --avator-background-color:#666666;
   --component-border-color: #2f2f2f;
+  --scroll-thum: #333333;
 }
 
 @media (prefers-color-scheme: light) {
   html:not([data-mode=light]):not([data-mode=dark]) {
     --base: 255, 255, 255;
     --base-revers: 0, 0, 0;
+    --component-shadow: 1px 1px 8px 0 rgba(var(--base-revers), 0.2);
     --theme-primary: #7A2AD9;
     --theme-primary-rgb: 122, 42, 217;
     --theme-secondary: #EA1E63;
@@ -60,16 +68,20 @@ html[data-mode=dark] {
     --text-secondary: #666666;
     --text-endpoint: #999999;
     --background: #F5F5F5;
+    --background-rgb: 245, 245, 245;
     --paper-primary: #FFFFFF;
     --paper-secondary: #F5F5F5;
     --paper-endpoint: #EEEEEE;
+    --avator-background-color:#F5F5F5;
     --component-border-color: #EAEAEA;
+    --scroll-thum: #dddddd;
   }
 }
 @media (prefers-color-scheme: dark) {
   html:not([data-mode=light]):not([data-mode=dark]) {
     --base: 0, 0, 0;
     --base-revers: 255, 255, 255;
+    --component-shadow: none;
     --theme-primary: #c197f3;
     --theme-primary-rgb: 193, 151, 243;
     --theme-secondary: #ff79a4;
@@ -77,10 +89,13 @@ html[data-mode=dark] {
     --text-secondary: #cccccc;
     --text-endpoint: #666666;
     --background: #0c0c0c;
+    --background-rgb: 12, 12, 12;
     --paper-primary: #171717;
     --paper-secondary: #2d2d2d;
     --paper-endpoint: #3a3a3a;
+    --avator-background-color:#666666;
     --component-border-color: #2f2f2f;
+    --scroll-thum: #333333;
   }
 }
 
@@ -1067,7 +1082,7 @@ html[data-mode=dark] .ul-table__row > .title {
   }
   .popup__container::-webkit-scrollbar-thumb {
     width: 6px;
-    background: #DDDDDD;
+    background: var(--scroll-thum);
     border-radius: 10px;
     background-clip: padding-box;
     border: 5px solid transparent;
@@ -1100,7 +1115,7 @@ html[data-mode=dark] .ul-table__row > .title {
   height: 120px;
   border: 1px solid var(--component-border-color);
   border-radius: 50%;
-  background-color: var(--paper-secondary);
+  background-color: var(--avator-background-color);
 }
 .profile__card__avatar > img {
   display: block;
@@ -1294,7 +1309,7 @@ html[data-mode=dark] .ul-table__row > .title {
   }
   .container__inner .profile::-webkit-scrollbar-thumb {
     width: 6px;
-    background: #DDDDDD;
+    background: var(--scroll-thum);
     border-radius: 10px;
     background-clip: padding-box;
     border: 5px solid transparent;
@@ -1323,7 +1338,7 @@ html[data-mode=dark] .ul-table__row > .title {
   padding: var(--component-padding-secondary);
   border: 1px solid rgba(var(--theme-primary-rgb), 0.4);
   border-radius: var(--component-radius);
-  background-color: rgba(var(--background), 0.2);
+  background-color: rgba(var(--background-rgb), 0.2);
   backdrop-filter: blur(12px);
 }
 @media (min-width: 768px) {
@@ -1419,7 +1434,7 @@ html[data-mode=dark] .ul-table__row > .title {
   }
   .detail__info::-webkit-scrollbar-thumb {
     width: 6px;
-    background: #DDDDDD;
+    background: var(--scroll-thum);
     border-radius: 10px;
     background-clip: padding-box;
     border: 5px solid transparent;

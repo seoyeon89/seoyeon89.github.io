@@ -4,7 +4,6 @@ html {
     --component-gap               : 16px;
     --component-padding           : 16px;
     --component-padding-secondary : 6px;
-    --component-shadow            : 1px 1px 8px 0 rgba(var(--base-revers), 0.2);
     --component-radius            : 8px;
     --popup-radius                : 20px;
     --inner-padding               : 12px;
@@ -25,6 +24,8 @@ html {
     --base                   : #{function-to-rgb($color-white)};
     --base-revers            : #{function-to-rgb($color-black)};
 
+    --component-shadow : 1px 1px 8px 0 rgba(var(--base-revers), 0.2);
+
     --theme-primary          : #{$color-theme-primary};
     --theme-primary-rgb      : #{function-to-rgb($color-theme-primary)};
     --theme-secondary        : #{$color-theme-secondary};
@@ -34,17 +35,24 @@ html {
     --text-endpoint          : #999999;
 
     --background             : #F5F5F5;
+    --background-rgb         : #{function-to-rgb(#F5F5F5)};
 
     --paper-primary          : #FFFFFF;
     --paper-secondary        : #F5F5F5;
     --paper-endpoint         : #EEEEEE;
 
+    --avator-background-color :#F5F5F5;
+
     --component-border-color : #EAEAEA;
+
+    --scroll-thum : #dddddd;
 }
 
 @mixin dark-theme {
     --base                   : #{function-to-rgb($color-black)};
     --base-revers            : #{function-to-rgb($color-white)};
+
+    --component-shadow : none;
 
     --theme-primary          : #{$color-theme-dark-primary};
     --theme-primary-rgb      : #{function-to-rgb($color-theme-dark-primary)};
@@ -55,12 +63,17 @@ html {
     --text-endpoint          : #666666;
 
     --background             : #0c0c0c;
+    --background-rgb         : #{function-to-rgb(#0c0c0c)};
 
     --paper-primary          : #171717;
     --paper-secondary        : #2d2d2d;
     --paper-endpoint         : #3a3a3a;
 
+    --avator-background-color :#666666;
+
     --component-border-color : #2f2f2f;
+
+    --scroll-thum : #333333;
 }
 
 

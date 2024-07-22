@@ -19,7 +19,7 @@
         box-shadow    : var(--component-shadow);
 
         @include media-laptop {
-            @include mixin-scrollbar(#DDDDDD);
+            @include mixin-scrollbar();
             position   : sticky;
             top        : 0;
             width      : 320px;

@@ -63,7 +63,7 @@
     }
 
     &__container {
-        @include mixin-scrollbar(#DDDDDD);
+        @include mixin-scrollbar();
         overflow            : auto;
         flex                : 0 1 auto;
         padding             : 0 $mobile-padding $mobile-padding $mobile-padding;

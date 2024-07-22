@@ -53,7 +53,7 @@
             box-shadow    : var(--component-shadow);
 
             @include media-tablet {
-                @include mixin-scrollbar(#DDDDDD);
+                @include mixin-scrollbar();
                 position           : sticky;
                 top                : $size-header-height;
                 overflow           : hidden auto;
@@ -84,7 +84,7 @@
                 padding          : var(--component-padding-secondary);
                 border           : 1px solid rgba(var(--theme-primary-rgb), 0.4);
                 border-radius    : var(--component-radius);
-                background-color : rgba(var(--background), 0.2);
+                background-color : rgba(var(--background-rgb), 0.2);
                 backdrop-filter  : blur(12px);
 
                 @include media-tablet {

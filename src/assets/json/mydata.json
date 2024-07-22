@@ -1,98 +1,98 @@
 {
-    "experience": [
-        {
-            "order": 0,
-            "title": "코비젼",
-            "dateStart": "2022/10",
-            "description": [
-                "웹퍼블리싱(HTML/SCSS/JS/jquery)"
-            ]
-        },
-        {
-            "order": 1,
-            "title": "엘에스이노베이션",
-            "dateStart": "2021/09",
-            "dateEnd": "2022/09",
-            "description": [
-                "웹퍼블리싱(HTML/SCSS/JS/jquery/gulp/GIT)"
-            ]
-        },
-        {
-            "order": 2,
-            "title": "NGTech",
-            "dateStart": "2019/06",
-            "dateEnd": "2021/06",
-            "description": [
-                "웹퍼블리싱(HTML/CSS/JS/VUE/GIT)",
-                "디자인 보조(adobe XD)",
-                "기획"
-            ]
-        },
-        {
-            "order": 3,
-            "title": "시대고시",
-            "dateStart": "2017/07",
-            "dateEnd": "2019/02",
-            "description": [
-                "웹퍼블리싱(HTML/CSS/JS)"
-            ]
-        },
-        {
-            "order": 4,
-            "title": "센치",
-            "dateStart": "2016/05",
-            "dateEnd": "2017/02",
-            "description": [
-                "웹퍼블리싱(HTML/SCSS/JS/jquery)",
-                "디자인",
-                "프론트 유지보수(PHP)"
-            ]
-        }
-    ],
-    "education": [
-        {
-            "order": 0,
-            "title": "방송통신대학교",
-            "dateStart": "2022/03",
-            "description": [
-                "컴퓨터과학과 (휴학중)"
-            ]
-        },
-        {
-            "order": 1,
-            "title": "(NCS)웹 php msql 초급 과정",
-            "dateStart": "2016/11",
-            "dateEnd": "2016/12",
-            "description": [
-                "그린컴퓨터아트학원"
-            ]
-        },
-        {
-            "order": 2,
-            "title": "(NCS)모바일 웹&디자인 UI/UX디자인 과정",
-            "dateStart": "2015/04",
-            "dateEnd": "2015/09",
-            "description": [
-                "더조은컴퓨터아트학원"
-            ]
-        },
-        {
-            "order": 3,
-            "title": "기업 실무반 정규과정 과정",
-            "dateStart": "2014/01",
-            "dateEnd": "2014/05",
-            "description": [
-                "그린컴퓨터아트학원"
-            ]
-        },
-        {
-            "order": 4,
-            "title": "연세대학교",
-            "dateStart": "2008/03",
-            "dateEnd": "2015/02",
-            "description": [
-                "디자인예술학부 시각디자인 전공(4년) 졸업"
-            ]
-        }
-    ]
+  "experience": [
+    {
+      "order": 0,
+      "title": "코비젼",
+      "dateStart": "2022/10",
+      "description": [
+        "웹퍼블리싱(HTML/SCSS/JS/jquery)"
+      ]
+    },
+    {
+      "order": 1,
+      "title": "엘에스이노베이션",
+      "dateStart": "2021/09",
+      "dateEnd": "2022/09",
+      "description": [
+        "웹퍼블리싱(HTML/SCSS/JS/jquery/gulp/GIT)"
+      ]
+    },
+    {
+      "order": 2,
+      "title": "NGTech",
+      "dateStart": "2019/06",
+      "dateEnd": "2021/06",
+      "description": [
+        "웹퍼블리싱(HTML/CSS/JS/VUE/GIT)",
+        "디자인 보조(adobe XD)",
+        "기획"
+      ]
+    },
+    {
+      "order": 3,
+      "title": "시대고시",
+      "dateStart": "2017/07",
+      "dateEnd": "2019/02",
+      "description": [
+        "웹퍼블리싱(HTML/CSS/JS)"
+      ]
+    },
+    {
+      "order": 4,
+      "title": "센치",
+      "dateStart": "2016/05",
+      "dateEnd": "2017/02",
+      "description": [
+        "웹퍼블리싱(HTML/SCSS/JS/jquery)",
+        "디자인",
+        "프론트 유지보수(PHP)"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "order": 0,
+      "title": "방송통신대학교",
+      "dateStart": "2022/03",
+      "description": [
+        "컴퓨터과학과 (휴학중)"
+      ]
+    },
+    {
+      "order": 1,
+      "title": "(NCS)웹 php msql 초급 과정",
+      "dateStart": "2016/11",
+      "dateEnd": "2016/12",
+      "description": [
+        "그린컴퓨터아트학원"
+      ]
+    },
+    {
+      "order": 2,
+      "title": "(NCS)모바일 웹&디자인 UI/UX디자인 과정",
+      "dateStart": "2015/04",
+      "dateEnd": "2015/09",
+      "description": [
+        "더조은컴퓨터아트학원"
+      ]
+    },
+    {
+      "order": 3,
+      "title": "기업 실무반 정규과정 과정",
+      "dateStart": "2014/01",
+      "dateEnd": "2014/05",
+      "description": [
+        "그린컴퓨터아트학원"
+      ]
+    },
+    {
+      "order": 4,
+      "title": "연세대학교",
+      "dateStart": "2008/03",
+      "dateEnd": "2015/02",
+      "description": [
+        "디자인예술학부 시각디자인 전공(4년) 졸업"
+      ]
+    }
+  ]
 }

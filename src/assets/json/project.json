@@ -139,11 +139,11 @@
         "학원의 수강 정보를 알려주는 포스터 제작 하였습니다."
       ],
       "thumbnail": "02_study/01_noin/mobile_thum.png",
-      "images" : [
+      "images": [
         "02_study/01_noin/mobile1.jpg",
         "02_study/01_noin/mobile2.jpg"
       ],
-      "links" : [
+      "links": [
         "https://fool89.cafe24.com/project/siribm/"
       ]
     },
@@ -1234,9 +1234,9 @@
         "02_study/03_2019pp/site2.jpg",
         "02_study/03_2019pp/site3.jpg"
       ],
-     "links": [
-       "https://fool89.cafe24.com/"
-     ]
+      "links": [
+        "https://fool89.cafe24.com/"
+      ]
     },
     {
       "id": 40,
@@ -1373,7 +1373,7 @@
         "07_out/01_auto/site4.png",
         "07_out/01_auto/site5.png"
       ],
-      "links" : [
+      "links": [
         "https://www.automarketing.co.kr/"
       ]
     },
@@ -1402,10 +1402,10 @@
         "datepicker수정 및 gulp 3.X버전을 4버전으로 마이그레이션 하는 작업을 하였습니다."
       ],
       "thumbnail": "08_lsinno/moa/img0.png",
-      "images" : [
+      "images": [
         "08_lsinno/moa/img0.png"
       ],
-      "links" : [
+      "links": [
         "https://info.maemo.co.kr/"
       ]
     },
@@ -1433,12 +1433,12 @@
         "마사지 샵 사용자를 위한 어플 마통의 웹페이지 유지보수 작업을 진행하였습니다.퍼블리싱 기여도는 100%입니다."
       ],
       "thumbnail": "08_lsinno/matong/site_thum.png",
-      "images" : [
+      "images": [
         "08_lsinno/matong/img1.png",
         "08_lsinno/matong/img2.png",
         "08_lsinno/matong/img3.png"
       ],
-      "links" : [
+      "links": [
         "https://www.msgtong.com/"
       ]
     },
@@ -1468,7 +1468,7 @@
         "차를 마시고 시음기를 써서 친구들과 함께 공유하는 차 일기 서비스 제안. 기획은 어플리케이션으로, 실제 구현한 서비스 플랫폼은 모바일 웹입니다."
       ],
       "thumbnail": "02_study/04_teajournal/site_thum.jpg",
-      "images" : [
+      "images": [
         "02_study/04_teajournal/site1.jpg",
         "02_study/04_teajournal/site2.png",
         "02_study/04_teajournal/site3.png",
@@ -1500,7 +1500,7 @@
         "figma로 제작된 디자인 시안을 기반으로 작업하였으며, 풀 반응형으로 모바일, 태블릿, 랩탑, 데스크탑에서 최신 크롬/사파리 브라우저 를 기준으로 최적화 하며 퍼블리싱 진행하였습니다. 개발은 react 로 진행되었고, 퍼블리싱 파트를 담당하였습니다. 기여도는 100%입니다."
       ],
       "thumbnail": "07_out/02_cleanician/site_thum.png",
-      "images" : [
+      "images": [
         "07_out/02_cleanician/cleanician01.png",
         "07_out/02_cleanician/cleanician02.png",
         "07_out/02_cleanician/cleanician03.png",
@@ -1536,7 +1536,7 @@
         "Dx&Vx 게놈 유전자 검사 결과지 관련 퍼블리싱 본 작업 하였습니다 해당 페이지 웹에서 프린팅 하였을대 문제 없이 출력 가능하도록 고려하여 퍼블리싱 진행되었습니다."
       ],
       "thumbnail": "07_out/03_genom/site_thum.png",
-      "images" : [
+      "images": [
         "07_out/03_genom/genom01.png"
       ]
     },
@@ -1564,7 +1564,7 @@
         "figma로 제작된 디자인 시안을 기반으로 작업하였으며, 풀 반응형으로 모바일, 태블릿, 랩탑, 데스크탑에서 최신 크롬/사파리 브라우저 를 기준으로 최적화 하며 퍼블리싱 진행하였습니다. 개발은 react 로 진행되었고, 퍼블리싱 파트를 담당하였습니다. 기여도는 100%입니다."
       ],
       "thumbnail": "07_out/04_hwasung/site_thum.png",
-      "images" : [
+      "images": [
         "07_out/04_hwasung/hwasung01.png",
         "07_out/04_hwasung/hwasung02.png",
         "07_out/04_hwasung/hwasung03.png",
@@ -1600,7 +1600,7 @@
         "기여도는 70프로로 전임자가 작업한 페이지를 바탕으로 수정 및 신규 페이지 작업을 하였습니다."
       ],
       "thumbnail": "09_covision/01_suhyup/site_thum.png",
-      "images" : [
+      "images": [
         "09_covision/01_suhyup/suhyup01.png",
         "09_covision/01_suhyup/suhyup02.png",
         "09_covision/01_suhyup/suhyup03.png",
@@ -1634,7 +1634,7 @@
         "백엔드 언어는 JAVA입니다."
       ],
       "thumbnail": "09_covision/02_woomi/site_thum.png",
-      "images" : [
+      "images": [
         "09_covision/02_woomi/woomi01.png",
         "09_covision/02_woomi/woomi02.png"
       ]
@@ -1665,7 +1665,7 @@
         "기여도는 70프로로 전임자가 작업한 페이지를 바탕으로 수정 및 신규 페이지 작업을 하였습니다."
       ],
       "thumbnail": "09_covision/03_dongkook/site_thum.png",
-      "images" : [
+      "images": [
         "09_covision/03_dongkook/dongkook01.png",
         "09_covision/03_dongkook/dongkook02.png"
       ]
@@ -1696,7 +1696,7 @@
         "기여도는 30프로로 전임자가 작업한 페이지를 바탕으로 오류 수정 작업을 하였습니다."
       ],
       "thumbnail": "09_covision/04_econet/site_thum.png",
-      "images" : [
+      "images": [
         "09_covision/04_econet/site01.png",
         "09_covision/04_econet/site02.png"
       ]
@@ -1726,7 +1726,7 @@
         "백엔드 언어는 닷넷(ASPX)입니다."
       ],
       "thumbnail": "09_covision/05_mitsubishi/site_thum.png",
-      "images" : [
+      "images": [
         "09_covision/05_mitsubishi/site01.png",
         "09_covision/05_mitsubishi/site02.png"
       ]
@@ -1756,7 +1756,7 @@
         "백엔드 언어는 JAVA(JSP)입니다."
       ],
       "thumbnail": "09_covision/06_hallym/site_thum.png",
-      "images" : [
+      "images": [
         "09_covision/06_hallym/site01.png",
         "09_covision/06_hallym/site02.png"
       ]
@@ -1786,7 +1786,7 @@
         "백엔드 언어는 닷넷(ASPX)입니다."
       ],
       "thumbnail": "09_covision/07_kyungshinholdings/site_thum.png",
-      "images" : [
+      "images": [
         "09_covision/07_kyungshinholdings/site01.png",
         "09_covision/07_kyungshinholdings/site02.png",
         "09_covision/07_kyungshinholdings/site03.png",
@@ -1818,7 +1818,7 @@
         "백엔드 언어는 닷넷(ASPX)입니다."
       ],
       "thumbnail": "09_covision/08_daeduck/site_thum.png",
-      "images" : [
+      "images": [
         "09_covision/08_daeduck/site01.png",
         "09_covision/08_daeduck/site02.png"
       ]
@@ -1848,7 +1848,7 @@
         "백엔드 언어는 JAVA(JSP)입니다."
       ],
       "thumbnail": "09_covision/09_kaya_univ/site_thum.png",
-      "images" : [
+      "images": [
         "09_covision/09_kaya_univ/site01.png"
       ]
     },
@@ -1877,7 +1877,7 @@
         "백엔드 언어는 JAVA(JSP)입니다."
       ],
       "thumbnail": "09_covision/11_inzigroup/site_thum.png",
-      "images" : [
+      "images": [
         "09_covision/11_inzigroup/site01.png",
         "09_covision/11_inzigroup/site02.png"
       ]
@@ -1907,7 +1907,7 @@
         "백엔드 언어는 JAVA(JSP)입니다."
       ],
       "thumbnail": "09_covision/12_jeisys/site_thum.png",
-      "images" : [
+      "images": [
         "09_covision/12_jeisys/site01.png",
         "09_covision/12_jeisys/site02.png"
       ]
@@ -1937,7 +1937,7 @@
         "백엔드 언어는 JAVA(JSP)입니다."
       ],
       "thumbnail": "09_covision/13_hoban/site_thum.png",
-      "images" : [
+      "images": [
         "09_covision/13_hoban/site01.png",
         "09_covision/13_hoban/site02.png",
         "09_covision/13_hoban/site03.png",
@@ -1970,7 +1970,7 @@
         "PC웹 환경 외에도 Teams Add In 환경도 함께 고려하는 퍼블리싱 작업을 진행하였습니다."
       ],
       "thumbnail": "09_covision/14_ls/site_thum.png",
-      "images" : [
+      "images": [
         "09_covision/14_ls/site01.png",
         "09_covision/14_ls/site02.png",
         "09_covision/14_ls/site03.png",
@@ -2008,7 +2008,7 @@
         "백엔드 언어는 닷넷(ASPX)입니다."
       ],
       "thumbnail": "09_covision/15_nh_amundi/site_thum.png",
-      "images" : [
+      "images": [
         "09_covision/15_nh_amundi/site01.png",
         "09_covision/15_nh_amundi/site02.png",
         "09_covision/15_nh_amundi/site03.png"
@@ -2039,7 +2039,7 @@
         "백엔드 언어는 JAVA(JSP)입니다."
       ],
       "thumbnail": "09_covision/16_fila/site01.png",
-      "images" : [
+      "images": [
         "09_covision/16_fila/site01.png",
         "09_covision/16_fila/site02.png",
         "09_covision/16_fila/site03.png"
@@ -2071,7 +2071,7 @@
         "백엔드 언어는 닷넷(ASPX)입니다."
       ],
       "thumbnail": "09_covision/17_bnk/site_thum.png",
-      "images" : [
+      "images": [
         "09_covision/17_bnk/site01.png"
       ]
     },
@@ -2100,7 +2100,7 @@
         "백엔드 언어는 닷넷(ASPX)입니다."
       ],
       "thumbnail": "09_covision/18_metlife/site_thum.png",
-      "images" : [
+      "images": [
         "09_covision/18_metlife/site01.png",
         "09_covision/18_metlife/site02.png"
       ]
@@ -2130,7 +2130,7 @@
         "백엔드 언어는 JAVA(JSP)입니다."
       ],
       "thumbnail": "09_covision/19_kita/site02.png",
-      "images" : [
+      "images": [
         "09_covision/19_kita/site01.png",
         "09_covision/19_kita/site02.png",
         "09_covision/19_kita/site03.png",
@@ -2166,7 +2166,7 @@
         "학습한 vue를 이용하여 코비젼 프로젝트 포트폴리오, 코비폴리오 사이트를 개설한다는 컨셉으로 프로젝트를 진행하였습니다."
       ],
       "thumbnail": "02_study/05_covifoilo/site_thum.png",
-      "images" : [
+      "images": [
         "02_study/05_covifoilo/site01.png",
         "02_study/05_covifoilo/site02.png",
         "02_study/05_covifoilo/site03.png"
@@ -2199,7 +2199,7 @@
         "react 스터디를 하며 학습한 코드를 이용하여 개인 포트폴리오 사이트를 리뉴얼 하였습니다."
       ],
       "thumbnail": "02_study/06_portfoilo/site_thum.png",
-      "images" : [
+      "images": [
         "02_study/06_portfoilo/site01.png",
         "02_study/06_portfoilo/site02.png"
       ]
