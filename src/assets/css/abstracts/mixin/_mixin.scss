@@ -25,7 +25,7 @@
     }
 }
 
-@mixin scrollbar($thumbColor : #DDDDDD) {
+@mixin scrollbar($thumbColor : var(--scroll-thum)) {
     @include tablet {
 
         &::-webkit-scrollbar {
@@ -60,7 +60,7 @@
     height           : $size;
     border           : 1px solid var(--component-border-color);
     border-radius    : 50%;
-    background-color : var(--paper-secondary);
+    background-color : var(--avator-background-color);
 
     & > img {
         display         : block;
