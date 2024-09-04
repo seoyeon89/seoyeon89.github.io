@@ -79,7 +79,7 @@
             .works-top {
                 position         : sticky;
                 z-index          : 10;
-                top              : $size-header-height;
+                top              : 0;
                 display          : flex;
                 padding          : var(--component-padding-secondary);
                 border           : 1px solid rgba(var(--theme-primary-rgb), 0.4);
@@ -89,6 +89,7 @@
 
                 @include media-tablet {
                     align-items : center;
+                    top              : $size-header-height;
                 }
 
                 .filter {

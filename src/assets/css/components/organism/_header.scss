@@ -2,17 +2,25 @@
 
 .header {
     font-size       : 1.14rem;
-    position        : fixed;
-    z-index         : 10;
+    position        : absolute;
     top             : 0;
     right           : 0;
     left            : 0;
+    z-index         : 10;
     display         : flex;
     align-items     : center;
     width           : 100%;
     height          : $size-header-height;
     padding         : 0 var(--inner-padding);
     backdrop-filter : blur(12px);
+
+    @include media-tablet {
+        position        : fixed;
+        top             : 0;
+        right           : 0;
+        left            : 0;
+
+    }
 
     &__logo {
         font-size : 1.14em;

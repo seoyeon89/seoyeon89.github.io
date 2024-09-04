@@ -1,11 +1,16 @@
+@use "../../import" as *;
 .ui-checkbox {
-    font-size   : 0.9em;
+    font-size   : 1em;
     line-height : 1.2em;
     display     : flex;
     align-items : center;
     padding     : 4px 2px;
     cursor      : pointer;
     gap         : 6px;
+
+    @include media-laptop {
+        font-size   : 0.9em;
+    }
 
     & > input {
         transform    : scale(1.1);

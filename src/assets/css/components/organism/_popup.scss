@@ -23,11 +23,8 @@
     z-index             : 1;
     display             : flex;
     flex-direction      : column;
-    width               : calc(100vw - $mobile-padding * 2);
-    height              : auto;
-    max-height          : calc(100vh - $mobile-padding * 2);
-    max-height          : calc(100svh - $mobile-padding * 2);
-    border-radius       : var(--popup-radius);
+    width               : 100vw;
+    height          : 100vh;
     background          : var(--paper-secondary);
     overscroll-behavior : contain;
 
@@ -35,6 +32,8 @@
         width      : calc(100vw - $laptop-padding * 2);
         max-height : calc(100vh - $laptop-padding * 2);
         max-height : calc(100svh - $laptop-padding * 2);
+        border-radius       : var(--popup-radius);
+        box-shadow: var(--component-shadow);
     }
 
     &__title {

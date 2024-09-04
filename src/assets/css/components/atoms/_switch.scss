@@ -19,6 +19,11 @@
 
     & > input {
         @include mixin-clip;
+        &:focus-visible + .ui-switch__button{
+            outline-color: var(--theme-primary);
+            outline-offset: 1px;
+            outline-style: auto;
+        }
 
         &:checked + .ui-switch__button {
             background : var(--theme-primary);

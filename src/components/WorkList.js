@@ -9,8 +9,8 @@ let projectInit = ProjectsJsonData.projects
     .sort((a, b) => { return new Date(b.date.start) - new Date(a.date.start) })
 
 const filterInit = [
-    { id: 0, title: 'web', seen: true },
     { id: 1, title: 'mobile', seen: true },
+    { id: 0, title: 'web', seen: true },
     { id: 2, title: 'app', seen: false },
     { id: 3, title: 'print', seen: false },
     { id: 4, title: 'etc', seen: false },
@@ -145,7 +145,7 @@ const WorkList = () => {
 
                             <div className="flex-box__item">
                                 <div className="flex-box__item__title">중요 프로젝트만 보기</div>
-                                <label className="ui-switch">
+                                <label className="ui-switch" role="switch">
                                     <input type="checkbox"
                                            onChange={e => featuredChange(e.target.checked)}
                                            checked={seeFeatured}/>

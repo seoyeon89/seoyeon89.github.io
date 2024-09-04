@@ -29,6 +29,7 @@ body [hidden] {
     box-sizing : border-box;
     margin     : 0;
     padding    : 0;
+    //transition: all 0.5s ease-out;
 }
 
 button,
@@ -68,6 +69,11 @@ select {
     appearance : none;
 }
 
+:focus-visible {
+    outline-color: var(--theme-primary);
+    outline-offset: 1px;
+    outline-style: auto;
+}
 // 숨김
 .blind {
     @include mixin-clip;
