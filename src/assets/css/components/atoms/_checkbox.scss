@@ -1,15 +1,16 @@
 @use "../../import" as *;
+
 .ui-checkbox {
-    font-size   : 1em;
-    line-height : 1.2em;
     display     : flex;
+    gap         : 6px;
     align-items : center;
     padding     : 4px 2px;
+    line-height : 1.2em;
     cursor      : pointer;
-    gap         : 6px;
+    font-size   : 1em;
 
     @include media-laptop {
-        font-size   : 0.9em;
+        font-size : 0.9em;
     }
 
     & > input {
@@ -18,7 +19,7 @@
     }
 
     & > em {
-        font-style     : normal;
         text-transform : uppercase;
+        font-style     : normal;
     }
 }

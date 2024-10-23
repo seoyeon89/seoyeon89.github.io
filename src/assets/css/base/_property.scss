@@ -21,59 +21,59 @@ html {
 
 
 @mixin light-theme {
-    --base                   : #{function-to-rgb($color-white)};
-    --base-revers            : #{function-to-rgb($color-black)};
+    --base                    : #{function-to-rgb($color-white)};
+    --base-revers             : #{function-to-rgb($color-black)};
 
-    --component-shadow : 1px 1px 8px 0 rgba(var(--base-revers), 0.2);
+    --component-shadow        : 1px 1px 8px 0 rgba(var(--base-revers), 0.2);
 
-    --theme-primary          : #{$color-theme-primary};
-    --theme-primary-rgb      : #{function-to-rgb($color-theme-primary)};
-    --theme-secondary        : #{$color-theme-secondary};
+    --theme-primary           : #{$color-theme-primary};
+    --theme-primary-rgb       : #{function-to-rgb($color-theme-primary)};
+    --theme-secondary         : #{$color-theme-secondary};
 
-    --text-primary           : #222222;
-    --text-secondary         : #666666;
-    --text-endpoint          : #999999;
+    --text-primary            : #222222;
+    --text-secondary          : #666666;
+    --text-endpoint           : #999999;
 
-    --background             : #F5F5F5;
-    --background-rgb         : #{function-to-rgb(#F5F5F5)};
+    --background              : #F5F5F5;
+    --background-rgb          : #{function-to-rgb(#F5F5F5)};
 
-    --paper-primary          : #FFFFFF;
-    --paper-secondary        : #F5F5F5;
-    --paper-endpoint         : #EEEEEE;
+    --paper-primary           : #FFFFFF;
+    --paper-secondary         : #F5F5F5;
+    --paper-endpoint          : #EEEEEE;
 
-    --avator-background-color :#F5F5F5;
+    --avator-background-color : #F5F5F5;
 
-    --component-border-color : #EAEAEA;
+    --component-border-color  : #EAEAEA;
 
-    --scroll-thum : #dddddd;
+    --scroll-thum             : #DDDDDD;
 }
 
 @mixin dark-theme {
-    --base                   : #{function-to-rgb($color-black)};
-    --base-revers            : #{function-to-rgb($color-white)};
+    --base                    : #{function-to-rgb($color-black)};
+    --base-revers             : #{function-to-rgb($color-white)};
 
-    --component-shadow : none;
+    --component-shadow        : none;
 
-    --theme-primary          : #{$color-theme-dark-primary};
-    --theme-primary-rgb      : #{function-to-rgb($color-theme-dark-primary)};
-    --theme-secondary        : #{$color-theme-dark-secondary};
+    --theme-primary           : #{$color-theme-dark-primary};
+    --theme-primary-rgb       : #{function-to-rgb($color-theme-dark-primary)};
+    --theme-secondary         : #{$color-theme-dark-secondary};
 
-    --text-primary           : #EEEEEE;
-    --text-secondary         : #cccccc;
-    --text-endpoint          : #666666;
+    --text-primary            : #EEEEEE;
+    --text-secondary          : #CCCCCC;
+    --text-endpoint           : #666666;
 
-    --background             : #0c0c0c;
-    --background-rgb         : #{function-to-rgb(#0c0c0c)};
+    --background              : #0C0C0C;
+    --background-rgb          : #{function-to-rgb(#0C0C0C)};
 
-    --paper-primary          : #171717;
-    --paper-secondary        : #2d2d2d;
-    --paper-endpoint         : #3a3a3a;
+    --paper-primary           : #171717;
+    --paper-secondary         : #2D2D2D;
+    --paper-endpoint          : #3A3A3A;
 
-    --avator-background-color :#666666;
+    --avator-background-color : #666666;
 
-    --component-border-color : #2f2f2f;
+    --component-border-color  : #2F2F2F;
 
-    --scroll-thum : #333333;
+    --scroll-thum             : #333333;
 }
 
 

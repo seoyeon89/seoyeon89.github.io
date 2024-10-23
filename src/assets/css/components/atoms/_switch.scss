@@ -7,8 +7,8 @@
     $border  : 2px;
     $width   : ($height - $gap - $border ) * 2;
 
-    position : relative;
     display  : flex;
+    position : relative;
     width    : $width;
     height   : $height;
     cursor   : pointer;
@@ -19,10 +19,11 @@
 
     & > input {
         @include mixin-clip;
-        &:focus-visible + .ui-switch__button{
-            outline-color: var(--theme-primary);
-            outline-offset: 1px;
-            outline-style: auto;
+
+        &:focus-visible + .ui-switch__button {
+            outline-style  : auto;
+            outline-color  : var(--theme-primary);
+            outline-offset : 1px;
         }
 
         &:checked + .ui-switch__button {
@@ -45,12 +46,12 @@
         border-radius : math.div($height, 2);
 
         &::before {
+            content       : "";
+            display       : block;
             position      : absolute;
             top           : $gap;
             left          : $gap;
-            display       : block;
             height        : calc(100% - $gap * 2);
-            content       : "";
             transition    : all 0.2s;
             border-radius : 50%;
             background    : var(--theme-primary);

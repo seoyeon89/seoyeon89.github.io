@@ -4,13 +4,13 @@
         padding-left : 16px;
 
         &:before {
+            content          : "";
+            display          : block;
             position         : absolute;
             top              : 0.5em;
             left             : 4px;
-            display          : block;
             width            : 4px;
             height           : 4px;
-            content          : "";
             border-radius    : 50%;
             background-color : var(--theme-primary);
         }
