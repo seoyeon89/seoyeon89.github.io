@@ -1,5 +1,5 @@
-import React, { useEffect } from "react";
-import { useNavigate } from 'react-router-dom';
+import React, {useEffect} from "react";
+import {useNavigate} from 'react-router-dom';
 
 export const preventScroll = () => {
     const currentScrollY = window.scrollY;
@@ -16,7 +16,7 @@ const allowScroll = (prevScrollY) => {
     document.body.style.overflowY = '';
     window.scrollTo(0, prevScrollY);
 };
-export const  Popup = ( {children, title}) => {
+export const Popup = ({children, title}) => {
     let navigate = useNavigate();
     useEffect(() => {
         const prevScrollY = preventScroll();
@@ -34,7 +34,7 @@ export const  Popup = ( {children, title}) => {
             <div className="popup">
                 <div className="popup__title">
                     <h1>{title}</h1>
-                    <button type="button" className="popup__title__close" onClick={closePopup} >
+                    <button type="button" className="popup__title__close" onClick={closePopup}>
                         <span hidden>닫기</span>
                     </button>
                 </div>

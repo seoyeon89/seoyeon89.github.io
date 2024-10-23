@@ -1,7 +1,7 @@
-import React, { useState } from 'react';
+import React, {useState} from 'react';
 import FeatherIcon from 'feather-icons-react';
 
-export const Accordions = ({ children, initOpen = 0 }) => {
+export const Accordions = ({children, initOpen = 0}) => {
     const [activeIndex, setActiveIndex] = useState(initOpen);
 
     const handleToggle = (index) => {
@@ -11,7 +11,7 @@ export const Accordions = ({ children, initOpen = 0 }) => {
     return (
         <>
             {React.Children.map(children, (child, index) =>
-                React.cloneElement( child, {
+                React.cloneElement(child, {
                     isOpen: activeIndex === index,
                     onToggle: () => handleToggle(index)
                 })

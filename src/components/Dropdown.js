@@ -1,4 +1,4 @@
-import React, { useRef, useState, useEffect } from 'react';
+import React, {useEffect, useRef, useState} from 'react';
 import FeatherIcon from 'feather-icons-react';
 
 export const Dropdown = ({children, title, titleIcon, label, initOpen = false, extraClass = ''}) => {
@@ -37,7 +37,7 @@ export const Dropdown = ({children, title, titleIcon, label, initOpen = false, e
                 <em>{label}</em>
             </button>
 
-            <div className="dropdown__list" >
+            <div className="dropdown__list">
                 {children}
             </div>
         </div>

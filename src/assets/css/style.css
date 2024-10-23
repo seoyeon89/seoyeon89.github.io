@@ -981,6 +981,13 @@ html[data-mode=dark] .ul-table__row > .title {
 .header__navigation > ul {
   display: flex;
   gap: 20px;
+  align-items: center;
+}
+.header__navigation > ul li a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 32px;
 }
 
 .popup-warp {

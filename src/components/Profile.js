@@ -1,21 +1,22 @@
 import FeatherIcon from 'feather-icons-react';
-import { Accordions, Accordion} from './Accordion';
+import {Accordion, Accordions} from './Accordion';
 import MyJsonData from '../assets/json/mydata.json';
-import { ReactComponent as IconHtml } from '../assets/images/icon_html.svg';
-import { ReactComponent as IconCss3 } from '../assets/images/icon_css3.svg';
-import { ReactComponent as IconSass } from '../assets/images/icon_scss.svg';
-import { ReactComponent as IconFigma } from '../assets/images/icon_figma.svg';
-import { ReactComponent as IconXd } from '../assets/images/icon_xd.svg';
-import { ReactComponent as IconPhotoshop } from '../assets/images/icon_photoshop.svg';
-import { ReactComponent as IconJs } from '../assets/images/icon_js.svg';
-import { ReactComponent as IconJquery } from '../assets/images/icon_jquery.svg';
-import { ReactComponent as IconVue } from '../assets/images/icon_vue.svg';
-import { ReactComponent as IconReact } from '../assets/images/icon_react.svg';
-import { ReactComponent as IconPhp } from '../assets/images/icon_php.svg';
-import { ReactComponent as IconSvn } from '../assets/images/icon_svn.svg';
-import { ReactComponent as IconGit } from '../assets/images/icon_git.svg';
-import { ReactComponent as IconVscode } from '../assets/images/icon_vscode.svg';
-import { ReactComponent as IconWebstrom } from '../assets/images/icon_webstorm.svg';
+import {ReactComponent as IconHtml} from '../assets/images/icon_html.svg';
+import {ReactComponent as IconCss3} from '../assets/images/icon_css3.svg';
+import {ReactComponent as IconSass} from '../assets/images/icon_scss.svg';
+import {ReactComponent as IconFigma} from '../assets/images/icon_figma.svg';
+import {ReactComponent as IconXd} from '../assets/images/icon_xd.svg';
+import {ReactComponent as IconPhotoshop} from '../assets/images/icon_photoshop.svg';
+import {ReactComponent as IconJs} from '../assets/images/icon_js.svg';
+import {ReactComponent as IconJquery} from '../assets/images/icon_jquery.svg';
+import {ReactComponent as IconVue} from '../assets/images/icon_vue.svg';
+import {ReactComponent as IconReact} from '../assets/images/icon_react.svg';
+import {ReactComponent as IconPhp} from '../assets/images/icon_php.svg';
+import {ReactComponent as IconSvn} from '../assets/images/icon_svn.svg';
+import {ReactComponent as IconGit} from '../assets/images/icon_git.svg';
+import {ReactComponent as IconVscode} from '../assets/images/icon_vscode.svg';
+import {ReactComponent as IconWebstrom} from '../assets/images/icon_webstorm.svg';
+
 const MyInfo = MyJsonData;
 
 const formatMonthsToYearMonth = (months) => {
@@ -44,7 +45,7 @@ const getMonthGap = (joinDate, leaveDate) => {
     return (leaveDateObj.getFullYear() * 12 + leaveDateObj.getMonth()) - (joinDateObj.getFullYear() * 12 + joinDateObj.getMonth());
 }
 
-const totalCareerMonth = Number(MyInfo.experience.map( item => {
+const totalCareerMonth = Number(MyInfo.experience.map(item => {
     return getMonthGap(item.dateStart, item.dateEnd);
 }).reduce((acc, cur) => {
     return acc + cur;
@@ -52,37 +53,38 @@ const totalCareerMonth = Number(MyInfo.experience.map( item => {
 
 const MyInfoSection = (props) => {
     return (
-            MyInfo[props.objectKey].map((list, index) => {
+        MyInfo[props.objectKey].map((list, index) => {
                 return (
                     <div className="info-box" key={list.order}>
                         <div className="info-box__title" key={list.title}>
                             {(!list.dateEnd && index === 0) &&
                                 <i>NOW</i>
                             }
-                                <strong>{list.title}</strong>
+                            <strong>{list.title}</strong>
                         </div>
 
-                            <p className="info-box__date">
-                                <i>
-                                    <FeatherIcon icon="calendar" size="12"/>
-                                </i>
-                                <span>{list.dateStart}</span>
-                                <span>-</span>
-                                <span>{list.dateEnd ?? `NOW`}</span>
-                                {
-                                    props.objectKey === 'experience' &&
-                                    <em>{formatMonthsToYearMonth(getMonthGap(list.dateStart, list.dateEnd))}</em>
-                                }
-                            </p>
+                        <p className="info-box__date">
+                            <i>
+                                <FeatherIcon icon="calendar" size="12"/>
+                            </i>
+                            <span>{list.dateStart}</span>
+                            <span>-</span>
+                            <span>{list.dateEnd ?? `NOW`}</span>
+                            {
+                                props.objectKey === 'experience' &&
+                                <em>{formatMonthsToYearMonth(getMonthGap(list.dateStart, list.dateEnd))}</em>
+                            }
+                        </p>
                         <div className="info-box__content">
-                        <ul className="list-bullet">
+                            <ul className="list-bullet">
                                 {
                                     list['description'].map((item, index) => {
-                                        return(
-                                            <li key={index}>
-                                                <span>{item}</span>
-                                            </li>
-                                        )}
+                                            return (
+                                                <li key={index}>
+                                                    <span>{item}</span>
+                                                </li>
+                                            )
+                                        }
                                     )
                                 }
                             </ul>

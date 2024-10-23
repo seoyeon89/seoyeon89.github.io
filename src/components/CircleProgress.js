@@ -1,5 +1,3 @@
-
-
 export const CircleProgress = ({title, percent, extraClass = ''}) => {
     const RADIUS = 54;
     const CIRCUMFERENCE = 2 * Math.PI * RADIUS;

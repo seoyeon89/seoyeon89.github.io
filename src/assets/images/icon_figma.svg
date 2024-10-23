@@ -1,1 +1,17 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 80 80"><g transform="translate(-870 -193)"><rect width="80" height="80" transform="translate(870 193)" fill="#fff" opacity="0"/><g transform="translate(882.534 191.801)"><path d="M1.466,2.2h52v78h-52Z" transform="translate(0 -0.001)" fill="none"/><path d="M144,157.733a13,13,0,1,1,13,13A13,13,0,0,1,144,157.733Z" transform="translate(-116.534 -116.534)" fill="#1abcfe"/><path d="M1.466,300.267a13,13,0,0,1,13-13h13v13a13,13,0,0,1-26,0Z" transform="translate(0 -233.068)" fill="#0acf83"/><path d="M144,2.2v26h13a13,13,0,1,0,0-26Z" transform="translate(-116.534 -0.001)" fill="#ff7262"/><path d="M1.466,15.2a13,13,0,0,0,13,13h13V2.2h-13a13,13,0,0,0-13,13Z" transform="translate(0)" fill="#f24e1e"/><path d="M1.466,157.733a13,13,0,0,0,13,13h13v-26h-13a13,13,0,0,0-13,13Z" transform="translate(0 -116.534)" fill="#a259ff"/></g></g></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 80 80">
+    <g transform="translate(-870 -193)">
+        <rect width="80" height="80" transform="translate(870 193)" fill="#fff" opacity="0"/>
+        <g transform="translate(882.534 191.801)">
+            <path d="M1.466,2.2h52v78h-52Z" transform="translate(0 -0.001)" fill="none"/>
+            <path d="M144,157.733a13,13,0,1,1,13,13A13,13,0,0,1,144,157.733Z" transform="translate(-116.534 -116.534)"
+                  fill="#1abcfe"/>
+            <path d="M1.466,300.267a13,13,0,0,1,13-13h13v13a13,13,0,0,1-26,0Z" transform="translate(0 -233.068)"
+                  fill="#0acf83"/>
+            <path d="M144,2.2v26h13a13,13,0,1,0,0-26Z" transform="translate(-116.534 -0.001)" fill="#ff7262"/>
+            <path d="M1.466,15.2a13,13,0,0,0,13,13h13V2.2h-13a13,13,0,0,0-13,13Z" transform="translate(0)"
+                  fill="#f24e1e"/>
+            <path d="M1.466,157.733a13,13,0,0,0,13,13h13v-26h-13a13,13,0,0,0-13,13Z" transform="translate(0 -116.534)"
+                  fill="#a259ff"/>
+        </g>
+    </g>
+</svg>

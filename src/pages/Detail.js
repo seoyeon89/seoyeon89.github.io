@@ -1,6 +1,6 @@
-import { useParams, useSearchParams } from 'react-router-dom';
-import { Popup } from '../components/Popup';
-import { CircleProgress } from '../components/CircleProgress';
+import {useParams, useSearchParams} from 'react-router-dom';
+import {Popup} from '../components/Popup';
+import {CircleProgress} from '../components/CircleProgress';
 import Error from '../components/Error';
 import ProjectsJsonData from '../assets/json/project.json';
 
@@ -54,7 +54,7 @@ const DetailPopup = ({Project}) => {
                                 {Object.entries(Project.participation).map(([key, value]) => {
                                     return (
                                         <div className="participation__item" key={key}>
-                                            <CircleProgress title={mappingParticipation(key)} percent={value} />
+                                            <CircleProgress title={mappingParticipation(key)} percent={value}/>
                                         </div>
                                     );
                                 })
@@ -99,7 +99,7 @@ const DetailPopup = ({Project}) => {
                 </div>
                 {Project.thumbnail &&
                     <div className="detail__thumbnail">
-                        { Project.images.map((image, index) => {
+                        {Project.images.map((image, index) => {
                             return (
                                 <div className="detail__thumbnail__item" key={index}>
                                     <img src={`/assets/thumnail/${image}`} alt={`${Project.name}의 썸네일`}/>
@@ -135,10 +135,10 @@ const Detail = () => {
         <>
             {
                 isShow
-                ? <DetailPopup Project={Project}/>
-                : <Popup title="ERROR">
+                    ? <DetailPopup Project={Project}/>
+                    : <Popup title="ERROR">
                         <Error/>
-                  </Popup>
+                    </Popup>
             }
         </>
     )
