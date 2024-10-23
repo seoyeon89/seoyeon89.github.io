@@ -1315,11 +1315,10 @@ html[data-mode=dark] .ul-table__row > .title {
   flex: 0 1 auto;
   width: 100%;
   margin-top: 54px;
-  padding: var(--component-gap) calc(var(--component-gap) - 16px) var(--component-gap) var(--component-gap);
+  padding: var(--component-gap);
   border-radius: var(--component-radius);
   background: var(--paper-primary);
   box-shadow: var(--component-shadow);
-  scrollbar-gutter: stable;
 }
 @media (min-width: 768px) {
   .container__inner .profile {
@@ -1328,8 +1327,10 @@ html[data-mode=dark] .ul-table__row > .title {
     top: 54px;
     overflow: hidden auto;
     width: 360px;
+    padding: var(--component-gap) calc(var(--component-gap) - 16px) var(--component-gap) var(--component-gap);
     max-height: calc(100vh - var(--max-height-outer));
     --max-height-outer: calc(var(--inner-padding) + 54px);
+    scrollbar-gutter: stable;
   }
 }
 @media (min-width: 768px) and (min-width: 768px) {

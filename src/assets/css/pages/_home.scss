@@ -47,11 +47,10 @@
             flex             : 0 1 auto;
             width            : 100%;
             margin-top       : $size-header-height;
-            padding          : var(--component-gap) calc(var(--component-gap) - 16px) var(--component-gap) var(--component-gap);
+            padding          : var(--component-gap);
             border-radius    : var(--component-radius);
             background       : var(--paper-primary);
             box-shadow       : var(--component-shadow);
-            scrollbar-gutter : stable;
 
             @include media-tablet {
                 @include mixin-scrollbar();
@@ -60,8 +59,10 @@
                 top                : $size-header-height;
                 overflow           : hidden auto;
                 width              : 360px;
+                padding          : var(--component-gap) calc(var(--component-gap) - 16px) var(--component-gap) var(--component-gap);
                 max-height         : calc(100vh - var(--max-height-outer));
                 --max-height-outer : calc(var(--inner-padding) + #{$size-header-height});
+                scrollbar-gutter : stable;
             }
         }
 
