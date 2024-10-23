@@ -69,10 +69,10 @@
         overflow            : auto;
         padding             : 0 $mobile-padding $mobile-padding $mobile-padding;
         overscroll-behavior : contain;
-        scrollbar-gutter : stable;
 
         @include media-laptop {
             padding : 0 ($laptop-padding - 16px) $laptop-padding $laptop-padding;
+            scrollbar-gutter : stable;
         }
     }
 }

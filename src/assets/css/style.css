@@ -1101,7 +1101,6 @@ html[data-mode=dark] .ul-table__row > .title {
   overflow: auto;
   padding: 0 20px 20px 20px;
   overscroll-behavior: contain;
-  scrollbar-gutter: stable;
 }
 @media (min-width: 768px) {
   .popup__container::-webkit-scrollbar {
@@ -1121,6 +1120,7 @@ html[data-mode=dark] .ul-table__row > .title {
 @media (min-width: 1020px) {
   .popup__container {
     padding: 0 20px 36px 36px;
+    scrollbar-gutter: stable;
   }
 }
 
