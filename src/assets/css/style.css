@@ -1010,6 +1010,7 @@ html[data-mode=dark] .ul-table__row > .title {
   flex-direction: column;
   width: 100vw;
   height: 100vh;
+  height: 100svh;
   background: var(--paper-secondary);
   z-index: 1;
   overscroll-behavior: contain;
