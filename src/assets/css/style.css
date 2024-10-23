@@ -1018,6 +1018,7 @@ html[data-mode=dark] .ul-table__row > .title {
 @media (min-width: 1020px) {
   .popup {
     width: calc(100vw - 72px);
+    height: auto;
     max-height: calc(100vh - 72px);
     max-height: calc(100svh - 72px);
     border-radius: var(--popup-radius);
@@ -1098,7 +1099,7 @@ html[data-mode=dark] .ul-table__row > .title {
 .popup__container {
   flex: 0 1 auto;
   overflow: auto;
-  padding: 0 4px 20px 20px;
+  padding: 0 20px 20px 20px;
   overscroll-behavior: contain;
   scrollbar-gutter: stable;
 }
