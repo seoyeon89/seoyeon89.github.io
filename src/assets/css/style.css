@@ -54,6 +54,7 @@ html[data-mode=dark] {
   --avator-background-color: #666666;
   --component-border-color: #2F2F2F;
   --scroll-thum: #333333;
+  color-scheme: dark;
 }
 
 @media (prefers-color-scheme: light) {
@@ -96,6 +97,7 @@ html[data-mode=dark] {
     --avator-background-color: #666666;
     --component-border-color: #2F2F2F;
     --scroll-thum: #333333;
+    color-scheme: dark;
   }
 }
 
