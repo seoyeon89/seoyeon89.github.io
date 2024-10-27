@@ -1,7 +1,7 @@
 @use "sass:math" as math;
 @use "../../import" as *;
 
-.ui-switch {
+.switch {
     $height  : 20px;
     $gap     : 2px;
     $border  : 2px;
@@ -20,14 +20,15 @@
     & > input {
         @include mixin-clip;
 
-        &:focus-visible + .ui-switch__button {
+        &:focus-visible + .switch__button {
             outline-style  : auto;
             outline-color  : var(--theme-primary);
             outline-offset : 1px;
         }
 
-        &:checked + .ui-switch__button {
+        &:checked + .switch__button {
             background : var(--theme-primary);
+            border-color : var(--theme-primary);
 
             &:before {
                 left       : $width -  $height + $gap;
@@ -42,7 +43,7 @@
         height        : 100%;
         transition    : all 0.2s;
         opacity       : 0.85;
-        border        : $border solid var(--theme-primary);
+        border        : $border solid #DDDDDD;
         border-radius : math.div($height, 2);
 
         &::before {
@@ -54,7 +55,7 @@
             height        : calc(100% - $gap * 2);
             transition    : all 0.2s;
             border-radius : 50%;
-            background    : var(--theme-primary);
+            background    : #DDDDDD;
             aspect-ratio  : 1;
 
         }

@@ -2,7 +2,7 @@
   "projects": [
     {
       "id": 1,
-      "isOpen": 2,
+      "isOpen": 1,
       "isFeatured": false,
       "name": "월요일의 과일가게",
       "category": "기타",
@@ -34,7 +34,7 @@
     },
     {
       "id": 2,
-      "isOpen": 2,
+      "isOpen": 1,
       "isFeatured": false,
       "name": "어라연전각연구소 포스터 작업",
       "category": "외주",
@@ -62,7 +62,7 @@
     },
     {
       "id": 3,
-      "isOpen": 2,
+      "isOpen": 1,
       "isFeatured": false,
       "name": "어라연전각연구소 리플렛 작업",
       "category": "외주",
@@ -90,7 +90,7 @@
     },
     {
       "id": 4,
-      "isOpen": 2,
+      "isOpen": 1,
       "isFeatured": false,
       "name": "카룻 BI디자인",
       "category": "신규구축",
@@ -115,7 +115,7 @@
     },
     {
       "id": 5,
-      "isOpen": 2,
+      "isOpen": 1,
       "isFeatured": false,
       "name": "시립노원노인복지관 모바일 리뉴얼 제안",
       "category": "개인프로젝트",
@@ -149,7 +149,7 @@
     },
     {
       "id": 6,
-      "isOpen": 2,
+      "isOpen": 1,
       "isFeatured": false,
       "name": "시립노원노인복지관 사이트리뉴얼 제안",
       "category": "개인프로젝트",
@@ -186,7 +186,7 @@
     },
     {
       "id": 7,
-      "isOpen": 2,
+      "isOpen": 1,
       "isFeatured": false,
       "name": "국립수목원 사이트 리뉴얼 제안",
       "category": "개인프로젝트",
@@ -221,7 +221,7 @@
     },
     {
       "id": 8,
-      "isOpen": 2,
+      "isOpen": 1,
       "isFeatured": false,
       "name": "어라연 전각 연구소 홈페이지 리뉴얼",
       "category": "외주",
@@ -260,7 +260,7 @@
     },
     {
       "id": 9,
-      "isOpen": 2,
+      "isOpen": 1,
       "isFeatured": false,
       "name": "카룻 : 자동차 사용자를 위한 SNS",
       "category": "신규구축",
@@ -293,7 +293,7 @@
     },
     {
       "id": 10,
-      "isOpen": 2,
+      "isOpen": 1,
       "isFeatured": false,
       "name": "시대고시 회원가입 리뉴얼",
       "category": "신규구축",
@@ -323,7 +323,7 @@
     },
     {
       "id": 11,
-      "isOpen": 2,
+      "isOpen": 1,
       "isFeatured": false,
       "name": "시대고시 공무원 통합사이트",
       "category": "신규구축",
@@ -358,7 +358,7 @@
     },
     {
       "id": 12,
-      "isOpen": 2,
+      "isOpen": 1,
       "isFeatured": false,
       "name": "시대고시 지텔프 리뉴얼",
       "category": "신규구축",
@@ -390,7 +390,7 @@
     {
       "id": 13,
       "isOpen": 2,
-      "isFeatured": false,
+      "isFeatured": true,
       "name": "시대 북 어플리케이션",
       "category": "신규구축",
       "workedFor": "시대고시",
@@ -418,7 +418,7 @@
     },
     {
       "id": 14,
-      "isOpen": 2,
+      "isOpen": 1,
       "isFeatured": false,
       "name": "시대 평생 교육원",
       "category": "신규구축",
@@ -449,7 +449,7 @@
     },
     {
       "id": 15,
-      "isOpen": 2,
+      "isOpen": 1,
       "isFeatured": false,
       "name": "시대고시 조경기능사 리뉴얼",
       "category": "신규구축",
@@ -481,7 +481,7 @@
     },
     {
       "id": 16,
-      "isOpen": 2,
+      "isOpen": 1,
       "isFeatured": false,
       "name": "시대고시 드론 신규",
       "category": "신규구축",
@@ -513,7 +513,7 @@
     },
     {
       "id": 17,
-      "isOpen": 2,
+      "isOpen": 1,
       "isFeatured": false,
       "name": "시대고시 유통관리사 2급 리뉴얼",
       "category": "신규구축",
@@ -545,7 +545,7 @@
     },
     {
       "id": 18,
-      "isOpen": 2,
+      "isOpen": 1,
       "isFeatured": false,
       "name": "시대드론 교육원 사이트",
       "category": "신규구축",
@@ -578,7 +578,7 @@
     },
     {
       "id": 19,
-      "isOpen": 2,
+      "isOpen": 1,
       "isFeatured": false,
       "name": "시대드론 교육원 사이트 모바일",
       "category": "신규구축",
@@ -611,7 +611,7 @@
     },
     {
       "id": 20,
-      "isOpen": 2,
+      "isOpen": 1,
       "isFeatured": false,
       "name": "시대고시 직업상담사",
       "category": "신규구축",
@@ -642,7 +642,7 @@
     },
     {
       "id": 21,
-      "isOpen": 2,
+      "isOpen": 1,
       "isFeatured": false,
       "name": "시대고시 사회조사분석사",
       "category": "신규구축",
@@ -674,7 +674,7 @@
     },
     {
       "id": 22,
-      "isOpen": 2,
+      "isOpen": 1,
       "isFeatured": false,
       "name": "시대고시 경비지도사",
       "category": "신규구축",
@@ -705,7 +705,7 @@
     },
     {
       "id": 23,
-      "isOpen": 2,
+      "isOpen": 1,
       "isFeatured": false,
       "name": "시대고시 임상심리사",
       "category": "신규구축",
@@ -737,7 +737,7 @@
     },
     {
       "id": 24,
-      "isOpen": 2,
+      "isOpen": 1,
       "isFeatured": true,
       "name": "시대고시 위생사",
       "category": "신규구축",
@@ -769,7 +769,7 @@
     },
     {
       "id": 25,
-      "isOpen": 2,
+      "isOpen": 1,
       "isFeatured": false,
       "name": "시대고시 관광종사원",
       "category": "신규구축",
@@ -801,7 +801,7 @@
     },
     {
       "id": 26,
-      "isOpen": 2,
+      "isOpen": 1,
       "isFeatured": false,
       "name": "시대고시 조경산업기사",
       "category": "신규구축",
@@ -831,7 +831,7 @@
     },
     {
       "id": 27,
-      "isOpen": 2,
+      "isOpen": 1,
       "isFeatured": false,
       "name": "시대고시 CS리더스관리사",
       "category": "신규구축",
@@ -862,7 +862,7 @@
     },
     {
       "id": 28,
-      "isOpen": 2,
+      "isOpen": 1,
       "isFeatured": false,
       "name": "시대고시 공인중개사",
       "category": "신규구축",
@@ -893,7 +893,7 @@
     },
     {
       "id": 29,
-      "isOpen": 2,
+      "isOpen": 1,
       "isFeatured": true,
       "name": "시대고시 정오표 구조변경",
       "category": "신규구축",
@@ -923,7 +923,7 @@
     },
     {
       "id": 30,
-      "isOpen": 2,
+      "isOpen": 1,
       "isFeatured": false,
       "name": "시대고시 주택관리사",
       "category": "신규구축",
@@ -983,7 +983,7 @@
     },
     {
       "id": 32,
-      "isOpen": 2,
+      "isOpen": 1,
       "isFeatured": true,
       "name": "시대고시 결제단계 축소",
       "category": "신규구축",
@@ -1045,7 +1045,7 @@
     },
     {
       "id": 34,
-      "isOpen": 2,
+      "isOpen": 1,
       "isFeatured": false,
       "name": "시대고시 사회복지사",
       "category": "신규구축",
@@ -1076,7 +1076,7 @@
     },
     {
       "id": 35,
-      "isOpen": 2,
+      "isOpen": 1,
       "isFeatured": false,
       "name": "시대고시 공인노무사",
       "category": "신규구축",
@@ -1107,7 +1107,7 @@
     },
     {
       "id": 36,
-      "isOpen": 2,
+      "isOpen": 1,
       "isFeatured": false,
       "name": "시대고시 경영지도사",
       "category": "신규구축",
@@ -1138,7 +1138,7 @@
     },
     {
       "id": 37,
-      "isOpen": 2,
+      "isOpen": 1,
       "isFeatured": true,
       "name": "시대고시 보세사",
       "category": "신규구축",
@@ -1169,7 +1169,7 @@
     },
     {
       "id": 38,
-      "isOpen": 2,
+      "isOpen": 1,
       "isFeatured": false,
       "name": "시대고시 텔레마케팅",
       "category": "신규구축",
@@ -1240,7 +1240,7 @@
     },
     {
       "id": 40,
-      "isOpen": 2,
+      "isOpen": 1,
       "isFeatured": true,
       "name": "병원 진료예약 플랫폼",
       "category": "신규구축",
@@ -1276,7 +1276,7 @@
     },
     {
       "id": 41,
-      "isOpen": 2,
+      "isOpen": 1,
       "isFeatured": false,
       "name": "병원 마케팅 플랫폼 어드민",
       "category": "신규구축",
@@ -1379,7 +1379,7 @@
     },
     {
       "id": 44,
-      "isOpen": 2,
+      "isOpen": 1,
       "isFeatured": false,
       "name": "매출모아",
       "category": "유지보수",
@@ -1411,7 +1411,7 @@
     },
     {
       "id": 45,
-      "isOpen": 2,
+      "isOpen": 1,
       "isFeatured": true,
       "name": "마통",
       "category": "유지보수",
@@ -1515,7 +1515,7 @@
     },
     {
       "id": 48,
-      "isOpen": 2,
+      "isOpen": 1,
       "isFeatured": false,
       "name": "Dx&Vx 게놈 유전자 검사 결과",
       "category": "외주",

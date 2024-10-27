@@ -1,7 +1,7 @@
 @use "../../import" as *;
 @use "sass:math" as math;
 
-.ui-button {
+.sy-button {
     @include reset-button;
     $height       : 36px;
     height        : $height;

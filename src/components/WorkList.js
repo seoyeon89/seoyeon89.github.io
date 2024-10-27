@@ -113,7 +113,7 @@ const WorkList = () => {
                                         categories.map((category) => {
                                             return (
                                                 <li key={category.id}>
-                                                    <label className="ui-checkbox">
+                                                    <label className="sy-checkbox">
                                                         <input type="checkbox" checked={category.seen}
                                                                onChange={e => categoryChange(category.id, e.target.checked)}
                                                                value={category.title}/>
@@ -133,7 +133,7 @@ const WorkList = () => {
                                         filters.map((filter) => {
                                             return (
                                                 <li key={filter.id}>
-                                                    <label className="ui-checkbox">
+                                                    <label className="sy-checkbox">
                                                         <input type="checkbox" checked={filter.seen}
                                                                onChange={e => filterChange(filter.id, e.target.checked)}
                                                                value={filter.title}/>
@@ -148,11 +148,11 @@ const WorkList = () => {
 
                             <div className="flex-box__item">
                                 <div className="flex-box__item__title">중요 프로젝트만 보기</div>
-                                <label className="ui-switch" role="switch">
+                                <label className="switch">
                                     <input type="checkbox"
                                            onChange={e => featuredChange(e.target.checked)}
                                            checked={seeFeatured}/>
-                                    <span className="ui-switch__button"></span>
+                                    <span className="switch__button"></span>
                                 </label>
                             </div>
                         </div>
@@ -198,9 +198,9 @@ const WorkList = () => {
                     </div>
                 </div>
                 <div className="counter">
+                    <div className="current"><span>선택</span> <strong>{projects.length}</strong>개</div>
+                    <div className="bar"><span>/</span></div>
                     <div className="total"><span>전체 </span>{projectInit.length}개</div>
-                    <div className="bar"><span>중에서</span></div>
-                    <div className="current"><strong>{projects.length}</strong>개<span> 보는 중</span></div>
                 </div>
             </div>
             {projects.length > 0 ?

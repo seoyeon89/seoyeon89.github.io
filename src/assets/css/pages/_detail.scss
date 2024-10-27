@@ -24,6 +24,8 @@
             top        : 0;
             width      : 320px;
             max-height : calc(100vh - 180px);
+            padding       : var(--component-padding) calc(var(--component-padding) - 16px) var(--component-padding) var(--component-padding);
+            scrollbar-gutter : stable;
         }
     }
 

@@ -10,10 +10,10 @@ html {
 
 @media (min-width: 768px) {
   html {
-    --inner-padding: 32px;
-    --component-gap: 20px;
-    --component-padding: 20px;
+    --component-gap: 12px;
+    --component-padding: 16px;
     --component-padding-secondary: 12px;
+    --inner-padding: 32px;
   }
 }
 html[data-mode=light] {
@@ -206,7 +206,7 @@ select {
   background: none !important;
 }
 
-.ui-button {
+.sy-button {
   position: relative;
   display: inline-flex;
   align-items: center;
@@ -235,20 +235,20 @@ select {
   padding: 0 20px;
   border-radius: 18px;
 }
-.ui-button:before,
-.ui-button i,
-.ui-button span {
+.sy-button:before,
+.sy-button i,
+.sy-button span {
   position: relative;
 }
-.ui-button:disabled {
+.sy-button:disabled {
   cursor: default;
   pointer-events: none;
 }
-.ui-button--primary {
+.sy-button--primary {
   color: #FFFFFF;
   background: var(--theme-primary);
 }
-.ui-button--primary:hover, .ui-button--primary:visited, .ui-button--primary:link {
+.sy-button--primary:hover, .sy-button--primary:visited, .sy-button--primary:link {
   color: #FFFFFF;
 }
 
@@ -272,7 +272,7 @@ select:hover, select:focus {
   border: 1px solid var(--component-border-hover-color);
 }
 
-.ui-checkbox {
+.sy-checkbox {
   display: flex;
   gap: 6px;
   align-items: center;
@@ -281,31 +281,26 @@ select:hover, select:focus {
   cursor: pointer;
   font-size: 1em;
 }
-@media (min-width: 1020px) {
-  .ui-checkbox {
-    font-size: 0.9em;
-  }
-}
-.ui-checkbox > input {
+.sy-checkbox > input {
   transform: scale(1.1);
   accent-color: var(--theme-primary);
 }
-.ui-checkbox > em {
+.sy-checkbox > em {
   text-transform: uppercase;
   font-style: normal;
 }
 
-.ui-switch {
+.switch {
   display: flex;
   position: relative;
   width: 32px;
   height: 20px;
   cursor: pointer;
 }
-.ui-switch:hover {
+.switch:hover {
   opacity: 1;
 }
-.ui-switch > input {
+.switch > input {
   position: absolute !important;
   overflow: hidden !important;
   clip: rect(0, 0, 0, 0) !important;
@@ -315,28 +310,29 @@ select:hover, select:focus {
   border: none !important;
   background: none !important;
 }
-.ui-switch > input:focus-visible + .ui-switch__button {
+.switch > input:focus-visible + .switch__button {
   outline-style: auto;
   outline-color: var(--theme-primary);
   outline-offset: 1px;
 }
-.ui-switch > input:checked + .ui-switch__button {
+.switch > input:checked + .switch__button {
   background: var(--theme-primary);
+  border-color: var(--theme-primary);
 }
-.ui-switch > input:checked + .ui-switch__button:before {
+.switch > input:checked + .switch__button:before {
   left: 14px;
   background: #FFFFFF;
 }
-.ui-switch__button {
+.switch__button {
   position: relative;
   width: 100%;
   height: 100%;
   transition: all 0.2s;
   opacity: 0.85;
-  border: 2px solid var(--theme-primary);
+  border: 2px solid #DDDDDD;
   border-radius: 10px;
 }
-.ui-switch__button::before {
+.switch__button::before {
   content: "";
   display: block;
   position: absolute;
@@ -345,7 +341,7 @@ select:hover, select:focus {
   height: calc(100% - 4px);
   transition: all 0.2s;
   border-radius: 50%;
-  background: var(--theme-primary);
+  background: #DDDDDD;
   aspect-ratio: 1;
 }
 
@@ -391,11 +387,11 @@ select:hover, select:focus {
   color: var(--theme-primary);
   font-size: 0.8em;
 }
-.ui-callout {
+.sy-callout {
   padding: var(--component-padding);
   background: var(--paper-secondary);
 }
-.ui-callout > p + p {
+.sy-callout > p + p {
   margin-top: 8px;
 }
 
@@ -858,7 +854,7 @@ html[data-mode=dark] .ul-table__row > .title {
   flex: 0 1 auto;
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 4px;
   width: 100%;
 }
 .flex-box__item__title {
@@ -1315,21 +1311,21 @@ html[data-mode=dark] .ul-table__row > .title {
   flex: 0 1 auto;
   width: 100%;
   margin-top: 54px;
-  padding: var(--component-gap);
+  padding: var(--component-padding);
   border-radius: var(--component-radius);
   background: var(--paper-primary);
   box-shadow: var(--component-shadow);
 }
 @media (min-width: 768px) {
   .container__inner .profile {
+    --max-height-outer: calc(var(--inner-padding) + 54px);
     flex: 0 0 auto;
     position: sticky;
     top: 54px;
+    padding: var(--component-padding) calc(var(--component-padding) - 16px) var(--component-padding) var(--component-padding);
     overflow: hidden auto;
     width: 360px;
-    padding: var(--component-gap) calc(var(--component-gap) - 16px) var(--component-gap) var(--component-gap);
     max-height: calc(100vh - var(--max-height-outer));
-    --max-height-outer: calc(var(--inner-padding) + 54px);
     scrollbar-gutter: stable;
   }
 }
@@ -1428,7 +1424,7 @@ html[data-mode=dark] .ul-table__row > .title {
   }
 }
 .container__inner .works .projects {
-  margin-top: 20px;
+  margin-top: var(--component-gap);
 }
 
 .detail {
@@ -1457,6 +1453,8 @@ html[data-mode=dark] .ul-table__row > .title {
     top: 0;
     width: 320px;
     max-height: calc(100vh - 180px);
+    padding: var(--component-padding) calc(var(--component-padding) - 16px) var(--component-padding) var(--component-padding);
+    scrollbar-gutter: stable;
   }
 }
 @media (min-width: 1020px) and (min-width: 768px) {

@@ -12,10 +12,10 @@ html {
 
 @include media-tablet {
     html {
-        --inner-padding               : 32px;
-        --component-gap               : 20px;
-        --component-padding           : 20px;
+        --component-gap               : 12px;
+        --component-padding           : 16px;
         --component-padding-secondary : 12px;
+        --inner-padding               : 32px;
     }
 }
 

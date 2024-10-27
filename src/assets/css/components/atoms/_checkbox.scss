@@ -1,6 +1,6 @@
 @use "../../import" as *;
 
-.ui-checkbox {
+.sy-checkbox {
     display     : flex;
     gap         : 6px;
     align-items : center;
@@ -9,9 +9,6 @@
     cursor      : pointer;
     font-size   : 1em;
 
-    @include media-laptop {
-        font-size : 0.9em;
-    }
 
     & > input {
         transform    : scale(1.1);

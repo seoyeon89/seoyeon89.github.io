@@ -74,7 +74,7 @@ const DetailPopup = ({Project}) => {
                             </div>
                         </div>
                     </div>
-                    <div className="ui-callout discription">
+                    <div className="sy-callout discription">
                         {
                             Project.discription.map((discription, index) => {
                                 return (
