@@ -316,8 +316,8 @@ select:hover, select:focus {
   outline-offset: 1px;
 }
 .switch > input:checked + .switch__button {
-  background: var(--theme-primary);
   border-color: var(--theme-primary);
+  background: var(--theme-primary);
 }
 .switch > input:checked + .switch__button:before {
   left: 14px;
@@ -1132,7 +1132,7 @@ html[data-mode=dark] .ul-table__row > .title {
   gap: 16px;
   align-items: center;
   justify-content: center;
-  margin-bottom: var(--component-gap);
+  padding: 8px;
 }
 .profile__card__avatar {
   flex: 0 0 auto;
@@ -1204,6 +1204,7 @@ html[data-mode=dark] .ul-table__row > .title {
   display: flex;
   flex-direction: column;
   gap: 4px;
+  padding: 0 8px;
 }
 .profile .introduce__title {
   margin-bottom: 12px;
@@ -1318,14 +1319,14 @@ html[data-mode=dark] .ul-table__row > .title {
 }
 @media (min-width: 768px) {
   .container__inner .profile {
-    --max-height-outer: calc(var(--inner-padding) + 54px);
     flex: 0 0 auto;
     position: sticky;
     top: 54px;
-    padding: var(--component-padding) calc(var(--component-padding) - 16px) var(--component-padding) var(--component-padding);
     overflow: hidden auto;
     width: 360px;
     max-height: calc(100vh - var(--max-height-outer));
+    padding: var(--component-padding) calc(var(--component-padding) - 16px) var(--component-padding) var(--component-padding);
+    --max-height-outer: calc(var(--inner-padding) + 54px);
     scrollbar-gutter: stable;
   }
 }

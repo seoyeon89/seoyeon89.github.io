@@ -27,8 +27,8 @@
         }
 
         &:checked + .switch__button {
-            background : var(--theme-primary);
             border-color : var(--theme-primary);
+            background   : var(--theme-primary);
 
             &:before {
                 left       : $width -  $height + $gap;

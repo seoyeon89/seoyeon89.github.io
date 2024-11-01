@@ -44,25 +44,25 @@
         }
 
         .profile {
-            flex             : 0 1 auto;
-            width            : 100%;
-            margin-top       : $size-header-height;
-            padding          : var(--component-padding);
-            border-radius    : var(--component-radius);
-            background       : var(--paper-primary);
-            box-shadow       : var(--component-shadow);
+            flex          : 0 1 auto;
+            width         : 100%;
+            margin-top    : $size-header-height;
+            padding       : var(--component-padding);
+            border-radius : var(--component-radius);
+            background    : var(--paper-primary);
+            box-shadow    : var(--component-shadow);
 
             @include media-tablet {
                 @include mixin-scrollbar();
-                --max-height-outer : calc(var(--inner-padding) + #{$size-header-height});
                 flex               : 0 0 auto;
                 position           : sticky;
                 top                : $size-header-height;
-                padding          : var(--component-padding) calc(var(--component-padding) - 16px) var(--component-padding) var(--component-padding) ;
                 overflow           : hidden auto;
                 width              : 360px;
                 max-height         : calc(100vh - var(--max-height-outer));
-                scrollbar-gutter : stable ;
+                padding            : var(--component-padding) calc(var(--component-padding) - 16px) var(--component-padding) var(--component-padding);
+                --max-height-outer : calc(var(--inner-padding) + #{$size-header-height});
+                scrollbar-gutter   : stable;
             }
         }
 
