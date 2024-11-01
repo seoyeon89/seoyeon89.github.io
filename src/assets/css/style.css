@@ -1204,7 +1204,7 @@ html[data-mode=dark] .ul-table__row > .title {
   display: flex;
   flex-direction: column;
   gap: 4px;
-  padding: 0 8px;
+  padding: 8px;
 }
 .profile .introduce__title {
   margin-bottom: 12px;
