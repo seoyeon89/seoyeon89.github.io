@@ -11,13 +11,14 @@ let projectInit = ProjectsJsonData.projects
     })
 
 const filterInit = [
-    {id: 1, title: 'mobile', seen: true},
     {id: 0, title: 'web', seen: true},
+    {id: 1, title: 'mobile', seen: true},
     {id: 2, title: 'app', seen: false},
     {id: 3, title: 'print', seen: false},
     {id: 4, title: 'etc', seen: false},
 ];
 const featuredInit = true;
+const allInit = false;
 const categoriesInit = [
     {id: 0, title: '신규구축', seen: true},
     {id: 1, title: '유지보수', seen: true},
@@ -63,14 +64,17 @@ const getProjectList = (filters, featured, categories) => {
 
 const WorkList = () => {
     const [searchParams] = useSearchParams();
-    if (!searchParams.get('resume')) {
+    const isResume = searchParams.get('resume') === 'yes';
+
+    if (!isResume) {
         projectInit = projectInit.filter((a) => a.isOpen > 1)
     }
 
-    const [filters, setFilter] = useState(filterInit);
-    const [categories, setCategories] = useState(categoriesInit);
-    const [seeFeatured, setSeeFeatured] = useState(featuredInit);
-    const [projects, setProjects] = useState(getProjectList(filterInit, featuredInit, categoriesInit));
+    const [seeAll, setSeeAll] = useState(isResume ? true : allInit);
+    const [seeFeatured, setSeeFeatured] = useState(isResume ? false : featuredInit);
+    const [filters, setFilter] = useState(isResume ? filterInit.map(f => ({...f, seen: true})) : filterInit);
+    const [categories, setCategories] = useState(isResume ? categoriesInit.map(c => ({...c, seen: true})) : categoriesInit);
+    const [projects, setProjects] = useState( isResume ? projectInit : getProjectList(filterInit, featuredInit, categoriesInit) );
 
     const filterChange = (filterId, nextSeen) => {
         const nextFilters = [...filters];
@@ -92,6 +96,24 @@ const WorkList = () => {
         setSeeFeatured(checked);
         setProjects(getProjectList(filters, checked, categories));
     }
+
+    const seeAllChange = (checked) => {
+        setSeeAll(checked);
+        if (checked) {
+            const allFilters = filters.map(item => ({...item, seen: true}));
+            const allCategories = categories.map(item => ({...item, seen: true}));
+
+            setFilter(allFilters);
+            setCategories(allCategories);
+            setSeeFeatured(false);
+            setProjects(projectInit);
+        } else {
+            setFilter(filterInit);
+            setCategories(categoriesInit);
+            setSeeFeatured(featuredInit);
+            setProjects(getProjectList(filterInit, featuredInit, categoriesInit));
+        }
+    }
     const getFilterCounter = () => {
         let num = seeFeatured === true ? 1 : 0;
         num += countingSeen(filters);
@@ -105,97 +127,129 @@ const WorkList = () => {
                 <div className="filter">
                     <Dropdown title="filter-list" titleIcon="filter" label={`${getFilterCounter()}개의 필터 활성화`}
                               extraClass="filter__dropdown">
+
                         <div className="flex-box">
                             <div className="flex-box__item">
-                                <div className="flex-box__item__title">Category</div>
-                                <ul>
-                                    {
-                                        categories.map((category) => {
-                                            return (
-                                                <li key={category.id}>
-                                                    <label className="sy-checkbox">
-                                                        <input type="checkbox" checked={category.seen}
-                                                               onChange={e => categoryChange(category.id, e.target.checked)}
-                                                               value={category.title}/>
-                                                        <em>{category.title}</em>
-                                                    </label>
-                                                </li>
-                                            )
-                                        })
-                                    }
-                                </ul>
-                            </div>
-
-                            <div className="flex-box__item">
-                                <div className="flex-box__item__title">Platform</div>
-                                <ul>
-                                    {
-                                        filters.map((filter) => {
-                                            return (
-                                                <li key={filter.id}>
-                                                    <label className="sy-checkbox">
-                                                        <input type="checkbox" checked={filter.seen}
-                                                               onChange={e => filterChange(filter.id, e.target.checked)}
-                                                               value={filter.title}/>
-                                                        <em>{filter.title}</em>
-                                                    </label>
-                                                </li>
-                                            )
-                                        })
-                                    }
-                                </ul>
-                            </div>
-
-                            <div className="flex-box__item">
-                                <div className="flex-box__item__title">중요 프로젝트만 보기</div>
+                                <div className="flex-box__item__title">전체보기</div>
                                 <label className="switch">
                                     <input type="checkbox"
-                                           onChange={e => featuredChange(e.target.checked)}
-                                           checked={seeFeatured}/>
+                                           onChange={e => seeAllChange(e.target.checked)}
+                                           checked={seeAll}/>
                                     <span className="switch__button"></span>
                                 </label>
                             </div>
+
+                            {
+                                seeAll === false && (
+                                    <>
+                                        <div className="flex-box__item">
+                                            <div className="flex-box__item__title">중요 프로젝트만 보기</div>
+                                            <label className="switch">
+                                                <input type="checkbox"
+                                                       onChange={e => featuredChange(e.target.checked)}
+                                                       checked={seeFeatured}/>
+                                                <span className="switch__button"></span>
+                                            </label>
+                                        </div>
+
+                                        <div className="flex-box__item">
+                                            <div className="flex-box__item__title">Category</div>
+                                            <ul>
+                                                {
+                                                    categories.map((category) => (
+                                                        <li key={category.id}>
+                                                            <label className="sy-checkbox">
+                                                                <input type="checkbox" checked={category.seen}
+                                                                       onChange={e => categoryChange(category.id, e.target.checked)}
+                                                                       value={category.title}/>
+                                                                <em>{category.title}</em>
+                                                            </label>
+                                                        </li>
+                                                    ))
+                                                }
+                                            </ul>
+                                        </div>
+
+                                        <div className="flex-box__item">
+                                            <div className="flex-box__item__title">Platform</div>
+                                            <ul>
+                                                {
+                                                    filters.map((filter) => (
+                                                        <li key={filter.id}>
+                                                            <label className="sy-checkbox">
+                                                                <input type="checkbox" checked={filter.seen}
+                                                                       onChange={e => filterChange(filter.id, e.target.checked)}
+                                                                       value={filter.title}/>
+                                                                <em>{filter.title}</em>
+                                                            </label>
+                                                        </li>
+                                                    ))
+                                                }
+                                            </ul>
+                                        </div>
+                                    </>
+                                )
+                            }
                         </div>
+
                     </Dropdown>
+
                     <div className="filter__result">
-                        {
-                            seeFeatured === true &&
+                    {
+                        seeAll === true ? (
+                            // 전체보기 전용 표시
                             <div className="filter__result__item">
-                                <button type="button" onClick={e => featuredChange(!seeFeatured)}>
-                                    <div><i><FeatherIcon icon="x"/></i></div>
-                                    <em>중요프로젝트만 보기</em>
+                                <button type="button" onClick={() => seeAllChange(false)}>
+                                    <div><i><FeatherIcon icon="x" /></i></div>
+                                    <em>전체보기</em>
                                 </button>
                             </div>
-                        }
-                        {
-                            categories.map((category) => {
-                                return category.seen === true &&
-                                    <div key={category.id} className="filter__result__item">
-                                        <button type="button" onClick={() => {
-                                            categoryChange(category.id, !category.seen)
-                                        }}>
+                        ) : (
+                            <>
+                                {
+                                    seeFeatured === true &&
+                                    <div className="filter__result__item">
+                                        <button type="button" onClick={() => featuredChange(!seeFeatured)}>
                                             <div><i><FeatherIcon icon="x"/></i></div>
-                                            <span>범주</span>
-                                            <em>{category.title}</em>
+                                            <em>중요프로젝트만 보기</em>
                                         </button>
                                     </div>
-                            })
-                        }
-                        {
-                            filters.map((filter) => {
-                                return filter.seen === true &&
-                                    <div key={filter.id} className="filter__result__item">
-                                        <button type="button" onClick={() => {
-                                            filterChange(filter.id, !filter.seen)
-                                        }}>
-                                            <div><i><FeatherIcon icon="x"/></i></div>
-                                            <span>플랫폼</span>
-                                            <em>{filter.title}</em>
-                                        </button>
-                                    </div>
-                            })
-                        }
-                    </div>
+                                }
+
+                                {
+                                    categories.map((category) => {
+                                        return category.seen === true &&
+                                            <div key={category.id} className="filter__result__item">
+                                                <button type="button" onClick={() => {
+                                                    categoryChange(category.id, !category.seen)
+                                                }}>
+                                                    <div><i><FeatherIcon icon="x"/></i></div>
+                                                    <span>범주</span>
+                                                    <em>{category.title}</em>
+                                                </button>
+                                            </div>
+                                    })
+                                }
+
+                                {
+                                    filters.map((filter) => {
+                                        return filter.seen === true &&
+                                            <div key={filter.id} className="filter__result__item">
+                                                <button type="button" onClick={() => {
+                                                    filterChange(filter.id, !filter.seen)
+                                                }}>
+                                                    <div><i><FeatherIcon icon="x"/></i></div>
+                                                    <span>플랫폼</span>
+                                                    <em>{filter.title}</em>
+                                                </button>
+                                            </div>
+                                    })
+                                }
+                            </>
+                        )
+                    }
+                </div>
+
                 </div>
                 <div className="counter">
                     <div className="current"><span>선택</span> <strong>{projects.length}</strong>개</div>

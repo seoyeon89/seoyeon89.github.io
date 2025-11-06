@@ -2203,6 +2203,521 @@
         "02_study/06_portfoilo/site01.png",
         "02_study/06_portfoilo/site02.png"
       ]
+    },
+    {
+      "id": 70,
+      "isOpen": 1,
+      "isFeatured": false,
+      "name": "유진그룹",
+      "category": "신규구축",
+      "workedFor": "코비젼",
+      "participation": {
+        "publish": 100
+      },
+      "platform": "web",
+      "date": {
+        "start": "2023-11-20",
+        "end": "2024-05-31"
+      },
+      "skills": [
+        "HTML5",
+        "CSS3",
+        "JQuery"
+      ],
+      "discription": [
+        "유진그룹 구축 프로젝트의 퍼블리싱 담당으로 참여 하였습니다.",
+        "백엔드 언어는 JAVA(JSP)입니다."
+      ],
+      "thumbnail": "09_covision/20_eugene/site_thum.png",
+      "images": [
+        "09_covision/20_eugene/site01.png",
+        "09_covision/20_eugene/site02.png",
+        "09_covision/20_eugene/site03.png",
+        "09_covision/20_eugene/site04.png",
+        "09_covision/20_eugene/site05.png",
+        "09_covision/20_eugene/site06.png"
+      ]
+    },
+    {
+      "id": 71,
+      "isOpen": 0,
+      "isFeatured": false,
+      "name": "중앙그룹",
+      "category": "Teams Add-in 업그레이드 구축",
+      "workedFor": "코비젼",
+      "participation": {
+        "publish": 100
+      },
+      "platform": "web",
+      "date": {
+        "start": "2024-04-15",
+        "end": "2024-10-31"
+      },
+      "skills": [
+        "HTML5",
+        "CSS3",
+        "JQuery"
+      ],
+      "discription": [
+        "Teams Add-in 업그레이드 구축 프로젝트의 퍼블리싱 담당으로 참여 하였습니다.",
+        "백엔드 언어는 JAVA(JSP)입니다."
+      ],
+      "thumbnail": "09_covision/21_joongang_teams/site_thum.png",
+      "images": [
+        "09_covision/21_joongang_teams/site01.png",
+        "09_covision/21_joongang_teams/site02.png",
+        "09_covision/21_joongang_teams/site03.png",
+        "09_covision/21_joongang_teams/site04.png",
+        "09_covision/21_joongang_teams/site05.png",
+        "09_covision/21_joongang_teams/site06.png"
+      ]
+    },
+    {
+      "id": 72,
+      "isOpen": 1,
+      "isFeatured": true,
+      "name": "동우화인캠 환경규제물질 관리시스템",
+      "category": "신규구축",
+      "workedFor": "코비젼",
+      "participation": {
+        "design": 80,
+        "publish": 100
+      },
+      "platform": "web",
+      "date": {
+        "start": "2024-11-04",
+        "end": "2024-12-02"
+      },
+      "skills": [
+        "HTML5",
+        "CSS3",
+        "JQuery"
+      ],
+      "discription": [
+        "동우화인캠 환경규제물질 관리시스템 구축 프로젝트의 퍼블리싱 담당으로 참여 하였습니다.",
+        "고객사 및 개발팀의 요청으로 인하여, 기존 퍼블리싱 구조가 아닌 동우화인캠 만의 고유 디자인 시스템을 구축하였습니다.",
+        "대부분의 컴포넌트의 디자인, 퍼블리싱을 진행하였고, 비주얼 적인 요소가 필요한 로그인 배경화면, 포털 디자인은 디자이너의 지원을 받았습니다." ,
+        "페이지 단위 퍼블리싱 외에도 컴포넌트 단위의 설명이 있는 퍼블리싱 가이드를 사전에 제공하여 공수를 절감 했을 뿐 아니라 고객사의 갑작스러운 수정 요청 및 추가 작업에 개발자들이 유연하게 대처 할 수 있어 유용하게 사용되었습니다.",
+        "백엔드 언어는 JAVA(JSP)입니다."
+      ],
+      "thumbnail": "09_covision/22_dwchem/site_thum.png",
+      "images": [
+        "09_covision/22_dwchem/site01.png",
+        "09_covision/22_dwchem/site02.png",
+        "09_covision/22_dwchem/site03.png",
+        "09_covision/22_dwchem/site04.png",
+        "09_covision/22_dwchem/site05.png",
+        "09_covision/22_dwchem/site06.png",
+        "09_covision/22_dwchem/site07.png"
+      ]
+    },
+    {
+      "id": 73,
+      "isOpen": 1,
+      "isFeatured": false,
+      "name": "효성",
+      "category": "신규구축",
+      "workedFor": "코비젼",
+      "participation": {
+        "publish": 100
+      },
+      "platform": "web",
+      "date": {
+        "start": "2023-08-23",
+        "end": "2024-08-02"
+      },
+      "skills": [
+        "HTML5",
+        "CSS3",
+        "JQuery"
+      ],
+      "discription": [
+        "  구축 프로젝트의 퍼블리싱 담당으로 참여 하였습니다.",
+        "백엔드 언어는 JAVA(JSP)입니다."
+      ],
+      "thumbnail": "09_covision/23_hyosung/site_thum.png",
+      "images": [
+        "09_covision/23_hyosung/site01.png",
+        "09_covision/23_hyosung/site02.png",
+        "09_covision/23_hyosung/site03.png",
+        "09_covision/23_hyosung/site04.png",
+        "09_covision/23_hyosung/site05.png",
+        "09_covision/23_hyosung/site06.png"
+      ]
+    },
+    {
+      "id": 74,
+      "isOpen": 0,
+      "isFeatured": false,
+      "name": "에터미",
+      "category": "신규구축",
+      "workedFor": "코비젼",
+      "participation": {
+        "publish": 100
+      },
+      "platform": "web",
+      "date": {
+        "start": "2023-08-23",
+        "end": "2024-08-02"
+      },
+      "skills": [
+        "HTML5",
+        "CSS3",
+        "JQuery"
+      ],
+      "discription": [
+        "  구축 프로젝트의 퍼블리싱 담당으로 참여 하였습니다.",
+        "백엔드 언어는 JAVA(JSP)입니다."
+      ],
+      "thumbnail": "09_covision/24_atomy/",
+      "images": [
+        "09_covision/24_atomy/.png",
+        "09_covision/24_atomy/.png",
+        "09_covision/24_atomy/.png",
+        "09_covision/24_atomy/.png",
+        "09_covision/24_atomy/.png",
+        "09_covision/24_atomy/.png"
+      ]
+    },
+    {
+      "id": 75,
+      "isOpen": 0,
+      "isFeatured": false,
+      "name": "레조낙",
+      "category": "신규구축",
+      "workedFor": "코비젼",
+      "participation": {
+        "publish": 100
+      },
+      "platform": "web",
+      "date": {
+        "start": "2023-08-23",
+        "end": "2024-08-02"
+      },
+      "skills": [
+        "HTML5",
+        "CSS3",
+        "JQuery"
+      ],
+      "discription": [
+        "  구축 프로젝트의 퍼블리싱 담당으로 참여 하였습니다.",
+        "백엔드 언어는 JAVA(JSP)입니다."
+      ],
+      "thumbnail": "09_covision/25_resonac/site_thum.png",
+      "images": [
+        "09_covision/25_resonac/site01.png",
+        "09_covision/25_resonac/site02.png",
+        "09_covision/25_resonac/site03.png",
+        "09_covision/25_resonac/site04.png",
+        "09_covision/25_resonac/site05.png",
+        "09_covision/25_resonac/site06.png"
+      ]
+    },
+    {
+      "id": 76,
+      "isOpen": 0,
+      "isFeatured": false,
+      "name": "올림푸스",
+      "category": "신규구축",
+      "workedFor": "코비젼",
+      "participation": {
+        "publish": 100
+      },
+      "platform": "web",
+      "date": {
+        "start": "2023-08-23",
+        "end": "2024-08-02"
+      },
+      "skills": [
+        "HTML5",
+        "CSS3",
+        "JQuery"
+      ],
+      "discription": [
+        "  구축 프로젝트의 퍼블리싱 담당으로 참여 하였습니다.",
+        "백엔드 언어는 JAVA(JSP)입니다."
+      ],
+      "thumbnail": "09_covision/26_olympus/site_thum.png",
+      "images": [
+        "09_covision/26_olympus/site01.png",
+        "09_covision/26_olympus/site02.png",
+        "09_covision/26_olympus/site03.png",
+        "09_covision/26_olympus/site04.png",
+        "09_covision/26_olympus/site05.png",
+        "09_covision/26_olympus/site06.png"
+      ]
+    },
+    {
+      "id": 77,
+      "isOpen": 0,
+      "isFeatured": false,
+      "name": "히타치",
+      "category": "신규구축",
+      "workedFor": "코비젼",
+      "participation": {
+        "publish": 100
+      },
+      "platform": "web",
+      "date": {
+        "start": "2023-08-23",
+        "end": "2024-08-02"
+      },
+      "skills": [
+        "HTML5",
+        "CSS3",
+        "JQuery"
+      ],
+      "discription": [
+        "  구축 프로젝트의 퍼블리싱 담당으로 참여 하였습니다.",
+        "백엔드 언어는 JAVA(JSP)입니다."
+      ],
+      "thumbnail": "09_covision/27_hitachi/site_thum.png",
+      "images": [
+        "09_covision/27_hitachi/site01.png",
+        "09_covision/27_hitachi/site02.png",
+        "09_covision/27_hitachi/site03.png",
+        "09_covision/27_hitachi/site04.png",
+        "09_covision/27_hitachi/site05.png",
+        "09_covision/27_hitachi/site06.png"
+      ]
+    },
+    {
+      "id": 78,
+      "isOpen": 0,
+      "isFeatured": false,
+      "name": "소노그룹",
+      "category": "신규구축",
+      "workedFor": "코비젼",
+      "participation": {
+        "publish": 100
+      },
+      "platform": "web",
+      "date": {
+        "start": "2023-08-23",
+        "end": "2024-08-02"
+      },
+      "skills": [
+        "HTML5",
+        "CSS3",
+        "JQuery"
+      ],
+      "discription": [
+        "  구축 프로젝트의 퍼블리싱 담당으로 참여 하였습니다.",
+        "백엔드 언어는 JAVA(JSP)입니다."
+      ],
+      "thumbnail": "09_covision/28_sono/site_thum.png",
+      "images": [
+        "09_covision/28_sono/site01.png",
+        "09_covision/28_sono/site02.png",
+        "09_covision/28_sono/site03.png",
+        "09_covision/28_sono/site04.png",
+        "09_covision/28_sono/site05.png",
+        "09_covision/28_sono/site06.png"
+      ]
+    },
+    {
+      "id": 79,
+      "isOpen": 0,
+      "isFeatured": false,
+      "name": "엔지니어링협회",
+      "category": "신규구축",
+      "workedFor": "코비젼",
+      "participation": {
+        "publish": 100
+      },
+      "platform": "web",
+      "date": {
+        "start": "2023-08-23",
+        "end": "2024-08-02"
+      },
+      "skills": [
+        "HTML5",
+        "CSS3",
+        "JQuery"
+      ],
+      "discription": [
+        "  구축 프로젝트의 퍼블리싱 담당으로 참여 하였습니다.",
+        "백엔드 언어는 JAVA(JSP)입니다."
+      ],
+      "thumbnail": "09_covision/29_egic/site_thum.png",
+      "images": [
+        "09_covision/29_egic/site01.png",
+        "09_covision/29_egic/site02.png",
+        "09_covision/29_egic/site03.png",
+        "09_covision/29_egic/site04.png",
+        "09_covision/29_egic/site05.png",
+        "09_covision/29_egic/site06.png"
+      ]
+    },
+    {
+      "id": 80,
+      "isOpen": 0,
+      "isFeatured": false,
+      "name": "금호석유화학",
+      "category": "신규구축",
+      "workedFor": "코비젼",
+      "participation": {
+        "publish": 100
+      },
+      "platform": "web",
+      "date": {
+        "start": "2023-08-23",
+        "end": "2024-08-02"
+      },
+      "skills": [
+        "HTML5",
+        "CSS3",
+        "JQuery"
+      ],
+      "discription": [
+        "  구축 프로젝트의 퍼블리싱 담당으로 참여 하였습니다.",
+        "백엔드 언어는 JAVA(JSP)입니다."
+      ],
+      "thumbnail": "09_covision/30_kkpc/site_thum.png",
+      "images": [
+        "09_covision/30_kkpc/site01.png",
+        "09_covision/30_kkpc/site02.png",
+        "09_covision/30_kkpc/site03.png",
+        "09_covision/30_kkpc/site04.png",
+        "09_covision/30_kkpc/site05.png",
+        "09_covision/30_kkpc/site06.png"
+      ]
+    },
+    {
+      "id": 81,
+      "isOpen": 0,
+      "isFeatured": false,
+      "name": "TOK",
+      "category": "신규구축",
+      "workedFor": "코비젼",
+      "participation": {
+        "publish": 100
+      },
+      "platform": "web",
+      "date": {
+        "start": "2023-08-23",
+        "end": "2024-08-02"
+      },
+      "skills": [
+        "HTML5",
+        "CSS3",
+        "JQuery"
+      ],
+      "discription": [
+        "  구축 프로젝트의 퍼블리싱 담당으로 참여 하였습니다.",
+        "백엔드 언어는 JAVA(JSP)입니다."
+      ],
+      "thumbnail": "09_covision/31_tok/site_thum.png",
+      "images": [
+        "09_covision/31_tok/site01.png",
+        "09_covision/31_tok/site02.png",
+        "09_covision/31_tok/site03.png",
+        "09_covision/31_tok/site04.png",
+        "09_covision/31_tok/site05.png",
+        "09_covision/31_tok/site06.png"
+      ]
+    },
+    {
+      "id": 82,
+      "isOpen": 0,
+      "isFeatured": false,
+      "name": "MP제품 UXUI 전면개편",
+      "category": "신규구축",
+      "workedFor": "코비젼",
+      "participation": {
+        "publish": 100
+      },
+      "platform": "web",
+      "date": {
+        "start": "2023-08-23",
+        "end": "2024-08-02"
+      },
+      "skills": [
+        "HTML5",
+        "CSS3",
+        "JQuery"
+      ],
+      "discription": [
+        "  구축 프로젝트의 퍼블리싱 담당으로 참여 하였습니다.",
+        "백엔드 언어는 JAVA(JSP)입니다."
+      ],
+      "thumbnail": "09_covision/32_mp_renewal/site_thum.png",
+      "images": [
+        "09_covision/32_mp_renewal/site01.png",
+        "09_covision/32_mp_renewal/site02.png",
+        "09_covision/32_mp_renewal/site03.png",
+        "09_covision/32_mp_renewal/site04.png",
+        "09_covision/32_mp_renewal/site05.png",
+        "09_covision/32_mp_renewal/site06.png"
+      ]
+    },
+    {
+      "id": 83,
+      "isOpen": 0,
+      "isFeatured": true,
+      "name": "코비젼 AI 제품 개발",
+      "category": "신규구축",
+      "workedFor": "코비젼",
+      "participation": {
+        "publish": 100
+      },
+      "platform": "web",
+      "date": {
+        "start": "2023-08-23",
+        "end": "2024-08-02"
+      },
+      "skills": [
+        "HTML5",
+        "CSS3",
+        "JQuery"
+      ],
+      "discription": [
+        "구축 프로젝트의 퍼블리싱 담당으로 참여 하였습니다.",
+        "백엔드 언어는 JAVA(JSP)입니다."
+      ],
+      "thumbnail": "09_covision/33_cp_ai/site_thum.png",
+      "images": [
+        "09_covision/33_cp_ai/site01.png",
+        "09_covision/33_cp_ai/site02.png",
+        "09_covision/33_cp_ai/site03.png",
+        "09_covision/33_cp_ai/site04.png",
+        "09_covision/33_cp_ai/site05.png",
+        "09_covision/33_cp_ai/site06.png"
+      ]
+    },
+    {
+      "id": 84,
+      "isOpen": 0,
+      "isFeatured": true,
+      "name": "로그인 UXUI 개편",
+      "category": "신규구축",
+      "workedFor": "코비젼",
+      "participation": {
+        "publish": 100
+      },
+      "platform": "web",
+      "date": {
+        "start": "2023-08-23",
+        "end": "2024-08-02"
+      },
+      "skills": [
+        "HTML5",
+        "CSS3",
+        "JQuery"
+      ],
+      "discription": [
+        "구축 프로젝트의 퍼블리싱 담당으로 참여 하였습니다.",
+        "백엔드 언어는 JAVA(JSP)입니다."
+      ],
+      "thumbnail": "09_covision/34_cp_login/site_thum.png",
+      "images": [
+        "09_covision/34_cp_login/site01.png",
+        "09_covision/34_cp_login/site02.png",
+        "09_covision/34_cp_login/site03.png",
+        "09_covision/34_cp_login/site04.png",
+        "09_covision/34_cp_login/site05.png",
+        "09_covision/34_cp_login/site06.png"
+      ]
     }
   ]
 }
