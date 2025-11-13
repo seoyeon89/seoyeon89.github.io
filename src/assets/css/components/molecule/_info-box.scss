@@ -5,25 +5,25 @@
         margin-top : 16px
     }
 
-    &__title {
+    &__header {
         display       : flex;
         align-items   : center;
         margin-bottom : 2px;
-
-        & > i {
-            display       : inline-flex;
-            margin-right  : 4px;
-            padding       : 0 4px;
-            line-height   : 14px;
-            color         : #FFFFFF;
-            border-radius : 4px;
-            background    : var(--theme-primary);
-            font-size     : 9px;
-            font-style    : normal;
-        }
-
     }
 
+    &__label {
+        flex: 1 1 0;
+        & > em {
+            color       : var(--text-secondary);
+            font-style  : normal;
+        }
+    }
+    &__meta {
+        flex: 0 0 auto;
+        margin-left : auto;
+        display:flex;
+        align-items:center;
+    }
     &__date {
         @include mixin-icons(var(--text-endpoint));
         min-height : 24px;

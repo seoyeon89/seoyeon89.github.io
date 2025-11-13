@@ -1,23 +1,12 @@
 @use "../../import" as *;
 
 .accordion {
-    //overflow      : hidden;
     border        : 1px solid transparent;
-    border-radius : var(--component-radius);
 
-    &:hover {
-        &:not([data-expended="true"]) {
-            box-shadow : var(--component-shadow);
-        }
-    }
-
-    &__title {
+    & > .accordion__title {
         @include reset-button;
         width      : 100%;
-        padding    : 8px 8px 8px 18px;
         transition : all 0.2s;
-        color      : var(--theme-primary);
-        font-size  : 1.14em;
 
         & > span {
             flex        : 0 1 auto;
@@ -48,17 +37,15 @@
         }
     }
 
-    &__content {
+    & > .accordion__content {
         display    : none;
-        padding    : 12px;
-        border-top : 1px solid var(--component-border-color);
     }
 
 
     &[data-expended="true"] {
         border-color : var(--component-border-color);
 
-        .accordion__title {
+        & > .accordion__title {
             i {
                 svg {
                     transition : all .2s;
@@ -67,9 +54,58 @@
             }
         }
 
-        .accordion__content {
+        & > .accordion__content {
             display : block;
         }
     }
 
+
+    &.primary {
+        border-radius : var(--component-radius);
+
+        &:hover {
+            &:not([data-expended="true"]) {
+                box-shadow : var(--component-shadow);
+            }
+        }
+
+        & > .accordion__title {
+            padding    : 8px 8px 8px 18px;
+            color      : var(--theme-primary);
+            font-size  : 1.14em;
+
+            & > span {
+                flex        : 0 1 auto;
+                width       : 100%;
+                text-align  : left;
+                font-weight : $font-weight-bold;
+            }
+
+            & > i {
+                flex            : 0 0 auto;
+                display         : inline-flex;
+                align-items     : center;
+                justify-content : center;
+                overflow        : hidden;
+                width           : 24px;
+                height          : 24px;
+                margin-left     : auto;
+                border-radius   : 50%;
+
+                & > svg {
+                    width           : 18px;
+                    height          : 18px;
+                    transition      : all .2s;
+                    object-fit      : contain;
+                    object-position : center;
+                    stroke          : var(--theme-primary);
+                }
+            }
+        }
+
+        & > .accordion__content {
+            padding    : 12px;
+            border-top : 1px solid var(--component-border-color);
+        }
+    }
 }

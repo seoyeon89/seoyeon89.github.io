@@ -1,4 +1,5 @@
 import FeatherIcon from 'feather-icons-react';
+import React, { useState } from "react";
 import {Accordion, Accordions} from './Accordion';
 import MyJsonData from '../assets/json/mydata.json';
 import {ReactComponent as IconHtml} from '../assets/images/icon_html.svg';
@@ -51,48 +52,24 @@ const totalCareerMonth = Number(MyInfo.experience.map(item => {
     return acc + cur;
 }, 0));
 
-const MyInfoSection = (props) => {
+const MyInfoSection = ({ item }) => {
     return (
-        MyInfo[props.objectKey].map((list, index) => {
-                return (
-                    <div className="info-box" key={list.order}>
-                        <div className="info-box__title" key={list.title}>
-                            {(!list.dateEnd && index === 0) &&
-                                <i>NOW</i>
-                            }
-                            <strong>{list.title}</strong>
-                        </div>
+        <div className="info-box">
+            <div className="info-box__content">
+                <div>
+                    <i><FeatherIcon icon="calendar" size="12" /></i>
+                    <span>{item.dateStart}</span>
+                    <span>-</span>
+                    <span>{item.dateEnd ?? `NOW`}</span>
+                </div>
 
-                        <p className="info-box__date">
-                            <i>
-                                <FeatherIcon icon="calendar" size="12"/>
-                            </i>
-                            <span>{list.dateStart}</span>
-                            <span>-</span>
-                            <span>{list.dateEnd ?? `NOW`}</span>
-                            {
-                                props.objectKey === 'experience' &&
-                                <em>{formatMonthsToYearMonth(getMonthGap(list.dateStart, list.dateEnd))}</em>
-                            }
-                        </p>
-                        <div className="info-box__content">
-                            <ul className="list-bullet">
-                                {
-                                    list['description'].map((item, index) => {
-                                            return (
-                                                <li key={index}>
-                                                    <span>{item}</span>
-                                                </li>
-                                            )
-                                        }
-                                    )
-                                }
-                            </ul>
-                        </div>
-                    </div>
-                );
-            }
-        )
+                <ul className="list-bullet">
+                    {item.description.map((desc, i) => (
+                        <li key={i} dangerouslySetInnerHTML={{ __html: desc }} />
+                    ))}
+                </ul>
+            </div>
+        </div>
     );
 };
 
@@ -152,17 +129,40 @@ const Profile = () => {
             </div>
             <div className="profile__blocks">
                 <Accordions>
-                    <Accordion title="Hello World!">
+                    <Accordion title="Hello World!"
+                               extraClass={"primary"}>
                         <div className="introduce">
                             <div className="introduce__title">
                                 <strong>열정적인 탐험가,</strong><br/>
                                 웹퍼블리셔 <strong>장서연</strong>입니다.
                             </div>
                             <p>다양한 직군과 함께 <strong>효율적인 UIUX를 만드는 데</strong> 관심이 많습니다.</p>
-                            <p>폭넓은 탐구를 통해 <strong>다양한 개발 스택을 쌓는 것을 좋아</strong>합니다. 신기술을 접목하여 레거시 소스를 리펙토링 하는데 능숙합니다.</p>
+                            <p>레거시 소스의 문제를 분석하고, 최신 기술 트렌드에 맞춰 <strong>구조적으로 개선</strong>하는 작업에 능숙합니다.</p>
                         </div>
                     </Accordion>
-                    <Accordion title="Skills & Tools">
+                    <Accordion title="Work Experience"
+                               extraClass={"primary"}>
+                        <Accordions>
+                        {MyInfo.experience.map((item) => (
+                            <Accordion
+                                key={item.order}
+                                title={
+                                    <>
+                                        {!item.dateEnd && <div className="sy-chip">NOW</div>}
+                                        <strong>{item.title}</strong>
+                                        <em>{formatMonthsToYearMonth(getMonthGap(item.dateStart, item.dateEnd))}</em>
+                                    </>
+                                }
+                            >
+                                <MyInfoSection item={item} />
+                            </Accordion>
+                        ))}
+                        </Accordions>
+                    </Accordion>
+
+
+                    <Accordion title="Skills & Tools"
+                               extraClass={"primary"}>
                         <div className="skills">
                             <div className="skills__item">
                                 <div className="skills__item__title">
@@ -182,15 +182,6 @@ const Profile = () => {
                                         <li>반응형, 모바일 웹 퍼블리싱이 가능합니다.</li>
                                         <li>CSS 전처리기(SCSS, LESS) 사용 가능합니다.</li>
                                         <li>ES5, ES6 및 jQuery의 차이를 이해하며 사용 가능합니다.</li>
-                                    </ul>
-                                </div>
-                                <div className="skills__item__box">
-                                    <div className="skills__item__box__icons">
-                                        <span><IconSvn/></span>
-                                        <span><IconGit/></span>
-                                    </div>
-                                    <ul className="list-bullet">
-                                        <li>GIT/SVN의 형상관리 툴을 사용 가능합니다.</li>
                                     </ul>
                                 </div>
                                 <div className="skills__item__box">
@@ -221,6 +212,15 @@ const Profile = () => {
                                 </div>
                                 <div className="skills__item__box">
                                     <div className="skills__item__box__icons">
+                                        <span><IconSvn/></span>
+                                        <span><IconGit/></span>
+                                    </div>
+                                    <ul className="list-bullet">
+                                        <li>GIT/SVN의 형상관리 툴을 사용 가능합니다.</li>
+                                    </ul>
+                                </div>
+                                <div className="skills__item__box">
+                                    <div className="skills__item__box__icons">
                                         <span><IconFigma/></span>
                                         <span><IconXd/></span>
                                         <span><IconPhotoshop/></span>
@@ -233,11 +233,11 @@ const Profile = () => {
                             </div>
                         </div>
                     </Accordion>
-                    <Accordion title="Work Experience">
-                        <MyInfoSection objectKey="experience"/>
-                    </Accordion>
-                    <Accordion title="Education">
-                        <MyInfoSection objectKey="education"/>
+                    <Accordion title="Education"
+                               extraClass={"primary"}>
+                        {MyInfo.education.map((item) => (
+                            <MyInfoSection  key={item.order}  item={item} />
+                        ))}
                     </Accordion>
                 </Accordions>
             </div>

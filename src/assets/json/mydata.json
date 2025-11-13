@@ -4,8 +4,10 @@
       "order": 0,
       "title": "코비젼",
       "dateStart": "2022/10",
+      "position": "파트장/ 과장",
       "description": [
-        "웹퍼블리싱(HTML/SCSS/JS/jquery)"
+        "웹퍼블리셔로서 <strong>AI R&D</strong>메인 퍼블리싱  (HTML/SCSS/JS/jquery)",
+        "웹퍼블리셔로서 AI R&D (HTML/SCSS/JS/jquery)"
       ]
     },
     {
@@ -13,6 +15,7 @@
       "title": "엘에스이노베이션",
       "dateStart": "2021/09",
       "dateEnd": "2022/09",
+      "position": "팀원/ 대리",
       "description": [
         "웹퍼블리싱(HTML/SCSS/JS/jquery/gulp/GIT)"
       ]
@@ -22,6 +25,7 @@
       "title": "NGTech",
       "dateStart": "2019/06",
       "dateEnd": "2021/06",
+      "position": "팀원/ 대리",
       "description": [
         "웹퍼블리싱(HTML/CSS/JS/VUE/GIT)",
         "디자인 보조(adobe XD)",
@@ -33,6 +37,7 @@
       "title": "시대고시",
       "dateStart": "2017/07",
       "dateEnd": "2019/02",
+      "position": "팀원/ 주임",
       "description": [
         "웹퍼블리싱(HTML/CSS/JS)"
       ]
@@ -42,8 +47,9 @@
       "title": "센치",
       "dateStart": "2016/05",
       "dateEnd": "2017/02",
+      "position": "팀원/ 사원",
       "description": [
-        "웹퍼블리싱(HTML/SCSS/JS/jquery)",
+        "웹퍼블리싱 (HTML/SCSS/JS/jquery)",
         "디자인",
         "프론트 유지보수(PHP)"
       ]

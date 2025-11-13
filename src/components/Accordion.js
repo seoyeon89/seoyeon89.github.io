@@ -23,7 +23,6 @@ export const Accordion = ({children, title, isOpen, onToggle, extraClass = ''}) 
     return (
         <div className={`accordion ${extraClass}`}
              data-expended={`${isOpen ? 'true' : 'false'}`}
-             key={title}
         >
             <button type="button"
                     className="accordion__title"

@@ -70,11 +70,19 @@ const WorkList = () => {
         projectInit = projectInit.filter((a) => a.isOpen > 1)
     }
 
-    const [seeAll, setSeeAll] = useState(isResume ? true : allInit);
-    const [seeFeatured, setSeeFeatured] = useState(isResume ? false : featuredInit);
-    const [filters, setFilter] = useState(isResume ? filterInit.map(f => ({...f, seen: true})) : filterInit);
-    const [categories, setCategories] = useState(isResume ? categoriesInit.map(c => ({...c, seen: true})) : categoriesInit);
-    const [projects, setProjects] = useState( isResume ? projectInit : getProjectList(filterInit, featuredInit, categoriesInit) );
+    const [seeAll, setSeeAll] = useState(isResume ? false : allInit);
+    const [seeFeatured, setSeeFeatured] = useState(isResume ? true : featuredInit);
+    const [filters, setFilter] = useState( isResume ? filterInit.map(f => ({ ...f, seen: true })) : filterInit );
+    const [categories, setCategories] = useState( isResume ? categoriesInit.map(c => ({ ...c, seen: true })) : categoriesInit );
+    const [projects, setProjects] = useState(
+        isResume
+            ? getProjectList(
+                filterInit.map(f => ({ ...f, seen: true })),
+                true,
+                categoriesInit.map(c => ({ ...c, seen: true }))
+            )
+            : getProjectList(filterInit, featuredInit, categoriesInit)
+    );
 
     const filterChange = (filterId, nextSeen) => {
         const nextFilters = [...filters];
