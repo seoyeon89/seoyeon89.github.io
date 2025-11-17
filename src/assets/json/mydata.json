@@ -6,8 +6,10 @@
       "dateStart": "2022/10",
       "position": "파트장/ 과장",
       "description": [
-        "웹퍼블리셔로서 <strong>AI R&D</strong>메인 퍼블리싱  (HTML/SCSS/JS/jquery)",
-        "웹퍼블리셔로서 AI R&D (HTML/SCSS/JS/jquery)"
+        "퍼블리싱 파트 파트장으로서 R&D의 요구사항 정리·프로세스 조율·일정 관리 등을 수행했으며, 특히 <strong>AI 제품</strong>의 메인 퍼블리셔로 구조 설계와 UI 구현을 담당했습니다.",
+        "또한 다수의 고객사 <strong>SI 프로젝트 퍼블리싱</strong>도 진행했습니다.",
+        "<strong>사용 기술 : </strong><br>HTML5 / SCSS, CSS3 / Javascript(ES5, ES6, JQuery)",
+        "<strong>사용 프로그램 :</strong><br>WebStrom, VS code / SVN / XD"
       ]
     },
     {
@@ -17,7 +19,9 @@
       "dateEnd": "2022/09",
       "position": "팀원/ 대리",
       "description": [
-        "웹퍼블리싱(HTML/SCSS/JS/jquery/gulp/GIT)"
+        "",
+        "<strong>사용 기술 :</strong><br>HTML5 / SCSS, CSS3 / Javascript(ES6, JQuery)",
+        "<strong>사용 프로그램 :</strong><br>WebStrom, VS code / GIT / gulp"
       ]
     },
     {

@@ -5,7 +5,7 @@
         margin-top : 16px
     }
 
-    &__header {
+    &__head {
         display       : flex;
         align-items   : center;
         margin-bottom : 2px;
@@ -13,6 +13,9 @@
 
     &__label {
         flex: 1 1 0;
+        &> strong {
+
+        }
         & > em {
             color       : var(--text-secondary);
             font-style  : normal;

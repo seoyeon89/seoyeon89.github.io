@@ -19,7 +19,23 @@ import {ReactComponent as IconVscode} from '../assets/images/icon_vscode.svg';
 import {ReactComponent as IconWebstrom} from '../assets/images/icon_webstorm.svg';
 
 const MyInfo = MyJsonData;
-
+const skillIcons = [
+    <IconHtml />,
+    <IconCss3 />,
+    <IconSass />,
+    <IconJs />,
+    <IconJquery />,
+    <IconVue />,
+    <IconReact />,
+    <IconPhp />,
+    <IconVscode />,
+    <IconWebstrom />,
+    <IconSvn />,
+    <IconGit />,
+    <IconFigma />,
+    <IconXd />,
+    <IconPhotoshop />
+];
 const formatMonthsToYearMonth = (months) => {
     const years = Math.floor(months / 12);
     const remainingMonths = months % 12;
@@ -52,11 +68,18 @@ const totalCareerMonth = Number(MyInfo.experience.map(item => {
     return acc + cur;
 }, 0));
 
-const MyInfoSection = ({ item }) => {
+const MyInfoSection = ({ item, title = null}) => {
     return (
         <div className="info-box">
+            {title && (
+            <div className="info-box__head">
+                <div className="info-box__label">
+                    <strong>{item.title}</strong>
+                </div>
+            </div>
+            )}
             <div className="info-box__content">
-                <div>
+                <div className="info-box__date">
                     <i><FeatherIcon icon="calendar" size="12" /></i>
                     <span>{item.dateStart}</span>
                     <span>-</span>
@@ -129,8 +152,7 @@ const Profile = () => {
             </div>
             <div className="profile__blocks">
                 <Accordions>
-                    <Accordion title="Hello World!"
-                               extraClass={"primary"}>
+                    <Accordion title="Hello World!" extraClass={"primary"}>
                         <div className="introduce">
                             <div className="introduce__title">
                                 <strong>열정적인 탐험가,</strong><br/>
@@ -140,29 +162,30 @@ const Profile = () => {
                             <p>레거시 소스의 문제를 분석하고, 최신 기술 트렌드에 맞춰 <strong>구조적으로 개선</strong>하는 작업에 능숙합니다.</p>
                         </div>
                     </Accordion>
-                    <Accordion title="Work Experience"
-                               extraClass={"primary"}>
-                        <Accordions>
-                        {MyInfo.experience.map((item) => (
-                            <Accordion
-                                key={item.order}
-                                title={
-                                    <>
-                                        {!item.dateEnd && <div className="sy-chip">NOW</div>}
-                                        <strong>{item.title}</strong>
-                                        <em>{formatMonthsToYearMonth(getMonthGap(item.dateStart, item.dateEnd))}</em>
-                                    </>
-                                }
-                            >
-                                <MyInfoSection item={item} />
-                            </Accordion>
-                        ))}
-                        </Accordions>
+                    <Accordion title="Work Experience" extraClass={"primary"}>
+                        <div className="experience">
+                            <Accordions mode="multiple" initOpen={[0]}>
+                            {MyInfo.experience.map((item) => (
+                                <Accordion
+                                    key={item.order}
+                                    extraClass={"secondary"}
+                                    iconOpen={"minus"}
+                                    iconClosed={"plus"}
+                                    title={
+                                        <>
+                                            {!item.dateEnd && <div className="sy-chip">NOW</div>}
+                                            <strong>{item.title}</strong>
+                                            <em>{formatMonthsToYearMonth(getMonthGap(item.dateStart, item.dateEnd))}</em>
+                                        </>
+                                    }
+                                >
+                                    <MyInfoSection item={item} />
+                                </Accordion>
+                            ))}
+                            </Accordions>
+                        </div>
                     </Accordion>
-
-
-                    <Accordion title="Skills & Tools"
-                               extraClass={"primary"}>
+                    <Accordion title="Skills & Tools" extraClass={"primary"}>
                         <div className="skills">
                             <div className="skills__item">
                                 <div className="skills__item__title">
@@ -170,29 +193,19 @@ const Profile = () => {
                                     <span>MY</span><strong>SKILLS</strong>
                                 </div>
                                 <div className="skills__item__box">
-                                    <div className="skills__item__box__icons">
-                                        <span><IconHtml/></span>
-                                        <span><IconCss3/></span>
-                                        <span><IconSass/></span>
-                                        <span><IconJs/></span>
-                                        <span><IconJquery/></span>
-                                    </div>
                                     <ul className="list-bullet">
-                                        <li>웹 표준, 웹 접근성, 크로스 브라우징 마크업이 가능합니다.</li>
-                                        <li>반응형, 모바일 웹 퍼블리싱이 가능합니다.</li>
-                                        <li>CSS 전처리기(SCSS, LESS) 사용 가능합니다.</li>
-                                        <li>ES5, ES6 및 jQuery의 차이를 이해하며 사용 가능합니다.</li>
+                                        <li><strong>웹 표준·웹 접근성</strong>에 맞춰 HTML/CSS 마크업을 작성합니다.</li>
+                                        <li> Chrome, Firefox, Edge, Safari 등 주요 브라우저에서의 크로스 브라우징을 맞춰 구현합니다.</li>
+                                        <li><strong>웹 표준, 웹 접근성, 크로스 브라우징</strong> 마크업이 가능합니다.</li>
+                                        <li>데스크톱·태블릿·모바일 환경에 맞춘 <strong>반응형/적응형</strong> 레이아웃을 구현할 수 있습니다.</li>
+                                        <li>CSS 전처리기(SCSS, LESS)로 스타일 코드를 구조화해 작성할 수 있습니다.</li>
+                                        <li>ES5, ES6문법 차이를 이해하며, 상황에 맞게 JavaScript와 jQuery 코드를 작성할 수 있습니다.</li>
                                     </ul>
                                 </div>
                                 <div className="skills__item__box">
-                                    <div className="skills__item__box__icons">
-                                        <span><IconVue/></span>
-                                        <span><IconReact/></span>
-                                        <span><IconPhp/></span>
-                                    </div>
                                     <ul className="list-bullet">
-                                        <li>Vue, React에 대한 간단한 이해가 있으며, Vue, React 환경에서의 퍼블리싱 경험이 있습니다.</li>
-                                        <li>PHP에 대한 간단한 이해가 있으며, PHP환경에서의 퍼블리싱 경험이 있습니다.</li>
+                                        <li>Vue, React 구조를 이해하며, 해당 환경에서의 퍼블리싱 경험이 있습니다.</li>
+                                        <li>PHP 기본 구조를 이해하며, PHP 기반 프로젝트에서 퍼블리싱 경험이 있습니다.</li>
                                     </ul>
                                 </div>
                             </div>
@@ -202,41 +215,41 @@ const Profile = () => {
                                     <span>used</span><strong>TOOLS</strong>
                                 </div>
                                 <div className="skills__item__box">
-                                    <div className="skills__item__box__icons">
-                                        <span><IconVscode/></span>
-                                        <span><IconWebstrom/></span>
-                                    </div>
                                     <ul className="list-bullet">
                                         <li>Visual Studio Code, WebStrom을 활용할 수 있습니다.</li>
                                     </ul>
                                 </div>
                                 <div className="skills__item__box">
-                                    <div className="skills__item__box__icons">
-                                        <span><IconSvn/></span>
-                                        <span><IconGit/></span>
-                                    </div>
                                     <ul className="list-bullet">
                                         <li>GIT/SVN의 형상관리 툴을 사용 가능합니다.</li>
+                                        <li>회사 환경에 맞는 Git Flow 브랜치 전략을 직접 구상해본 경험이 있습니다.</li>
                                     </ul>
                                 </div>
                                 <div className="skills__item__box">
-                                    <div className="skills__item__box__icons">
-                                        <span><IconFigma/></span>
-                                        <span><IconXd/></span>
-                                        <span><IconPhotoshop/></span>
-                                    </div>
                                     <ul className="list-bullet">
                                         <li>Figma, XD 툴을 이용한 프로토 타이핑 작업, 컴포넌트(에셋)을 활용한 디자인 시스템 셋팅이 가능합니다.</li>
                                         <li>Photoshop을 이용한 이미지 가공 작업이 가능합니다.</li>
                                     </ul>
                                 </div>
                             </div>
+                            <div className="skills__icons">
+                                <div className="sy-marquee">
+                                    <div className="marquee__track">
+                                        {[...Array(2)].map((_, idx) =>
+                                            skillIcons.map((icon, i) => (
+                                                <span className="skills__icon" key={`${idx}-${i}`}>
+                                                    {icon}
+                                                  </span>
+                                            ))
+                                        )}
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </Accordion>
-                    <Accordion title="Education"
-                               extraClass={"primary"}>
+                    <Accordion title="Education" extraClass={"primary"}>
                         {MyInfo.education.map((item) => (
-                            <MyInfoSection  key={item.order}  item={item} />
+                            <MyInfoSection  key={item.order} title={item.title}  item={item} />
                         ))}
                     </Accordion>
                 </Accordions>
