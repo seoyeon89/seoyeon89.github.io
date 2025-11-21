@@ -31,6 +31,7 @@ const formatDate = (dateString) => {
     const [year, month] = dateString.split('-');
     return `${year}/${month}`;
 }
+
 const getSelected = (FilterObject) => {
     return FilterObject.reduce((acc, cur) => {
         if (cur.seen) {
@@ -43,10 +44,12 @@ const getSelected = (FilterObject) => {
 const countingSeen = (filterObject) => {
     return filterObject.filter(item => item.seen === true).length;
 }
+
 const getProjectList = (filters, featured, categories) => {
     const selectedFilter = getSelected(filters);
     const selectedCategories = getSelected(categories);
     const nextFeatured = featured;
+
     return projectInit
         .filter((a) => {
             return selectedFilter.includes(a.platform)
@@ -65,23 +68,41 @@ const getProjectList = (filters, featured, categories) => {
 const WorkList = () => {
     const [searchParams] = useSearchParams();
     const isResume = searchParams.get('resume') === 'yes';
+    const isDev = searchParams.get('resume') === 'dev';  // ★ 추가됨
 
-    if (!isResume) {
-        projectInit = projectInit.filter((a) => a.isOpen > 1)
+    // ★ dev가 아닐 때만 기존처럼 isOpen > 1 필터 적용
+    if (!isResume && !isDev) {
+        projectInit = projectInit.filter((a) => a.isOpen > 1);
     }
 
-    const [seeAll, setSeeAll] = useState(isResume ? false : allInit);
-    const [seeFeatured, setSeeFeatured] = useState(isResume ? true : featuredInit);
-    const [filters, setFilter] = useState( isResume ? filterInit.map(f => ({ ...f, seen: true })) : filterInit );
-    const [categories, setCategories] = useState( isResume ? categoriesInit.map(c => ({ ...c, seen: true })) : categoriesInit );
+    // ★ 초기 상태: dev일 경우 전체 오픈 + 전체 보기 + 모든 필터 활성화
+    const [seeAll, setSeeAll] = useState(isDev ? true : (isResume ? false : allInit));
+    const [seeFeatured, setSeeFeatured] = useState(isDev ? false : (isResume ? true : featuredInit));
+
+    const [filters, setFilter] = useState(
+        isDev
+            ? filterInit.map(f => ({ ...f, seen: true }))
+            : (isResume ? filterInit.map(f => ({ ...f, seen: true })) : filterInit)
+    );
+
+    const [categories, setCategories] = useState(
+        isDev
+            ? categoriesInit.map(c => ({ ...c, seen: true }))
+            : (isResume ? categoriesInit.map(c => ({ ...c, seen: true })) : categoriesInit)
+    );
+
     const [projects, setProjects] = useState(
-        isResume
-            ? getProjectList(
-                filterInit.map(f => ({ ...f, seen: true })),
-                true,
-                categoriesInit.map(c => ({ ...c, seen: true }))
+        isDev
+            ? projectInit   // ★ dev는 필터 없이 전체 프로젝트 그대로
+            : (
+                isResume
+                    ? getProjectList(
+                        filterInit.map(f => ({ ...f, seen: true })),
+                        true,
+                        categoriesInit.map(c => ({ ...c, seen: true }))
+                    )
+                    : getProjectList(filterInit, featuredInit, categoriesInit)
             )
-            : getProjectList(filterInit, featuredInit, categoriesInit)
     );
 
     const filterChange = (filterId, nextSeen) => {
@@ -92,6 +113,7 @@ const WorkList = () => {
         setFilter(nextFilters);
         setProjects(getProjectList(nextFilters, seeFeatured, categories));
     }
+
     const categoryChange = (CategoryId, nextSeen) => {
         const nextCategories = [...categories];
         const targetCategory = nextCategories.find(item => item.id === CategoryId);
@@ -100,6 +122,7 @@ const WorkList = () => {
         setCategories(nextCategories);
         setProjects(getProjectList(filters, seeFeatured, nextCategories));
     }
+
     const featuredChange = (checked) => {
         setSeeFeatured(checked);
         setProjects(getProjectList(filters, checked, categories));
@@ -107,6 +130,7 @@ const WorkList = () => {
 
     const seeAllChange = (checked) => {
         setSeeAll(checked);
+
         if (checked) {
             const allFilters = filters.map(item => ({...item, seen: true}));
             const allCategories = categories.map(item => ({...item, seen: true}));
@@ -122,12 +146,14 @@ const WorkList = () => {
             setProjects(getProjectList(filterInit, featuredInit, categoriesInit));
         }
     }
+
     const getFilterCounter = () => {
         let num = seeFeatured === true ? 1 : 0;
         num += countingSeen(filters);
         num += countingSeen(categories);
         return num;
     }
+
     return (
         <section id="works" className="works">
             <h1 hidden>WorkList</h1>
@@ -203,60 +229,59 @@ const WorkList = () => {
                     </Dropdown>
 
                     <div className="filter__result">
-                    {
-                        seeAll === true ? (
-                            // 전체보기 전용 표시
-                            <div className="filter__result__item">
-                                <button type="button" onClick={() => seeAllChange(false)}>
-                                    <div><i><FeatherIcon icon="x" /></i></div>
-                                    <em>전체보기</em>
-                                </button>
-                            </div>
-                        ) : (
-                            <>
-                                {
-                                    seeFeatured === true &&
-                                    <div className="filter__result__item">
-                                        <button type="button" onClick={() => featuredChange(!seeFeatured)}>
-                                            <div><i><FeatherIcon icon="x"/></i></div>
-                                            <em>중요프로젝트만 보기</em>
-                                        </button>
-                                    </div>
-                                }
+                        {
+                            seeAll === true ? (
+                                <div className="filter__result__item">
+                                    <button type="button" onClick={() => seeAllChange(false)}>
+                                        <div><i><FeatherIcon icon="x" /></i></div>
+                                        <em>전체보기</em>
+                                    </button>
+                                </div>
+                            ) : (
+                                <>
+                                    {
+                                        seeFeatured === true &&
+                                        <div className="filter__result__item">
+                                            <button type="button" onClick={() => featuredChange(!seeFeatured)}>
+                                                <div><i><FeatherIcon icon="x"/></i></div>
+                                                <em>중요프로젝트만 보기</em>
+                                            </button>
+                                        </div>
+                                    }
 
-                                {
-                                    categories.map((category) => {
-                                        return category.seen === true &&
-                                            <div key={category.id} className="filter__result__item">
-                                                <button type="button" onClick={() => {
-                                                    categoryChange(category.id, !category.seen)
-                                                }}>
-                                                    <div><i><FeatherIcon icon="x"/></i></div>
-                                                    <span>범주</span>
-                                                    <em>{category.title}</em>
-                                                </button>
-                                            </div>
-                                    })
-                                }
+                                    {
+                                        categories.map((category) => {
+                                            return category.seen === true &&
+                                                <div key={category.id} className="filter__result__item">
+                                                    <button type="button" onClick={() => {
+                                                        categoryChange(category.id, !category.seen)
+                                                    }}>
+                                                        <div><i><FeatherIcon icon="x"/></i></div>
+                                                        <span>범주</span>
+                                                        <em>{category.title}</em>
+                                                    </button>
+                                                </div>
+                                        })
+                                    }
 
-                                {
-                                    filters.map((filter) => {
-                                        return filter.seen === true &&
-                                            <div key={filter.id} className="filter__result__item">
-                                                <button type="button" onClick={() => {
-                                                    filterChange(filter.id, !filter.seen)
-                                                }}>
-                                                    <div><i><FeatherIcon icon="x"/></i></div>
-                                                    <span>플랫폼</span>
-                                                    <em>{filter.title}</em>
-                                                </button>
-                                            </div>
-                                    })
-                                }
-                            </>
-                        )
-                    }
-                </div>
+                                    {
+                                        filters.map((filter) => {
+                                            return filter.seen === true &&
+                                                <div key={filter.id} className="filter__result__item">
+                                                    <button type="button" onClick={() => {
+                                                        filterChange(filter.id, !filter.seen)
+                                                    }}>
+                                                        <div><i><FeatherIcon icon="x"/></i></div>
+                                                        <span>플랫폼</span>
+                                                        <em>{filter.title}</em>
+                                                    </button>
+                                                </div>
+                                        })
+                                    }
+                                </>
+                            )
+                        }
+                    </div>
 
                 </div>
                 <div className="counter">
@@ -265,62 +290,67 @@ const WorkList = () => {
                     <div className="total"><span>전체 </span>{projectInit.length}개</div>
                 </div>
             </div>
-            {projects.length > 0 ?
-                (
-                    <ul className="projects">
-                        {
-                            projects.map((project) => {
-                                const url = searchParams.get('resume') === 'yes' ? `/detail/${project.id}?resume=yes` : `/detail/${project.id}`
-                                return (
-                                    <li key={project.id}>
-                                        <Link to={url} className="project">
-                                            <div className="project__thumbnail">
-                                                <div>
-                                                    <img src={`/assets/thumnail/${project.thumbnail}`}
-                                                         alt={`${project.projactName}의 썸네일`}/>
-                                                </div>
-                                            </div>
-                                            <div className="project__info">
-                                                <div className="project__info__important">
-                                                    <h2>
-                                                        <span>{project.name}</span>
-                                                    </h2>
 
-                                                    {project.platform &&
-                                                        <div className="tags">
+            {projects.length > 0 ? (
+                <ul className="projects">
+                    {
+                        projects.map((project) => {
+                            const url = searchParams.get('resume') === 'yes'
+                                ? `/detail/${project.id}?resume=yes`
+                                : (isDev ? `/detail/${project.id}?resume=dev` : `/detail/${project.id}`);
+
+                            return (
+                                <li key={project.id}>
+                                    <Link to={url} className="project">
+                                        <div className="project__thumbnail">
+                                            <div>
+                                                <img src={`/assets/thumnail/${project.thumbnail}`}
+                                                     alt={`${project.projactName}의 썸네일`}/>
+                                            </div>
+                                        </div>
+                                        <div className="project__info">
+                                            <div className="project__info__important">
+                                                <h2>
+                                                    <span>{project.name}</span>
+                                                </h2>
+
+                                                {project.platform &&
+                                                    <div className="tags">
                                                         <span key={project.platform}
                                                               className="tags__item">{project.platform}</span>
-                                                        </div>
-                                                    }
-                                                </div>
-                                                <div className="project__info__detail">
-                                                    <div className="type">
-                                                        {project.category}
                                                     </div>
-                                                    {project.date.start &&
-                                                        <div className="start-date">
-                                                            <time>{formatDate(project.date.start)}</time>
-                                                        </div>
-                                                    }
-                                                </div>
-                                                <div className="project__info__skills skills">
-                                                    {
-                                                        project.skills.map((skill, index) => {
-                                                            return <span key={index}>{skill}</span>
-                                                        })
-                                                    }
-                                                </div>
+                                                }
                                             </div>
-                                        </Link>
-                                    </li>
-                                );
-                            })
-                        }
-                    </ul>
-                ) : (
-                    <div className="projects--no-child">프로젝트가 없습니다.</div>
-                )
-            }
+
+                                            <div className="project__info__detail">
+                                                <div className="type">
+                                                    {project.category}
+                                                </div>
+                                                {project.date.start &&
+                                                    <div className="start-date">
+                                                        <time>{formatDate(project.date.start)}</time>
+                                                    </div>
+                                                }
+                                            </div>
+
+                                            <div className="project__info__skills skills">
+                                                {
+                                                    project.skills.map((skill, index) => {
+                                                        return <span key={index}>{skill}</span>
+                                                    })
+                                                }
+                                            </div>
+                                        </div>
+                                    </Link>
+                                </li>
+                            );
+                        })
+                    }
+                </ul>
+            ) : (
+                <div className="projects--no-child">프로젝트가 없습니다.</div>
+            )}
+
         </section>
     );
 };

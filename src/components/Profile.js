@@ -1,5 +1,4 @@
 import FeatherIcon from 'feather-icons-react';
-import React, { useState } from "react";
 import {Accordion, Accordions} from './Accordion';
 import MyJsonData from '../assets/json/mydata.json';
 import {ReactComponent as IconHtml} from '../assets/images/icon_html.svg';

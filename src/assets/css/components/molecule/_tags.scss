@@ -4,14 +4,15 @@
     flex      : 1 0 auto;
     display   : flex;
     flex-wrap : wrap;
-    gap       : 4px;
+    gap       : 6px;
 
     & > span {
-        padding        : 1px 4px;
+        padding        : 0 6px;
         text-transform : uppercase;
         color          : var(--text-secondary);
         background     : var(--paper-endpoint);
         font-size      : 0.86em;
+        border-radius  : 2px;
     }
 }
 

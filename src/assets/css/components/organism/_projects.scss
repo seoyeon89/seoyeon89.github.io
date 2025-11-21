@@ -65,9 +65,12 @@
             h2 {
                 flex        : 1 1 auto;
                 max-width   : 100%;
-                word-break  : break-all;
-                font-size   : 16px;
-                font-weight : $font-weight-bold;
+                font-size   : 15px;
+                font-weight : $font-weight-medium;
+                span {
+                    word-break: keep-all;
+                    word-wrap: break-word;
+                }
             }
 
             .tags {
@@ -80,6 +83,8 @@
 
         &__detail {
             display : flex;
+            font-size   : 13px;
+            color       : var(--text-secondary);
 
             .type {
                 flex : 1 0 auto;
@@ -93,6 +98,8 @@
 
         &__skills {
             flex : 0 0 auto;
+            margin-top:auto;
+            font-size   : 12px;
         }
     }
 }

@@ -85,9 +85,10 @@
                 padding          : var(--component-padding-secondary);
                 border           : 1px solid rgba(var(--theme-primary-rgb), 0.4);
                 border-radius    : var(--component-radius);
-                background-color : rgba(var(--background-rgb), 0.2);
                 z-index          : 10;
+                background-color : rgba(var(--background-rgb), 0.8);
                 backdrop-filter  : blur(12px);
+
 
                 @include media-tablet {
                     align-items : center;
