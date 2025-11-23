@@ -1,11 +1,19 @@
 import React, { useEffect, useState } from "react";
 
 export const Progress = ({
+<<<<<<< Updated upstream
                              type = "circle",
                              title,
                              percent,
                              extraClass = "",
                          }) => {
+=======
+    type = "circle",
+    title,
+    percent,
+    extraClass = "",
+}) => {
+>>>>>>> Stashed changes
     switch (type) {
         case "bar":
             return <BarProgress title={title} percent={percent} extraClass={extraClass} />;
@@ -14,7 +22,10 @@ export const Progress = ({
     }
 };
 
+<<<<<<< Updated upstream
 
+=======
+>>>>>>> Stashed changes
 const CircleProgress = ({ title, percent, extraClass }) => {
     const RADIUS = 54;
     const CIRCUMFERENCE = 2 * Math.PI * RADIUS;
@@ -71,7 +82,10 @@ const CircleProgress = ({ title, percent, extraClass }) => {
     );
 };
 
+<<<<<<< Updated upstream
 
+=======
+>>>>>>> Stashed changes
 const BarProgress = ({ title, percent, extraClass }) => {
     const [animatedPercent, setAnimatedPercent] = useState(0);
 

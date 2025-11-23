@@ -38,7 +38,11 @@
             flex-direction: column;
             position         : sticky;
             top              : 0;
+<<<<<<< Updated upstream
             width            : 380px;
+=======
+            width            : 420px;
+>>>>>>> Stashed changes
             max-height       : calc(100vh - 180px);
             padding          : var(--component-padding) calc(var(--component-padding) - 16px) var(--component-padding) var(--component-padding);
             scrollbar-gutter : stable;
@@ -75,14 +79,23 @@
     }
 
     .participation {
+<<<<<<< Updated upstream
         display:flex;
         flex-direction: column;
         //display               : grid;
+=======
+        display               : flex;
+        flex-direction:column;
+>>>>>>> Stashed changes
         //grid-template-columns : repeat(auto-fit, 80px);
         gap                   : 8px;
         //justify-content       : center;
 
+<<<<<<< Updated upstream
         .sy-progress {
+=======
+        .sy-progress__circle {
+>>>>>>> Stashed changes
             width  : 100%;
             height : 100%;
         }

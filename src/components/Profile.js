@@ -85,7 +85,7 @@ const MyInfoSection = ({ item, title = null}) => {
                     <span>{item.dateEnd ?? `NOW`}</span>
                 </div>
 
-                <ul className="list-bullet">
+                <ul className="info-box__list list-bullet">
                     {item.description.map((desc, i) => (
                         <li key={i} dangerouslySetInnerHTML={{ __html: desc }} />
                     ))}

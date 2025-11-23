@@ -56,7 +56,11 @@ const DetailPopup = ({Project}) => {
                                 {Object.entries(Project.participation).map(([key, value]) => {
                                     return (
                                         <div className="participation__item" key={key}>
+<<<<<<< Updated upstream
                                             <Progress type="bar" title={mappingParticipation(key)} percent={value}/>
+=======
+                                            <Progress type="bar"  title={mappingParticipation(key)} percent={value}/>
+>>>>>>> Stashed changes
                                         </div>
                                     );
                                 })}
@@ -117,11 +121,17 @@ const Detail = () => {
 
     let isShow = false;
 
+<<<<<<< Updated upstream
     // 🔥 dev 모드: isOpen과 무관하게 전체 허용
     if (isDev) {
         isShow = true;
     } else {
         // 기존 로직 유지
+=======
+    if (isDev) {
+        isShow = true;
+    } else {
+>>>>>>> Stashed changes
         switch (Project.isOpen) {
             case 1:
                 isShow = isResumeYes ? true : false;

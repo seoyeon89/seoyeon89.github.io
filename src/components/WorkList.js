@@ -5,10 +5,10 @@ import ProjectsJsonData from '../assets/json/project.json';
 import FeatherIcon from 'feather-icons-react';
 
 let projectInit = ProjectsJsonData.projects
-    .filter((a) => a.isOpen > 0)
-    .sort((a, b) => {
-        return new Date(b.date.start) - new Date(a.date.start)
-    })
+.filter((a) => a.isOpen > 0)
+.sort((a, b) => {
+    return new Date(b.date.start) - new Date(a.date.start)
+})
 
 const filterInit = [
     {id: 0, title: 'web', seen: true},
@@ -51,18 +51,18 @@ const getProjectList = (filters, featured, categories) => {
     const nextFeatured = featured;
 
     return projectInit
-        .filter((a) => {
-            return selectedFilter.includes(a.platform)
-        })
-        .filter((a) => {
-            return selectedCategories.includes(a.category)
-        })
-        .filter((a) => {
-            return nextFeatured ? a.isFeatured : true;
-        })
-        .sort((a, b) => {
-            return new Date(b.date.start) - new Date(a.date.start)
-        })
+    .filter((a) => {
+        return selectedFilter.includes(a.platform)
+    })
+    .filter((a) => {
+        return selectedCategories.includes(a.category)
+    })
+    .filter((a) => {
+        return nextFeatured ? a.isFeatured : true;
+    })
+    .sort((a, b) => {
+        return new Date(b.date.start) - new Date(a.date.start)
+    })
 }
 
 const WorkList = () => {

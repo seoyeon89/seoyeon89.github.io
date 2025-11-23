@@ -1617,7 +1617,7 @@
       "category": "신규구축",
       "workedFor": "코비젼",
       "participation": {
-        "publish": 70
+        "publish": 100
       },
       "platform": "web",
       "date": {
@@ -2208,7 +2208,7 @@
       "id": 70,
       "isOpen": 1,
       "isFeatured": false,
-      "name": "유진그룹",
+      "name": "유진그룹 그룹웨어 구축",
       "category": "신규구축",
       "workedFor": "코비젼",
       "participation": {
@@ -2216,7 +2216,7 @@
       },
       "platform": "web",
       "date": {
-        "start": "2023-11-20",
+        "start": "2024-02-16",
         "end": "2024-05-31"
       },
       "skills": [
@@ -2233,17 +2233,15 @@
         "09_covision/20_eugene/site01.png",
         "09_covision/20_eugene/site02.png",
         "09_covision/20_eugene/site03.png",
-        "09_covision/20_eugene/site04.png",
-        "09_covision/20_eugene/site05.png",
-        "09_covision/20_eugene/site06.png"
+        "09_covision/20_eugene/site04.png"
       ]
     },
     {
       "id": 71,
       "isOpen": 0,
       "isFeatured": false,
-      "name": "중앙그룹",
-      "category": "Teams Add-in 업그레이드 구축",
+      "name": "중앙그룹 Teams Add-in 업그레이드 구축",
+      "category": "신규구축",
       "workedFor": "코비젼",
       "participation": {
         "publish": 100
@@ -2315,7 +2313,7 @@
       "id": 73,
       "isOpen": 1,
       "isFeatured": false,
-      "name": "효성",
+      "name": "효성 그룹웨어 구축",
       "category": "신규구축",
       "workedFor": "코비젼",
       "participation": {
@@ -2323,8 +2321,8 @@
       },
       "platform": "web",
       "date": {
-        "start": "2023-08-23",
-        "end": "2024-08-02"
+        "start": "2024-02-16",
+        "end": "2024-05-07"
       },
       "skills": [
         "HTML5",
@@ -2347,9 +2345,9 @@
     },
     {
       "id": 74,
-      "isOpen": 0,
+      "isOpen": 1,
       "isFeatured": false,
-      "name": "에터미",
+      "name": "에터미 그룹웨어 구축",
       "category": "신규구축",
       "workedFor": "코비젼",
       "participation": {
@@ -2357,8 +2355,8 @@
       },
       "platform": "web",
       "date": {
-        "start": "2023-08-23",
-        "end": "2024-08-02"
+        "start": "2024-11-11",
+        "end": "2025-04-11"
       },
       "skills": [
         "HTML5",
@@ -2366,33 +2364,31 @@
         "JQuery"
       ],
       "discription": [
-        "  구축 프로젝트 퍼블리싱 담당으로 참여 하였습니다.",
+        "에터미 그룹의 그룹웨어 구축 프로젝트 퍼블리싱 담당으로 참여 하였습니다.",
         "백엔드 언어는 JAVA(JSP)입니다."
       ],
-      "thumbnail": "09_covision/24_atomy/",
+      "thumbnail": "09_covision/24_atomy/site_thum.png",
       "images": [
-        "09_covision/24_atomy/.png",
-        "09_covision/24_atomy/.png",
-        "09_covision/24_atomy/.png",
-        "09_covision/24_atomy/.png",
-        "09_covision/24_atomy/.png",
-        "09_covision/24_atomy/.png"
+        "09_covision/24_atomy/site01.png",
+        "09_covision/24_atomy/site02.png",
+        "09_covision/24_atomy/site03.png",
+        "09_covision/24_atomy/site04.png"
       ]
     },
     {
       "id": 75,
-      "isOpen": 0,
+      "isOpen": 1,
       "isFeatured": false,
-      "name": "레조낙",
-      "category": "신규구축",
+      "name": "레조낙 그룹웨어 재구축",
+      "category": "운영",
       "workedFor": "코비젼",
       "participation": {
         "publish": 100
       },
       "platform": "web",
       "date": {
-        "start": "2023-08-23",
-        "end": "2024-08-02"
+        "start": "2025-03-04",
+        "end": "2025-10-02"
       },
       "skills": [
         "HTML5",
@@ -2400,33 +2396,29 @@
         "JQuery"
       ],
       "discription": [
-        "  구축 프로젝트 퍼블리싱 담당으로 참여 하였습니다.",
+        "레조낙 그룹웨어 구축 프로젝트 퍼블리싱 담당으로 참여 하였습니다.",
         "백엔드 언어는 JAVA(JSP)입니다."
       ],
       "thumbnail": "09_covision/25_resonac/site_thum.png",
       "images": [
         "09_covision/25_resonac/site01.png",
-        "09_covision/25_resonac/site02.png",
-        "09_covision/25_resonac/site03.png",
-        "09_covision/25_resonac/site04.png",
-        "09_covision/25_resonac/site05.png",
-        "09_covision/25_resonac/site06.png"
+        "09_covision/25_resonac/site02.png"
       ]
     },
     {
       "id": 76,
-      "isOpen": 0,
+      "isOpen": 1,
       "isFeatured": false,
-      "name": "올림푸스",
-      "category": "신규구축",
+      "name": "올림푸스 그룹웨어 쉐어포인트 제거",
+      "category": "운영",
       "workedFor": "코비젼",
       "participation": {
         "publish": 100
       },
       "platform": "web",
       "date": {
-        "start": "2023-08-23",
-        "end": "2024-08-02"
+        "start": "2025-04-01",
+        "end": "2025-11-21"
       },
       "skills": [
         "HTML5",
@@ -2434,7 +2426,7 @@
         "JQuery"
       ],
       "discription": [
-        "  구축 프로젝트 퍼블리싱 담당으로 참여 하였습니다.",
+        "올림푸스 그룹웨어 쉐어포인트 제거 프로젝트 퍼블리싱 담당으로 참여 하였습니다.",
         "백엔드 언어는 JAVA(JSP)입니다."
       ],
       "thumbnail": "09_covision/26_olympus/site_thum.png",
