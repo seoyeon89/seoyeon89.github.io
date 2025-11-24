@@ -10,7 +10,7 @@ import './assets/css/style.scss';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
 root.render(
-    <BrowserRouter basename="/seoyeon89.github.io">
+    <BrowserRouter basename={import.meta.env.BASE_URL}>
         <App />
     </BrowserRouter>
 );
