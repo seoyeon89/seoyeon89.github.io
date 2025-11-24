@@ -13,7 +13,7 @@
         left       : 0;
         width      : 100%;
         height     : $size-containter_background_height;
-        background : url("/assets/images/background.png") center repeat var(--paper-primary);
+        background : url("/src/assets/images/background.png") center repeat var(--paper-primary);
         z-index    : 1;
 
         &:before {

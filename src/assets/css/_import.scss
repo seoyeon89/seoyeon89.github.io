@@ -1,7 +1,7 @@
-@forward "abstracts/variables/font" as font-*;
-@forward "abstracts/variables/color" as color-*;
-@forward "abstracts/variables/size" as size-*;
-@forward "abstracts/mixin/media" as media-*;
-@forward "abstracts/mixin/reset" as reset-*;
-@forward "abstracts/mixin/mixin" as mixin-*;
-@forward "abstracts/function" as function-*;
+@forward "abstracts/variables/font";
+@forward "abstracts/variables/color";
+@forward "abstracts/variables/size";
+@forward "abstracts/mixin/media";
+@forward "abstracts/mixin/reset";
+@forward "abstracts/mixin/mixin";
+@forward "abstracts/function";

@@ -1,21 +1,22 @@
 import FeatherIcon from 'feather-icons-react';
 import {Accordion, Accordions} from './Accordion';
 import MyJsonData from '../assets/json/mydata.json';
-import {ReactComponent as IconHtml} from '../assets/images/icon_html.svg';
-import {ReactComponent as IconCss3} from '../assets/images/icon_css3.svg';
-import {ReactComponent as IconSass} from '../assets/images/icon_scss.svg';
-import {ReactComponent as IconFigma} from '../assets/images/icon_figma.svg';
-import {ReactComponent as IconXd} from '../assets/images/icon_xd.svg';
-import {ReactComponent as IconPhotoshop} from '../assets/images/icon_photoshop.svg';
-import {ReactComponent as IconJs} from '../assets/images/icon_js.svg';
-import {ReactComponent as IconJquery} from '../assets/images/icon_jquery.svg';
-import {ReactComponent as IconVue} from '../assets/images/icon_vue.svg';
-import {ReactComponent as IconReact} from '../assets/images/icon_react.svg';
-import {ReactComponent as IconPhp} from '../assets/images/icon_php.svg';
-import {ReactComponent as IconSvn} from '../assets/images/icon_svn.svg';
-import {ReactComponent as IconGit} from '../assets/images/icon_git.svg';
-import {ReactComponent as IconVscode} from '../assets/images/icon_vscode.svg';
-import {ReactComponent as IconWebstrom} from '../assets/images/icon_webstorm.svg';
+
+import IconHtml from '../assets/images/icon_html.svg?react';
+import IconCss3 from '../assets/images/icon_css3.svg?react';
+import IconSass from '../assets/images/icon_scss.svg?react';
+import IconFigma from '../assets/images/icon_figma.svg?react';
+import IconXd from '../assets/images/icon_xd.svg?react';
+import IconPhotoshop from '../assets/images/icon_photoshop.svg?react';
+import IconJs from '../assets/images/icon_js.svg?react';
+import IconJquery from '../assets/images/icon_jquery.svg?react';
+import IconVue from '../assets/images/icon_vue.svg?react';
+import IconReact from '../assets/images/icon_react.svg?react';
+import IconPhp from '../assets/images/icon_php.svg?react';
+import IconSvn from '../assets/images/icon_svn.svg?react';
+import IconGit from '../assets/images/icon_git.svg?react';
+import IconVscode from '../assets/images/icon_vscode.svg?react';
+import IconWebstrom from '../assets/images/icon_webstorm.svg?react';
 
 const MyInfo = MyJsonData;
 const skillIcons = [
@@ -197,8 +198,8 @@ const Profile = () => {
                                         <li> Chrome, Firefox, Edge, Safari 등 주요 브라우저에서의 크로스 브라우징을 맞춰 구현합니다.</li>
                                         <li><strong>웹 표준, 웹 접근성, 크로스 브라우징</strong> 마크업이 가능합니다.</li>
                                         <li>데스크톱·태블릿·모바일 환경에 맞춘 <strong>반응형/적응형</strong> 레이아웃을 구현할 수 있습니다.</li>
-                                        <li>CSS 전처리기(SCSS, LESS)로 스타일 코드를 구조화해 작성할 수 있습니다.</li>
-                                        <li>ES5, ES6문법 차이를 이해하며, 상황에 맞게 JavaScript와 jQuery 코드를 작성할 수 있습니다.</li>
+                                        <li><strong>CSS 전처리기(SCSS, LESS)</strong>로 스타일 코드를 구조화해 작성할 수 있습니다.</li>
+                                        <li><strong>ES5, ES6</strong>문법 차이를 이해하며, 상황에 맞게 <strong>JavaScript와 jQuery</strong> 코드를 작성할 수 있습니다.</li>
                                     </ul>
                                 </div>
                                 <div className="skills__item__box">
@@ -220,13 +221,13 @@ const Profile = () => {
                                 </div>
                                 <div className="skills__item__box">
                                     <ul className="list-bullet">
-                                        <li>GIT/SVN의 형상관리 툴을 사용 가능합니다.</li>
+                                        <li><strong>GIT/SVN</strong>의 형상관리 툴을 사용 가능합니다.</li>
                                         <li>회사 환경에 맞는 Git Flow 브랜치 전략을 직접 구상해본 경험이 있습니다.</li>
                                     </ul>
                                 </div>
                                 <div className="skills__item__box">
                                     <ul className="list-bullet">
-                                        <li>Figma, XD 툴을 이용한 프로토 타이핑 작업, 컴포넌트(에셋)을 활용한 디자인 시스템 셋팅이 가능합니다.</li>
+                                        <li><strong>Figma, XD</strong> 툴을 이용한 프로토 타이핑 작업, 컴포넌트(에셋)을 활용한 디자인 시스템 셋팅이 가능합니다.</li>
                                         <li>Photoshop을 이용한 이미지 가공 작업이 가능합니다.</li>
                                     </ul>
                                 </div>

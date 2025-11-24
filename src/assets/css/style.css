@@ -231,9 +231,6 @@ select {
   text-decoration: none;
   -webkit-appearance: none;
   user-select: none;
-  height: 36px;
-  padding: 0 20px;
-  border-radius: 18px;
 }
 .sy-button:before,
 .sy-button i,
@@ -243,6 +240,11 @@ select {
 .sy-button:disabled {
   cursor: default;
   pointer-events: none;
+}
+.sy-button {
+  height: 36px;
+  padding: 0 20px;
+  border-radius: 18px;
 }
 .sy-button--primary {
   color: #FFFFFF;
@@ -356,11 +358,12 @@ select:hover, select:focus {
   aspect-ratio: 1;
 }
 
-<<<<<<< Updated upstream
 .sy-progress {
-=======
+  position: relative;
+  width: 100px;
+  height: 100px;
+}
 .sy-progress__circle {
->>>>>>> Stashed changes
   position: relative;
   width: 100px;
   height: 100px;
@@ -413,12 +416,13 @@ select:hover, select:focus {
   gap: 8px;
 }
 .sy-progress__bar__track {
-<<<<<<< Updated upstream
   position: relative;
   height: 12px;
   border-radius: 12px;
   background: var(--paper-secondary);
   max-width: 320px;
+  width: 100%;
+  background: var(--paper-endpoint);
 }
 .sy-progress__bar__value {
   position: absolute;
@@ -428,24 +432,7 @@ select:hover, select:focus {
   background: linear-gradient(90deg, var(--theme-primary) 0, var(--theme-secondary) 100%);
   border-radius: inherit;
   transition: width 0.6s ease;
-=======
-  width: 100%;
-  border-radius: 12px;
-  height: 12px;
-  background: var(--paper-endpoint);
-  position: relative;
-}
-.sy-progress__bar__value {
-  transition: width 0.6s ease;
   display: block;
-  height: 100%;
-  border-radius: inherit;
-  position: absolute;
-  left: 0;
-  top: 0;
-  bottom: 0;
-  background: linear-gradient(90deg, var(--theme-secondary) 0%, var(--theme-primary) 100%);
->>>>>>> Stashed changes
 }
 
 .sy-callout {
@@ -589,14 +576,6 @@ html[data-mode=dark] .sy-table__row > .title {
   text-decoration: none;
   -webkit-appearance: none;
   user-select: none;
-  display: flex;
-  gap: 4px;
-  align-items: center;
-  min-height: 24px;
-  padding: 4px 8px;
-  color: var(--theme-primary);
-  background: var(--paper-endpoint);
-  font-size: 0.8em;
 }
 .filter__result__item > button:before,
 .filter__result__item > button i,
@@ -606,6 +585,16 @@ html[data-mode=dark] .sy-table__row > .title {
 .filter__result__item > button:disabled {
   cursor: default;
   pointer-events: none;
+}
+.filter__result__item > button {
+  display: flex;
+  gap: 4px;
+  align-items: center;
+  min-height: 24px;
+  padding: 4px 8px;
+  color: var(--theme-primary);
+  background: var(--paper-endpoint);
+  font-size: 0.8em;
 }
 @media (min-width: 768px) {
   .filter__result__item > button {
@@ -683,13 +672,6 @@ html[data-mode=dark] .sy-table__row > .title {
   text-decoration: none;
   -webkit-appearance: none;
   user-select: none;
-  min-width: var(--dropdown-icon-height);
-  height: var(--dropdown-icon-height);
-  padding: 0 8px;
-  transition: background-color 0.3s;
-  color: var(--theme-primary);
-  border: 1px solid var(--theme-primary);
-  border-radius: calc(var(--dropdown-icon-height) / 2);
 }
 .dropdown__button:before,
 .dropdown__button i,
@@ -699,6 +681,15 @@ html[data-mode=dark] .sy-table__row > .title {
 .dropdown__button:disabled {
   cursor: default;
   pointer-events: none;
+}
+.dropdown__button {
+  min-width: var(--dropdown-icon-height);
+  height: var(--dropdown-icon-height);
+  padding: 0 8px;
+  transition: background-color 0.3s;
+  color: var(--theme-primary);
+  border: 1px solid var(--theme-primary);
+  border-radius: calc(var(--dropdown-icon-height) / 2);
 }
 .dropdown__button > .icons {
   display: flex;
@@ -785,9 +776,6 @@ html[data-mode=dark] .sy-table__row > .title {
   display: flex;
   align-items: center;
   gap: 4px;
-  min-height: 24px;
-  color: var(--text-endpoint);
-  font-size: 0.88em;
 }
 .info-box__date > i {
   align-items: center;
@@ -801,6 +789,11 @@ html[data-mode=dark] .sy-table__row > .title {
   object-fit: contain;
   object-position: center;
   stroke: var(--text-endpoint);
+}
+.info-box__date {
+  min-height: 24px;
+  color: var(--text-endpoint);
+  font-size: 0.88em;
 }
 .info-box__date > i {
   width: 12px;
@@ -876,8 +869,6 @@ html[data-mode=dark] .sy-table__row > .title {
   text-decoration: none;
   -webkit-appearance: none;
   user-select: none;
-  width: 100%;
-  transition: all 0.2s;
 }
 .accordion > .accordion__head:before,
 .accordion > .accordion__head i,
@@ -887,6 +878,10 @@ html[data-mode=dark] .sy-table__row > .title {
 .accordion > .accordion__head:disabled {
   cursor: default;
   pointer-events: none;
+}
+.accordion > .accordion__head {
+  width: 100%;
+  transition: all 0.2s;
 }
 .accordion > .accordion__head > .accordion__title {
   flex: 0 1 auto;
@@ -1233,12 +1228,6 @@ html[data-mode=dark] .sy-table__row > .title {
   text-decoration: none;
   -webkit-appearance: none;
   user-select: none;
-  width: 40px;
-  height: 40px;
-  transform: translate(6px, -1.5px);
-  flex: 0 0 auto;
-  position: relative;
-  border-radius: 50%;
 }
 .sy-dialog__close:before,
 .sy-dialog__close i,
@@ -1248,6 +1237,11 @@ html[data-mode=dark] .sy-table__row > .title {
 .sy-dialog__close:disabled {
   cursor: default;
   pointer-events: none;
+}
+.sy-dialog__close {
+  width: 40px;
+  height: 40px;
+  transform: translate(6px, -1.5px);
 }
 .sy-dialog__close::before, .sy-dialog__close::after {
   content: "";
@@ -1264,14 +1258,13 @@ html[data-mode=dark] .sy-table__row > .title {
 .sy-dialog__close::after {
   transform: rotate(45deg);
 }
+.sy-dialog__close {
+  flex: 0 0 auto;
+  position: relative;
+  border-radius: 50%;
+}
 .sy-dialog__close:hover {
   background: rgba(var(--base-revers-rgb), 0.08);
-}
-.sy-dialog__container {
-  flex: 0 1 auto;
-  overflow: auto;
-  padding: 0 20px 20px 20px;
-  overscroll-behavior: contain;
 }
 @media (min-width: 768px) {
   .sy-dialog__container::-webkit-scrollbar {
@@ -1287,6 +1280,12 @@ html[data-mode=dark] .sy-table__row > .title {
   .sy-dialog__container::-webkit-scrollbar-track {
     background-color: rgba(0, 0, 0, 0);
   }
+}
+.sy-dialog__container {
+  flex: 0 1 auto;
+  overflow: auto;
+  padding: 0 20px 20px 20px;
+  overscroll-behavior: contain;
 }
 @media (min-width: 1020px) {
   .sy-dialog__container {
@@ -1470,7 +1469,7 @@ html[data-mode=dark] .sy-table__row > .title {
   left: 0;
   width: 100%;
   height: 200px;
-  background: url("/assets/images/background.png") center repeat var(--paper-primary);
+  background: url("/src/assets/images/background.png") center repeat var(--paper-primary);
   z-index: 1;
 }
 .container__background:before {
@@ -1661,11 +1660,7 @@ html[data-mode=dark] .sy-table__row > .title {
     flex-direction: column;
     position: sticky;
     top: 0;
-<<<<<<< Updated upstream
-    width: 380px;
-=======
     width: 420px;
->>>>>>> Stashed changes
     max-height: calc(100vh - 180px);
     padding: var(--component-padding) calc(var(--component-padding) - 16px) var(--component-padding) var(--component-padding);
     scrollbar-gutter: stable;
@@ -1718,11 +1713,7 @@ html[data-mode=dark] .sy-table__row > .title {
   flex-direction: column;
   gap: 8px;
 }
-<<<<<<< Updated upstream
-.detail .participation .sy-progress {
-=======
 .detail .participation .sy-progress__circle {
->>>>>>> Stashed changes
   width: 100%;
   height: 100%;
 }
