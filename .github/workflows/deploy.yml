@@ -1,31 +1,44 @@
-name: Build and Deploy
+name: Deploy Vite Site
 
 on:
   push:
-    branches: [ "master" ]
+    branches:
+      - master  # master에 push될 때 자동 배포
 
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
 
     steps:
+      # 1. 소스 체크아웃
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Setup Node.js
+      # 2. Node 세팅
+      - name: Setup Node
         uses: actions/setup-node@v4
         with:
           node-version: 20
 
-      - name: Install dependencies
+      # 3. 의존성 설치
+      - name: Install Dependencies
         run: npm ci
 
-      - name: Build project
+      # 4. 빌드
+      - name: Build
         run: npm run build
 
-      - name: Create 404.html for SPA routing
+      # 5. index.html 캐시 무효화 - 배포마다 자동 버전 추가
+      - name: Add build timestamp
+        run: |
+          ts=$(date +%s)
+          sed -i "s/<head>/<head><meta name=\"version\" content=\"$ts\">/" dist/index.html
+
+      # 6. 404.html 생성 (GitHub Pages SPA용)
+      - name: Copy index to 404
         run: cp dist/index.html dist/404.html
 
+      # 7. gh-pages 브랜치로 배포
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
