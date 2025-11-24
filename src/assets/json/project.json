@@ -2437,9 +2437,9 @@
     },
     {
       "id": 77,
-      "isOpen": 0,
+      "isOpen": 1,
       "isFeatured": false,
-      "name": "히타치",
+      "name": "한국 히타치 그룹웨어 구축 프로젝트",
       "category": "신규구축",
       "workedFor": "코비젼",
       "participation": {
@@ -2447,8 +2447,8 @@
       },
       "platform": "web",
       "date": {
-        "start": "2023-08-23",
-        "end": "2024-08-02"
+        "start": "2025-05-26",
+        "end": "2025-11-30"
       },
       "skills": [
         "HTML5",
@@ -2456,33 +2456,30 @@
         "JQuery"
       ],
       "discription": [
-        "히타치 구축 프로젝트 퍼블리싱 담당으로 참여 하였습니다.",
+        "한국 히타치 그룹웨어 구축 프로젝트 퍼블리싱 담당으로 참여 하였습니다.",
         "백엔드 언어는 JAVA(JSP)입니다."
       ],
       "thumbnail": "09_covision/27_hitachi/site_thum.png",
       "images": [
         "09_covision/27_hitachi/site01.png",
         "09_covision/27_hitachi/site02.png",
-        "09_covision/27_hitachi/site03.png",
-        "09_covision/27_hitachi/site04.png",
-        "09_covision/27_hitachi/site05.png",
-        "09_covision/27_hitachi/site06.png"
+        "09_covision/27_hitachi/site03.png"
       ]
     },
     {
       "id": 78,
-      "isOpen": 0,
+      "isOpen": 1,
       "isFeatured": false,
-      "name": "소노그룹",
+      "name": "소노그룹 그룹웨어 구축",
       "category": "신규구축",
       "workedFor": "코비젼",
       "participation": {
-        "publish": 100
+        "publish": 90
       },
       "platform": "web",
       "date": {
-        "start": "2023-08-23",
-        "end": "2024-08-02"
+        "start": "2025-06-28",
+        "end": "2025-11-28"
       },
       "skills": [
         "HTML5",
@@ -2490,7 +2487,8 @@
         "JQuery"
       ],
       "discription": [
-        "  구축 프로젝트 퍼블리싱 담당으로 참여 하였습니다.",
+        "소노그룹 그룹웨어 구축 프로젝트 퍼블리싱 담당으로 참여 하였습니다.",
+        "21개 SI성 모듈이 있었으며 90%의 기여도로 작업하였고, 퇴사로 인하여 남은 작업은 인수인계 하였습니다.",
         "백엔드 언어는 JAVA(JSP)입니다."
       ],
       "thumbnail": "09_covision/28_sono/site_thum.png",
@@ -2499,15 +2497,14 @@
         "09_covision/28_sono/site02.png",
         "09_covision/28_sono/site03.png",
         "09_covision/28_sono/site04.png",
-        "09_covision/28_sono/site05.png",
-        "09_covision/28_sono/site06.png"
+        "09_covision/28_sono/site05.png"
       ]
     },
     {
       "id": 79,
-      "isOpen": 0,
+      "isOpen": 1,
       "isFeatured": false,
-      "name": "엔지니어링협회",
+      "name": "엔지니어링협회 그룹웨어 구축",
       "category": "신규구축",
       "workedFor": "코비젼",
       "participation": {
@@ -2515,8 +2512,8 @@
       },
       "platform": "web",
       "date": {
-        "start": "2023-08-23",
-        "end": "2024-08-02"
+        "start": "2025-04-01",
+        "end": "2025-11-28"
       },
       "skills": [
         "HTML5",
@@ -2524,24 +2521,20 @@
         "JQuery"
       ],
       "discription": [
-        "  구축 프로젝트 퍼블리싱 담당으로 참여 하였습니다.",
+        "엔지니어링협회 그룹웨어 구축 프로젝트 퍼블리싱 담당으로 참여 하였습니다.",
         "백엔드 언어는 JAVA(JSP)입니다."
       ],
       "thumbnail": "09_covision/29_egic/site_thum.png",
       "images": [
         "09_covision/29_egic/site01.png",
-        "09_covision/29_egic/site02.png",
-        "09_covision/29_egic/site03.png",
-        "09_covision/29_egic/site04.png",
-        "09_covision/29_egic/site05.png",
-        "09_covision/29_egic/site06.png"
+        "09_covision/29_egic/site02.png"
       ]
     },
     {
       "id": 80,
-      "isOpen": 0,
+      "isOpen": 1,
       "isFeatured": false,
-      "name": "금호석유화학",
+      "name": "금호석유화학 그룹웨어 구축",
       "category": "신규구축",
       "workedFor": "코비젼",
       "participation": {
@@ -2549,8 +2542,8 @@
       },
       "platform": "web",
       "date": {
-        "start": "2023-08-23",
-        "end": "2024-08-02"
+        "start": "2025-07-14",
+        "end": "2025-11-28"
       },
       "skills": [
         "HTML5",
@@ -2558,7 +2551,7 @@
         "JQuery"
       ],
       "discription": [
-        "  구축 프로젝트 퍼블리싱 담당으로 참여 하였습니다.",
+        "금호석유화학 그룹웨어 구축 프로젝트 퍼블리싱 담당으로 참여 하였습니다.",
         "백엔드 언어는 JAVA(JSP)입니다."
       ],
       "thumbnail": "09_covision/30_kkpc/site_thum.png",
@@ -2566,16 +2559,14 @@
         "09_covision/30_kkpc/site01.png",
         "09_covision/30_kkpc/site02.png",
         "09_covision/30_kkpc/site03.png",
-        "09_covision/30_kkpc/site04.png",
-        "09_covision/30_kkpc/site05.png",
-        "09_covision/30_kkpc/site06.png"
+        "09_covision/30_kkpc/site04.png"
       ]
     },
     {
       "id": 81,
       "isOpen": 0,
       "isFeatured": false,
-      "name": "TOK",
+      "name": "TOK 그룹웨어 구축 프로젝트",
       "category": "신규구축",
       "workedFor": "코비젼",
       "participation": {
@@ -2592,7 +2583,7 @@
         "JQuery"
       ],
       "discription": [
-        "  구축 프로젝트 퍼블리싱 담당으로 참여 하였습니다.",
+        "TOK 그룹웨어 구축 프로젝트 퍼블리싱 담당으로 참여 하였습니다.",
         "백엔드 언어는 JAVA(JSP)입니다."
       ],
       "thumbnail": "09_covision/31_tok/site_thum.png",
