@@ -1,0 +1,35 @@
+.cui_title {
+    font-size : 24px;
+
+    &.center {
+        width      : 100%;
+        text-align : center;
+    }
+}
+
+.cui_bullet_title {
+    display    : flex;
+    min-height : var(--control-size);
+
+    .bullet_title_label {
+        flex       : 0 1 auto;
+        padding    : 6px 0;
+        word-break : break-all;
+
+        span {
+            @include bullet-title;
+        }
+    }
+
+    .bullet_title_aside {
+        display     : flex;
+        flex        : 0 0 auto;
+        margin-left : auto;
+        gap         : 4px;
+
+        & > * {
+            flex : 0 0 auto;
+        }
+
+    }
+}
