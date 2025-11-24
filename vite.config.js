@@ -4,5 +4,5 @@ import svgr from "vite-plugin-svgr";
 
 export default defineConfig({
     plugins: [react(), svgr()],
-    base: "/seoyeon89.github.io/", // GitHub Pages용
+    base: "/seoyeon89.github.io/",
 });
