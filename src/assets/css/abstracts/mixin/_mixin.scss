@@ -2,7 +2,7 @@
 @use "sass:math" as math;
 @use "sass:selector";
 
-@mixin clip {
+@mixin mixin-clip {
     position   : absolute !important;
     overflow   : hidden !important;
     clip       : rect(0, 0, 0, 0) !important;
@@ -13,20 +13,20 @@
     background : none !important;
 }
 
-@mixin text-truncate {
+@mixin mixin-text-truncate {
     overflow      : hidden;
     text-overflow : ellipsis;
     white-space   : nowrap;
 }
 
-@mixin unify-parent($child) {
+@mixin mixin-unify-parent($child) {
     @at-root #{selector.unify(&, $child)} {
         @content;
     }
 }
 
-@mixin scrollbar($thumbColor : var(--scroll-thum)) {
-    @include tablet {
+@mixin mixin-scrollbar($thumbColor : var(--scroll-thum)) {
+    @include media-tablet {
 
         &::-webkit-scrollbar {
             width : 16px;
@@ -46,7 +46,7 @@
     }
 }
 
-@mixin multi-text-truncate($rows) {
+@mixin mixin-multi-text-truncate($rows) {
     display            : block;
     display            : -webkit-box;
     -webkit-box-orient : vertical;
@@ -55,7 +55,7 @@
 }
 
 
-@mixin avatar($size : 92px) {
+@mixin mixin-avatar($size : 92px) {
     width            : $size;
     height           : $size;
     border           : 1px solid var(--component-border-color);
@@ -71,7 +71,7 @@
     }
 }
 
-@mixin icons($iconColor : var(--theme-primary)) {
+@mixin mixin-icons($iconColor : var(--theme-primary)) {
     display     : flex;
     align-items : center;
     gap         : 4px;
@@ -92,7 +92,7 @@
     }
 }
 
-@mixin closeIcon($area:40px, $bar:24px, $color:#000000) {
+@mixin mixin-closeIcon($area:40px, $bar:24px, $color:#000000) {
     $barHafl    : math.div($bar, 2);
     $barQuarter : math.div($bar, 4);
 

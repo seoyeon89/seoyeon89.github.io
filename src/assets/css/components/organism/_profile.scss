@@ -86,22 +86,25 @@
     }
 
     .skills {
+        display        : flex;
+        flex-direction : column;
+        gap:24px;
+        @include media-laptop{
+            flex-wrap: nowrap
+        }
         &__item {
             display        : flex;
             flex-direction : column;
             flex-wrap      : wrap;
             gap            : 8px;
-
-            & + .skills__item {
-                margin-top : 24px;
-            }
+            width:100%;
 
             &__title {
                 display        : flex;
                 align-items    : center;
-                margin-bottom  : 4px;
                 text-transform : uppercase;
                 font-size      : 1.14em;
+                line-height:1.6em;
                 font-weight    : $font-weight;
 
                 i {
@@ -125,27 +128,32 @@
             }
 
             &__box {
-                & + .skills__item__box {
-                    margin-top : 12px;
-                }
+                display        : flex;
+                flex-direction : column;
+                gap: 12px;
 
-                &__icons {
-                    display               : grid;
-                    grid-template-columns : repeat(auto-fit, 32px);
-                    gap                   : 8px;
-                    margin-bottom         : 8px;
-
-                    & > span {
-                        & > svg {
-                            display : block;
-                            width   : 100%;
-                            height  : 100%;
-                        }
-                    }
-                }
             }
         }
 
-    }
+        .skills__icon {
+            display:flex;
+            align-items:center;
+            justify-content:center;
+            width:32px;
+            height:32px;
 
+            & > svg {
+                object-fit:contain;
+                object-position:center;
+                display : block;
+                width   : 100%;
+                height  : 100%;
+            }
+        }
+    }
+    .experience {
+        display:flex;
+        flex-direction:column;
+        gap:8px;
+    }
 }

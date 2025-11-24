@@ -30,15 +30,15 @@ export const Popup = ({children, title}) => {
     };
 
     return (
-        <aside className="popup-warp" key={title}>
-            <div className="popup">
-                <div className="popup__title">
-                    <h1>{title}</h1>
-                    <button type="button" className="popup__title__close" onClick={closePopup}>
+        <aside className="sy-dialog" key={title}>
+            <div className="sy-dialog__inner">
+                <div className="sy-dialog__title">
+                    <h1><span>{title}</span></h1>
+                    <button type="button" className="sy-dialog__close" onClick={closePopup}>
                         <span hidden>닫기</span>
                     </button>
                 </div>
-                <div className="popup__container">
+                <div className="sy-dialog__container">
                     {children}
                 </div>
             </div>

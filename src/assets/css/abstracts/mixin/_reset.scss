@@ -1,4 +1,4 @@
-@mixin button {
+@mixin reset-button {
     position           : relative;
     display            : inline-flex;
     align-items        : center;
@@ -36,7 +36,7 @@
     }
 }
 
-@mixin text-field {
+@mixin reset-text-field {
     -webkit-appearance : none;
     display            : flex;
     align-items        : center;

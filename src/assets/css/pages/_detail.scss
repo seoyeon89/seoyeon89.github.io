@@ -12,20 +12,40 @@
     &__info {
         flex          : 0 0 auto;
         overflow      : hidden auto;
+        display: flex;
+        flex-direction: column;
+        gap:12px;
         width         : 100%;
         padding       : var(--component-padding);
         border-radius : var(--component-radius);
         background    : var(--paper-primary);
         box-shadow    : var(--component-shadow);
 
+        @include media-tablet {
+            flex-direction : row;
+            align-items: flex-start;
+            .sy-table {
+                flex: 0 0 auto;
+                width: 380px;
+            }
+            .sy-callout {
+                flex: 1 1 0;
+            }
+        }
+
         @include media-laptop {
             @include mixin-scrollbar();
+            flex-direction: column;
             position         : sticky;
             top              : 0;
-            width            : 320px;
+            width            : 420px;
             max-height       : calc(100vh - 180px);
             padding          : var(--component-padding) calc(var(--component-padding) - 16px) var(--component-padding) var(--component-padding);
             scrollbar-gutter : stable;
+
+            .sy-table {
+               width: 100%
+            }
         }
     }
 
@@ -55,12 +75,14 @@
     }
 
     .participation {
-        display               : grid;
-        grid-template-columns : repeat(auto-fit, 80px);
+        display:flex;
+        flex-direction: column;
+        //display               : grid;
+        //grid-template-columns : repeat(auto-fit, 80px);
         gap                   : 8px;
-        justify-content       : center;
+        //justify-content       : center;
 
-        .circle-progress {
+        .sy-progress__circle {
             width  : 100%;
             height : 100%;
         }
@@ -80,7 +102,6 @@
     }
 
     .discription {
-        margin-top  : 12px;
         line-height : 1.5em;
 
         & > p {

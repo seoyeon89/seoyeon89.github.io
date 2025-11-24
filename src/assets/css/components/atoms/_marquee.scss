@@ -1,0 +1,24 @@
+@use "../../import" as *;
+@use "sass:math" as math;
+@keyframes marquee {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+.sy-marquee {
+    white-space: nowrap;
+    .marquee__track  {
+        display: inline-flex;
+        gap: 12px;
+        animation: marquee 30s linear infinite;
+        //animation-play-state: running;
+        opacity:0.8;
+    }
+    &:hover .marquee__track {
+        //animation-play-state: paused;
+        opacity:1;
+    }
+}

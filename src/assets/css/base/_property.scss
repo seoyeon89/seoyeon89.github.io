@@ -21,10 +21,10 @@ html {
 
 
 @mixin light-theme {
-    --base                    : #{function-to-rgb($color-white)};
-    --base-revers             : #{function-to-rgb($color-black)};
+    --base-rgb                    : #{function-to-rgb($color-white)};
+    --base-revers-rgb             : #{function-to-rgb($color-black)};
 
-    --component-shadow        : 1px 1px 8px 0 rgba(var(--base-revers), 0.2);
+    --component-shadow        : 1px 1px 8px 0 rgba(var(--base-revers-rgb), 0.2);
 
     --theme-primary           : #{$color-theme-primary};
     --theme-primary-rgb       : #{function-to-rgb($color-theme-primary)};
@@ -49,8 +49,8 @@ html {
 }
 
 @mixin dark-theme {
-    --base                    : #{function-to-rgb($color-black)};
-    --base-revers             : #{function-to-rgb($color-white)};
+    --base-rgb                    : #{function-to-rgb($color-black)};
+    --base-revers-rgb             : #{function-to-rgb($color-white)};
 
     --component-shadow        : none;
 

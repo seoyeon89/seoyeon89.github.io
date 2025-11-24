@@ -4,8 +4,14 @@
       "order": 0,
       "title": "코비젼",
       "dateStart": "2022/10",
+      "dateEnd": "2025/11",
+      "position": "파트장/ 과장",
       "description": [
-        "웹퍼블리싱(HTML/SCSS/JS/jquery)"
+        "퍼블리싱 파트 파트장으로서 R&D의 요구사항 정리·프로세스 조율·일정 관리 등을 수행했습니다.",
+        "<strong>coviAi(ai 제품)의 </strong>의 메인 퍼블리셔로 UI 구현을 담당했습니다.",
+        "다수의 <strong>SI 프로젝트 퍼블리싱</strong>의 담당 퍼블리셔로 진행했습니다.",
+        "<strong>사용 기술 : </strong><br>HTML5 / SCSS, CSS3 / Javascript(ES5, ES6, JQuery)",
+        "<strong>사용 프로그램 :</strong><br>WebStrom, VS code / SVN / XD"
       ]
     },
     {
@@ -13,8 +19,11 @@
       "title": "엘에스이노베이션",
       "dateStart": "2021/09",
       "dateEnd": "2022/09",
+      "position": "팀원/ 대리",
       "description": [
-        "웹퍼블리싱(HTML/SCSS/JS/jquery/gulp/GIT)"
+        "웹퍼블리셔로서 마사지 플랫폼인 마통의 운영 유지보수 하였습니다.",
+        "<strong>사용 기술 :</strong><br>HTML5 / SCSS, CSS3 / Javascript(JQuery) / gulp",
+        "<strong>사용 프로그램 :</strong><br> VS code / GIT"
       ]
     },
     {
@@ -22,10 +31,11 @@
       "title": "NGTech",
       "dateStart": "2019/06",
       "dateEnd": "2021/06",
+      "position": "팀원/ 대리",
       "description": [
-        "웹퍼블리싱(HTML/CSS/JS/VUE/GIT)",
-        "디자인 보조(adobe XD)",
-        "기획"
+        "모바일 병원 진료예약 플렛폼의 퍼블리셔로서, 기획 작업과 퍼블리싱을 병행하고, 디자인 지원도 하였습니다. ",
+        "<strong>사용 기술 :</strong><br>HTML5 / CSS / VUE ",
+        "<strong>사용 프로그램 :</strong><br> adobe XD / VS code / GIT"
       ]
     },
     {
@@ -33,8 +43,9 @@
       "title": "시대고시",
       "dateStart": "2017/07",
       "dateEnd": "2019/02",
+      "position": "팀원/ 주임",
       "description": [
-        "웹퍼블리싱(HTML/CSS/JS)"
+        "웹퍼블리싱(HTML/LESS, CSS/JS)"
       ]
     },
     {
@@ -42,8 +53,9 @@
       "title": "센치",
       "dateStart": "2016/05",
       "dateEnd": "2017/02",
+      "position": "팀원/ 사원",
       "description": [
-        "웹퍼블리싱(HTML/SCSS/JS/jquery)",
+        "웹퍼블리싱 (HTML/SCSS/JS/jquery)",
         "디자인",
         "프론트 유지보수(PHP)"
       ]

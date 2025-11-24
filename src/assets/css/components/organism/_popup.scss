@@ -1,7 +1,9 @@
 @use "sass:math" as math;
 @use "../../import" as *;
 
-.popup-warp {
+.sy-dialog{
+    $mobile-padding     : 20px;
+    $laptop-padding     : 36px;
     display             : flex;
     position            : fixed;
     align-items         : center;
@@ -10,32 +12,27 @@
     right               : 0;
     bottom              : 0;
     left                : 0;
-    background          : rgba(var(--base), 0.4);
+    background          : rgba(0, 0, 0, 0.4);
     z-index             : 300;
     overscroll-behavior : contain;
-}
 
-.popup {
-    $mobile-padding     : 20px;
-    $laptop-padding     : 36px;
+    &__inner {
+        display             : flex;
+        position            : relative;
+        flex-direction      : column;
+        width               : 100vw;
+        height              : 100svh;
+        background          : var(--paper-secondary);
+        z-index             : 1;
+        overscroll-behavior : contain;
 
-    display             : flex;
-    position            : relative;
-    flex-direction      : column;
-    width               : 100vw;
-    height              : 100vh;
-    height              : 100svh;
-    background          : var(--paper-secondary);
-    z-index             : 1;
-    overscroll-behavior : contain;
-
-    @include media-laptop {
-        width         : calc(100vw - $laptop-padding * 2);
-        height        : auto;
-        max-height    : calc(100vh - $laptop-padding * 2);
-        max-height    : calc(100svh - $laptop-padding * 2);
-        border-radius : var(--popup-radius);
-        box-shadow    : var(--component-shadow);
+        @include media-laptop {
+            width         : calc(100vw - $laptop-padding );
+            height        : auto;
+            max-height    : calc(100svh - $laptop-padding );
+            border-radius : var(--popup-radius);
+            box-shadow    : var(--component-shadow);
+        }
     }
 
     &__title {
@@ -52,15 +49,25 @@
             flex        : 1 0 0;
             line-height : 1.3em;
             font-size   : 1.750em;
+            span {
+                background: linear-gradient(152deg, var(--theme-secondary) 5%, var(--theme-primary) 60%);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
         }
 
-        &__close {
-            @include reset-button;
-            @include mixin-closeIcon(40px, 24px, var(--text-primary));
-            flex     : 0 0 auto;
-            position : relative;
-        }
 
+    }
+
+    &__close {
+        @include reset-button;
+        @include mixin-closeIcon(40px, 24px, var(--text-primary));
+        flex     : 0 0 auto;
+        position : relative;
+        border-radius: 50%;
+        &:hover {
+            background : rgba(var(--base-revers-rgb), 0.08);
+        }
     }
 
     &__container {
@@ -76,12 +83,3 @@
         }
     }
 }
-
-//
-//.dim {
-//    position   : absolute;
-//    display    : block;
-//    width      : 100%;
-//    height     : 100%;
-//    background : rgba(0, 0, 0, 0.6);
-//}
