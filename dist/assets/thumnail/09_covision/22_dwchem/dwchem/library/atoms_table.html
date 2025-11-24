@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ko" data-mode="">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" type="text/css" href="./plugin/highlightjs/atom-one-dark.min.css">
+    <script type="text/javascript" src="./plugin/highlightjs/highlight.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="../resourse/css/style.css" >
+    <link rel="stylesheet" type="text/css" href="./library.css" >
+    <title>퍼블리싱 가이드</title>
+</head>
+<body>
+<div class="cui_app">
+    <div class="cui_global">
+        <h1 class="global_logo">
+            <a href="./index.html"><span class="blind">동우화인캠</span></a>
+        </h1>
+    </div>
+    <div class="cui_container" data-module="">
+        <div class="cui_lnb">
+            <div class="lnb_root">
+                <div class="cui_nav">
+                    <nav class="nav_root">
+                    
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <div class="cui_content">
+            <div class="cui_main">
+                <div class="cui_head">
+                    <div class="head_content">
+                        <h2 class="cui_title"><span>table</span></h2>
+                    </div>
+                </div>
+                <div class="components_item">
+                    <div class="components_title">
+                        <h3>가로형 table</h3>
+                        <p><code>colgroup</code>이 없을때 table은 컨텐츠의 사이즈로 너비가 조정되며, <code>table</code>의 너비 100%가 정상적으로 작동하지 않을 수 있습니다.</p>
+                        <p><code>colgroup</code>의 자식요소인 <code>col</code>을 이용해 각 열의 넓이를 조정합니다. 넓이는 <code>style = "width: (원하는값)px"</code> 형태로 지정합니다.</p>
+                        <p>열의 제목이 들어가는 <code>th</code>는 태그 내부에  <code>span</code>으로 텍스트를 꼭 감싸주시기 바랍니다.</p>
+                        <p>해당 행/열의 필수를 표시할때는 <code>th</code>에 <code>required</code> class를 추가하여 주시기 바랍니다.</p>
+                    </div>
+                    <div class="components_preview">
+                        <table class="cui_table">
+                            <colgroup>
+                                <col style="width:154px;">
+                                <col>
+                            </colgroup>
+                            <tbody>
+                            <tr>
+                                <th class="required"><span>필수 제목</span></th>
+                                <td><span>본문</span></td>
+                            </tr>
+                            <tr>
+                                <th><span>제목</span></th>
+                                <td><span>본문</span></td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="components_code">
+                    <pre lang="HTML">
+                        <code class="language-html">
+                            <table class="cui_table">
+                                <colgroup>
+                                    <col style="width:154px;">
+                                    <col>
+                                </colgroup>
+                                <tbody>
+                                <tr>
+                                    <th class="required"><span>필수 제목</span></th>
+                                    <td><span>본문</span></td>
+                                </tr>
+                                <tr>
+                                    <th><span>제목</span></th>
+                                    <td><span>본문</span></td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </code>
+                    </pre>
+                    </div>
+                </div>
+                <div class="components_item">
+                    <div class="components_title">
+                        <h3>세로형 table</h3>
+                    </div>
+                    <div class="components_preview">
+                        <table class="cui_table">
+                            <colgroup>
+                                <col style="width:300px;">
+                                <col>
+                            </colgroup>
+                            <thead>
+                            <tr>
+                                <th><span>제목</span></th>
+                                <th><span>본문</span></th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td><span>프로젝트1</span></td>
+                                <td><span>본문</span></td>
+                            </tr>
+                            <tr>
+                                <td><span>프로젝트2</span></td>
+                                <td><span>본문</span></td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="components_code">
+                    <pre lang="HTML">
+                        <code class="language-html">
+                            <table class="cui_table">
+                                <colgroup>
+                                    <col style="width:300px;">
+                                    <col>
+                                </colgroup>
+                                <thead>
+                                <tr>
+                                    <th><span>제목</span></th>
+                                    <th><span>본문</span></th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td><span>프로젝트1</span></td>
+                                    <td><span>본문</span></td>
+                                </tr>
+                                <tr>
+                                    <td><span>프로젝트2</span></td>
+                                    <td><span>본문</span></td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </code>
+                    </pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript" src="./js/library.js"></script>
+<script type="text/javascript" src="./js/app.js"></script>
+</body>
+</html>

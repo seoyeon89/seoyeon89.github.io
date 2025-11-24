@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="ko" data-mode="">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" type="text/css" href="../../resourse/plugin/jqueryUi/jquery-ui.css">
+    <link rel="stylesheet" type="text/css" href="../../resourse/plugin/jqGrid/jQuery.jqGrid.css" >
+    <link rel="stylesheet" type="text/css" href="../../resourse/plugin/jqGrid/ui.jqGrid.css" >
+    <link rel="stylesheet" type="text/css" href="../../resourse/css/style.css" >
+    
+    <script type="text/javascript" src="../../resourse/plugin/jquery/jquery.min-1.11.1.js"></script>
+    <script type="text/javascript" src="../../resourse/plugin/jqueryUi/jquery-ui.js"></script>
+    <script type="text/javascript" src="../../resourse/plugin/jqGrid/jquery.jqGrid.js"></script>
+    <script type="text/javascript" src="../../resourse/js/app.js"></script>
+    <title>동우화인캠</title>
+    
+    <!-- [시작] 퍼블본용 js. 개발 반영되면 안됨 -->
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#jqGrid").jqGrid({
+                datatype: "jsonp",
+                colModel: [
+                    { label: 'OrderID', name: 'OrderID', key: true, width: 75 },
+                    { label: 'Customer ID', name: 'CustomerID', width: 150 },
+                    { label: 'Order Date', name: 'OrderDate', width: 150,
+                        formatter : 'date', formatoptions: { srcformat : 'Y-m-d H:i:s', newformat :'ShortDate'}},
+                    { label: 'Freight', name: 'Freight', width: 150 },
+                    { label:'Ship Name', name: 'ShipName', width: 150 }
+                ],
+                viewrecords: true,
+                autowidth: true,
+                height: 250,
+                rowNum: 20,
+                pager: "#jqGridPager"
+            });
+        });
+    </script>
+    <!-- [종료] 퍼블본용 js. 개발 반영되면 안됨 -->
+</head>
+<body>
+<div class="cui_app">
+    <div class="cui_global">
+        <h1 class="global_logo">
+            <a href="#"><span class="blind">동우화인캠</span></a>
+        </h1>
+        <nav class="cui_gnb" role="navigation">
+            <ul>
+                <li>
+                    <a href="#"><span>Company Information</span></a>
+                    <ul>
+                        <li>
+                            <a href="#"><span>menu1</span></a>
+                            <ul>
+                                <li><a href="#"><span>menu1-1</span></a></li>
+                                <li><a href="#"><span>menu1-2</span></a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#"><span>menu2</span></a></li>
+                        <li><a href="#"><span>menu3</span></a></li>
+                    </ul>
+                </li>
+                <li><a href="#"><span>Audit Management</span></a></li>
+                <li><a href="#"><span>Part Management</span></a></li>
+                <li><a href="#"><span>Quality Control</span></a></li>
+                <li>
+                    <a href="#"><span>Q&A</span></a>
+                    <ul>
+                        <li>
+                            <a href="#"><span>menu1</span></a>
+                            <ul>
+                                <li><a href="#"><span>menu1-1</span></a></li>
+                                <li><a href="#"><span>menu1-2</span></a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#"><span>menu2</span></a></li>
+                        <li><a href="#"><span>menu3</span></a></li>
+                    </ul>
+                </li>
+                <li class="more">
+                    <a href="#" class="toggle"><span>더보기</span></a>
+                    <ul></ul>
+                </li>
+            </ul>
+        </nav>
+        <div class="global_utility">
+            <select class="cui_select_field">
+                <option>KOR</option>
+                <option>ENG</option>
+                <option>JPN</option>
+                <option>CHN</option>
+            </select>
+            <div class="utility_profile">
+                <div class="info">
+                    <strong>김하랑 과장</strong>
+                    <span>UX디자인팀</span>
+                </div>
+            </div>
+            <button type="button" class="global_icon" data-cui-icon="logout" data-tooltip-title="로그아웃"><span>로그아웃</span></button>
+        </div>
+    </div>
+    <div class="cui_container" data-module="">
+        <div class="cui_lnb">
+            <div class="lnb_root">
+                <div class="lnb_head">
+                    <h2 class="lnb_title"><span>Audit Manageme</span></h2>
+                </div>
+                <div class="cui_nav">
+                    <nav class="nav_root">
+                        <ul>
+                            <li>
+                                <a href="#" class="nav_item">
+                                    <span class="nav_label">ISO인증</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="nav_item" >
+                                    <span class="nav_label">노동인권</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="nav_item"  aria-selected="true">
+                                    <span class="nav_label">안전보건/환경관리</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="nav_item">
+                                    <span class="nav_label">품질관리</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="nav_item">
+                                    <span class="nav_label">분쟁/책임광물</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="nav_item">
+                                    <span class="nav_label">Audit 결과</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <div class="cui_content">
+            <div class="cui_main">
+                <div class="cui_head">
+                    <div class="head_content">
+                        <h2 class="cui_title"><span>코비젼</span></h2>
+                    </div>
+                    <div class="head_aside">
+                        <p>(제출: 2024-07-31)</p>
+                    </div>
+                </div>
+                <div class="cui_body">
+                    <form class="cui_form_section" data-legend="true">
+                        <fieldset>
+                            <legend><span>안전보건 및 환경 (배점10점)</span></legend>
+                            <table class="cui_table">
+                                <colgroup>
+                                    <col style="width:120px">
+                                    <col>
+                                </colgroup>
+                                <tbody>
+                                    <tr>
+                                        <th><span>Audit</span></th>
+                                        <td>
+                                            <div class="cui_items_wrap" data-direction="right">
+                                                <div class="item_label">Self-Audit</div>
+                                                <div class="item_content">
+                                                    <button type="button" class="cui_button"><span>양식다운로드</span></button>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th><span>근거서류</span></th>
+                                        <td>
+                                            <div class="cui_attachments">
+                                                <input type="file" class="cui_file_field">
+                                                <div class="cui_items_wrap" data-direction="left">
+                                                    <div class="item_label" data-cui-icon="paperclip"><span>파일명.html</span></div>
+                                                    <div class="item_content">
+                                                        <button type="button" class="cui_button icon endpoint" data-cui-icon="xmark" data-tooltip-title="삭제"><span>삭제</span></button>
+                                                    </div>
+                                                </div>
+                                                <button type="button" class="cui_button"><span>추가</span></button>
+                                            </div>
+                                            <div class="cui_attachments">
+                                                <input type="file" class="cui_file_field">
+                                                <div class="cui_items_wrap" data-direction="left">
+                                                    <div class="item_label" data-cui-icon="paperclip"><span>파일명.html</span></div>
+                                                    <div class="item_content">
+                                                        <button type="button" class="cui_button icon endpoint" data-cui-icon="xmark" data-tooltip-title="삭제"><span>삭제</span></button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th><span>보완자료</span></th>
+                                        <td>
+                                            <div class="cui_attachments">
+                                                <input type="file" class="cui_file_field">
+                                                <div class="cui_items_wrap" data-direction="left">
+                                                    <div class="item_label" data-cui-icon="paperclip"><span>파일명.html</span></div>
+                                                    <div class="item_content">
+                                                        <button type="button" class="cui_button icon endpoint" data-cui-icon="xmark" data-tooltip-title="삭제"><span>삭제</span></button>
+                                                    </div>
+                                                </div>
+                                                <button type="button" class="cui_button"><span>추가</span></button>
+                                            </div>
+                                            <div class="cui_attachments">
+                                                <input type="file" class="cui_file_field">
+                                                <div class="cui_items_wrap" data-direction="left">
+                                                    <div class="item_label" data-cui-icon="paperclip"><span>파일명.html</span></div>
+                                                    <div class="item_content">
+                                                        <button type="button" class="cui_button icon endpoint" data-cui-icon="xmark" data-tooltip-title="삭제"><span>삭제</span></button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <div class="cui_items_wrap" data-direction="right">
+                                <div class="item_content">
+                                    <button type="button" class="cui_button primary"><span>제출</span></button>
+                                </div>
+                            </div>
+                         </fieldset>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

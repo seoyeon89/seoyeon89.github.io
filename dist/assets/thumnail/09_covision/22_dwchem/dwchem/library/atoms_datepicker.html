@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ko" data-mode="">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" type="text/css" href="./plugin/jqueryUi/jquery-ui.css">
+    <link rel="stylesheet" type="text/css" href="./plugin/highlightjs/atom-one-dark.min.css">
+    <script type="text/javascript" src="./plugin/highlightjs/highlight.min.js"></script>
+    <script type="text/javascript" src="./plugin/jquery/jquery-3.7.1.min.js"></script>
+    <script type="text/javascript" src="./plugin/jqueryUi/jquery-ui.js"></script>
+    <link rel="stylesheet" type="text/css" href="../resourse/css/style.css" >
+    <link rel="stylesheet" type="text/css" href="./library.css" >
+    <title>퍼블리싱 가이드</title>
+</head>
+<body>
+<div class="cui_app">
+    <div class="cui_global">
+        <h1 class="global_logo">
+            <a href="./index.html"><span class="blind">동우화인캠</span></a>
+        </h1>
+    </div>
+    <div class="cui_container" data-module="">
+        <div class="cui_lnb">
+            <div class="lnb_root">
+                <div class="cui_nav">
+                    <nav class="nav_root">
+                    
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <div class="cui_content">
+            <div class="cui_main">
+                <div class="cui_head">
+                    <div class="head_content">
+                        <h2 class="cui_title"><span>datepicker</span></h2>
+                    </div>
+                </div>
+                <div class="components_item">
+                    <div class="components_title">
+                        <p>한줄 정렬을 해주는 <code>cui_items_wrap</code> 컴포넌트를 활용하여 date picker를 구성합니다. <a href="./library/atoms_layout_item.html" class="cui_link">참고</a> </p>
+                        <p>date Picker로 사용할시에는 <code>item_content</code>영역에 <code>data-role="calendar-picker"</code>추가 부탁드립니다.</p>
+                    </div>
+                    <div class="components_preview">
+                        <div class="cui_items_wrap">
+                            <div class="item_content" data-role="calendar-picker">
+                                <input type="text" class="cui_text_field" value="2024.09.30" id="datepicker01">
+                                <label for="datepicker01" class="cui_button icon endpoint" data-cui-icon="calendar"><span>날자 선택</span></label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="components_code">
+                    <pre lang="HTML">
+                        <code class="language-html">
+                            <div class="cui_items_wrap">
+                                <div class="item_content" data-role="calendar-picker" >
+                                    <input type="text" class="cui_text_field" value="2024.09.30" id="datepicker">
+                                    <label for="datepicker" class="cui_button icon endpoint" data-cui-icon="calendar"><span>날자 선택</span></label>
+                                </div>
+                            </div>
+                        </code>
+                    </pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    $( function() {
+        $( "#datepicker01" ).datepicker({
+            dateFormat: "yy.mm.dd",
+            monthNames: [ "1월", "2월", "3월", "4월", "5월", "6월", "7월", "8월", "9월", "10월", "11월", "12월" ],
+            monthNamesShort: [ "1월", "2월", "3월", "4월", "5월", "6월", "7월", "8월", "9월", "10월", "11월", "12월" ],
+            dayNamesMin: [ "일", "월", "화", "수", "목", "금", "토" ],
+            //
+            // firstDay: 1,
+            // changeYear: true,
+            // changeMonth:true,
+            // showButtonPanel: true,
+            // gotoCurrent: true,
+            // closeText: "Clear",
+            // currentText: "오늘",
+        });
+    } );
+</script>
+<script type="text/javascript" src="./js/library.js"></script>
+<script type="text/javascript" src="./js/app.js"></script>
+</body>
+</html>
