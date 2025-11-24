@@ -1,0 +1,215 @@
+//scss 내장 변수 및 함수
+@import "../resourse/css/scss/abstracts/function/function";
+@import "../resourse/css/scss/abstracts/mixin/reset";
+@import "../resourse/css/scss/abstracts/mixin/basic";
+@import "../resourse/css/scss/abstracts/mixin/selector";
+@import "../resourse/css/scss/abstracts/mixin/components";
+@import "../resourse/css/scss/abstracts/mixin/effect";
+@import "../resourse/css/scss/abstracts/variables/z-index";
+@import "../resourse/css/scss/abstracts/variables/color";
+@import "../resourse/css/scss/abstracts/variables/variables";
+@import "../resourse/css/scss/abstracts/variables/icon";
+
+
+.components_item {
+    display : flex;
+    flex-direction:column;
+    gap:12px;
+    & + .components_item {
+        margin-top:40px;
+    }
+    .components_title {
+        h3 {
+            font-size:18px;
+        }
+        p {
+            margin-top:4px;
+            color:var(--text-secondary);
+
+            & + p {
+                margin-top:8px;
+            }
+        }
+    }
+    .components_preview {
+        padding:20px;
+        border-radius:12px;
+        border:1px solid var(--border-primary);
+        display:flex;
+        flex-direction:column;
+        gap:12px;
+
+        .components_preview_item {
+            width:100%;
+            flex:0 0 auto;
+            display:flex;
+            gap:12px;
+            flex-wrap:wrap;
+        }
+    }
+    pre {
+        margin:0;
+        position:relative;
+        border-radius:12px;
+        overflow:hidden;
+        &:after{
+            content: attr(lang);
+            position: absolute;
+            top: 0;
+            right: 0;
+            padding: 4px 8px;
+            border-radius: 0 10px 0 4px;
+            background: rgba(255, 255, 255, 0.1);
+            font-size: 12px;
+            line-height: 1;
+            color: #ffffff;
+        }
+    }
+}
+:not(pre) > code {
+    padding: 2px 4px;
+    border-radius: 4px;
+    background: rgba(0, 30, 60, 0.08);
+    font-size: 13px;
+}
+.cui_link {
+    position:relative;
+    color:var(--primary);
+    padding:0 1.3em 0 0.2em;
+    &:after{
+        @include icon-font;
+        position:absolute;
+        display:block;
+        right:0;
+        width:1em;
+        height:1em;
+        line-height:1em;
+        content:$ci_arrow_up_right_from_square;
+        top:0;
+        bottom:0;
+        transform:translateY(1px);
+    }
+    &:hover{
+        //color:var(--primary);
+        text-decoration:underline;
+    }
+}
+
+
+.components_icon {
+    width : 100%;
+
+    .icon_toolbar {
+        display               : grid;
+        margin-bottom         : 24px;
+        grid-template-columns : auto 1fr auto;
+        gap                   : 8px 16px;
+        grid-template-areas   : "counter counter version" "search filter order";
+
+        .total_count {
+            grid-area : counter;
+            font-weight : 500;
+            line-height : 24px;
+        }
+
+        .version {
+            grid-area : version;
+            font-weight : 500;
+            line-height : 24px;
+        }
+
+        .search {
+            grid-area : search;
+        }
+
+        .filters {
+            display   : flex;
+            gap       : 8px;
+            grid-area : filter;
+        }
+
+        .orders {
+            grid-area : order;
+        }
+        .icon_search {
+            position    : relative;
+            display     : flex;
+            align-items : center;
+            gap         : 12px;
+
+            &:before {
+                @include icon-font;
+                font-size       : 24px;
+                position        : absolute;
+                z-index         : 1;
+                top             : 0;
+                bottom          : 0;
+                left            : 0;
+                display         : flex;
+                align-items     : center;
+                justify-content : center;
+                width           : 32px;
+                content         : $ci_search;
+                pointer-events  : none;
+                color           : var(--icon-primary);
+            }
+
+            input {
+                width        : 100%;
+                max-width    : 320px;
+                padding-left : 32px;
+            }
+        }
+    }
+
+    .icon_list {
+        display               : grid;
+        box-sizing            : border-box;
+        grid-template-columns : repeat(auto-fill, minmax(140px, 1fr));
+        gap                   : 20px;
+
+        .item {
+            font-family    : "JetBrains Mono", sans-serif;
+            line-height    : 1;
+            position       : relative;
+            display        : flex;
+            align-items    : center;
+            flex-direction : column;
+            box-sizing     : border-box;
+            padding        : 8px;
+            color          : var(--text-secondary);
+            border-radius  : 12px;
+            gap            : 8px;
+
+            i {
+                font-weight : normal;
+                font-style  : normal;
+                color       : #00ab55;
+                &:before{
+                    font-size   : 38px;
+                }
+            }
+
+            em {
+                font-style : normal;
+                color      : var(--text-endpoint);
+            }
+
+            strong {
+                font-size   : 12px;
+                font-weight : normal;
+                line-height : 1.5;
+                text-align  : center;
+                word-break  : break-all;
+            }
+        }
+
+        .ui_empty {
+            grid-column-start : 1;
+            grid-column-end   : -1;
+            &:before {
+                display: none;
+            }
+        }
+    }
+}
