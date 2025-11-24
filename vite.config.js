@@ -7,5 +7,5 @@ export default defineConfig(({ mode }) => ({
         react(),
         svgr(),
     ],
-    base: mode === "production" ? "/seoyeon89.github.io/" : "/",
+    base: "/",
 }));
