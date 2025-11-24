@@ -2427,16 +2427,12 @@
       ],
       "discription": [
         "올림푸스 그룹웨어 쉐어포인트 제거 프로젝트 퍼블리싱 담당으로 참여 하였습니다.",
-        "백엔드 언어는 JAVA(JSP)입니다."
+        "MS쉐어포인트를 제거하고 15년 전에 작업된 코드에서 스타일 변경하여 디자인 리뉴얼을 작업한 프로젝트로, 디자인도 병행하여 작업하였습니다.",
+        "백엔드 언어는 닷넷(ASPX)입니다."
       ],
       "thumbnail": "09_covision/26_olympus/site_thum.png",
       "images": [
-        "09_covision/26_olympus/site01.png",
-        "09_covision/26_olympus/site02.png",
-        "09_covision/26_olympus/site03.png",
-        "09_covision/26_olympus/site04.png",
-        "09_covision/26_olympus/site05.png",
-        "09_covision/26_olympus/site06.png"
+        "09_covision/26_olympus/site01.png"
       ]
     },
     {
@@ -2460,7 +2456,7 @@
         "JQuery"
       ],
       "discription": [
-        "  구축 프로젝트 퍼블리싱 담당으로 참여 하였습니다.",
+        "히타치 구축 프로젝트 퍼블리싱 담당으로 참여 하였습니다.",
         "백엔드 언어는 JAVA(JSP)입니다."
       ],
       "thumbnail": "09_covision/27_hitachi/site_thum.png",
