@@ -1,9 +1,6 @@
 @use "../../import" as *;
 
 .profile {
-    margin-top  : -$size-header-height;
-    padding-top : $size-header-height;
-
     &__card {
         display         : flex;
         flex-wrap       : wrap;

@@ -1444,7 +1444,7 @@
     },
     {
       "id": 46,
-      "isOpen": 2,
+      "isOpen": 1,
       "isFeatured": true,
       "name": "시음기 어플 : 차차로",
       "category": "개인프로젝트",
@@ -2564,7 +2564,7 @@
     },
     {
       "id": 81,
-      "isOpen": 0,
+      "isOpen": 1,
       "isFeatured": false,
       "name": "TOK 그룹웨어 구축 프로젝트",
       "category": "신규구축",
@@ -2590,15 +2590,12 @@
       "images": [
         "09_covision/31_tok/site01.png",
         "09_covision/31_tok/site02.png",
-        "09_covision/31_tok/site03.png",
-        "09_covision/31_tok/site04.png",
-        "09_covision/31_tok/site05.png",
-        "09_covision/31_tok/site06.png"
+        "09_covision/31_tok/site03.png"
       ]
     },
     {
       "id": 82,
-      "isOpen": 0,
+      "isOpen": 1,
       "isFeatured": false,
       "name": "MP제품 UXUI 전면개편",
       "category": "신규구축",
@@ -2608,8 +2605,8 @@
       },
       "platform": "web",
       "date": {
-        "start": "2023-08-23",
-        "end": "2024-08-02"
+        "start": "2024-02-23",
+        "end": "2024-07-02"
       },
       "skills": [
         "HTML5",
@@ -2617,8 +2614,10 @@
         "JQuery"
       ],
       "discription": [
-        "  구축 프로젝트 퍼블리싱 담당으로 참여 하였습니다.",
-        "백엔드 언어는 JAVA(JSP)입니다."
+        "MP제품 UXUI 전면개편 프로젝트 퍼블리싱 담당으로 참여 하였습니다.",
+        "HTML 구조는 최대한 건드리지 않고 css, images 파일 수정만 하여 다른 제품군과 LOOK & FEEL을 맞추는 목적의 프로젝트였습니다.",
+        "퍼블리싱 담당자로 작업했으며, SCSS를 도입하여 작업 공수를 대폭 감소시켰고 일정보다 조기 완료하여 남은 기간동안 다크모드 기능 추가도 추가하였습니다.",
+        "백엔드 언어는 닷넷(ASPX)입니다."
       ],
       "thumbnail": "09_covision/32_mp_renewal/site_thum.png",
       "images": [
@@ -2632,7 +2631,7 @@
     },
     {
       "id": 83,
-      "isOpen": 0,
+      "isOpen": 2,
       "isFeatured": true,
       "name": "코비젼 AI 제품 개발",
       "category": "신규구축",
@@ -2642,8 +2641,8 @@
       },
       "platform": "web",
       "date": {
-        "start": "2023-08-23",
-        "end": "2024-08-02"
+        "start": "2024-08-23",
+        "end": "2024-12-31"
       },
       "skills": [
         "HTML5",
@@ -2651,7 +2650,9 @@
         "JQuery"
       ],
       "discription": [
-        "구축 프로젝트 퍼블리싱 담당으로 참여 하였습니다.",
+        "코비젼 AI 모듈 프로젝트에 퍼블리싱 담당자로 참여하여 기획 단계부터 함께 협업했습니다. ",
+        "퍼블리싱 전 영역을 단독으로 수행(기여도 100%)하였으며, 전체 화면에서 유연하게 작동하는 풀 반응형 구조로 구현했습니다. ",
+        "코파일럿 형태의 사이드 분할 레이아웃에서도 AI 모듈이 안정적으로 배치될 수 있도록 CSS 구조를 최적화했으며, 채팅 영역 및 관련 UI 요소들은 타 모듈에서도 재사용할 수 있도록 컴파일 구조로 설계,구현했습니다.",
         "백엔드 언어는 JAVA(JSP)입니다."
       ],
       "thumbnail": "09_covision/33_cp_ai/site_thum.png",
@@ -2660,24 +2661,24 @@
         "09_covision/33_cp_ai/site02.png",
         "09_covision/33_cp_ai/site03.png",
         "09_covision/33_cp_ai/site04.png",
-        "09_covision/33_cp_ai/site05.png",
-        "09_covision/33_cp_ai/site06.png"
+        "09_covision/33_cp_ai/site05.png"
       ]
     },
     {
       "id": 84,
-      "isOpen": 0,
+      "isOpen": 2,
       "isFeatured": true,
-      "name": "로그인 UXUI 개편",
+      "name": "코비젼 로그인 UXUI 개편",
       "category": "신규구축",
       "workedFor": "코비젼",
       "participation": {
+        "planning" : 100,
         "publish": 100
       },
       "platform": "web",
       "date": {
-        "start": "2023-08-23",
-        "end": "2024-08-02"
+        "start": "2025-07-14",
+        "end": "2024-09-16"
       },
       "skills": [
         "HTML5",
@@ -2685,7 +2686,10 @@
         "JQuery"
       ],
       "discription": [
-        "구축 프로젝트 퍼블리싱 담당으로 참여 하였습니다.",
+        "로그인 UX/UI 개편 프로젝트에서 기획과 퍼블리싱을 전담했으며, 전체 기획서 작성도 직접 수행했습니다.",
+        "기존 로그인 화면은 레거시 코드 기반으로 표준화가 되어 있지 않아, 프로젝트마다 디자인에 맞춰 반복 작업이 발생하며 공수가 과도하게 소요되는 문제가 있었습니다.",
+        "이를 개선하기 위해 개편 작업을 직접 제안했고, 하나의 HTML 구조에서 CSS만으로 다양한 디자인 변형이 가능하도록 UX/UI를 기획,설계했습니다.",
+        "이 재사용성과 확장성을 갖춘 구조는 영업팀으로부터 높은 평가를 받았습니다.",
         "백엔드 언어는 JAVA(JSP)입니다."
       ],
       "thumbnail": "09_covision/34_cp_login/site_thum.png",
@@ -2695,7 +2699,41 @@
         "09_covision/34_cp_login/site03.png",
         "09_covision/34_cp_login/site04.png",
         "09_covision/34_cp_login/site05.png",
-        "09_covision/34_cp_login/site06.png"
+        "09_covision/34_cp_login/site06.png",
+        "09_covision/34_cp_login/site07.png"
+      ]
+    },
+    {
+      "id": 85,
+      "isOpen": 1,
+      "isFeatured": true,
+      "name": "Agentic AI 서비스 구축",
+      "category": "신규구축",
+      "workedFor": "코비젼",
+      "participation": {
+        "publish": 50
+      },
+      "platform": "web",
+      "date": {
+        "start": "2025-09-29",
+        "end": "2025-11-25"
+      },
+      "skills": [
+        "HTML5",
+        "CSS3",
+        "JQuery"
+      ],
+      "discription": [
+        "노트북 LM 서비스를 벤치마킹해 코비젼 AI 고도화 프로젝트의 퍼블리싱을 담당했습니다. ",
+        "Agentic AI 특성에 따라 사용자의 의도를 기반으로 단계별 작업이 전개되는 흐름을 고려해 인터랙션 중심의 퍼블리싱 구조를 설계,구현했습니다.",
+        "기획 단계에도 참여하여 기획서를 직접 작성하지는 않았지만, 기획 내용을 충분히 이해하고 이를 바탕으로 개발,디자인 간의 커뮤니케이션을 조율하는 역할을 수행했습니다.",
+        "1차 본 퍼블리싱까지 전담하여 작업햇으며, 이후 퇴사로 인해 최종 마무리 단계에는 참여하지 못했습니다.",
+        "백엔드 언어는 JAVA(JSP)입니다."
+      ],
+      "thumbnail": "09_covision/35_cp_notebook/site_thum.png",
+      "images": [
+        "09_covision/35_cp_notebook/site01.png",
+        "09_covision/35_cp_notebook/site02.png"
       ]
     }
   ]
