@@ -2,15 +2,15 @@
 
 .container {
     position   : relative;
+    min-width  : 280px;
     min-height : 100vh;
     background : var(--background);
-    min-width:280px;
 
     &__background {
         position   : absolute;
         top        : 0;
-        right      : 0;
         left       : 0;
+        right      : 0;
         width      : 100%;
         height     : $size-containter_background_height;
         background : url("/src/assets/images/background.png") center repeat var(--paper-primary);
@@ -18,12 +18,12 @@
 
         &:before {
             content    : "";
-            display    : block;
             position   : absolute;
             top        : 0;
-            right      : 0;
             bottom     : 0;
             left       : 0;
+            right      : 0;
+            display    : block;
             width      : 100%;
             height     : 100%;
             background : rgba(var(--base-rgb), 0.5);
@@ -31,10 +31,10 @@
     }
 
     &__inner {
-        display        : flex;
         position       : relative;
-        flex-direction : column;
+        display        : flex;
         gap            : var(--component-gap);
+        flex-direction : column;
         align-items    : center;
         padding        : var(--inner-padding);
         z-index        : 2;
@@ -48,15 +48,15 @@
             flex          : 0 1 auto;
             width         : 100%;
             padding       : var(--component-padding);
+            box-shadow    : var(--component-shadow);
             border-radius : var(--component-radius);
             background    : var(--paper-primary);
-            box-shadow    : var(--component-shadow);
 
             @include media-tablet {
                 @include mixin-scrollbar();
-                flex               : 0 0 auto;
                 position           : sticky;
-                top              : var(--component-padding);
+                top                : var(--component-padding);
+                flex               : 0 0 auto;
                 overflow           : hidden auto;
                 width              : 360px;
                 max-height         : calc(100vh - var(--max-height-outer));
@@ -67,41 +67,41 @@
         }
 
         .works {
-            flex        : 0 1 auto;
-            width       : 100%;
+            flex  : 0 1 auto;
+            width : 100%;
             @include media-tablet {
             }
 
             .works-top {
-                display          : flex;
                 position         : sticky;
                 top              : 0;
+                display          : flex;
                 padding          : var(--component-padding-secondary);
                 border           : 1px solid rgba(var(--theme-primary-rgb), 0.4);
                 border-radius    : var(--component-radius);
-                z-index          : 10;
                 background-color : rgba(var(--background-rgb), 0.8);
+                z-index          : 10;
                 backdrop-filter  : blur(12px);
 
 
                 @include media-tablet {
+                    top         : var(--component-padding);
                     align-items : center;
-                    top              : var(--component-padding);
                 }
 
                 .filter {
                 }
 
                 .counter {
-                    flex         : 0 1 auto;
                     display      : flex;
                     gap          : 4px;
+                    flex         : 0 1 auto;
                     align-items  : center;
                     margin-left  : auto;
                     padding-left : 8px;
+                    font-size    : 0.9em;
                     text-align   : right;
                     white-space  : nowrap;
-                    font-size    : 0.9em;
 
                     span {
                         @include media-laptop {
@@ -133,8 +133,8 @@
                     }
 
                     .current {
-                        order : 3;
                         color : var(--theme-primary);
+                        order : 3;
                         @include media-laptop {
                             order : 1;
                         }

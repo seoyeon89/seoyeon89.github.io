@@ -8,8 +8,8 @@
 
 
     &--no-child {
-        flex            : 1 1 auto;
         display         : flex;
+        flex            : 1 1 auto;
         align-items     : center;
         justify-content : center;
         height          : 300px;
@@ -51,15 +51,15 @@
     }
 
     &__info {
-        flex           : 1 0 auto;
         display        : flex;
-        flex-direction : column;
         gap            : 4px;
+        flex           : 1 0 auto;
+        flex-direction : column;
         padding        : 0 4px;
 
         &__important {
-            flex          : 0 0 auto;
             display       : flex;
+            flex          : 0 0 auto;
             align-content : flex-start;
 
             h2 {
@@ -67,9 +67,10 @@
                 max-width   : 100%;
                 font-size   : 15px;
                 font-weight : $font-weight-medium;
+
                 span {
-                    word-break: keep-all;
-                    word-wrap: break-word;
+                    word-break : keep-all;
+                    word-wrap  : break-word;
                 }
             }
 
@@ -82,9 +83,9 @@
         }
 
         &__detail {
-            display : flex;
-            font-size   : 13px;
-            color       : var(--text-secondary);
+            display   : flex;
+            font-size : 13px;
+            color     : var(--text-secondary);
 
             .type {
                 flex : 1 0 auto;
@@ -97,9 +98,9 @@
         }
 
         &__skills {
-            flex : 0 0 auto;
-            margin-top:auto;
-            font-size   : 12px;
+            flex       : 0 0 auto;
+            margin-top : auto;
+            font-size  : 12px;
         }
     }
 }

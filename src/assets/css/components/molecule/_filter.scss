@@ -12,16 +12,16 @@
     &__result {
         display : none;
         @include media-laptop {
-            flex        : 0 1 auto;
             display     : flex;
-            flex-wrap   : wrap;
             gap         : 6px 8px;
+            flex        : 0 1 auto;
+            flex-wrap   : wrap;
             align-items : center;
         }
 
         &__item {
-            flex        : 0 0 auto;
             gap         : 2px;
+            flex        : 0 0 auto;
             line-height : 16px;
 
             & > button {
@@ -31,9 +31,9 @@
                 align-items : center;
                 min-height  : 24px;
                 padding     : 4px 8px;
-                color       : var(--theme-primary);
                 background  : var(--paper-endpoint);
                 font-size   : 0.8em;
+                color       : var(--theme-primary);
 
                 @include media-tablet {
                     gap        : 6px;
@@ -50,9 +50,9 @@
                 }
 
                 & > em {
-                    text-transform : uppercase;
-                    font-weight    : $font-weight-bold;
                     font-style     : normal;
+                    font-weight    : $font-weight-bold;
+                    text-transform : uppercase;
                 }
             }
 

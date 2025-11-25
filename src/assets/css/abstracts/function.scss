@@ -1,9 +1,9 @@
 @use "sass:color";
 
 @function function-to-rgb($value) {
-    $red   : color.channel($value, "red", $space: rgb);
-    $green : color.channel($value, "green", $space: rgb);
-    $blue  : color.channel($value, "blue", $space: rgb);
+    $red : color.channel($value, "red", $space : rgb);
+    $green : color.channel($value, "green", $space : rgb);
+    $blue : color.channel($value, "blue", $space : rgb);
 
     @return $red + ", " + $green + ", " + $blue;
 }

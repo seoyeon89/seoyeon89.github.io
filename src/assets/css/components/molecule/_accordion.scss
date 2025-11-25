@@ -1,7 +1,7 @@
 @use "../../import" as *;
 
 .accordion {
-    border        : 1px solid transparent;
+    border : 1px solid transparent;
 
     & > .accordion__head {
         @include reset-button;
@@ -9,25 +9,25 @@
         transition : all 0.2s;
 
         & > .accordion__title {
+            display     : flex;
+            gap         : 4px;
             flex        : 0 1 auto;
+            align-items : center;
             width       : 100%;
-            text-align  : left;
-            display:flex;
-            gap:4px;
             font-weight : $font-weight-bold;
-            align-items: center;
+            text-align  : left;
 
             & > em {
-                font-style:normal;;
-                font-weight:$font-weight;
-                color:var(--text-endpoint);
-                font-size:0.84em;
+                font-size   : 0.84em;
+                font-style  : normal;;
+                font-weight : $font-weight;
+                color       : var(--text-endpoint);
             }
         }
 
         & > i {
-            flex            : 0 0 auto;
             display         : inline-flex;
+            flex            : 0 0 auto;
             align-items     : center;
             justify-content : center;
             overflow        : hidden;
@@ -47,18 +47,18 @@
     }
 
     & > .accordion__contents {
-        display : flex;
-        flex-direction:column;
-        gap:4px;
-        max-height:0;
-        overflow : hidden;
-        transition : max-height 0.4s;
+        display        : flex;
+        gap            : 4px;
+        flex-direction : column;
+        overflow       : hidden;
+        max-height     : 0;
+        transition     : max-height 0.4s;
     }
 
 
     &[data-expended="true"] {
         & > .accordion__contents {
-            max-height:200vh;
+            max-height : 200vh;
             transition : max-height 0.4s;
         }
     }
@@ -73,37 +73,40 @@
         }
 
         & > .accordion__head {
-            padding    : 8px 8px 8px 18px;
-            font-size  : 1.14em;
+            padding   : 8px 8px 8px 18px;
+            font-size : 1.14em;
 
             & > .accordion__title {
-                color      : var(--text-secondary);
+                color : var(--text-secondary);
             }
 
             & > i {
                 & > svg {
-                    stroke          : var(--text-endpoint);
+                    stroke : var(--text-endpoint);
                 }
             }
         }
 
         & > .accordion__contents {
-            & >.accordion__content {
-                border-top : 1px solid var(--component-border-color);
+            & > .accordion__content {
                 padding    : 12px;
+                border-top : 1px solid var(--component-border-color);
             }
         }
+
         &[data-expended="true"] {
             border-color : var(--component-border-color);
+
             & > .accordion__head {
                 & > .accordion__title {
-                color      : var(--theme-primary);
+                    color : var(--theme-primary);
                 }
+
                 i {
                     svg {
                         transition : all .2s;
                         transform  : rotate(0.5turn);
-                        stroke          : var(--theme-primary);
+                        stroke     : var(--theme-primary);
                     }
                 }
             }
@@ -112,7 +115,7 @@
 
     &.secondary {
         border-radius : var(--component-radius);
-        opacity:0.6;
+        opacity       : 0.6;
 
         &:hover {
             &:not([data-expended="true"]) {
@@ -120,17 +123,18 @@
         }
 
         & > .accordion__head {
-            padding    : 4px 0 4px 8px;
+            padding : 4px 0 4px 8px;
+
             & > .accordion__title {
                 flex        : 0 1 auto;
                 width       : 100%;
-                text-align  : left;
                 font-weight : $font-weight-bold;
+                text-align  : left;
             }
 
             & > i {
-                flex            : 0 0 auto;
                 display         : inline-flex;
+                flex            : 0 0 auto;
                 align-items     : center;
                 justify-content : center;
                 overflow        : hidden;
@@ -151,13 +155,15 @@
         }
 
         & > .accordion__contents {
-            background:var(--paper-secondary);
-            & >.accordion__content {
-                padding    : 12px;
+            background : var(--paper-secondary);
+
+            & > .accordion__content {
+                padding : 12px;
             }
         }
+
         &[data-expended="true"] {
-            opacity:1;
+            opacity : 1;
         }
     }
 }

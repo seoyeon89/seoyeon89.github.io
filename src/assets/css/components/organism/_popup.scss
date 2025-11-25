@@ -1,24 +1,24 @@
 @use "sass:math" as math;
 @use "../../import" as *;
 
-.sy-dialog{
+.sy-dialog {
     $mobile-padding     : 20px;
     $laptop-padding     : 36px;
-    display             : flex;
     position            : fixed;
-    align-items         : center;
-    justify-content     : center;
     top                 : 0;
-    right               : 0;
     bottom              : 0;
     left                : 0;
+    right               : 0;
+    display             : flex;
+    align-items         : center;
+    justify-content     : center;
     background          : rgba(0, 0, 0, 0.4);
     z-index             : 300;
     overscroll-behavior : contain;
 
     &__inner {
-        display             : flex;
         position            : relative;
+        display             : flex;
         flex-direction      : column;
         width               : 100vw;
         height              : 100svh;
@@ -27,17 +27,17 @@
         overscroll-behavior : contain;
 
         @include media-laptop {
-            width         : calc(100vw - $laptop-padding );
+            width         : calc(100vw - $laptop-padding);
             height        : auto;
-            max-height    : calc(100svh - $laptop-padding );
-            border-radius : var(--popup-radius);
+            max-height    : calc(100svh - $laptop-padding);
             box-shadow    : var(--component-shadow);
+            border-radius : var(--popup-radius);
         }
     }
 
     &__title {
-        flex        : 0 0 50px;
         display     : flex;
+        flex        : 0 0 50px;
         align-items : center;
         padding     : math.div($mobile-padding, 2) $mobile-padding;
 
@@ -47,12 +47,13 @@
 
         & > h1 {
             flex        : 1 0 0;
-            line-height : 1.3em;
             font-size   : 1.750em;
+            line-height : 1.3em;
+
             span {
-                background: linear-gradient(152deg, var(--theme-secondary) 5%, var(--theme-primary) 60%);
-                -webkit-background-clip: text;
-                -webkit-text-fill-color: transparent;
+                background              : linear-gradient(152deg, var(--theme-secondary) 5%, var(--theme-primary) 60%);
+                -webkit-background-clip : text;
+                -webkit-text-fill-color : transparent;
             }
         }
 
@@ -62,9 +63,10 @@
     &__close {
         @include reset-button;
         @include mixin-closeIcon(40px, 24px, var(--text-primary));
-        flex     : 0 0 auto;
-        position : relative;
-        border-radius: 50%;
+        position      : relative;
+        flex          : 0 0 auto;
+        border-radius : 50%;
+
         &:hover {
             background : rgba(var(--base-revers-rgb), 0.08);
         }

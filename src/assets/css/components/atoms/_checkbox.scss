@@ -5,9 +5,9 @@
     gap         : 6px;
     align-items : center;
     padding     : 4px 2px;
+    font-size   : 1em;
     line-height : 1.2em;
     cursor      : pointer;
-    font-size   : 1em;
 
 
     & > input {
@@ -16,7 +16,7 @@
     }
 
     & > em {
-        text-transform : uppercase;
         font-style     : normal;
+        text-transform : uppercase;
     }
 }
