@@ -86,7 +86,7 @@ const MyInfoSection = ({ item, title = null}) => {
                     <span>{item.dateEnd ?? `NOW`}</span>
                 </div>
 
-                <ul className="info-box__list list-bullet">
+                <ul className="info-box__list sy-list bullet">
                     {item.description.map((desc, i) => (
                         <li key={i} dangerouslySetInnerHTML={{ __html: desc }} />
                     ))}
@@ -193,7 +193,7 @@ const Profile = () => {
                                     <span>MY</span><strong>SKILLS</strong>
                                 </div>
                                 <div className="skills__item__box">
-                                    <ul className="list-bullet">
+                                    <ul className="sy-list bullet">
                                         <li><strong>웹 표준·웹 접근성</strong>에 맞춰 HTML/CSS 마크업을 작성합니다.</li>
                                         <li> Chrome, Firefox, Edge, Safari 등 주요 브라우저에서의 크로스 브라우징을 맞춰 구현합니다.</li>
                                         <li><strong>웹 표준, 웹 접근성, 크로스 브라우징</strong> 마크업이 가능합니다.</li>
@@ -203,7 +203,7 @@ const Profile = () => {
                                     </ul>
                                 </div>
                                 <div className="skills__item__box">
-                                    <ul className="list-bullet">
+                                    <ul className="sy-list bullet">
                                         <li>Vue, React 구조를 이해하며, 해당 환경에서의 퍼블리싱 경험이 있습니다.</li>
                                         <li>PHP 기본 구조를 이해하며, PHP 기반 프로젝트에서 퍼블리싱 경험이 있습니다.</li>
                                     </ul>
@@ -215,18 +215,18 @@ const Profile = () => {
                                     <span>used</span><strong>TOOLS</strong>
                                 </div>
                                 <div className="skills__item__box">
-                                    <ul className="list-bullet">
+                                    <ul className="sy-list bullet">
                                         <li>Visual Studio Code, WebStrom을 활용할 수 있습니다.</li>
                                     </ul>
                                 </div>
                                 <div className="skills__item__box">
-                                    <ul className="list-bullet">
+                                    <ul className="sy-list bullet">
                                         <li><strong>GIT/SVN</strong>의 형상관리 툴을 사용 가능합니다.</li>
                                         <li>회사 환경에 맞는 Git Flow 브랜치 전략을 직접 구상해본 경험이 있습니다.</li>
                                     </ul>
                                 </div>
                                 <div className="skills__item__box">
-                                    <ul className="list-bullet">
+                                    <ul className="sy-list bullet">
                                         <li><strong>Figma, XD</strong> 툴을 이용한 프로토 타이핑 작업, 컴포넌트(에셋)을 활용한 디자인 시스템 셋팅이 가능합니다.</li>
                                         <li>Photoshop을 이용한 이미지 가공 작업이 가능합니다.</li>
                                     </ul>

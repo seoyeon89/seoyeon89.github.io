@@ -265,7 +265,7 @@ select {
   color: #FFFFFF;
 }
 
-select {
+.sy-select {
   display: block;
   width: 100%;
   padding-top: var(--component-padding-top);
@@ -281,7 +281,7 @@ select {
   font-size: 14px;
   line-height: 1.5em;
 }
-select:hover, select:focus {
+.sy-select:hover, .sy-select:focus {
   border: 1px solid var(--component-border-hover-color);
 }
 
@@ -443,21 +443,21 @@ select:hover, select:focus {
   margin-top: 8px;
 }
 
-.list-bullet {
+.sy-list.bullet {
   display: flex;
-  gap: 8px;
   flex-direction: column;
+  gap: 8px;
 }
-.list-bullet > li {
+.sy-list.bullet > li {
   position: relative;
   padding-left: 16px;
 }
-.list-bullet > li:before {
+.sy-list.bullet > li:before {
   content: "";
+  display: block;
   position: absolute;
   top: 0.5em;
   left: 4px;
-  display: block;
   width: 4px;
   height: 4px;
   border-radius: 50%;

@@ -1,22 +1,24 @@
-.list-bullet {
-    display        : flex;
-    gap            : 8px;
-    flex-direction : column;
+.sy-list {
+    &.bullet {
+        display        : flex;
+        flex-direction : column;
+        gap            : 8px;
 
-    & > li {
-        position     : relative;
-        padding-left : 16px;
+        & > li {
+            position     : relative;
+            padding-left : 16px;
 
-        &:before {
-            content          : "";
-            position         : absolute;
-            top              : 0.5em;
-            left             : 4px;
-            display          : block;
-            width            : 4px;
-            height           : 4px;
-            border-radius    : 50%;
-            background-color : var(--theme-primary);
+            &:before {
+                content          : "";
+                display          : block;
+                position         : absolute;
+                top              : 0.5em;
+                left             : 4px;
+                width            : 4px;
+                height           : 4px;
+                border-radius    : 50%;
+                background-color : var(--theme-primary);
+            }
         }
     }
 }
