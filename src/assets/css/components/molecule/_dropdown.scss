@@ -12,8 +12,8 @@
 
     &[data-expended="true"] {
         .dropdown__button {
-            color      : #FFFFFF;
             background : var(--theme-primary);
+            color      : #FFFFFF;
 
             & > .icons > i > svg {
                 stroke : #FFFFFF;
@@ -31,10 +31,10 @@
         min-width     : var(--dropdown-icon-height);
         height        : var(--dropdown-icon-height);
         padding       : 0 8px;
-        transition    : background-color .3s;
-        color         : var(--theme-primary);
         border        : 1px solid var(--theme-primary);
         border-radius : calc(var(--dropdown-icon-height) / 2);
+        color         : var(--theme-primary);
+        transition    : background-color .3s;
 
         & > .icons {
             @include mixin-icons(var(--theme-primary))
@@ -67,9 +67,9 @@
         min-width     : 180px;
         max-height    : calc(100vh - 118px);
         padding       : var(--component-padding);
+        box-shadow    : var(--component-shadow);
         border-radius : var(--component-radius);
         background    : var(--paper-primary);
-        box-shadow    : var(--component-shadow);
         z-index       : 99;
 
         @include media-tablet {

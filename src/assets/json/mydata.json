@@ -63,14 +63,6 @@
   ],
   "education": [
     {
-      "order": 0,
-      "title": "방송통신대학교",
-      "dateStart": "2022/03",
-      "description": [
-        "컴퓨터과학과 (휴학중)"
-      ]
-    },
-    {
       "order": 1,
       "title": "(NCS)웹 php msql 초급 과정",
       "dateStart": "2016/11",

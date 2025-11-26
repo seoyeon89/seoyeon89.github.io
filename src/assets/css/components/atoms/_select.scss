@@ -1,20 +1,20 @@
 @use "../../import" as *;
 
-select {
+.sy-select {
     display             : block;
     width               : 100%;
     padding-top         : var(--component-padding-top);
     padding-right       : calc(var(--component-padding-left) * 2);
     padding-bottom      : var(--component-padding-top);
     padding-left        : var(--component-padding-left);
-    line-height         : calc(1em * 1.5);
+    box-shadow          : var(--component-shadow);
     border              : 1px solid var(--component-border-color);
     border-radius       : var(--component-radius);
     background-image    : url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI4IiBoZWlnaHQ9IjYiIHZpZXdCb3g9IjAgMCA4IDYiPjxwYXRoIGQ9Ik00LDAsOCw2SDBaIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSg4IDYpIHJvdGF0ZSgxODApIi8+PC9zdmc+");
     background-repeat   : no-repeat;
     background-position : calc(100% - 16px) center;
-    box-shadow          : var(--component-shadow);
     font-size           : $font-size;
+    line-height         : calc(1em * 1.5);
 
     &:hover,
     &:focus {

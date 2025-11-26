@@ -4,18 +4,18 @@
 html {
     height      : 100vh;
     height      : 100svh;
-    line-height : 1.3em;
     font-family : $font-family-list;
     font-size   : $font-size;
     font-weight : $font-weight;
+    line-height : 1.3em;
 }
 
 body {
     margin                  : 0;
-    color                   : var(--text-primary);
     font-family             : inherit;
     font-size               : inherit;
     font-weight             : inherit;
+    color                   : var(--text-primary);
     -webkit-font-smoothing  : antialiased;
     -moz-osx-font-smoothing : grayscale;
 }
@@ -25,10 +25,10 @@ body [hidden] {
 }
 
 * {
+    box-sizing : border-box;
     margin     : 0;
     padding    : 0;
     font-size  : inherit;
-    box-sizing : border-box;
     //transition: all 0.5s ease-out;
 }
 
@@ -49,14 +49,14 @@ ul {
 }
 
 a {
-    text-decoration : none;
     color           : inherit;
+    text-decoration : none;
 
     &:hover,
     &:focus,
     &:visited {
-        text-decoration : none;
         color           : inherit;
+        text-decoration : none;
     }
 }
 
@@ -64,8 +64,8 @@ select {
     display    : block;
     margin     : 0;
     padding    : 0;
-    cursor     : pointer;
     outline    : none;
+    cursor     : pointer;
     appearance : none;
 }
 

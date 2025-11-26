@@ -1,12 +1,12 @@
 @use "../../import" as *;
 
 .header {
-    display         : flex;
     position        : absolute;
-    align-items     : center;
     top             : 0;
-    right           : 0;
     left            : 0;
+    right           : 0;
+    display         : flex;
+    align-items     : center;
     width           : 100%;
     height          : $size-header-height;
     padding         : 0 var(--inner-padding);
@@ -17,8 +17,8 @@
     @include media-tablet {
         position : fixed;
         top      : 0;
-        right    : 0;
         left     : 0;
+        right    : 0;
 
     }
 
