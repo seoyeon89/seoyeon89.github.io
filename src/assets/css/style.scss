@@ -1,34 +1,8 @@
 @charset "UTF-8";
-@use "sass:math" as math;
 
 @use "base/property";
 @use "base/font";
 @use "base/default";
 
-@use "components/atoms/avatar";
-@use "components/atoms/buttons";
-@use "components/atoms/chip";
-@use "components/atoms/select";
-@use "components/atoms/checkbox";
-@use "components/atoms/switch";
-@use "components/atoms/progress";
-@use "components/atoms/callout";
-@use "components/atoms/list";
-@use "components/atoms/marquee";
-
-@use "components/molecule/table";
-@use "components/molecule/filter";
-@use "components/molecule/dropdown";
-@use "components/molecule/info-box";
-@use "components/molecule/tags";
-@use "components/molecule/accordion";
-@use "components/molecule/flex-box";
-
-@use "components/organism/projects";
-@use "components/organism/header";
-@use "components/organism/popup";
-@use "components/organism/profile";
-
-@use "pages/home";
-@use "pages/detail";
-@use "pages/no-page";
+@use "components";
+@use "pages";
