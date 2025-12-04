@@ -1,7 +1,11 @@
+@forward "abstracts/function";
+
+// 디자인 토큰
 @forward "abstracts/variables/font";
 @forward "abstracts/variables/color";
 @forward "abstracts/variables/size";
+
+// 공용 믹스인
 @forward "abstracts/mixin/media";
 @forward "abstracts/mixin/reset";
 @forward "abstracts/mixin/mixin";
-@forward "abstracts/function";

@@ -68,6 +68,7 @@
       "dateStart": "2016/11",
       "dateEnd": "2016/12",
       "description": [
+        "php / msql 학습 및 게시판 제작",
         "그린컴퓨터아트학원"
       ]
     },
@@ -77,15 +78,17 @@
       "dateStart": "2015/04",
       "dateEnd": "2015/09",
       "description": [
+        "XHTML,HTML5,J-QUERY 학습 및 기업형 웹표준, 접근성 사이트 제작 / 모바일 웹 / 반응형 웹페이지 제작",
         "더조은컴퓨터아트학원"
       ]
     },
     {
       "order": 3,
-      "title": "기업 실무반 정규과정 과정",
+      "title": "기업 실무반 정규 과정",
       "dateStart": "2014/01",
       "dateEnd": "2014/05",
       "description": [
+        "XHTML 기업형 웹표준, 접근성 사이트 제작",
         "그린컴퓨터아트학원"
       ]
     },
