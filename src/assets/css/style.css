@@ -247,11 +247,14 @@ select {
   border-radius: 18px;
 }
 .sy-button--primary {
-  background: var(--theme-primary);
+  background: rgba(var(--theme-primary-rgb), 0.85);
   color: #FFFFFF;
 }
 .sy-button--primary:hover, .sy-button--primary:visited, .sy-button--primary:link {
   color: #FFFFFF;
+}
+.sy-button--primary:hover {
+  background: rgba(var(--theme-primary-rgb), 1);
 }
 
 .sy-callout {

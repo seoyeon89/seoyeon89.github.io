@@ -10,13 +10,16 @@
 
 
     &--primary {
-        background : var(--theme-primary);
+        background : rgba(var(--theme-primary-rgb), 0.85);
         color      : #FFFFFF;
 
         &:hover,
         &:visited,
         &:link {
             color : #FFFFFF;
+        }
+        &:hover{
+            background : rgba(var(--theme-primary-rgb), 1);
         }
     }
 }
