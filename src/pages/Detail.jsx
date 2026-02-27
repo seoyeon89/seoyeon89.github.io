@@ -42,7 +42,7 @@ const DetailPopup = ({Project}) => {
 
                                     {Project.date.end &&
                                         <>
-                                            <span>~</span>
+                                            <span> ~ </span>
                                             <time>{Project.date.end}</time>
                                         </>
                                     }
@@ -73,23 +73,28 @@ const DetailPopup = ({Project}) => {
                         </div>
                     </div>
 
+                    {Project?.publicUrl && Array.isArray(Project.publicUrl) && (
+                        <div className="sy-button-group">
+                            {Project.publicUrl.map((link, index) => (
+                                <a
+                                    key={index}
+                                    href={link}
+                                    rel="noopener noreferrer"
+                                    target="_blank"
+                                    className="sy-button sy-button--primary"
+                                >
+                                    <span>사이트 방문하기</span>
+                                </a>
+                            ))}
+                        </div>
+                    )}
+
                     <div className="sy-callout discription">
                         {Project.discription.map((discription, index) => (
                             <p key={index}>{discription}</p>
                         ))}
                     </div>
 
-                    {Project.publicUrl &&
-                        Project.publicUrl.map((link, index) => (
-                            <a key={index}
-                               href={link}
-                               rel="noopener noreferrer"
-                               target="_blank"
-                            >
-                                {link}
-                            </a>
-                        ))
-                    }
                 </div>
 
                 {Project.thumbnail &&
