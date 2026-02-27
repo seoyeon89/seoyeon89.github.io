@@ -1,0 +1,20 @@
+/* Error: Undefined function.
+ *   ,
+ * 4 |     @return color.channel($color, "red", $space: rgb) + ", "
+ *   |             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ *   '
+ *   abstracts\function\_function.scss 4:13  to-rgb()
+ *   abstracts\base\_properties.scss 23:33   light()
+ *   abstracts\base\_properties.scss 188:5   @import
+ *   style.scss 21:9                         root stylesheet */
+
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: 'Error: Undefined function.\a   \2577 \a 4 \2502      @return color.channel($color, "red", $space: rgb) + ", "\d\a   \2502              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\a   \2575 \a   abstracts\\function\\_function.scss 4:13  to-rgb()\a   abstracts\\base\\_properties.scss 23:33   light()\a   abstracts\\base\\_properties.scss 188:5   @import\a   style.scss 21:9                         root stylesheet';
+}

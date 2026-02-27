@@ -2,24 +2,28 @@
 
 .detail {
     display        : flex;
-    gap            : var(--component-gap);
     flex-direction : column;
+    gap            : var(--component-gap);
     align-items    : flex-start;
     @include media-laptop {
         flex-direction : row;
     }
 
     &__info {
-        display        : flex;
-        gap            : 12px;
         flex           : 0 0 auto;
+        display        : flex;
         flex-direction : column;
+        gap            : 12px;
         overflow       : hidden auto;
         width          : 100%;
         padding        : var(--component-padding);
-        box-shadow     : var(--component-shadow);
         border-radius  : var(--component-radius);
         background     : var(--paper-primary);
+        box-shadow     : var(--component-shadow);
+
+        .sy-callout {
+            width : 100%;
+        }
 
         @include media-tablet {
             flex-direction : row;
@@ -36,8 +40,8 @@
         @include media-laptop {
             @include mixin-scrollbar();
             position         : sticky;
-            top              : 0;
             flex-direction   : column;
+            top              : 0;
             width            : 420px;
             max-height       : calc(100vh - 180px);
             padding          : var(--component-padding) calc(var(--component-padding) - 16px) var(--component-padding) var(--component-padding);
@@ -50,10 +54,10 @@
     }
 
     &__thumbnail {
-        display         : flex;
-        gap             : 8px;
         flex            : 0 1 auto;
+        display         : flex;
         flex-wrap       : wrap;
+        gap             : 8px;
         justify-content : center;
         width           : 100%;
 
@@ -76,10 +80,10 @@
 
     .participation {
         display        : flex;
-        gap            : 8px;
+        flex-direction : column;
         //display               : grid;
         //grid-template-columns : repeat(auto-fit, 80px);
-        flex-direction : column;
+        gap            : 8px;
         //justify-content       : center;
 
         .sy-progress__circle {

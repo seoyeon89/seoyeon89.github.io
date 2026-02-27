@@ -143,7 +143,7 @@
         "02_study/01_noin/mobile1.jpg",
         "02_study/01_noin/mobile2.jpg"
       ],
-      "links": [
+      "publicUrl": [
         "https://fool89.cafe24.com/project/siribm/"
       ]
     },
@@ -180,7 +180,7 @@
         "02_study/01_noin/site4.jpg",
         "02_study/01_noin/site5.jpg"
       ],
-      "links": [
+      "publicUrl": [
         "http://fool89.cafe24.com/project/siribw/"
       ]
     },
@@ -215,7 +215,7 @@
         "02_study/02_sumok/site2.jpg",
         "02_study/02_sumok/site3.jpg"
       ],
-      "links": [
+      "publicUrl": [
         "http://fool89.cafe24.com/project/sumok/"
       ]
     },
@@ -254,7 +254,7 @@
         "03_yhlajeon/site/site4.jpg",
         "03_yhlajeon/site/site5.jpg"
       ],
-      "links": [
+      "publicUrl": [
         "http://www.jeongakart.com/"
       ]
     },
@@ -352,7 +352,7 @@
         "05_sidaegosi/01_gov/site4.jpg",
         "05_sidaegosi/01_gov/site5.jpg"
       ],
-      "links": [
+      "publicUrl": [
         "http://www.sdedu.co.kr/gov/"
       ]
     },
@@ -1234,7 +1234,7 @@
         "02_study/03_2019pp/site2.jpg",
         "02_study/03_2019pp/site3.jpg"
       ],
-      "links": [
+      "publicUrl": [
         "https://fool89.cafe24.com/"
       ]
     },
@@ -1270,7 +1270,7 @@
         "06_ngt/01_mobile/site2.png",
         "06_ngt/01_mobile/site3.png"
       ],
-      "links": [
+      "publicUrl": [
         "https://web.saranghospital.com/"
       ]
     },
@@ -1373,7 +1373,7 @@
         "07_out/01_auto/site4.png",
         "07_out/01_auto/site5.png"
       ],
-      "links": [
+      "publicUrl": [
         "https://www.automarketing.co.kr/"
       ]
     },
@@ -1405,7 +1405,7 @@
       "images": [
         "08_lsinno/moa/img0.png"
       ],
-      "links": [
+      "publicUrl": [
         "https://info.maemo.co.kr/"
       ]
     },
@@ -1438,7 +1438,7 @@
         "08_lsinno/matong/img2.png",
         "08_lsinno/matong/img3.png"
       ],
-      "links": [
+      "publicUrl": [
         "https://www.msgtong.com/"
       ]
     },
@@ -1509,7 +1509,7 @@
         "07_out/02_cleanician/cleanician_dashboard03.png",
         "07_out/02_cleanician/cleanician_dashboard04.png"
       ],
-      "links": [
+      "publicUrl": [
         "https://cleanician.co.kr/"
       ]
     },
@@ -2734,6 +2734,48 @@
       "images": [
         "09_covision/35_cp_notebook/site01.png",
         "09_covision/35_cp_notebook/site02.png"
+      ]
+    },
+    {
+      "id": 86,
+      "isOpen": 1,
+      "isFeatured": true,
+      "name": "찻집소개 : 차차로",
+      "category": "개인프로젝트",
+      "workedFor": "개인작업",
+      "participation": {
+        "publish": 100,
+        "design": 100,
+        "development": 100,
+        "planning": 100
+      },
+      "platform": "web",
+      "date": {
+        "start": "2025-12-01"
+      },
+      "skills": [
+        "Next.js",
+        "tailwindcss",
+        "카카오 map api",
+        "firebase",
+        "HTML5",
+        "CSS3"
+      ],
+      "description": [
+        "전국 곳곳의 찻집을 탐색하고 추천받을 수 있는 개인 프로젝트 기반의 큐레이션 지도 서비스입니다.",
+        "Next.js와 Tailwind CSS와, Firebase(Firestore)를 활용하여 데이터 관리 시스템을 구축을 학습하기 위해 기획하였습니다.",
+        "카카오 맵 API를 연동하여 지도를 구현했으며, 마커 클릭 시 데스크톱은 사이드바, 모바일은 제스처 기반 드로어로 레이아웃이 유동적으로 변하는 적응형 UI를 적용했습니다.",
+        "서로 다른 디바이스 환경에서도 지도의 시각적 중심점이 가려지지 않도록 좌표 보정 로직을 설계하여 사용자 편의성을 극대화했습니다."
+      ],
+      "publicUrl": [
+        "https://chacha-ro.web.app/"
+      ],
+      "thumbnail": "02_study/07_teamap/site_thum.png",
+      "images": [
+        "02_study/07_teamap/site1.png",
+        "02_study/07_teamap/site2.png",
+        "02_study/07_teamap/site3.png",
+        "02_study/07_teamap/site4.png"
       ]
     }
   ]

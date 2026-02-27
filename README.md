@@ -17,7 +17,7 @@
 ## 코드 구조 개요
 - `src/`: 리액트 컴포넌트와 스타일 리소스.
 - `public/`: 정적 에셋.
-- `vite.config.js`: Vite 및 빌드 관련 설정.
+- `vite.config.mjs`: Vite 및 빌드 관련 설정.
 
 ## 배포 메모
 GitHub Action을 사용합니다. 
