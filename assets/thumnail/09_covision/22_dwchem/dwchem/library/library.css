@@ -1,0 +1,196 @@
+.components_item {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.components_item + .components_item {
+  margin-top: 40px;
+}
+.components_item .components_title h3 {
+  font-size: 18px;
+}
+.components_item .components_title p {
+  margin-top: 4px;
+  color: var(--text-secondary);
+}
+.components_item .components_title p + p {
+  margin-top: 8px;
+}
+.components_item .components_preview {
+  padding: 20px;
+  border-radius: 12px;
+  border: 1px solid var(--border-primary);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.components_item .components_preview .components_preview_item {
+  width: 100%;
+  flex: 0 0 auto;
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+.components_item pre {
+  margin: 0;
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+}
+.components_item pre:after {
+  content: attr(lang);
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 4px 8px;
+  border-radius: 0 10px 0 4px;
+  background: rgba(255, 255, 255, 0.1);
+  font-size: 12px;
+  line-height: 1;
+  color: #ffffff;
+}
+
+:not(pre) > code {
+  padding: 2px 4px;
+  border-radius: 4px;
+  background: rgba(0, 30, 60, 0.08);
+  font-size: 13px;
+}
+
+.cui_link {
+  position: relative;
+  color: var(--primary);
+  padding: 0 1.3em 0 0.2em;
+}
+.cui_link:after {
+  font-family: "CovisionIconFont";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 1;
+  vertical-align: middle;
+  position: absolute;
+  display: block;
+  right: 0;
+  width: 1em;
+  height: 1em;
+  line-height: 1em;
+  content: "\e918";
+  top: 0;
+  bottom: 0;
+  transform: translateY(1px);
+}
+.cui_link:hover {
+  text-decoration: underline;
+}
+
+.components_icon {
+  width: 100%;
+}
+.components_icon .icon_toolbar {
+  display: grid;
+  margin-bottom: 24px;
+  grid-template-columns: auto 1fr auto;
+  gap: 8px 16px;
+  grid-template-areas: "counter counter version" "search filter order";
+}
+.components_icon .icon_toolbar .total_count {
+  grid-area: counter;
+  font-weight: 500;
+  line-height: 24px;
+}
+.components_icon .icon_toolbar .version {
+  grid-area: version;
+  font-weight: 500;
+  line-height: 24px;
+}
+.components_icon .icon_toolbar .search {
+  grid-area: search;
+}
+.components_icon .icon_toolbar .filters {
+  display: flex;
+  gap: 8px;
+  grid-area: filter;
+}
+.components_icon .icon_toolbar .orders {
+  grid-area: order;
+}
+.components_icon .icon_toolbar .icon_search {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.components_icon .icon_toolbar .icon_search:before {
+  font-family: "CovisionIconFont";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 1;
+  vertical-align: middle;
+  font-size: 24px;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  content: "\e99e";
+  pointer-events: none;
+  color: var(--icon-primary);
+}
+.components_icon .icon_toolbar .icon_search input {
+  width: 100%;
+  max-width: 320px;
+  padding-left: 32px;
+}
+.components_icon .icon_list {
+  display: grid;
+  box-sizing: border-box;
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  gap: 20px;
+}
+.components_icon .icon_list .item {
+  font-family: "JetBrains Mono", sans-serif;
+  line-height: 1;
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  box-sizing: border-box;
+  padding: 8px;
+  color: var(--text-secondary);
+  border-radius: 12px;
+  gap: 8px;
+}
+.components_icon .icon_list .item i {
+  font-weight: normal;
+  font-style: normal;
+  color: #00ab55;
+}
+.components_icon .icon_list .item i:before {
+  font-size: 38px;
+}
+.components_icon .icon_list .item em {
+  font-style: normal;
+  color: var(--text-endpoint);
+}
+.components_icon .icon_list .item strong {
+  font-size: 12px;
+  font-weight: normal;
+  line-height: 1.5;
+  text-align: center;
+  word-break: break-all;
+}
+.components_icon .icon_list .ui_empty {
+  grid-column-start: 1;
+  grid-column-end: -1;
+}
+.components_icon .icon_list .ui_empty:before {
+  display: none;
+}
+
+/*# sourceMappingURL=library.css.map */
