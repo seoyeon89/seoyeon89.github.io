@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="ko" data-mode="">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" type="text/css" href="./plugin/highlightjs/atom-one-dark.min.css">
+    <script type="text/javascript" src="./plugin/highlightjs/highlight.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="../resourse/css/style.css" >
+    <link rel="stylesheet" type="text/css" href="./library.css" >
+    <title>퍼블리싱 가이드</title>
+</head>
+<body>
+<div class="cui_app">
+    <div class="cui_global">
+        <h1 class="global_logo">
+            <a href="./index.html"><span class="blind">동우화인캠</span></a>
+        </h1>
+    </div>
+    <div class="cui_container" data-module="">
+        <div class="cui_lnb">
+            <div class="lnb_root">
+                <div class="cui_nav">
+                    <nav class="nav_root">
+                    
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <div class="cui_content">
+            <div class="cui_main">
+                <div class="cui_head">
+                    <div class="head_content">
+                        <h2 class="cui_title"><span>한줄 정렬(가로형)</span></h2>
+                    </div>
+                </div>
+                <div class="components_item">
+                    <table class="cui_table cui_font_sm">
+                        <colgroup>
+                            <col style="width:124px;">
+                            <col style="width:108px;">
+                            <col style="width:108px;">
+                            <col style="width:108px;">
+                            <col style="width:80px;">
+                            <col>
+                        </colgroup>
+                        <thead>
+                        <tr>
+                            <th colspan="3"><span>Class Name</span></th>
+                            <th><span>Attribute</span></th>
+                            <th><span>value</span></th>
+                            <th><span>explain</span></th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <th rowspan="4" colspan="3"><span><code>cui_items_wrap</code></span></th>
+                            <th colspan="2"></th>
+                            <td>
+                                <p>요소를 정렬하는 레이아웃입니다. </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th><span><code>data-wrap</code></span></th>
+                            <th><span><code>wrap</code></span></th>
+                            <td>
+                                <p>값은 item_content 의 요소들이 여러줄로 들어갈 수 있도록 합니다.</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th rowspan="2"><span><code>data-direction</code></span></th>
+                            <td>
+                                <p><code>left</code></p>
+                                <p><code>right</code></p>
+                                <code>center</code></p>
+                            </td>
+                            <td>
+                                <p>각 값들은 가로 정렬시의 방향을 정합니다. <br> 각각 왼쪽정렬, 오른쪽 정렬, 중앙정렬을 합니다.
+                            </td>
+                        </tr>
+                        <tr>
+                            <th><span><code>column</code></span></th>
+                            <td>
+                                <p>세로 정렬됩니다. 세로 정렬에 대한 자세한 정보는 <a href="./library/atoms_layout_vertical-item.html" class="cui_link">링크</a> 참고하여 주시기 바랍니다.</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th rowspan="4"></th>
+                            <th colspan="2"><span><code>item_label</code></span></th>
+                            <th colspan="2"></th>
+                            <td>
+                                <span>cui_items_wrap의 하위요소로, 제목 영역입니다. 제목이 없을시에는 생략 가능합니다.</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th rowspan="2"><span><code>item_content</code></span></th>
+                            <th></th>
+                            <th colspan="2"></th>
+                            <td>
+                                <span>cui_items_wrap의 하위요소로, 본문 내용입니다. 컴포넌트를 정렬 할 수 있습니다. </span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th><span><code>field_connect</code></span></th>
+                            <th colspan="2"></th>
+                            <td>
+                                <span>item_content의 하위요소로 요소와 요소를 이어주는 ~ 등을 표현할 때 사용합니다.</span>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="components_item">
+                    <div class="components_title">
+                        <h3>기본형 (제목 유무)</h3>
+                    </div>
+                    <div class="components_preview">
+                        <div class="cui_items_wrap">
+                            <div class="item_label"><span>title</span></div>
+                            <div class="item_content">
+                                <input type="text" class="cui_text_field">
+                                <span class="field_connect">~</span>
+                                <input type="text" class="cui_text_field">
+                                <button type="button" class="cui_button secondary"><span>버튼</span></button>
+                            </div>
+                        </div>
+                        <div class="cui_items_wrap">
+                            <div class="item_content">
+                                <input type="text" class="cui_text_field" placeholder="내용을 입력하세요">
+                                <button type="button" class="cui_button icon" data-cui-icon="search"><span>검색</span></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="components_code">
+                    <pre lang="HTML">
+                        <code class="language-html">
+                            <div class="cui_items_wrap">
+                                <div class="item_label"><span>title</span></div>
+                                <div class="item_content">
+                                    <input type="text" class="cui_text_field">
+                                    <span class="field_connect">~</span>
+                                    <input type="text" class="cui_text_field">
+                                    <button type="button" class="cui_button secondary"><span>버튼</span></button>
+                                </div>
+                            </div>
+                            <div class="cui_items_wrap">
+                                <div class="item_content">
+                                    <input type="text" class="cui_text_field" placeholder="내용을 입력하세요">
+                                    <button type="button" class="cui_button icon" data-cui-icon="search"><span>검색</span></button>
+                                </div>
+                            </div>
+                        </code>
+                    </pre>
+                    </div>
+                </div>
+                <div class="components_item">
+                    <div class="components_title">
+                        <h3>data-wrap</h3>
+                    </div>
+                    <div class="components_preview">
+                        <div class="cui_items_wrap" data-wrap="wrap">
+                            <div class="item_label"><span>title</span></div>
+                            <div class="item_content">
+                                <label class="cui_checkbox"><input type="checkbox" name="checkbox1"><i></i><span>checkbox item label</span></label>
+                                <label class="cui_checkbox"><input type="checkbox" name="checkbox1"><i></i><span>checkbox item label</span></label>
+                                <label class="cui_checkbox"><input type="checkbox" name="checkbox1"><i></i><span>checkbox item label</span></label>
+                                <label class="cui_checkbox"><input type="checkbox" name="checkbox1"><i></i><span>checkbox item label</span></label>
+                                <label class="cui_checkbox"><input type="checkbox" name="checkbox1"><i></i><span>checkbox item label</span></label>
+                                <label class="cui_checkbox"><input type="checkbox" name="checkbox1"><i></i><span>checkbox item label</span></label>
+                                <label class="cui_checkbox"><input type="checkbox" name="checkbox1"><i></i><span>checkbox item label</span></label>
+                                <label class="cui_checkbox"><input type="checkbox" name="checkbox1"><i></i><span>checkbox item label</span></label>
+                                <label class="cui_checkbox"><input type="checkbox" name="checkbox1"><i></i><span>checkbox item label</span></label>
+                                <label class="cui_checkbox"><input type="checkbox" name="checkbox1"><i></i><span>checkbox item label</span></label>
+                                <label class="cui_checkbox"><input type="checkbox" name="checkbox1"><i></i><span>checkbox item label</span></label>
+                                <label class="cui_checkbox"><input type="checkbox" name="checkbox1"><i></i><span>checkbox item label</span></label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="components_code">
+                    <pre lang="HTML">
+                        <code class="language-html">
+                            <div class="cui_items_wrap" data-wrap="wrap">
+                                <div class="item_label"><span>title</span></div>
+                                <div class="item_content">
+                                    <label class="cui_checkbox"><input type="checkbox" name="checkbox1"><i></i><span>checkbox item label</span></label>
+                                    <label class="cui_checkbox"><input type="checkbox" name="checkbox1"><i></i><span>checkbox item label</span></label>
+                                    <label class="cui_checkbox"><input type="checkbox" name="checkbox1"><i></i><span>checkbox item label</span></label>
+                                    <label class="cui_checkbox"><input type="checkbox" name="checkbox1"><i></i><span>checkbox item label</span></label>
+                                    <label class="cui_checkbox"><input type="checkbox" name="checkbox1"><i></i><span>checkbox item label</span></label>
+                                    <label class="cui_checkbox"><input type="checkbox" name="checkbox1"><i></i><span>checkbox item label</span></label>
+                                    <label class="cui_checkbox"><input type="checkbox" name="checkbox1"><i></i><span>checkbox item label</span></label>
+                                    <label class="cui_checkbox"><input type="checkbox" name="checkbox1"><i></i><span>checkbox item label</span></label>
+                                    <label class="cui_checkbox"><input type="checkbox" name="checkbox1"><i></i><span>checkbox item label</span></label>
+                                    <label class="cui_checkbox"><input type="checkbox" name="checkbox1"><i></i><span>checkbox item label</span></label>
+                                    <label class="cui_checkbox"><input type="checkbox" name="checkbox1"><i></i><span>checkbox item label</span></label>
+                                    <label class="cui_checkbox"><input type="checkbox" name="checkbox1"><i></i><span>checkbox item label</span></label>
+                                </div>
+                            </div>
+                        </code>
+                    </pre>
+                    </div>
+                </div>
+                <div class="components_item">
+                    <div class="components_title">
+                        <h3>data-direction</h3>
+                        <p><code>data-direction</code>으로 요소 정렬의 방향을 결정하며, <code>data-direction</code>가 없을때 요소는 컨텐츠 길이만큼 정렬됩니다. <code>data-direction</code> 있을시 정렬되는 영역은 부모요소의 100%입니다.</p>
+                        <p>주로 <code>item_label을 생략하여</code>하단 버튼 영역 / 버튼이 있는 form 영역을 구성할때 사용합니다. </p>
+                    </div>
+                    <div class="components_preview">
+                        <div class="components_preview">
+                            <div class="cui_items_wrap" data-direction="left">
+                                <div class="item_content">
+                                    <button type="button" class="cui_button primary"><span>발송</span></button>
+                                    <button type="button" class="cui_button"><span>취소</span></button>
+                                </div>
+                            </div>
+                            
+                            <div class="cui_items_wrap" data-direction="center">
+                                <div class="item_content">
+                                    <button type="button" class="cui_button primary"><span>승인</span></button>
+                                    <button type="button" class="cui_button"><span>취소</span></button>
+                                </div>
+                            </div>
+                            
+                            <div class="cui_items_wrap" data-direction="right">
+                                <div class="item_content">
+                                    <button type="button" class="cui_button primary"><span>다음</span></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="components_code">
+                    <pre lang="HTML">
+                        <code class="language-html">
+                            <div class="cui_items_wrap" data-direction="left">
+                                <div class="item_content">
+                                    <button type="button" class="cui_button primary"><span>발송</span></button>
+                                    <button type="button" class="cui_button"><span>취소</span></button>
+                                </div>
+                            </div>
+                            
+                            <div class="cui_items_wrap" data-direction="center">
+                                <div class="item_content">
+                                    <button type="button" class="cui_button primary"><span>승인</span></button>
+                                    <button type="button" class="cui_button"><span>취소</span></button>
+                                </div>
+                            </div>
+                            
+                            <div class="cui_items_wrap" data-direction="right">
+                                <div class="item_content">
+                                    <button type="button" class="cui_button primary"><span>다음</span></button>
+                                </div>
+                            </div>
+                        </code>
+                    </pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript" src="./js/library.js"></script>
+<script type="text/javascript" src="./js/app.js"></script>
+</body>
+</html>

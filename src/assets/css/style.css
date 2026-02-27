@@ -1608,8 +1608,8 @@ html[data-mode=dark] .sy-table__row > .title {
 
 .detail {
   display: flex;
-  gap: var(--component-gap);
   flex-direction: column;
+  gap: var(--component-gap);
   align-items: flex-start;
 }
 @media (min-width: 1020px) {
@@ -1618,16 +1618,19 @@ html[data-mode=dark] .sy-table__row > .title {
   }
 }
 .detail__info {
-  display: flex;
-  gap: 12px;
   flex: 0 0 auto;
+  display: flex;
   flex-direction: column;
+  gap: 12px;
   overflow: hidden auto;
   width: 100%;
   padding: var(--component-padding);
-  box-shadow: var(--component-shadow);
   border-radius: var(--component-radius);
   background: var(--paper-primary);
+  box-shadow: var(--component-shadow);
+}
+.detail__info .sy-callout {
+  width: 100%;
 }
 @media (min-width: 768px) {
   .detail__info {
@@ -1645,8 +1648,8 @@ html[data-mode=dark] .sy-table__row > .title {
 @media (min-width: 1020px) {
   .detail__info {
     position: sticky;
-    top: 0;
     flex-direction: column;
+    top: 0;
     width: 420px;
     max-height: calc(100vh - 180px);
     padding: var(--component-padding) calc(var(--component-padding) - 16px) var(--component-padding) var(--component-padding);
@@ -1674,10 +1677,10 @@ html[data-mode=dark] .sy-table__row > .title {
   }
 }
 .detail__thumbnail {
-  display: flex;
-  gap: 8px;
   flex: 0 1 auto;
+  display: flex;
   flex-wrap: wrap;
+  gap: 8px;
   justify-content: center;
   width: 100%;
 }
@@ -1697,8 +1700,8 @@ html[data-mode=dark] .sy-table__row > .title {
 }
 .detail .participation {
   display: flex;
-  gap: 8px;
   flex-direction: column;
+  gap: 8px;
 }
 .detail .participation .sy-progress__circle {
   width: 100%;
