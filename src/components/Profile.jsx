@@ -19,6 +19,7 @@ import IconVscode from '../assets/images/icon_vscode.svg?react';
 import IconWebstrom from '../assets/images/icon_webstorm.svg?react';
 
 const MyInfo = MyJsonData;
+const sortedExperience = [...MyInfo.experience].sort((a, b) => b.order - a.order);
 const skillIcons = [
     <IconHtml />,
     <IconCss3 />,
@@ -165,9 +166,9 @@ const Profile = () => {
                     <Accordion title="Work Experience" extraClass={"primary"}>
                         <div className="experience">
                             <Accordions mode="multiple" initOpen={[0]}>
-                            {MyInfo.experience.map((item) => (
+                            {sortedExperience.map((item) => (
                                 <Accordion
-                                    key={item.order}
+                                    key={`${item.title}-${item.dateStart}`}
                                     extraClass={"secondary"}
                                     iconOpen={"minus"}
                                     iconClosed={"plus"}
