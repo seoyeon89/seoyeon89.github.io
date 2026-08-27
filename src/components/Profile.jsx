@@ -38,6 +38,10 @@ const skillIcons = [
     <IconPhotoshop />
 ];
 const formatMonthsToYearMonth = (months) => {
+    if (months <= 0) {
+        return '0개월';
+    }
+
     const years = Math.floor(months / 12);
     const remainingMonths = months % 12;
 
@@ -57,10 +61,22 @@ const formatMonthsToYearMonth = (months) => {
     return result.trim();
 }
 
+const getMonthIndex = (dateString) => {
+    const [year, month] = dateString.split('/').map(Number);
+    return year * 12 + month - 1;
+}
+
 const getMonthGap = (joinDate, leaveDate) => {
-    const joinDateObj = new Date(`${joinDate}/01`);
-    let leaveDateObj = (typeof leaveDate !== 'undefined') ? new Date(`${leaveDate}/${new Date(joinDateObj.getFullYear(), joinDateObj.getMonth() + 1, 0).getDate()}`) : new Date();
-    return (leaveDateObj.getFullYear() * 12 + leaveDateObj.getMonth()) - (joinDateObj.getFullYear() * 12 + joinDateObj.getMonth());
+    const startMonthIndex = getMonthIndex(joinDate);
+    const today = new Date();
+    const currentMonthIndex = today.getFullYear() * 12 + today.getMonth();
+    const endMonthIndex = leaveDate ? getMonthIndex(leaveDate) : currentMonthIndex;
+
+    if (endMonthIndex < startMonthIndex) {
+        return 0;
+    }
+
+    return endMonthIndex - startMonthIndex + 1;
 }
 
 const totalCareerMonth = Number(MyInfo.experience.map(item => {
