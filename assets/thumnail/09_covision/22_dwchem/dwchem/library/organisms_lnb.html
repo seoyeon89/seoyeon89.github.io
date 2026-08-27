@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="ko" data-mode="">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" type="text/css" href="./plugin/highlightjs/atom-one-dark.min.css">
+    <script type="text/javascript" src="./plugin/highlightjs/highlight.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="../resourse/css/style.css" >
+    <link rel="stylesheet" type="text/css" href="./library.css" >
+    <title>퍼블리싱 가이드</title>
+</head>
+<body>
+<div class="cui_app">
+    <div class="cui_global">
+        <h1 class="global_logo">
+            <a href="./index.html"><span class="blind">동우화인캠</span></a>
+        </h1>
+    </div>
+    <div class="cui_container" data-module="">
+        <div class="cui_lnb">
+            <div class="lnb_root">
+                <div class="cui_nav">
+                    <nav class="nav_root">
+                    
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <div class="cui_content">
+            <div class="cui_main">
+                <div class="cui_head">
+                    <div class="head_content">
+                        <h2 class="cui_title"><span>lnb</span></h2>
+                    </div>
+                </div>
+                <div class="components_item">
+                    <div class="components_title">
+                        <p><code>nav_item</code>에서 하위 메뉴가 없는 경우에는 <code>a</code>태그 사용 / 하위 메뉴가 있는 경우에는 <code>button</code>태그 사용 및 <code>role="button"</code> 추가하여주십시오</p>
+                        <p><code>nav_item</code>의 하위 메뉴가 열리는 경우는 <code>nav_item</code>의 바로 위 부모인 <code>li</code>에 <code>aria-expanded="true"</code>가 추가하여 주시기 바랍니다.</p>
+                        <p>현재 열려 있는 페이지를 표시기, <code>nav_item</code>에 <code>aria-selected="true"</code>가 추가 및 하이라키 구조상 그 위의 구조의 부모요소인 <code>li</code>에 <code>aria-expanded="true"</code>가 추가하여 주시기 바랍니다. </p>
+                    </div>
+                    <div class="components_preview">
+                        <div class="cui_lnb">
+                            <div class="lnb_root">
+                                <div class="lnb_head">
+                                    <h2 class="lnb_title"><span>lnb title</span></h2>
+                                </div>
+                                <div class="cui_nav">
+                                    <nav class="nav_root">
+                                        <ul>
+                                            <li>
+                                                <a href="#" class="nav_item">
+                                                    <span class="nav_label">기본메뉴</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="nav_item">
+                                                    <span class="nav_label">텍스트가 길어질때 : Lorem ipsum dolor sit amet, conse</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <div class="nav_item" role="button">
+                                                    <a href="#" class="nav_label">기본버튼 + 추가 영역</a>
+                                                    <div class="nav_aside">
+                                                        <button type="button" class="cui_button icon endpoint" data-cui-icon="question_circle" data-tooltip-title="도움말"><span>도움말</span></button>
+                                                        <button type="button" class="cui_button icon endpoint" data-cui-icon="ellipsis_vertical" data-tooltip-title="더보기"><span>더보기</span></button>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <button type="button" class="nav_item">
+                                                    <span class="nav_label">기본메뉴 + 하위메뉴</span>
+                                                    <i class="nav_toggle cui_button icon endpoint" role="button"><span>열기</span></i>
+                                                </button>
+                                                <ul>
+                                                    <li><a href="#" class="nav_item"><span class="nav_label">하위메뉴1</span></a></li>
+                                                    <li>
+                                                        <button type="button" class="nav_item">
+                                                            <span class="nav_label">하위메뉴2</span>
+                                                            <i class="nav_toggle cui_button icon endpoint" role="button"><span>열기</span></i>
+                                                        </button>
+                                                        <ul>
+                                                            <li><a href="#" class="nav_item"><span class="nav_label">하위메뉴2-1</span></a></li>
+                                                            <li><a href="#" class="nav_item"><span class="nav_label">하위메뉴2-2</span></a></li>
+                                                            <li><a href="#" class="nav_item"><span class="nav_label">하위메뉴2-3</span></a></li>
+                                                        </ul>
+                                                    </li>
+                                                    <li><a href="#" class="nav_item"><span class="nav_label">하위메뉴2</span></a></li>
+                                                </ul>
+                                            </li>
+                                            <li aria-expanded="true">
+                                                <button type="button" class="nav_item">
+                                                    <span class="nav_label">기본메뉴 + 하위메뉴(로드시 열림)</span>
+                                                    <i class="nav_toggle cui_button icon endpoint" role="button"><span>열기</span></i>
+                                                </button>
+                                                <ul>
+                                                    <li><a href="#" class="nav_item"><span class="nav_label">하위메뉴1</span></a></li>
+                                                    <li>
+                                                        <button type="button" class="nav_item">
+                                                            <span class="nav_label">하위메뉴2</span>
+                                                            <i class="nav_toggle cui_button icon endpoint" role="button"><span>열기</span></i>
+                                                        </button>
+                                                        <ul>
+                                                            <li><a href="#" class="nav_item"><span class="nav_label">하위메뉴2-1</span></a></li>
+                                                            <li><a href="#" class="nav_item"><span class="nav_label">하위메뉴2-2</span></a></li>
+                                                            <li><a href="#" class="nav_item"><span class="nav_label">하위메뉴2-3</span></a></li>
+                                                        </ul>
+                                                    </li>
+                                                    <li><a href="#" class="nav_item"><span class="nav_label">하위메뉴2</span></a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="components_code">
+                    <pre lang="HTML">
+                        <code class="language-html">
+                            <div class="cui_lnb">
+                                <div class="lnb_root">
+                                    <div class="lnb_head">
+                                        <h2 class="lnb_title"><span>lnb title</span></h2>
+                                    </div>
+                                    <div class="cui_nav">
+                                        <nav class="nav_root">
+                                            <ul>
+                                                <li>
+                                                    <a href="#" class="nav_item">
+                                                        <span class="nav_label">기본메뉴</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" class="nav_item">
+                                                        <span class="nav_label">텍스트가 길어질때 : Lorem ipsum dolor sit amet, conse</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <div class="nav_item" role="button">
+                                                        <a href="#" class="nav_label">기본버튼 + 추가 영역</a>
+                                                        <div class="nav_aside">
+                                                            <button type="button" class="cui_button icon endpoint" data-cui-icon="question_circle" data-tooltip-title="도움말"><span>도움말</span></button>
+                                                            <button type="button" class="cui_button icon endpoint" data-cui-icon="ellipsis_vertical" data-tooltip-title="더보기"><span>더보기</span></button>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <button type="button" class="nav_item">
+                                                        <span class="nav_label">기본메뉴 + 하위메뉴</span>
+                                                        <i class="nav_toggle cui_button icon endpoint" role="button"><span>열기</span></i>
+                                                    </button>
+                                                    <ul>
+                                                        <li><a href="#" class="nav_item"><span class="nav_label">하위메뉴1</span></a></li>
+                                                        <li>
+                                                            <button type="button" class="nav_item">
+                                                                <span class="nav_label">하위메뉴2</span>
+                                                                <i class="nav_toggle cui_button icon endpoint" role="button"><span>열기</span></i>
+                                                            </button>
+                                                            <ul>
+                                                                <li><a href="#" class="nav_item"><span class="nav_label">하위메뉴2-1</span></a></li>
+                                                                <li><a href="#" class="nav_item"><span class="nav_label">하위메뉴2-2</span></a></li>
+                                                                <li><a href="#" class="nav_item"><span class="nav_label">하위메뉴2-3</span></a></li>
+                                                            </ul>
+                                                        </li>
+                                                        <li><a href="#" class="nav_item"><span class="nav_label">하위메뉴2</span></a></li>
+                                                    </ul>
+                                                </li>
+                                                <li aria-expanded="true">
+                                                    <button type="button" class="nav_item">
+                                                        <span class="nav_label">기본메뉴 + 하위메뉴(로드시 열림)</span>
+                                                        <i class="nav_toggle cui_button icon endpoint" role="button"><span>열기</span></i>
+                                                    </button>
+                                                    <ul>
+                                                        <li><a href="#" class="nav_item"><span class="nav_label">하위메뉴1</span></a></li>
+                                                        <li>
+                                                            <button type="button" class="nav_item">
+                                                                <span class="nav_label">하위메뉴2</span>
+                                                                <i class="nav_toggle cui_button icon endpoint" role="button"><span>열기</span></i>
+                                                            </button>
+                                                            <ul>
+                                                                <li><a href="#" class="nav_item"><span class="nav_label">하위메뉴2-1</span></a></li>
+                                                                <li><a href="#" class="nav_item"><span class="nav_label">하위메뉴2-2</span></a></li>
+                                                                <li><a href="#" class="nav_item"><span class="nav_label">하위메뉴2-3</span></a></li>
+                                                            </ul>
+                                                        </li>
+                                                        <li><a href="#" class="nav_item"><span class="nav_label">하위메뉴2</span></a></li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </nav>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </code>
+                    </pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript" src="./js/library.js"></script>
+<script type="text/javascript" src="./js/app.js"></script>
+</body>
+</html>
