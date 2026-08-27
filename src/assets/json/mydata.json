@@ -1,14 +1,14 @@
 {
   "experience": [
     {
-      "order": 0,
+      "order": 5,
       "title": "버블콘",
-      "dateStart": "2026/10",
+      "dateStart": "2026/06/08",
       "position": "팀장/ 리더",
       "description": ["기획, 디자인, 퍼블리싱으로 구성된 서비스 운영팀의 팀장으로서 다수의 프로젝트 및 솔루션 고도화의 요구사항 정리·프로세스 조율·일정 관리 등을 수행했습니다."]
     },
     {
-      "order": 1,
+      "order": 4,
       "title": "코비젼",
       "dateStart": "2022/10",
       "dateEnd": "2025/11",
@@ -22,7 +22,7 @@
       ]
     },
     {
-      "order": 1,
+      "order": 3,
       "title": "엘에스이노베이션",
       "dateStart": "2021/09",
       "dateEnd": "2022/09",
@@ -46,7 +46,7 @@
       ]
     },
     {
-      "order": 3,
+      "order": 1,
       "title": "시대고시",
       "dateStart": "2017/07",
       "dateEnd": "2019/02",
@@ -54,7 +54,7 @@
       "description": ["웹퍼블리싱(HTML/LESS, CSS/JS)"]
     },
     {
-      "order": 4,
+      "order": 0,
       "title": "센치",
       "dateStart": "2016/05",
       "dateEnd": "2017/02",
